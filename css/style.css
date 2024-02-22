@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-left: .3rem;
+}
+
+.portada {
+    width: 100w;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    background: url(../img/ORSAY9.jpg);
+    background-size:cover;
+    background-position:center;
+}
+h1{
+    color: white;
+    animation: titulo 2s  infinite ease-in-out;
+    margin-left: .4rem;
+    margin-bottom: 10rem;
+    
+  
+    
+   
+}
+@keyframes titulo{
+    from{
+        transform: translateX(-180px);
+    }
+   
+}
+.navbar-toggler {
+    border: 0;
+
+}
+
+.navbar-toggler:focus {
+    color: transparent;
+
+
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.iconos {
+    display: flex;
+    gap: .3rem;
+}
