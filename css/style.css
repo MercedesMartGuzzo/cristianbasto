@@ -20,9 +20,11 @@ a {
 img {
     max-width: 100%;
 }
-
-
-
+/* .wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: black;
+} */
 .logo {
     display: flex;
     flex-direction: column;
@@ -31,33 +33,42 @@ img {
 }
 
 .portada {
-    width: 100w;
-    height: 100vw;
-    display: flex;
+    width: 100vw;
+    margin-top: 2rem;
+    position: relative;
+    /*  display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    background: url(../img/ORSAY9.jpg);
-    background-size:cover;
-    background-position:center;
+    align-items: center; */
+    /* 
+    background-image: url(../img/orsai9.jpg);
+    background-size: cover;
+    background-position: center; */
+
 }
-h1{
-    color: white;
-    animation: titulo 2s  infinite ease-in-out;
-    margin-left: .4rem;
-    margin-bottom: 10rem;
-    
-  
-    
-   
+
+h1 {
+    color: grey;
+    animation: titulo 3s ease-in-out infinite;
+    margin-left: .5rem;
+    position: absolute;
+    top: 20%;
+
 }
-@keyframes titulo{
-    from{
+
+@keyframes titulo {
+    /* from {
         transform: translateX(-180px);
+    } */
+    from {
+        opacity: 0; /* Opacidad inicial en 0 para que el texto no sea visible */
     }
-   
+    to {
+        opacity: 1; 
+        color: white;
+    }
 }
-.navbar-toggler {
+
+*/ .navbar-toggler {
     border: 0;
 
 }
