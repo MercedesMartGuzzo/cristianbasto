@@ -99,7 +99,7 @@ h1 {
     color: gray;
     font-size: 1.3rem;
     font-weight: 200;
-    animation: titulo 2s ease-in-out 1 forwards;
+    animation: titulo 4s  2s ease-in-out 1 forwards;
     margin-left: .5rem;
     position: absolute;
     top: 20%;
