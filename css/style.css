@@ -99,7 +99,7 @@ h1 {
     color: gray;
     font-size: 1.3rem;
     font-weight: 200;
-    animation: titulo 3s ease-in-out 1 forwards;
+    animation: titulo 2s ease-in-out 1 forwards;
     margin-left: .5rem;
     position: absolute;
     top: 20%;
@@ -136,26 +136,27 @@ h2 {
 }
 
 .spotify {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     width: 80vw;
-    gap: .2rem;
+    gap: .3rem;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -65%;
+    top: 90%;
     margin-left: .4rem;
 }
 
 .suite {
-    display: grid;
+    display: flex;
+    justify-content: center;
 
 }
 
 .piano {
 
-    display: grid;
-    align-self: end;
+    display: flex;
+    justify-content: center;
 }
 
 .suite:hover {
