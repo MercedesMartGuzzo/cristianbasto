@@ -39,7 +39,6 @@ body {
     margin-left: .3rem;
 } */
 /* header-mobile */
-
 .navbar-toggler {
     border: 0;
 }
@@ -51,7 +50,14 @@ body {
 .navbar-brand {
     color: white;
 }
-
+.redes{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin: 0;
+    gap:.3rem;
+    
+}
 .iconos {
     display: flex;
     gap: .3rem;
@@ -59,31 +65,36 @@ body {
 
 /* header-desktop */
 @media (min-width: 1200px) {
+
     .navbar-nav {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-
-    .navbar-nav {
-        display: flex;
-        gap: .2rem;
+        justify-content: center;
         text-align: center;
-        margin-left: 5px;
     }
-
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .nav-item {
         margin-right: 5px;
-        padding-right: 2px;
     }
-
-    .nav-link.iconos {
-        margin-right: 5px;
-        padding-right: 2px;
-
+    .nav-link {
+        margin: 0;
+        padding: 0;
     }
-
+    .redes{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 0;
+        gap:.1rem;
+        
+    }
+    .iconos{
+        gap:.5rem;
+    }
 }
 
 
@@ -99,7 +110,7 @@ h1 {
     color: gray;
     font-size: 1.3rem;
     font-weight: 200;
-    animation: titulo 4s  2s ease-in-out 1 forwards;
+    animation: titulo 4s 2s ease-in-out 1 forwards;
     margin-left: .5rem;
     position: absolute;
     top: 20%;
