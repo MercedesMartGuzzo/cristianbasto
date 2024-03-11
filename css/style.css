@@ -168,7 +168,7 @@ h1 {
 
     position: absolute;
 
-    right: calc(100% + 1rem);
+    right: calc(95% + 1rem);
     top: 0;
 
 }
@@ -181,7 +181,7 @@ h1 {
 
     position: absolute;
 
-    left: calc(100% + 1rem);
+    left: calc(80% + 1rem);
     top: 0;
 
 }
@@ -285,7 +285,7 @@ h1 {
 
     position: absolute;
 
-    right: calc(100% + 1rem);
+    right: calc(95% + 1rem);
     top: 0;
 
 }
@@ -298,7 +298,7 @@ h1 {
 
     position: absolute;
 
-    left: calc(100% + 1rem);
+    left: calc(80% + 1rem);
     top: 0;
 
 }
