@@ -38,7 +38,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#bioContainer">BIO</a>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">AGENDA</a>
+                                    <a class="nav-link" href="#agendaContainer">AGENDA</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">PARTITURAS</a>
@@ -81,8 +81,8 @@
             <h1>CRISTIAN BASTO</h1>
         </section>
 
-        <section class="musica container"id="musicaContainer">
-            <img class="musica-foto"id="musica-titulo" src="./img/crischus-contra.jpg" alt="">
+        <section class="musica container" id="musicaContainer">
+            <img class="musica-foto" id="musica-titulo" src="./img/crischus-contra.jpg" alt="">
             <h2 class="musica-titulo">MUSICA</h2>
 
             <div class="spotify container">
@@ -103,15 +103,15 @@
             </div>
         </section>
 
-        <section class="videos container"id="videosContainer">
+        <section class="videos container" id="videosContainer">
             <div>
-                <img class="videos-fotos"id="videos-titulo" src="./img/fondo-videos.jpg" alt="">
+                <img class="videos-fotos" id="videos-titulo" src="./img/fondo-videos.jpg" alt="">
                 <h2 class="videos-titulo">VIDEOS</h2>
             </div>
 
-            <div id="carouselVideos" class="carousel slide" >
+            <div id="carouselVideos" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active"data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="2000">
                         <iframe class="d-block w-100" width="200" height="200"
                             src="https://www.youtube.com/embed/4ZF4WjQQCyg?si=QMcFjFqZFw3aoR6O"
                             title="YouTube video player" frameborder="0"
@@ -119,7 +119,7 @@
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <div class="carousel-item"data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <iframe class="d-block w-100" width="200" height="200"
                             src="https://www.youtube.com/embed/b2CMxg6wspE?si=YbNH9qPnQiXzRp_X"
                             title="YouTube video player" frameborder="0"
@@ -127,7 +127,7 @@
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <div class="carousel-item"data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <iframe class="d-block w-100" width="200" height="200"
                             src="https://www.youtube.com/embed/cS7g1r8yc38?si=JzznhLX8nCXRnT6C"
                             title="YouTube video player" frameborder="0"
@@ -135,8 +135,12 @@
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <div class="carousel-item"data-bs-interval="2000">
-                        <iframe class="d-block w-100" width="200" height="200"   src="https://www.youtube.com/embed/C0Yyg5bmKg4?si=B_-Pz3a_FYBmWwNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <iframe class="d-block w-100" width="200" height="200"
+                            src="https://www.youtube.com/embed/C0Yyg5bmKg4?si=B_-Pz3a_FYBmWwNR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos"
@@ -152,8 +156,8 @@
 
             </div>
         </section>
-   
-        <section class="bio container"id="bioContainer">
+
+        <section class="bio container" id="bioContainer">
             <div>
                 <img class="bio-fotos" id="bio-titulo" src="./img/bio-fondo2.jpg" alt="">
                 <h2 class="bio-titulo">BIO</h2>
@@ -180,6 +184,23 @@
 
         </section>
 
+         <section class="agenda container" id="agendaContainer">
+         
+
+            <div class="agenda-lista">
+                <h2 class="agenda-titulo">AGENDA</h2>
+                <h3>Próximos Eventos</h3>
+                <ul id="eventos"></ul>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
 
     </main>
 
@@ -193,7 +214,7 @@
 
 
 
-
+    <script src="./js/agenda.js"></script> 
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
