@@ -55,8 +55,8 @@ window.addEventListener("scroll", function () {
   let bioContainer = document.getElementById("bioContainer");
   activarDesactivarBordes(bioContainer);
 
-  let agendaContainer =this.document.getElementById("agendaContainer");
-  activarDesactivarBordes(agendaContainer);
+  let contactoContainer =document.getElementById("contactoContainer");
+  activarDesactivarBordes(contactoContainer);
 });
 
 function activarBordesMusicaContainer(contenedor) {

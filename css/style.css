@@ -121,6 +121,8 @@ h1 {
   }
 }
 
+/* Seccion musica */
+
 .musica {
   position: relative;
   margin-top: 1rem;
@@ -194,7 +196,7 @@ h1 {
   content: "";
   background-color: rgba(255, 255, 255, 0.507);
   /*  rgba(194, 82, 194, 0.404); */
-  width: 190px;
+  width: 13rem;
   height: 100%;
 
   position: absolute;
@@ -228,15 +230,7 @@ h1 {
   width: 85vw;
 }
 
-.suite:hover {
-  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.329);
-  border-radius: 12px;
-}
-
-.piano:hover {
-  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.329);
-  border-radius: 12px;
-}
+/* SECCION VIDEOS */
 
 .videos {
   margin-top: 1rem;
@@ -306,7 +300,7 @@ h1 {
   content: "";
   background-color: rgba(0, 0, 0, 0.219);
   /* rgba(194, 82, 194, 0.404); */
-  width: 190px;
+  width: 13rem;
   height: 100%;
 
   position: absolute;
@@ -320,18 +314,14 @@ h1 {
   padding: 0.5rem;
 }
 
-/* .carousel-inner:hover {
-    box-shadow: 0px 3px 15px 3px rgba(194, 82, 194, 0.404);
-    border-radius: 12px;
-
-} */
-
 .carousel-control-prev,
 .carousel-control-next {
   width: 20%;
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* SECCION BIO */
 
 .bio {
   margin-top: 1rem;
@@ -378,7 +368,6 @@ h1 {
 
 .bio-titulo {
   color: rgba(172, 255, 47, 0.473);
-  /* rgb(82, 16, 82) */
   position: absolute;
   font-weight: 400;
   font-size: 1.3rem;
@@ -390,13 +379,9 @@ h1 {
 .bio-titulo::before {
   content: "";
   background-color: rgba(172, 255, 47, 0.295);
-  /*  rgba(194, 82, 194, 0.404); */
-
-  width: 12px;
+  width: 13px;
   height: 100%;
-
   position: absolute;
-
   right: calc(95% + 1rem);
   top: 0;
 }
@@ -404,12 +389,9 @@ h1 {
 .bio-titulo::after {
   content: "";
   background-color: rgba(172, 255, 47, 0.295);
-  /*  rgba(194, 82, 194, 0.404); */
-  width: 225px;
+  width: 15.2rem;
   height: 100%;
-
   position: absolute;
-
   left: calc(80% + 1rem);
   top: 0;
 }
@@ -423,7 +405,10 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.agenda-lista{
+
+/* SECCION AGENDA */
+
+.agenda-lista {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,13 +416,9 @@ h1 {
   background: rgb(49, 47, 47);
   padding: 20px;
   border-radius: 10px;
-  box-shadow:2px 2px 2px 2px rgb(26, 24, 24);
-  
- 
-}
+  box-shadow: 2px 2px 2px 2px rgb(26, 24, 24);
 
-#eventos{
-  padding-left: 0px;
+
 }
 
 .agenda-lista h3 {
@@ -447,14 +428,20 @@ h1 {
   color: #d4d4d4;
   margin-bottom: 1rem
 }
-.agenda-titulo{
+
+.agenda-titulo {
   text-align: center;
   justify-content: center;
   margin-bottom: .5rem;
   color: #d4d4d4;
 }
+
+#eventos {
+  padding-left: 0px;
+}
+
 #eventos li {
-  background :#d4d4d4;
+  background: #d4d4d4;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -467,8 +454,8 @@ h1 {
 }
 
 #eventos li:hover {
-  background:rgba(172, 255, 47, 0.295);
- color: white;
+  background:peru;
+  color: white;
 }
 
 .view-more-btn {
@@ -499,29 +486,116 @@ h1 {
 .location-map {
   display: block;
   margin-top: 10px;
-  color:black;
+  color: black;
   text-decoration: none;
 }
 
 .location-map:hover {
   text-decoration: underline;
-  color:white ;
+  color: white;
 }
 
-/* @media (max-width: 600px) {
-  body {
-      padding: 10px;
-  }
+/* SECCION BIO */
 
-  .eventos-list {
-      padding: 15px;
-  }
+.contacto {
+  margin-top: 1rem;
+  width: 90vw;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
 
-  #eventos li {
-      padding: 10px;
-  }
+.contacto::before,
+.contacto::after {
+  content: "";
+  position: absolute;
+  background-color: peru;
+  /*  rgba(194, 82, 194, 0.404); */
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+  width: 0;
+  height: 0;
+}
 
-  .view-more-btn {
-      padding: 8px;
-  } */
+.contacto::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+}
+
+.contacto::after {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+}
+
+.border-visible-top::before {
+  width: 100%;
+}
+
+.border-visible-left::after {
+  height: 100%;
+}
+
+
+.contacto-titulo {
+  color:peru;
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.3rem;
+  top: 10%;
+  left: 12%;
+  letter-spacing: 1px;
+}
+
+.contacto-titulo::before {
+  content: "";
+  background-color:peru;
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  right: calc(95% + 1rem);
+  top: 0;
+}
+
+.contacto-titulo::after {
+  content: "";
+  background-color: peru;
+  width: 170px;
+  height: 100%;
+  position: absolute;
+  left: calc(90% + 1rem);
+  top: 0;
+}
+.contacto-redes{
+  color: peru;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: .5rem;
+
+}
+.redes-contacto {
+ gap: 1.5rem;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+flex-direction: row;
+margin-top: .5rem;
+}
+.contacto-redes:hover{
+  color:  rgba(205, 134, 63, 0.676);
+}
+.contacto-parrafo{
+  color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: .5rem;
+  gap: .3rem;
+  margin-left: .6rem;
+}
 

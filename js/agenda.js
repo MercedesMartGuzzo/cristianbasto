@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
             date: "26-06-2024",
             time: "20:00 hs",
             location: "La Tierra Invisible",
-         /*    imageUrl: "./img/laTierraInvisible.jpg", */
             mapUrl: "https:///maps.app.goo.gl/sUn7cwrhY9UWFiiw9"
         },
         {
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
             date: "2024-07-10",
             time: "10:00",
             location: "Centro de Convenciones",
-            imageUrl: "path/to/centro-convenciones.jpg",
             mapUrl: "https://www.google.com/maps?q=Centro+de+Convenciones"
         },
         {
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
             date: "2024-08-15",
             time: "09:00",
             location: "Hotel Hilton",
-            imageUrl: "path/to/hotel-hilton.jpg",
             mapUrl: "https://www.google.com/maps?q=Hotel+Hilton"
         },
         {
@@ -32,13 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
             date: "2024-09-05",
             time: "20:00",
             location: "Parque Central",
-            imageUrl: "path/to/parque-central.jpg",
             mapUrl: "https://www.google.com/maps?q=Parque+Central"
         }
     ];
 
     // Función para agregar un evento a la lista
-    function addEvent(name, date, time, location, imageUrl, mapUrl) {
+    function addEvent(name, date, time, location, mapUrl) {
         const eventItem = document.createElement('li');
 
         eventItem.innerHTML = `
@@ -56,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <button class="view-more-btn">Ver más</button>
             <div class="event-details" style="display: none;">
-                <img src="${imageUrl}" alt="Imagen de ${location}" class="location-image">
                 <a href="${mapUrl}" target="_blank" class="location-map">Ver en el mapa</a>
             </div>
         `;
@@ -79,6 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Recorrer y agregar cada evento de la lista al DOM
     eventos.forEach(event => {
-        addEvent(event.name, event.date, event.time, event.location, event.imageUrl, event.mapUrl);
+        addEvent(event.name, event.date, event.time, event.location, event.mapUrl);
     });
 });
