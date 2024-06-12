@@ -24,24 +24,35 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  background-color: rgb(29, 26, 26);
+  background-color:/*  rgb(29, 26, 26); */white;
 }
 
 body {
-  background-color: rgb(29, 26, 26);
+  background-color: /*  rgb(29, 26, 26);  */white;
 }
 
+.navbar{
+  background-color:/* rgba(255, 255, 255, 0.263);  */  rgb(29, 26, 26);
+  border: none;
+}
 .navbar-toggler {
   border: 0;
-}
 
+}
 .navbar-toggler:focus {
   color: transparent;
 }
-
-.navbar-brand {
-  color: white;
+.navbar li a{
+  color:peru
 }
+.active{
+  color:peru;
+}
+
+
+/* .navbar-brand {
+  color: white;
+} */
 
 .redes {
   display: flex;
@@ -96,14 +107,14 @@ body {
 /* index-mobile */
 .portada {
   width: 100vw;
-  position: relative;
+position: relative;
 }
 
 h1 {
-  color: gray;
+  color: transparent;
   font-size: 1.3rem;
   font-weight: 200;
-  animation: titulo 4s 2s ease-in-out 1 forwards;
+  animation: titulo 4s 2s ease-in-out 1 forwards ;
   margin-left: 0.5rem;
   position: absolute;
   top: 20%;
@@ -124,10 +135,10 @@ h1 {
 /* Seccion musica */
 
 .musica {
-  position: relative;
+  position:relative;
   margin-top: 1rem;
   width: 90vw;
-  overflow: hidden;
+   overflow: hidden; 
   padding-top: 1rem;
   
 }
@@ -136,7 +147,7 @@ h1 {
 .musica::after {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color:/* :rgba(255, 255, 255, 0.507);  */black;
   transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
   width: 0;
   height: 0;
@@ -165,7 +176,7 @@ h1 {
 }
 
 .musica-titulo {
-  color: rgba(255, 255, 255, 0.795);
+  color:rgba(255, 255, 255, 0.795); 
   /*  rgb(46, 5, 46); */
   position: absolute;
   font-weight: 400;
@@ -177,7 +188,7 @@ h1 {
 
 .musica-titulo::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color:  rgba(255, 255, 255, 0.507); 
   width: 12px;
   height: 100%;
   position: absolute;
@@ -187,7 +198,7 @@ h1 {
 
 .musica-titulo::after {
   content: "";
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color:  rgba(255, 255, 255, 0.507); 
   width: 190px;
   height: 100%;
   position: absolute;
@@ -231,7 +242,7 @@ h1 {
 .videos::after {
   content: "";
   position: absolute;
-  background-color: rgba(245, 245, 245, 0.438);
+  background-color:/* rgba(245, 245, 245, 0.438); */black;
   /* rgba(194, 82, 194, 0.404) */
   transition: width 1s ease-in-out, height 1s ease-in-out;
 }
@@ -379,7 +390,7 @@ h1 {
 
 .bio-parrafo {
   margin-top: 1.1rem;
-  color:#d4d4d4;
+  color:/* #d4d4d4; */black;
   display: flex;
   flex-direction: column;
   justify-content: center;
