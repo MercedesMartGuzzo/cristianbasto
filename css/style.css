@@ -586,6 +586,116 @@ margin-top: .5rem;
   left: calc(90% + 1rem);
   top: 0;
 }
+
+.contacto {
+  margin-top: 1rem;
+  width: 90vw;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contacto::before,
+.contacto::after {
+  content: "";
+  position: absolute;
+  background-color: peru;
+
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+  width: 0;
+  height: 0;
+}
+
+.contacto::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+}
+
+.contacto::after {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+}
+
+.border-visible-top::before {
+  width: 100%;
+}
+
+.border-visible-left::after {
+  height: 100%;
+}
+
+
+.contacto-redes{
+  color: peru;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: .5rem;
+
+}
+.redes-contacto {
+ gap: 1.5rem;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+flex-direction: row;
+margin-top: .5rem;
+}
+.contacto-redes:hover{
+  color:  rgba(205, 134, 63, 0.676);
+}
+.contacto-parrafo{
+  color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: .5rem;
+  gap: .3rem;
+  margin-left: .6rem;
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.contacto-titulo {
+  color: peru;
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.3rem;
+  top: 8%;
+  left: 12%;
+  letter-spacing: 1px;
+}
+
+.contacto-titulo::before {
+  content: "";
+  background-color: peru;
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  right: calc(95% + 1rem); /* Ajusta según sea necesario */
+  top: 0;
+}
+
+.contacto-titulo::after {
+  content: "";
+  background-color: peru;
+  width: 165px;
+  height: 100%;
+  position: absolute;
+  left: calc(90% + 1rem);
+  top: 0;
+}
+/* 
 .contacto-formulario{
   display: flex;
   flex-direction: column;
@@ -643,4 +753,10 @@ button:hover{
 .saludo{
   color: peru;
   display: none;
-}
+ */
+ 
+
+
+
+
+

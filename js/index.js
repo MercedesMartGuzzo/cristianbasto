@@ -93,7 +93,7 @@ navLinks.forEach(function (navLink) {
 });
 
 /* FORMULARIO DE CONNTACTO */
-
+/* 
 document.getElementById('contactoForm').addEventListener('submit', function(e) {
   e.preventDefault(); // Evita el envío del formulario
 
@@ -121,6 +121,6 @@ document.getElementById('contactoForm').addEventListener('submit', function(e) {
   }, 8000);
 
   formulario.reset();
-});
+}); */
 
 
