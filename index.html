@@ -84,9 +84,9 @@
 
         <section class="musica container" id="musicaContainer">
             <div class="img-container">
-            <img class="musica-foto" id="musica-titulo" src="./img/crischus-contra.jpg" alt="">
-            <h2 class="musica-titulo">MUSICA</h2>
-        </div>
+                <img class="musica-foto" id="musica-titulo" src="./img/crischus-contra.jpg" alt="">
+                <h2 class="musica-titulo">MUSICA</h2>
+            </div>
             <div class="spotify container">
                 <div class="suite">
                     <iframe style="border-radius:12px"
@@ -217,8 +217,24 @@
                 </li>
             </ul>
             <div>
-                <p class="contacto-parrafo">Para comunicarte con Cristian Basto, <br> escribí a cristian@gmaicom</p>
+                <p class="contacto-parrafo">Para comunicarte con Cristian Basto, <br> escribí a cristian@gmail.com</p>
                 <p class="contacto-parrafo"><i class="bi bi-whatsapp"></i> +54 9 11 12 345 332</p>
+            </div>
+
+            <div class="contacto-formulario">
+                <form id="contactoForm">
+                    <label for="nombreUsuario"></label>
+                    <input type="text" id="nombreUsuario" placeholder="Nombre y Apellido">
+
+                    <label for="mailUsuario"></label>
+                    <input type="email" id="mailUsuario" required placeholder="Email">
+
+                    <label for="mensajeUsuario"></label>
+                    <textarea name="" id="mensajeUsuario" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensajeSaludo" class= "saludo">¡Gracias por escribirnos!</div>
             </div>
         </section>
 

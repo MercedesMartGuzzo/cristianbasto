@@ -91,3 +91,36 @@ navLinks.forEach(function (navLink) {
     smoothScroll(target);
   });
 });
+
+/* FORMULARIO DE CONNTACTO */
+
+document.getElementById('contactoForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Evita el envío del formulario
+
+  // Obtener los valores del formulario
+  const nombreUsuario = document.getElementById('nombreUsuario').value;
+  const mailUsuario = document.getElementById('mailUsuario').value;
+  const mensajeUsuario = document.getElementById('mensajeUsuario').value;
+
+  // Guardar datos en el localStorage
+  localStorage.setItem("nombreUsuario", nombreUsuario);
+  localStorage.setItem("mailUsuario", mailUsuario);
+  localStorage.setItem("mensajeUsuario", mensajeUsuario);
+
+  // Mostrar el mensaje de agradecimiento y ocultar el formulario
+  const mensajeSaludo = document.getElementById('mensajeSaludo');
+  mensajeSaludo.style.display = 'block';
+  mensajeSaludo.innerHTML = `¡Gracias ${nombreUsuario} por escribirnos!`;
+
+  const formulario = document.getElementById('contactoForm');
+  formulario.style.display = 'none';
+
+  setTimeout(() => {
+    mensajeSaludo.style.display = 'none';
+    formulario.style.display = 'block';
+  }, 8000);
+
+  formulario.reset();
+});
+
+
