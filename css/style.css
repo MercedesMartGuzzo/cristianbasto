@@ -33,8 +33,9 @@ body {
 
 .navbar{
   background-color:/* rgba(255, 255, 255, 0.263);  */   rgb(15, 14, 14) ;
-  border: none;
 }
+  
+
 
 .navbar-toggler {
  border:0;
@@ -76,7 +77,7 @@ color: peru;
 /* header-desktop */
 @media (min-width: 1200px) {
   .navbar-nav {
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: center;
     text-align: center;
@@ -112,8 +113,9 @@ color: peru;
 
 /* index-mobile */
 .portada {
-  width: 100vw;
+  object-fit: cover;
 position: relative;
+
 }
 
 h1 {
@@ -608,10 +610,14 @@ margin-top: .5rem;
   flex-direction: column;
   justify-content:center ;
   align-items: center;
-  background-color: rgb(15, 14, 14);
+  background-color:/*  rgb(15, 14, 14); */white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-weight: 200;
+  border-top: 1px solid peru;
+  
+  
+  
   
 }
 footer h2{
@@ -622,13 +628,17 @@ footer h2{
   margin-bottom: 1rem;
   font-weight: 200;
 }
+footer h2:hover{
+  font-weight: 400;
+}
+
 .footer-parrafo{
   color:peru;
 
 }
 .encabezado{
-  margin-bottom: .2rem;
-}
+  margin-bottom: 1rem;
+}/* 
 .footer-redes{
   color: peru;
   display: flex;
@@ -647,9 +657,10 @@ margin-top: .5rem;
 }
 .contacto-redes:hover{
   color:  rgba(205, 134, 63, 0.676);
-}
+} */
 .copi{
   font-size: .8rem;
+  margin-bottom: 1rem;
 }
 /* 
 
