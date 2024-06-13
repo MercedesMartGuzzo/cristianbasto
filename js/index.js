@@ -23,6 +23,8 @@ document.querySelectorAll('.redes a').forEach(item => {
 
 
 
+
+
 // Definir una función para activar/desactivar los bordes de una sección
 function activarDesactivarBordes(contenedor) {
   // Obtener las dimensiones y la posición del contenedor con respecto al viewport
@@ -122,5 +124,3 @@ document.getElementById('contactoForm').addEventListener('submit', function(e) {
 
   formulario.reset();
 }); */
-
-

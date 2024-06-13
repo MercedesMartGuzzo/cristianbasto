@@ -32,29 +32,33 @@ body {
 }
 
 .navbar{
-  background-color:/* rgba(255, 255, 255, 0.263);  */  rgb(29, 26, 26);
+  background-color:/* rgba(255, 255, 255, 0.263);  */   rgb(15, 14, 14) ;
   border: none;
 }
 
 .navbar-toggler {
-  border: 0;
-
+ border:0;
+}
+.navbar-toggler:hover{
+background-color:peru;
 }
 .navbar-toggler:focus {
-  color: transparent;
+  color: transparent
 }
 .navbar li a{
   color:peru
 }
 .navbar li a:hover{
-  color: white;
+  color:peru;
+}
+.navbar-brand{
+  color: transparent;
+}
+.navbar-brand:hover{
+color: peru;
 }
 
 
-
- .navbar-brand {
-  color: peru;
-} 
 
 .redes {
   display: flex;
@@ -116,7 +120,7 @@ h1 {
   color: transparent;
   font-size: 1.3rem;
   font-weight: 200;
-  animation: titulo 4s 2s ease-in-out 1 ;
+  animation: titulo 4s 2s ease-in-out 1 forwards ;
   margin-left: 0.5rem;
   position: absolute;
   top: 20%;
@@ -190,7 +194,7 @@ h1 {
 
 .musica-titulo::before {
   content: "";
-  background-color:  rgba(255, 255, 255, 0.507); 
+  background-color:  rgba(255, 255, 255, 0.893); /* rgba(255, 255, 255, 0.507) */; 
   width: 12px;
   height: 100%;
   position: absolute;
@@ -200,7 +204,7 @@ h1 {
 
 .musica-titulo::after {
   content: "";
-  background-color:  rgba(255, 255, 255, 0.507); 
+  background-color:  rgba(255, 255, 255, 0.893); 
   width: 190px;
   height: 100%;
   position: absolute;
@@ -284,8 +288,7 @@ h1 {
 
 .videos-titulo::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.219);
-  /* rgba(194, 82, 194, 0.404); */
+  background-color: rgba(0, 0, 0, 0.76) ;/* rgba(0, 0, 0, 0.219); */
   width: 12px;
   height: 100%;
   position: absolute;
@@ -295,7 +298,7 @@ h1 {
 
 .videos-titulo::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.219);
+  background-color:  rgba(0, 0, 0, 0.76); /* rgba(0, 0, 0, 0.219); */
   /* rgba(194, 82, 194, 0.404); */
   width: 190px;
   height: 100%;
@@ -360,7 +363,7 @@ h1 {
 
 
 .bio-titulo {
-  color:peru ;/* rgba(172, 255, 47, 0.473); */
+  color: peru;/* rgba(172, 255, 47, 0.473);*/
   position: absolute;
   font-weight: 400;
   font-size: 1.3rem;
@@ -371,7 +374,7 @@ h1 {
 
 .bio-titulo::before {
   content: "";
-  background-color: rgba(205, 134, 63, 0.845);/*  rgba(172, 255, 47, 0.295); */
+  background-color: /* rgba(205, 134, 63, 0.845); *//*  rgba(172, 255, 47, 0.295); */peru ;
   width: 13px;
   height: 100%;
   position: absolute;
@@ -381,8 +384,7 @@ h1 {
 
 .bio-titulo::after {
   content: "";
-  background-color : rgba(205, 134, 63, 0.845);/*  rgba(172, 255, 47, 0.295); */
-  /*  rgba(172, 255, 47, 0.295); */
+  background-color : peru; /*   rgba(172, 255, 47, 0.295);  *//*  rgba(205, 134, 63, 0.845) */
   width:240px;
   height: 100%; 
   position: absolute;
@@ -419,7 +421,7 @@ h1 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #d4d4d4;
+  color:/*  #d4d4d4; */peru;
   margin-bottom: 1rem
 }
 
@@ -427,7 +429,7 @@ h1 {
   text-align: center;
   justify-content: center;
   margin-bottom: .5rem;
-  color: #d4d4d4;
+  color: /* #d4d4d4; */peru;
 }
 
 #eventos {
@@ -489,7 +491,7 @@ h1 {
   color: white;
 }
 
-/* SECCION BIO */
+/* SECCION CONTACTO*/
 
 .contacto {
   margin-top: 1rem;
@@ -592,67 +594,51 @@ margin-top: .5rem;
 
 .contacto-titulo::after {
   content: "";
-  background-color: peru;
+  background-color: peru; 
   width: 165px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
   top: 0;
 }
+/* FOOTER */
 
-.contacto {
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+  background-color: rgb(15, 14, 14);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 200;
+  
+}
+footer h2{
+  display: flex;
+  color:peru;
   margin-top: 1rem;
-  width: 90vw;
-  position: relative;
-  overflow: hidden;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: 200;
 }
+.footer-parrafo{
+  color:peru;
 
-.contacto::before,
-.contacto::after {
-  content: "";
-  position: absolute;
-  background-color: peru;
-
-  transition: width 1s ease-in-out, height 1s ease-in-out;
-  width: 0;
-  height: 0;
 }
-
-.contacto::before {
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
+.encabezado{
+  margin-bottom: .2rem;
 }
-
-.contacto::after {
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 0;
-}
-
-.border-visible-top::before {
-  width: 100%;
-}
-
-.border-visible-left::after {
-  height: 100%;
-}
-
-
-.contacto-redes{
+.footer-redes{
   color: peru;
   display: flex;
   justify-content:center;
   align-items: center;
-  margin-top: .5rem;
-
+  margin-top: .3rem;
 }
-.redes-contacto {
- gap: 1.5rem;
+
+.redes-footer{
+  gap: 1.5rem;
  display: flex;
  justify-content:center;
  align-items: center;
@@ -662,53 +648,11 @@ margin-top: .5rem;
 .contacto-redes:hover{
   color:  rgba(205, 134, 63, 0.676);
 }
-.contacto-parrafo{
-  color: peru;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: .5rem;
-  gap: .3rem;
-  margin-left: .6rem;
-}
-
-.img-container{
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.contacto-titulo {
-  color: peru;
-  position: absolute;
-  font-weight: 400;
-  font-size: 1.3rem;
-  top: 8%;
-  left: 12%;
-  letter-spacing: 1px;
-}
-
-.contacto-titulo::before {
-  content: "";
-  background-color: peru;
-  width: 15px;
-  height: 100%;
-  position: absolute;
-  right: calc(95% + 1rem); /* Ajusta según sea necesario */
-  top: 0;
-}
-
-.contacto-titulo::after {
-  content: "";
-  background-color: peru;
-  width: 165px;
-  height: 100%;
-  position: absolute;
-  left: calc(90% + 1rem);
-  top: 0;
+.copi{
+  font-size: .8rem;
 }
 /* 
+
 .contacto-formulario{
   display: flex;
   flex-direction: column;
@@ -767,9 +711,3 @@ button:hover{
   color: peru;
   display: none;
  */
- 
-
-
-
-
-
