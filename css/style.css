@@ -40,9 +40,6 @@ body {
 .navbar-toggler {
  border:0;
 }
-.navbar-toggler:hover{
-background-color:peru;
-}
 .navbar-toggler:focus {
   color: transparent
 }
@@ -73,7 +70,11 @@ color: peru;
   display: flex;
   gap: 0.3rem;
 }
-
+.img-container{
+  position: relative;
+overflow: hidden;
+  max-width: 100%;
+}
 /* header-desktop */
 @media (min-width: 1200px) {
   .navbar-nav {
@@ -146,7 +147,7 @@ h1 {
   position:relative;
   margin-top: 1rem;
   width: 90vw;
-   overflow: hidden; 
+  overflow: hidden; 
   padding-top: 1rem;
   
 }
@@ -197,20 +198,20 @@ h1 {
 .musica-titulo::before {
   content: "";
   background-color:  rgba(255, 255, 255, 0.893); /* rgba(255, 255, 255, 0.507) */; 
-  width: 12px;
+  width: 40px;
   height: 100%;
   position: absolute;
-  right: calc(95% + 1rem);
+  right: calc(90% + 1rem);
   top: 0;
 }
 
 .musica-titulo::after {
   content: "";
   background-color:  rgba(255, 255, 255, 0.893); 
-  width: 190px;
+  width: 210px;
   height: 100%;
   position: absolute;
-  left: calc(90% + 1rem);
+  left: calc(85% + 1rem);
   top: 0;
 }
 
@@ -291,10 +292,10 @@ h1 {
 .videos-titulo::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.76) ;/* rgba(0, 0, 0, 0.219); */
-  width: 12px;
+  width: 40px;
   height: 100%;
   position: absolute;
-  right: calc(95% + 1rem);
+  right: calc(90% + 1rem);
   top: 0;
 }
 
@@ -302,7 +303,7 @@ h1 {
   content: "";
   background-color:  rgba(0, 0, 0, 0.76); /* rgba(0, 0, 0, 0.219); */
   /* rgba(194, 82, 194, 0.404); */
-  width: 190px;
+  width: 220px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
@@ -369,7 +370,7 @@ h1 {
   position: absolute;
   font-weight: 400;
   font-size: 1.3rem;
-  top: 2%;
+  top: 4%;
   left: 12%;
   letter-spacing: 1px;
 }
@@ -377,20 +378,20 @@ h1 {
 .bio-titulo::before {
   content: "";
   background-color: /* rgba(205, 134, 63, 0.845); *//*  rgba(172, 255, 47, 0.295); */peru ;
-  width: 13px;
+  width:33px;
   height: 100%;
   position: absolute;
-  right: calc(95% + 1rem);
+  right: calc(76% + 1rem);
   top: 0;
 }
 
 .bio-titulo::after {
   content: "";
   background-color : peru; /*   rgba(172, 255, 47, 0.295);  *//*  rgba(205, 134, 63, 0.845) */
-  width:240px;
+  width:270px;
   height: 100%; 
   position: absolute;
-  left: calc(90% +1rem);
+  left: calc(100% +1rem);
  top: 0;
 }
 
@@ -501,7 +502,7 @@ h1 {
   position: relative;
   overflow: hidden;
   padding-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .contacto::before,
@@ -529,6 +530,7 @@ h1 {
   height: 0;
 }
 
+
 .border-visible-top::before {
   width: 100%;
 }
@@ -536,8 +538,17 @@ h1 {
 .border-visible-left::after {
   height: 100%;
 }
+.border-visible-bottom::before {
+  top: auto;
+  bottom: 0;
+  width: 100%;
+}
 
-
+.border-visible-bottom::after {
+  left: auto;
+  right: 0;
+  height: 100%;
+}
 .contacto-redes{
   color: peru;
   display: flex;
@@ -568,18 +579,12 @@ margin-top: .5rem;
   margin-left: .6rem;
 }
 
-.img-container{
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
 .contacto-titulo {
   color: peru;
   position: absolute;
   font-weight: 400;
   font-size: 1.3rem;
-  top: 8%;
+  top: 4%;
   left: 12%;
   letter-spacing: 1px;
 }
@@ -587,7 +592,7 @@ margin-top: .5rem;
 .contacto-titulo::before {
   content: "";
   background-color: peru;
-  width: 15px;
+  width: 40px;
   height: 100%;
   position: absolute;
   right: calc(95% + 1rem); /* Ajusta según sea necesario */
@@ -597,7 +602,7 @@ margin-top: .5rem;
 .contacto-titulo::after {
   content: "";
   background-color: peru; 
-  width: 165px;
+  width: 180px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
@@ -611,15 +616,10 @@ margin-top: .5rem;
   justify-content:center ;
   align-items: center;
   background-color:/*  rgb(15, 14, 14); */white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   font-weight: 200;
-  border-top: 1px solid peru;
-  
-  
-  
-  
+  border-top: 1px solid peru; 
 }
+
 footer h2{
   display: flex;
   color:peru;
@@ -627,6 +627,7 @@ footer h2{
   justify-content: center;
   margin-bottom: 1rem;
   font-weight: 200;
+  margin-top: 1.5rem;
 }
 footer h2:hover{
   font-weight: 400;
@@ -637,6 +638,7 @@ footer h2:hover{
 
 }
 .encabezado{
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }/* 
 .footer-redes{
@@ -660,7 +662,8 @@ margin-top: .5rem;
 } */
 .copi{
   font-size: .8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  margin-top: .5rem;
 }
 /* 
 
