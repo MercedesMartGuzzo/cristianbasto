@@ -641,7 +641,6 @@ h1 {
 .contacto-titulo::after {
   content: "";
   background-color:/*  peru; */white;
-  width: 167px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
