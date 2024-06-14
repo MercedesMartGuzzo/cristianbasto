@@ -312,6 +312,7 @@ h1 {
   letter-spacing: 1px;
 }
 
+
 .videos-titulo::before {
   content: "";
   background-color:/*  rgba(0, 0, 0, 0.76); */peru;
@@ -714,12 +715,12 @@ margin-top: .5rem;
 
 /* INDEX DESKTOP */
 @media (min-width: 1200px){
-h1{
-  font-size: 4rem;
-  left: 10%;
-}
-
-}
+  h1{
+    font-size: 4rem;
+    left: 10%;
+  }
+  
+  }
 
 
 /* 
