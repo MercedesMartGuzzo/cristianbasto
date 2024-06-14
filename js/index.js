@@ -44,15 +44,6 @@ document.querySelectorAll('.redes a').forEach(item => {
       contenedor.classList.remove("border-visible-left");
       console.log(`Borde izquierdo de ${contenedor.id} desactivado`);
     }
-    if (contenedor.id === "contactoContainer") {
-      if (rect.bottom <= window.innerHeight) {
-        contenedor.classList.add("border-visible-bottom");
-        console.log(`Borde inferior de ${contenedor.id} activado`);
-      } else {
-        contenedor.classList.remove("border-visible-bottom");
-        console.log(`Borde inferior de ${contenedor.id} desactivado`);
-      }
-    }
   }
   
   
