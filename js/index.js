@@ -51,21 +51,21 @@ document.querySelectorAll('.redes a').forEach(item => {
     let videosContainer = document.getElementById("videosContainer");
     activarDesactivarBordes(videosContainer);
   
-    let bioContainer = document.getElementById("bioContainer");
-    activarDesactivarBordes(bioContainer);
+    let musicaContainer = document.getElementById("musicaContainer");
+    activarDesactivarBordes(musicaContainer);
   
     let contactoContainer = document.getElementById("contactoContainer");
     activarDesactivarBordes(contactoContainer);
   });
   
-  function activarBordesMusicaContainer(contenedor) {
+  function activarBordesBioContainer(contenedor) {
     contenedor.classList.add("border-visible-top");
     contenedor.classList.add("border-visible-left");
     console.log(`Bordes de ${contenedor.id} activados`);
   }
   
-  let musicaContainer = document.getElementById("musicaContainer");
-  activarBordesMusicaContainer(musicaContainer);
+  let bioContainer = document.getElementById("bioContainer");
+  activarBordesBioContainer(bioContainer);
   
 
 // Función para agregar desplazamiento suave al hacer clic en enlaces de la barra de navegación
@@ -89,6 +89,29 @@ navLinks.forEach(function (navLink) {
 
     let target = this.getAttribute("href");
     smoothScroll(target);
+  });
+});
+
+
+
+/* ICONOS PARA MOSTRAR PARRAFOS DE BIO */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const icons = document.querySelectorAll('.toggle-icon');
+
+  icons.forEach(icon => {
+      icon.addEventListener('click', () => {
+          const paragraph = icon.closest('.bio-parrafo').querySelector('p');
+          if (paragraph.style.display === 'none' || paragraph.style.display === '') {
+              paragraph.style.display = 'block';
+              icon.classList.remove('bi-chevron-down');
+              icon.classList.add('bi-chevron-up');
+          } else {
+              paragraph.style.display = 'none';
+              icon.classList.remove('bi-chevron-up');
+              icon.classList.add('bi-chevron-down');
+          }
+      });
   });
 });
 

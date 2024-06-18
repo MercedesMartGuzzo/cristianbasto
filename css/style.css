@@ -39,7 +39,7 @@ body {
   background-color:
     /* rgba(255, 255, 255, 0.263);  */
     rgb(15, 14, 14);
-} 
+}
 
 
 
@@ -56,8 +56,11 @@ body {
   padding-top: .2rem;
 }
 
+/* .navbar li a:active:hover{
+  color:rgba(205, 134, 63, 0.685);
+} */
 .navbar li a:hover {
-  color: peru;
+  color: rgba(205, 134, 63, 0.685);
 }
 
 .navbar-brand {
@@ -86,7 +89,7 @@ body {
 
 .img-container {
   position: relative;
- /*  overflow: hidden; */
+  /*  overflow: hidden; */
   max-width: 100%;
 }
 
@@ -167,6 +170,9 @@ h1 {
 
 }
 
+/* .musica-copete{
+  display: none;
+} */
 .musica::before,
 .musica::after {
   content: "";
@@ -175,7 +181,7 @@ h1 {
     /* :rgba(255, 255, 255, 0.507);  */
     /* black; */
     peru;
-  transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
   width: 0;
   height: 0;
 }
@@ -189,7 +195,7 @@ h1 {
 
 .musica::after {
   top: 0;
-  right: 0;
+  left: 0;
   width: 1px;
   height: 0;
 }
@@ -281,14 +287,14 @@ h1 {
 
 .videos::before {
   top: 0;
-  left: 0;
+left: 0;
   width: 0;
   height: 1px;
 }
 
 .videos::after {
   top: 0;
-  left: 0;
+  right: 0;
   width: 1px;
   height: 0;
 }
@@ -302,7 +308,9 @@ h1 {
 }
 
 .videos-titulo {
-  color: /* black; */peru;
+  color:
+    /* black; */
+    peru;
   /* rgb(46, 5, 46); */
   position: absolute;
   font-weight: 600;
@@ -315,9 +323,11 @@ h1 {
 
 .videos-titulo::before {
   content: "";
-  background-color:/*  rgba(0, 0, 0, 0.76); */peru;
+  background-color:
+    /*  rgba(0, 0, 0, 0.76); */
+    peru;
   /* rgba(0, 0, 0, 0.219); */
-  width: 50px;
+  width: 31px;
   height: 100%;
   position: absolute;
   right: calc(90% + 1rem);
@@ -326,14 +336,16 @@ h1 {
 
 .videos-titulo::after {
   content: "";
-  background-color:/*  rgba(0, 0, 0, 0.76); */peru;
+  background-color:
+    /*  rgba(0, 0, 0, 0.76); */
+    peru;
   /* rgba(0, 0, 0, 0.219); */
   /* rgba(194, 82, 194, 0.404); */
-  width: 200px;
+  width: 270px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
-  top :0;
+  top: 0;
 }
 
 .carousel {
@@ -366,7 +378,7 @@ h1 {
   background-color: peru;
   /* rgba(172, 255, 47, 0.295); */
 
-  transition: width 1s ease-in-out, height 1s ease-in-out;
+  transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
   width: 0;
   height: 0;
 }
@@ -429,19 +441,43 @@ h1 {
   left: calc(95% + .5rem);
   top: 0;
 }
-
+.bio-parrafo1{
+margin-top: 1rem;
+color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:start;
+text-align: start;
+}
+.bio-parrafo1 h3{
+  color: peru;
+}
 .bio-parrafo {
   margin-top: 1.1rem;
-  color:
-    /* #d4d4d4; */
-    black;
+  gap: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
+  border-top: 1px solid peru;
+  padding-top: .8rem;
+}
+ .bio-parrafo h3{
+  color: peru;
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
+.toggle-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.bio-parrafo p{
+  display: none;
+}
 /* SECCION AGENDA */
 
 .agenda-lista {
@@ -453,7 +489,8 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgb(26, 24, 24);
-
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -565,7 +602,7 @@ h1 {
 
 .contacto::before {
   top: 0;
-  left: 0;
+  right: 0;
   width: 0;
   height: 1px;
 }
@@ -620,7 +657,9 @@ h1 {
 }
 
 .contacto-titulo {
-  color:/*  peru; */white;
+  color:
+    /*  peru; */
+    white;
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -631,7 +670,9 @@ h1 {
 
 .contacto-titulo::before {
   content: "";
-  background-color: /* peru; */white;
+  background-color:
+    /* peru; */
+    white;
   width: 40px;
   height: 100%;
   position: absolute;
@@ -642,7 +683,9 @@ h1 {
 
 .contacto-titulo::after {
   content: "";
-  background-color:/*  peru; */white;
+  background-color:
+    /*  peru; */
+    white;
   width: 169px;
   height: 100%;
   position: absolute;
@@ -715,15 +758,147 @@ margin-top: .5rem;
 }
 
 
-/* INDEX DESKTOP */
-@media (min-width: 1200px){
-  h1{
+/*********** INDEX DESKTOP ************/
+
+@media (min-width: 1200px) {
+  /* PORTADA */
+  h1 {
     font-size: 4rem;
     left: 10%;
   }
+  /* SECCION BIO */
+  .bio {
+    margin-top: 1rem;
+    width: 90vw;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
   
+  
+  .bio-titulo {
+    color: peru;
+    /* rgba(172, 255, 47, 0.473);*/
+    position: absolute;
+    font-weight: 600;
+    font-size:2.5rem;
+    top: 2%;
+    left: 12%;
+    letter-spacing: 1px;
+  }
+  
+  .bio-titulo::before {
+    width: 64px;
+    height: 100%;
+    right: calc(83% + 1rem);
+    top: 0;
+  }
+  
+  .bio-titulo::after {
+    width: 419px;
+    height: 100%;
+    position: absolute;
+    left: calc(95% + .5rem);
+    top: 0;
+  }
+  
+  .bio-parrafo {
+    margin: 0;
+    color: black;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
+  .musica {
+    position: relative;
+    margin-top: 1rem;
+    width: 90vw;
+    height: 150vh;
+    /* overflow: hidden; */
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .musica-copete {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: .8rem;
+  }
+
+  .img-container {
+    display: grid;
+    grid-row: span 3;
+    max-width: 100%;
+  }
+
+  .musica-foto {
+    display: grid;
+    max-width: 100%;
+  }
+
+  .musica-titulo {
+    color: white;
+    /*  rgb(46, 5, 46); */
+    position: absolute;
+    font-weight: 600;
+    font-size: 2.5rem;
+    top: 02%;
+    left: 12%;
+    letter-spacing: 1px;
+  }
+
+  .musica-titulo::before {
+    width: 150px;
+    height: 100%;
+    right: calc(100% + 1rem);
+    background-color: white;
+  }
+
+  .musica-titulo::after {
+    width: 325px;
+    height: 100%;
+    left: calc(100% + 1rem);
+    background-color: white;
+  }
+
+
+
+  .spotify {
+    display: none;
+
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 0.5rem;
+
+  }
+
+  .suite {
+    display: none;
+    width: 40vw;
+
+
+  }
+
+  .piano {
+    display: none;
+    width: 40vw;
+    height: 40vh;
+
+  }
+
+}
 
 /* 
 .contacto-formulario{
