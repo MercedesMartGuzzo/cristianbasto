@@ -464,7 +464,7 @@ text-align: start;
   border-top: 1px solid peru;
   padding-top: .8rem;
 }
- .bio-parrafo h3{
+ .bio-parrafo h4{
   color: peru;
   display: flex;
   justify-content: start;
@@ -485,12 +485,13 @@ text-align: start;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(49, 47, 47);
+  background:/*  rgb(49, 47, 47); */white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px rgb(26, 24, 24);
+  box-shadow: 2px 2px 1px 1px/*  rgb(26, 24, 24);  */peru;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  border: 1px solid peru;
 
 }
 
@@ -498,9 +499,9 @@ text-align: start;
   text-align: center;
   justify-content: center;
   align-items: center;
-  color:
+  color:peru;
     /*  #d4d4d4; */
-    peru;
+     
   margin-bottom: 1rem
 }
 
@@ -518,30 +519,26 @@ text-align: start;
 }
 
 #eventos li {
-  background:
+  background:white;
     /* #d4d4d4; */
-    peru;
+
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
   position: relative;
   gap: .3rem;
+  border: 1px solid peru;
 }
 
 #eventos li:not(:last-child) {
   margin-bottom: 15px;
 }
 
-/* #eventos li:hover {
-  background:peru;
-  color: white;
-} */
-
 .view-more-btn {
-  background-color: rgb(49, 47, 47);
+  background-color:/*  rgb(49, 47, 47); */peru;
   color:
     /*  white; */
-    peru;
+  black;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -551,6 +548,7 @@ text-align: start;
 
 .view-more-btn:hover {
   background-color: black;
+  color:peru;
 }
 
 .event-details {
@@ -792,7 +790,7 @@ margin-top: .5rem;
   }
   
   .bio-titulo::before {
-    width: 64px;
+    width: 63px;
     height: 100%;
     right: calc(83% + 1rem);
     top: 0;
