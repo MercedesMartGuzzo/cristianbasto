@@ -89,7 +89,7 @@ body {
 
 .img-container {
   position: relative;
-  /*  overflow: hidden; */
+  overflow: hidden;  
   max-width: 100%;
 }
 
@@ -327,9 +327,11 @@ left: 0;
     /*  rgba(0, 0, 0, 0.76); */
     peru;
   /* rgba(0, 0, 0, 0.219); */
-  width: 31px;
+  width: 32px;
   height: 100%;
   position: absolute;
+  
+  
   right: calc(90% + 1rem);
   top: 0;
 }
@@ -790,7 +792,7 @@ margin-top: .5rem;
   }
   
   .bio-titulo::before {
-    width: 63px;
+    width: 64px;
     height: 100%;
     right: calc(83% + 1rem);
     top: 0;
