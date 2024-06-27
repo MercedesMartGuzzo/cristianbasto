@@ -1,8 +1,8 @@
 // Agregar un evento de clic a todos los enlaces del menú
- 
+
 document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
   item.addEventListener("click", () => {
-   
+
     let navbarToggler = document.querySelector(".navbar-toggler");
     if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
       navbarToggler.click();
@@ -13,60 +13,60 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
 // Event listener solo para los enlaces dentro del div "redes"
 document.querySelectorAll('.redes a').forEach(item => {
   item.addEventListener('click', event => {
-      event.preventDefault(); 
-      const url = item.getAttribute('href'); 
-      if (url) {
-          window.open(url, '_blank');
-      }
+    event.preventDefault();
+    const url = item.getAttribute('href');
+    if (url) {
+      window.open(url, '_blank');
+    }
   });
 });
 
 // Definir una función para activar/desactivar los bordes de una sección
-  // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
-  function activarDesactivarBordes(contenedor) {
-    // Obtener las dimensiones y la posición del contenedor con respecto al viewport
-    let rect = contenedor.getBoundingClientRect();
-  
-    // Aparecer borde superior cuando el borde superior del contenedor está dentro del viewport
-    if (rect.top <= window.innerHeight) {
-      contenedor.classList.add("border-visible-top");
-      console.log(`Borde superior de ${contenedor.id} activado`);
-    } else {
-      contenedor.classList.remove("border-visible-top");
-      console.log(`Borde superior de ${contenedor.id} desactivado`);
-    }
-  
-    // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
-    if (rect.top <= window.innerHeight) {
-      contenedor.classList.add("border-visible-left");
-      console.log(`Borde izquierdo de ${contenedor.id} activado`);
-    } else {
-      contenedor.classList.remove("border-visible-left");
-      console.log(`Borde izquierdo de ${contenedor.id} desactivado`);
-    }
-  }
-  
-  
-  window.addEventListener("scroll", function () {
-    let videosContainer = document.getElementById("videosContainer");
-    activarDesactivarBordes(videosContainer);
-  
-    let musicaContainer = document.getElementById("musicaContainer");
-    activarDesactivarBordes(musicaContainer);
-  
-    let contactoContainer = document.getElementById("contactoContainer");
-    activarDesactivarBordes(contactoContainer);
-  });
-  
-  function activarBordesBioContainer(contenedor) {
+// Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
+function activarDesactivarBordes(contenedor) {
+  // Obtener las dimensiones y la posición del contenedor con respecto al viewport
+  let rect = contenedor.getBoundingClientRect();
+
+  // Aparecer borde superior cuando el borde superior del contenedor está dentro del viewport
+  if (rect.top <= window.innerHeight) {
     contenedor.classList.add("border-visible-top");
-    contenedor.classList.add("border-visible-left");
-    console.log(`Bordes de ${contenedor.id} activados`);
+    console.log(`Borde superior de ${contenedor.id} activado`);
+  } else {
+    contenedor.classList.remove("border-visible-top");
+    console.log(`Borde superior de ${contenedor.id} desactivado`);
   }
-  
-  let bioContainer = document.getElementById("bioContainer");
-  activarBordesBioContainer(bioContainer);
-  
+
+  // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
+  if (rect.top <= window.innerHeight) {
+    contenedor.classList.add("border-visible-left");
+    console.log(`Borde izquierdo de ${contenedor.id} activado`);
+  } else {
+    contenedor.classList.remove("border-visible-left");
+    console.log(`Borde izquierdo de ${contenedor.id} desactivado`);
+  }
+}
+
+
+window.addEventListener("scroll", function () {
+  let videosContainer = document.getElementById("videosContainer");
+  activarDesactivarBordes(videosContainer);
+
+  let musicaContainer = document.getElementById("musicaContainer");
+  activarDesactivarBordes(musicaContainer);
+
+  let contactoContainer = document.getElementById("contactoContainer");
+  activarDesactivarBordes(contactoContainer);
+});
+
+function activarBordesBioContainer(contenedor) {
+  contenedor.classList.add("border-visible-top");
+  contenedor.classList.add("border-visible-left");
+  console.log(`Bordes de ${contenedor.id} activados`);
+}
+
+let bioContainer = document.getElementById("bioContainer");
+activarBordesBioContainer(bioContainer);
+
 
 // Función para agregar desplazamiento suave al hacer clic en enlaces de la barra de navegación
 function smoothScroll(target) {
@@ -95,25 +95,35 @@ navLinks.forEach(function (navLink) {
 
 
 /* ICONOS PARA MOSTRAR PARRAFOS DE BIO */
+ document.addEventListener('DOMContentLoaded', () => {
+  const toggleIcons = document.querySelectorAll('.toggle-icon');
+  const paragraphs = document.querySelectorAll('.bio-parrafo');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const icons = document.querySelectorAll('.toggle-icon');
+  toggleIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+      const currentParagraph = icon.closest('.bio-parrafo');
 
-  icons.forEach(icon => {
-      icon.addEventListener('click', () => {
-          const paragraph = icon.closest('.bio-parrafo').querySelector('p');
-          if (paragraph.style.display === 'none' || paragraph.style.display === '') {
-              paragraph.style.display = 'block';
-              icon.classList.remove('bi-chevron-down');
-              icon.classList.add('bi-chevron-up');
-          } else {
-              paragraph.style.display = 'none';
-              icon.classList.remove('bi-chevron-up');
-              icon.classList.add('bi-chevron-down');
-          }
+      // Toggle 'open' class to expand/collapse the paragraph
+      currentParagraph.classList.toggle('open');
+
+      // Close all other paragraphs except the current one
+      paragraphs.forEach(paragraph => {
+        if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
+          paragraph.classList.remove('open');
+        }
       });
+    });
   });
-});
+}); 
+
+
+
+
+
+
+
+
+
 
 /* FORMULARIO DE CONNTACTO */
 /* 

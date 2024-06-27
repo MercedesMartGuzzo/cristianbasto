@@ -45,18 +45,19 @@ body {
 .navbar-toggler {
   border: 0;
 }
+
 .navbar-toggler:focus {
   color: transparent
 }
 
 .navbar li a {
-  color: peru!important;
+  color: peru !important;
   padding-top: .2rem;
 }
 
 .navbar li a:hover {
- text-decoration:underline;
-}  
+  text-decoration: underline;
+}
 
 .navbar-brand {
   color: transparent;
@@ -96,10 +97,11 @@ body {
     justify-content: center;
     text-align: center;
     color: peru;
-   
-   
+
+
   }
-/* .navbar{
+
+  /* .navbar{
   position: absolute;
   width: 100%;
   backdrop-filter: blur(10px);
@@ -128,7 +130,7 @@ body {
     gap: 0.1rem;
   }
 
-  
+
   .iconos {
     gap: 0.5rem;
   }
@@ -269,6 +271,19 @@ h1 {
   text-align: start;
   border-top: 1px solid peru;
   padding-top: .8rem;
+
+}
+
+.bio-parrafo.open p {
+  max-height: 1000px;
+  /* Altura máxima suficiente para mostrar todo el contenido */
+}
+
+.bio-parrafo p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  /* Transición suave de 0.3 segundos */
 }
 
 .bio-parrafo h4 {
@@ -283,9 +298,9 @@ h1 {
   margin-left: 10px;
 }
 
-.bio-parrafo p {
+/* .bio-parrafo p {
   display: none;
-}
+} */
 
 /* SECCION MUSICA */
 
@@ -295,12 +310,8 @@ h1 {
   width: 90vw;
   overflow: hidden;
   padding-top: 1rem;
-
 }
 
-/* .musica-copete{
-  display: none;
-} */
 .musica::before,
 .musica::after {
   content: "";
@@ -351,7 +362,6 @@ h1 {
   content: "";
   background-color: rgb(255, 255, 255);
   /* rgba(255, 255, 255, 0.507) */
-  ;
   width: 40px;
   height: 100%;
   position: absolute;
@@ -367,6 +377,17 @@ h1 {
   position: absolute;
   left: calc(85% + 1rem);
   top: 0;
+}
+
+.musica-copete {
+  margin-top: 1rem;
+}
+
+.musica-copete h4 {
+  color: peru;
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
 .spotify {
@@ -436,10 +457,7 @@ h1 {
 }
 
 .videos-titulo {
-  color:
-    /* black; */
-    peru;
-  /* rgb(46, 5, 46); */
+  color: peru;
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -451,15 +469,10 @@ h1 {
 
 .videos-titulo::before {
   content: "";
-  background-color:
-    /*  rgba(0, 0, 0, 0.76); */
-    peru;
-  /* rgba(0, 0, 0, 0.219); */
+  background-color: peru;
   width: 32px;
   height: 100%;
   position: absolute;
-
-
   right: calc(90% + 1rem);
   top: 0;
 }
@@ -476,6 +489,22 @@ h1 {
   position: absolute;
   left: calc(90% + 1rem);
   top: 0;
+}
+
+.videos-copete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  margin-top: 1rem;
+}
+
+.videos-copete h4 {
+  color: peru;
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
 .carousel {
@@ -517,8 +546,7 @@ h1 {
   align-items: center;
   color: peru;
   /*  #d4d4d4; */
-
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 .agenda-titulo {
@@ -786,57 +814,49 @@ margin-top: .5rem;
     /*  margin-left: .5rem; */
   }
 
-  .img-container {
-    display: none;
-  }
-
   /* SECCION BIO */
-  .bio {
-    display: flex;
-    margin-top: 4rem;
-    position: relative;
-    overflow: hidden;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 1.5rem;
 
+  .bio {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 1.5rem;
+    width: 90vw;
+    position: relative;
   }
 
   .bio-secciones {
-    display: grid;
-    /*  gap: 1rem; */
-    /* justify-content: start;
-  align-content: start; */
+    font-display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-
-  .bio-parrafo1 {
-    padding-right: .5rem;
-    padding-bottom: 1.5rem;
-  }
-
 
   .bio-parrafo h4 {
-    font-size: 1.2rem;
-
+    font-size: 1rem;
   }
 
   .bio-parrafo {
-    padding-right: .5rem;
+    margin-top: .1rem;
+    padding-top: .3rem;
+  }
+
+
+  .bio-parrafo p {
+    font-size: .8rem;
+    padding-top: .2rem;
+    padding-right: .2rem;
   }
 
   .bio h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
-    justify-content: start;
-    align-items: start;
-    justify-self: start;
-    align-self: start;
-    margin-bottom: 1rem;
-    justify-items: start;
+    margin-bottom: .8rem;
   }
 
+  .bio-parrafo1 {
+    font-size: .9rem;
+  }
 
   .bio-titulo {
     color: peru;
@@ -847,110 +867,200 @@ margin-top: .5rem;
     top: 2%;
     left: 12%;
     letter-spacing: 1px;
+    z-index: 10;
   }
 
   .bio-titulo::before {
-    width: 64px;
+    width: 65px;
     height: 100%;
     right: calc(83% + 1rem);
     top: 0;
+    position: absolute;
   }
 
   .bio-titulo::after {
-    width: 1000px;
+    width: 447px;
     height: 100%;
     position: absolute;
     left: calc(95% + .5rem);
     top: 0;
   }
 
-
   /* SECCION MUSICA */
 
   .musica {
     position: relative;
     margin-top: 1rem;
+    margin-bottom: 4rem;
     width: 90vw;
-    height: 150vh;
-    /* overflow: hidden; */
     padding-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+      "musica-foto musica-foto musica-copete musica-copete"
+      "musica-foto musica-foto musica-copete musica-copete"
+      "spotify spotify spotify spotify"
+      "spotify spotify spotify spotify";
   }
 
   .musica-copete {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    padding: .8rem;
+    grid-area: musica-copete;
+    justify-self: end;
+  }
+
+  .musica-copete h3 {
+    font-size: 1.5rem;
+    color: peru;
+    margin-bottom: .8rem;
+  }
+
+  .musica-copete {
+    font-size: .9rem;
+    padding-top: .2rem;
+    padding-right: .2rem;
   }
 
   .img-container {
-    display: grid;
-    grid-row: span 3;
-    max-width: 100%;
+    grid-area: musica-foto;
   }
 
   .musica-foto {
-    display: grid;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 
   .musica-titulo {
     color: white;
-    /*  rgb(46, 5, 46); */
     position: absolute;
     font-weight: 600;
     font-size: 2.5rem;
-    top: 02%;
+    top: 2%;
     left: 12%;
     letter-spacing: 1px;
+    z-index: 1;
+
   }
 
   .musica-titulo::before {
-    width: 150px;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    /* rgba(255, 255, 255, 0.507) */
+    width: 70px;
     height: 100%;
-    right: calc(100% + 1rem);
-    background-color: white;
+    position: absolute;
+    right: calc(95% + 1rem);
+    top: 0;
   }
 
   .musica-titulo::after {
-    width: 325px;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 400px;
     height: 100%;
-    left: calc(100% + 1rem);
-    background-color: white;
+    position: absolute;
+    left: calc(95% + 1rem);
+    top: 0;
   }
 
-
-
   .spotify {
-    display: none;
+    grid-area: spotify;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    width: 80vw;
+    border-top: 1px solid peru;
+    padding-top: 1.5rem;
+  }
 
-    gap: 0.5rem;
-    justify-content: center;
-    align-content: space-between;
-    margin-top: 0.5rem;
-
+  .spotify iframe {
+    width: 100%;
+    height: 360px;
   }
 
   .suite {
-    display: none;
-    width: 40vw;
-
-
+    width: 100%;
+    grid-row: span 2;
   }
 
   .piano {
-    display: none;
-    width: 40vw;
-    height: 40vh;
-
+    width: 100%;
+    grid-row: span 2;
   }
 
-}
+  /* SECCION VIDEOS */
 
+  .videos {
+    margin-top: 1rem;
+    width:90vw;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    
+  }
+  .videos-titulo {
+    color: peru;
+    position: absolute;
+    font-weight: 600;
+    font-size: 2.5rem;
+    top: 2%;
+    left: 12%;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+
+  .videos-titulo::before {
+    content: "";
+    background-color: peru;
+    /* rgba(255, 255, 255, 0.507) */
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    right: calc(95% + 1rem);
+    top: 0;
+  }
+
+  .videos-titulo::after {
+    content: "";
+    background-color: peru;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: calc(95% + 1rem);
+    top: 0;
+  }
+
+
+.videos-copete h3{
+  font-size: 1.5rem;
+  color: peru;
+  margin-bottom: .8rem;
+}
+  .videos-copete {
+    font-size: .9rem;
+    padding-top: .2rem;
+    padding-right: .2rem; 
+  }
+  .videos-copete1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+.carousel{
+  width: 400px;
+  height: auto;
+  margin-left: 3rem;
+ padding: 0;
+
+}
+}
 /* 
 .contacto-formulario{
   display: flex;
@@ -1009,4 +1119,5 @@ button:hover{
 .saludo{
   color: peru;
   display: none;
- */
+}
+*/
