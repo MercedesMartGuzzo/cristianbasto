@@ -383,7 +383,7 @@ h1 {
   margin-top: 1rem;
 }
 
-.musica-copete h4 {
+.musica-copete h3 {
   color: peru;
   display: flex;
   justify-content: start;
@@ -617,7 +617,7 @@ h1 {
 
 .location-map:hover {
   text-decoration: underline;
-  color: white;
+  color: peru;
 }
 
 /* SECCION CONTACTO*/
@@ -685,9 +685,7 @@ h1 {
   margin-top: .5rem;
 }
 
-.contacto-redes:hover {
-  color: rgba(205, 134, 63, 0.676);
-}
+
 
 .contacto-parrafo {
   color: peru;
@@ -776,26 +774,24 @@ footer h2:hover {
   margin-bottom: 1rem;
 }
 
-/* 
-.footer-redes{
+/* .footer-redes {
   color: peru;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: .3rem;
+  padding-left: 0;
 }
 
-.redes-footer{
+.redes-footer {
   gap: 1.5rem;
- display: flex;
- justify-content:center;
- align-items: center;
-flex-direction: row;
-margin-top: .5rem;
-}
-.contacto-redes:hover{
-  color:  rgba(205, 134, 63, 0.676);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: .5rem;
 } */
+
 .copi {
   font-size: .8rem;
   margin-bottom: 3rem;
@@ -996,14 +992,15 @@ margin-top: .5rem;
 
   .videos {
     margin-top: 1rem;
-    width:90vw;
+    width: 90vw;
     position: relative;
     overflow: hidden;
     padding-top: 1rem;
     display: flex;
     gap: 1.5rem;
-    
+
   }
+
   .videos-titulo {
     color: peru;
     position: absolute;
@@ -1037,30 +1034,185 @@ margin-top: .5rem;
   }
 
 
-.videos-copete h3{
-  font-size: 1.5rem;
-  color: peru;
-  margin-bottom: .8rem;
-}
+  .videos-copete h3 {
+    font-size: 1.5rem;
+    color: peru;
+    margin-bottom: .8rem;
+  }
+
   .videos-copete {
     font-size: .9rem;
     padding-top: .2rem;
-    padding-right: .2rem; 
+    padding-right: .2rem;
   }
-  .videos-copete1{
+
+  .videos-copete1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
+
   }
-.carousel{
-  width: 400px;
-  height: auto;
-  margin-left: 3rem;
- padding: 0;
+
+  .carousel {
+    width: 400px;
+    padding: 0;
+  }
+
+  /* SECCION  AGENDA */
+
+
+  .agenda-lista li {
+    display: flex;
+
+  }
+
+  .agenda-lista h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: peru;
+    /*  #d4d4d4; */
+    margin-bottom: 1rem;
+  }
+
+  .agenda-titulo {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+    color:
+      /* #d4d4d4; */
+      peru;
+  }
+
+  #eventos {
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(4. 1fr);
+    gap: 1rem;
+  }
+
+  #eventos li {
+    background: white;
+    /* #d4d4d4; */
+
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    gap: .3rem;
+    border: 1px solid peru;
+    justify-content: space-between;
+  }
+
+  #eventos li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .view-more-btn {
+    background-color:
+      /*  rgb(49, 47, 47); */
+      peru;
+    color:
+      /*  white; */
+      black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+
+  .view-more-btn:hover {
+    background-color: black;
+    color: peru;
+  }
+
+  .event-details {
+    margin-top: 0px;
+  }
+
+  .location-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .location-map {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .location-map:hover {
+    text-decoration: underline;
+    color: peru;
+  }
+
+  /* SECCION CONTACTO */
+
+  .contacto {
+    margin-top: 1rem;
+    width: 90vw;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    margin-bottom: 3rem;
+    display: flex;
+  }
+
+  .foto {
+    max-width: 50%;
+  }
+
+  .contacto-desktop {
+    justify-content: center;
+    text-align: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+
+  }
+
+  .contacto-redes {
+    display: flex;
+
+    margin-left: 0;
+  }
+
+  .contacto-parrafo {
+    color: peru;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: .5rem;
+    gap: .3rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid peru;
+
+  }
+
+  .contacto-titulo {
+    font-size: 2.5rem;
+  }
+
+  .contacto-titulo::before {
+    right: calc(95% + 1rem);
+    width: 80px;
+  }
+
+  .contacto-titulo::after {
+    width: 400px;
+    left: calc(95% + 1rem);
+  }
 
 }
-}
+
 /* 
 .contacto-formulario{
   display: flex;
@@ -1121,3 +1273,274 @@ button:hover{
   display: none;
 }
 */
+
+/* BARRA DE NAVEGACION PARTITURAS Y PEDAGOGIA */
+.nav-pages {
+  background-color: rgba(245, 222, 179, 0.16);
+  backdrop-filter: blur (10px)
+}
+
+.pages {
+  color: peru;
+}
+
+/********SECCION PARTITURAS MOBILE *********/
+
+.partituras1 {
+  margin-top: 1rem;
+  width: 90vw;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.partituras1::before,
+.partituras1::after {
+  content: "";
+  position: absolute;
+  background-color: peru;
+  /* rgba(172, 255, 47, 0.295); */
+
+  transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
+  width: 0;
+  height: 0;
+}
+
+.partituras1::before {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+}
+
+.partituras1::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+}
+
+.border-visible-top::before {
+  width: 100%;
+}
+
+.border-visible-left::after {
+  height: 100%;
+}
+
+
+.partituras1-titulo {
+  color: peru;
+  /* rgba(172, 255, 47, 0.473);*/
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.3rem;
+  top: 4%;
+  left: 12%;
+  letter-spacing: 1px;
+}
+
+.partituras1-titulo::before {
+  content: "";
+  background-color:
+    /* rgba(205, 134, 63, 0.845); */
+    /*  rgba(172, 255, 47, 0.295); */
+    peru;
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  right: calc(95% + 1rem);
+  top: 0;
+}
+
+.partituras1-titulo::after {
+  content: "";
+  background-color: peru;
+  /*   rgba(172, 255, 47, 0.295);  */
+  /*  rgba(205, 134, 63, 0.845) */
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  left: calc(95% + 1rem);
+  top: 0;
+}
+
+.partituras-grilla {
+  border-top: 1px solid peru;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.partituras-piano {
+  display: flex;
+  flex-direction: column;
+}
+
+.partituras-piano h3 {
+  color: peru;
+  margin-top: 1rem;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+}
+
+.piano-portada {
+  position: relative;
+
+}
+
+.piano-partes img {
+  margin-top: .5rem;
+  border: 1px solid peru;
+  border-radius: 5px;
+  width: 400px;
+  position: relative;
+}
+
+.previsualizacion {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+
+}
+
+.piano-descargas {
+  background-color: white;
+  padding: 10px;
+  color: peru;
+  border: 1px solid peru;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: .5rem;
+}
+
+.piano-descargas:hover {
+  background-color: peru;
+  color: white;
+}
+
+.mostrar-icono {
+  cursor: pointer;
+  margin: 10px;
+  position: absolute;
+  font-size: 20px;
+  color:peru;
+  bottom: 0;
+  right: 1%;
+  z-index: 10;
+}
+
+/* PARTIRURAS DESKTOP */
+@media(min-width: 1200px) {
+  .partituras1-titulo {
+    font-size: 2.5rem;
+    top: 2%;
+  }
+
+  .partituras1-titulo::before {
+    width: 150px;
+    height: 100%;
+    right: calc(100% + 1rem);
+
+  }
+
+  .partituras1-titulo::after {
+    width: 1000px;
+    height: 100%;
+    left: calc(100% + 1rem);
+  }
+
+  .partituras-piano {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .piano-partes img {
+    width: 400px;
+  }
+
+  .mostrar-icono{
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    font-size: 20px;
+    color: peru;
+    bottom: 0;
+    left:32% ;
+  }
+ 
+}
+
+/* FOOTER PARTITURAS Y PEDAGOGIA */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:
+    /*  rgb(15, 14, 14); */
+    white;
+  font-weight: 200;
+  border-top: 1px solid peru;
+  margin-bottom: 2rem;
+}
+
+footer h2 {
+  display: flex;
+  color: peru;
+  margin-top: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  margin-top: 1.5rem;
+}
+
+footer h2:hover {
+  font-weight: 400;
+}
+
+.footer-parrafo {
+  color: peru;
+
+}
+
+.encabezado {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.footer-redes {
+  color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .3rem;
+  padding-left: 0;
+}
+
+.redes-footer {
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: .5rem;
+}
+
+.contacto-redes:hover {
+  color: rgba(205, 134, 63, 0.676);
+}
+
+.copi {
+  font-size: .8rem;
+  margin-bottom: 3rem;
+  margin-top: .5rem;
+}

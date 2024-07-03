@@ -80,14 +80,18 @@ function smoothScroll(target) {
     behavior: "smooth",
   });
 }
-
 // Obtener todos los enlaces de la barra de navegación y agregar un evento de clic a cada uno
 let navLinks = document.querySelectorAll(".navbar-nav a");
 navLinks.forEach(function (navLink) {
   navLink.addEventListener("click", function (event) {
-    event.preventDefault();
-
     let target = this.getAttribute("href");
+
+    // Excluir los enlaces de "PARTITURAS" y "PEDAGOGIA" del comportamiento de desplazamiento suave
+    if (this.classList.contains("partitura") || this.classList.contains("pedagogia")) {
+      return;
+    }
+
+    event.preventDefault();
     smoothScroll(target);
   });
 });
