@@ -8,7 +8,8 @@
 }
 
 ul,
-ol {
+ol,
+li {
   list-style-type: none;
 }
 
@@ -520,52 +521,35 @@ h1 {
 }
 
 /* SECCION AGENDA */
-
+.agenda-encabezado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  color:peru;
+  border-top: 1px solid peru;
+}
+ 
 .agenda-lista {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:
-    /*  rgb(49, 47, 47); */
-    white;
+  background:white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 1px 1px
-    /*  rgb(26, 24, 24);  */
-    peru;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: 1px solid peru;
-
 }
-
-.agenda-lista h3 {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: peru;
-  /*  #d4d4d4; */
-  margin-bottom: 1rem;
-}
-
-.agenda-titulo {
-  text-align: center;
-  justify-content: center;
-  margin-bottom: .5rem;
-  color:
-    /* #d4d4d4; */
-    peru;
-}
-
 #eventos {
   padding-left: 0px;
 }
-
 #eventos li {
   background: white;
-  /* #d4d4d4; */
-
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -579,13 +563,9 @@ h1 {
 }
 
 .view-more-btn {
-  background-color:
-    /*  rgb(49, 47, 47); */
-    peru;
-  color:
-    /*  white; */
-    black;
-  border: none;
+  background-color: white;
+  color: peru;
+  border: 1px solid peru;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -593,8 +573,8 @@ h1 {
 }
 
 .view-more-btn:hover {
-  background-color: black;
-  color: peru;
+  background-color:peru;
+  color:white;
 }
 
 .event-details {
@@ -1060,96 +1040,11 @@ footer h2:hover {
   }
 
   /* SECCION  AGENDA */
-
-
-  .agenda-lista li {
-    display: flex;
-
-  }
-
-  .agenda-lista h3 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: peru;
-    /*  #d4d4d4; */
-    margin-bottom: 1rem;
-  }
-
-  .agenda-titulo {
-    text-align: center;
-    justify-content: center;
-    margin-bottom: .5rem;
-    color:
-      /* #d4d4d4; */
-      peru;
-  }
-
   #eventos {
-    padding-left: 0px;
     display: grid;
-    grid-template-columns: repeat(4. 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-  }
-
-  #eventos li {
-    background: white;
-    /* #d4d4d4; */
-
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    position: relative;
-    gap: .3rem;
-    border: 1px solid peru;
-    justify-content: space-between;
-  }
-
-  #eventos li:not(:last-child) {
-    margin-bottom: 15px;
-  }
-
-  .view-more-btn {
-    background-color:
-      /*  rgb(49, 47, 47); */
-      peru;
-    color:
-      /*  white; */
-      black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-
-  }
-
-  .view-more-btn:hover {
-    background-color: black;
-    color: peru;
-  }
-
-  .event-details {
-    margin-top: 0px;
-  }
-
-  .location-image {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-
-  .location-map {
-    display: block;
-    margin-top: 10px;
-    color: black;
-    text-decoration: none;
-  }
-
-  .location-map:hover {
-    text-decoration: underline;
-    color: peru;
-  }
+}
 
   /* SECCION CONTACTO */
 
@@ -1367,12 +1262,39 @@ button:hover{
 }
 
 .partituras-grilla {
-  border-top: 1px solid peru;
-  margin-top: 3rem;
+   border-top: 1px solid peru; 
+   margin-top:  2rem;
   display: flex;
   flex-direction: column;
 }
-
+.partituras-pa{
+   margin-top: 1rem; 
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: 1rem;
+}
+.partituras-pa1{
+  margin-top: 1rem;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: .9rem;
+}
+.arreglos{
+  border-bottom: 1px solid peru;
+  padding-bottom: 1rem;
+}
+.partituras1 h4{
+  color: peru;
+  font-size: 1.3rem;
+}
 .partituras-piano {
   display: flex;
   flex-direction: column;
@@ -1395,7 +1317,7 @@ button:hover{
   margin-top: .5rem;
   border: 1px solid peru;
   border-radius: 5px;
-  width: 400px;
+  min-width: 100%;
   position: relative;
 }
 
@@ -1410,13 +1332,14 @@ button:hover{
 }
 
 .piano-descargas {
-  background-color: white;
+   background-color: white;
   padding: 10px;
   color: peru;
   border: 1px solid peru;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: .5rem;
+  margin-top: .5rem; 
+  margin-bottom: .5rem;
 }
 
 .piano-descargas:hover {
@@ -1454,6 +1377,30 @@ button:hover{
   .partituras1-titulo {
     font-size: 2.5rem;
     top: 2%;
+  }
+
+  .partituras-pa{
+   margin-bottom: 1.6rem;
+    font-size: 1rem;
+  }
+  .partituras-pa1{
+    margin-top: 1.1rem;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    font-size: .9rem;
+  }
+  
+  .partituras1 h4{
+    color: peru;
+    font-size: 1.3rem;
+  }
+  .arreglos{
+    border-bottom: 1px solid peru;
+    padding-bottom: 1rem;
   }
 .piano-partes{
  display: flex;
