@@ -78,16 +78,15 @@ body.dark-mode .contacto,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
-body.dark-mode .pedagogia {
+body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedagogia-pa2{
   background-color: black;
   color: white;
 }
 
 /* BARRA DE NAVEGACION */
 .navbar {
-  background-color: rgb(15, 14, 14);
+  background-color:  rgb(15, 14, 14);
   border-bottom: 1px solid peru;
-  /* rgba(255, 255, 255, 0.263);  */
   color: peru;
 }
 
@@ -151,7 +150,8 @@ body.dark-mode .pedagogia {
 }
 
 /* header-desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1200px)
+ {
   .navbar-nav {
     width: 100%;
     display: flex;
@@ -205,204 +205,6 @@ body.dark-mode .pedagogia {
 }
 
 /* index-mobile */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-ul,
-ol,
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: peru;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color:
-    /*  rgb(29, 26, 26); */
-    white;
-}
-
-body {
-  background-color:
-    /*  rgb(29, 26, 26);  */
-    white;
-  transition: background-color .3s, color .3s;
-}
-
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-main {
-  background-color: white;
-  transition: background-color .3s, color .3s;
-}
-
-body.dark-mode main {
-  background-color: black;
-}
-
-header,
-footer {
-  background-color: white;
-  transition: background-color .3s, color .3s;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background-color: black;
-}
-
-body.dark-mode .bio,
-body.dark-mode .bio-secciones p,
-body.dark-mode .musica,
-body.dark-mode .spotify,
-body.dark-mode .videos,
-body.dark-mode .videos p,
-body.dark-mode .agenda,
-body.dark-mode .agenda-lista,
-body.dark-mode #eventos li,
-body.dark-mode .contacto,
-body.dark-mode .partituras1,
-body.dark-mode .partituras-grilla,
-body.dark-mode .partituras-grilla p,
-body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa{
-  background-color: black;
-  color: white;
-}
-
-/* BARRA DE NAVEGACION */
-.navbar {
-  background-color: rgb(15, 14, 14);
-  border-bottom: 1px solid peru;
-  /* rgba(255, 255, 255, 0.263);  */
-  color: peru;
-}
-
-.navbar-toggler {
-  border: 0;
-}
-
-.navbar-toggler:focus {
-  color: transparent
-}
-
-.navbar li a {
-  color: peru !important;
-  padding-top: .2rem;
-}
-
-.navbar li a:hover {
-  text-decoration: underline;
-}
-
-.navbar-brand {
-  color: transparent;
-  text-align: center;
-}
-
-.navbar-brand:hover {
-  color: peru;
-}
-
-
-
-.redes {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 0;
-  gap: 0.3rem;
-}
-
-.redes a:hover {
-  transform: scale(1.1);
-}
-
-.iconos {
-  display: flex;
-  gap: 0.3rem;
-}
-
-.bi-moon-stars-fill:hover,
-.bi-translate:hover {
-  transform: scale(1.1);
-}
-
-.img-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-/* header-desktop */
-@media (min-width: 1200px) {
-  .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: peru;
-
-
-  }
-
-  /* .navbar{
-  position: absolute;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  background-color: transparent;
-} */
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-right: 5px;
-  }
-
-  .nav-link {
-    margin: 0;
-    padding: 0;
-  }
-
-  .redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 0;
-    gap: 0.1rem;
-  }
-
-  .redes a:hover {
-    transform: scale(1.1);
-  }
-
-  .iconos {
-    gap: 0.5rem;
-  }
-
-}
-
-/* index-mobile */
 
 .portada {
   position: relative;
@@ -435,30 +237,6 @@ h1 {
 }
 
 
-
-h1 {
-  color: transparent;
-  font-size: 1.3rem;
-  font-weight: 200;
-  animation: titulo 4s 2s ease-in-out 1 forwards;
-  /* margin-left: 1rem; */
-  position: absolute;
-  top: 20%;
-  left: 8%;
-  z-index: 1;
-}
-
-@keyframes titulo {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    color: peru;
-    letter-spacing: 1px;
-  }
-}
 
 /* SECCION BIO */
 
@@ -1493,7 +1271,6 @@ button:hover{
 /* BARRA DE NAVEGACION PARTITURAS Y PEDAGOGIA */
 .nav-pages {
   background-color: rgba(245, 222, 179, 0.16);
-  backdrop-filter: blur (10px)
 }
 
 .pages {
