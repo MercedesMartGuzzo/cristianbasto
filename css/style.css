@@ -277,15 +277,12 @@ body.dark-mode .videos,
 body.dark-mode .videos p,
 body.dark-mode .agenda,
 body.dark-mode .agenda-lista,
-body.dark-mode #eventos li
-
-/* ,body.dark-mode .agenda button */
-,
+body.dark-mode #eventos li,
 body.dark-mode .contacto,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
-body.dark-mode .pedagogia {
+body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa{
   background-color: black;
   color: white;
 }
@@ -1806,6 +1803,142 @@ body.dark-mode .piano-descargas:hover {
   }
 }
 
+/********SECCION PEDAGOGIA MOBILE *********/
+
+.pedagogias {
+  margin-top: 1rem;
+  width: 90vw;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pedagogias:before,
+.pedagogias::after {
+  content: "";
+  position: absolute;
+  background-color: peru;
+  transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
+  width: 0;
+  height: 0;
+}
+
+.pedagogias::before {
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+}
+
+.pedagogias::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+}
+
+.border-visible-top::before {
+  width: 100%;
+}
+
+.border-visible-left::after {
+  height: 100%;
+}
+
+
+.pedagogias-titulo {
+  color: peru;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.3rem;
+  top: 4%;
+  left: 12%;
+  letter-spacing: 1px;
+}
+
+.pedagogias-titulo::before {
+  content: "";
+  background-color: peru;
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  right: calc(95% + 1rem);
+  top: 0;
+}
+
+.pedagogias-titulo::after {
+  content: "";
+  background-color: peru;
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  left: calc(95% + 1rem);
+  top: 0;
+} 
+.pedagogia-pa {
+  margin-top: 1.5rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: 1rem;
+}
+
+.pedagogia-pa2 {
+  margin-top: 1rem;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+.workshop{
+    color: peru;
+    font-size: 1.3rem;
+   
+}
+.pedagogia-grilla{
+  border: 1px solid peru;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.workshop1, .workshop2, .workshop3{
+  margin-bottom: 1rem;
+}
+
+/* PEDAGOGIA DESKTOP */
+@media(min-width :1200px){
+.pedagogias-titulo {
+  font-size: 2.5rem;
+  top: 2%;
+}
+.workshop{
+    color: peru;
+    font-size: 1.3rem;
+  }
+.pedagogia-grilla{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: .3rem;
+}
+.workshop1,.workshop2{
+  margin-bottom:.3rem ;
+}
+/* .workshop1:hover,.workshop2:hover, .workshop3:hover, .workshop4:hover{
+  transform: scale(1.1);
+
+} */
+
+}
 /* FOOTER PARTITURAS Y PEDAGOGIA */
 
 .footer {

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const pianoParts = document.querySelectorAll('.piano-partes');
 
     pianoParts.forEach(part => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const portada = portadaContainer.querySelector('.portada-img');
         let currentIndex = 0;
 
-        icono.addEventListener('click', function() {
+        icono.addEventListener('click', function () {
             // Ocultar la portada original o la imagen actual
             portada.style.display = 'none';
             previsualizacionImages.forEach(image => {
@@ -51,59 +51,59 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', () => {
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     const paragraphs = document.querySelectorAll('.bio-parrafo');
-  
+
     toggleIcons.forEach(icon => {
-      icon.addEventListener('click', () => {
-        const currentParagraph = icon.closest('.bio-parrafo');
-  
-        // Toggle 'open' class to expand/collapse the paragraph
-        currentParagraph.classList.toggle('open');
-  
-        // Close all other paragraphs except the current one
-        paragraphs.forEach(paragraph => {
-          if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
-            paragraph.classList.remove('open');
-          }
+        icon.addEventListener('click', () => {
+            const currentParagraph = icon.closest('.bio-parrafo');
+
+            // Toggle 'open' class to expand/collapse the paragraph
+            currentParagraph.classList.toggle('open');
+
+            // Close all other paragraphs except the current one
+            paragraphs.forEach(paragraph => {
+                if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
+                    paragraph.classList.remove('open');
+                }
+            });
         });
-      });
     });
-  });
-  
-  
-  //ACTIVAR-DESACTIVAR DARK-MODE//
-  document.addEventListener("DOMContentLoaded", () => {
+});
+
+
+//ACTIVAR-DESACTIVAR DARK-MODE//
+document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
     const body = document.body;
-  
+
     let darkMode = localStorage.getItem("dark-mode");
-  
+
     function activarDarkMode() {
         body.classList.add("dark-mode");
         botonColorMode.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
         localStorage.setItem("dark-mode", "activado");
     }
-  
+
     function desactivarDarkMode() {
         body.classList.remove("dark-mode");
         botonColorMode.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
         localStorage.setItem("dark-mode", "desactivado");
     }
-  
+
     if (darkMode === "activado") {
         activarDarkMode();
     } else {
         desactivarDarkMode();
     }
-  
+
     botonColorMode.addEventListener("click", () => {
         darkMode = localStorage.getItem("dark-mode");
-  
+
         if (darkMode === "activado") {
             desactivarDarkMode();
         } else {
             activarDarkMode();
         }
     });
-  });
+});
 
 
