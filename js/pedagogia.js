@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//ACTIVAR DARK MODE//
+/* //ACTIVAR DARK MODE//
 document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
     const body = document.body;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activarDarkMode();
     } else {
         desactivarDarkMode();
-    }
+    } 
 
     botonColorMode.addEventListener("click", () => {
         darkMode = localStorage.getItem("dark-mode");
@@ -46,4 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
             activarDarkMode();
         }
     });
-}); 
+}); */

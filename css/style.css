@@ -78,14 +78,16 @@ body.dark-mode .contacto,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
-body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedagogia-pa2{
+body.dark-mode .pedagogias,
+body.dark-mode .pedagogia-pa,
+body.dark-mode .pedagogia-pa2 {
   background-color: black;
   color: white;
 }
 
 /* BARRA DE NAVEGACION */
 .navbar {
-  background-color:  rgb(15, 14, 14);
+  background-color: rgb(15, 14, 14);
   border-bottom: 1px solid peru;
   color: peru;
 }
@@ -123,21 +125,22 @@ body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedago
   justify-content: start;
   align-items: center;
   margin: 0;
- 
+  gap: .3rem;
+
 }
-.redes a{
-  gap:.3rem;
-}
+
 .redes a:hover {
   transform: scale(1.1);
 }
 
-.iconos{
+.iconos {
   gap: .3rem;
 }
-.bi-translate{
+
+.bi-translate {
   margin-left: .3rem;
 }
+
 .bi-moon-stars-fill:hover,
 .bi-translate:hover {
   transform: scale(1.1);
@@ -150,8 +153,7 @@ body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedago
 }
 
 /* header-desktop */
-@media (min-width: 1200px)
- {
+@media (min-width: 1200px) {
   .navbar-nav {
     width: 100%;
     display: flex;
@@ -161,6 +163,16 @@ body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedago
 
 
   }
+.dropdown{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+ .language-option{
+  
+ }
+
 
   /* .navbar{
   position: absolute;
@@ -195,13 +207,14 @@ body.dark-mode .pedagogias, body.dark-mode .pedagogia-pa, body.dark-mode .pedago
     transform: scale(1.1);
   }
 
-  .iconos  {
+  .iconos {
     gap: 0.9rem;
   }
-  .bi-moon-stars-fill{
+
+  .bi-moon-stars-fill {
     margin-right: .3rem;
   }
-  
+
 }
 
 /* index-mobile */
@@ -216,7 +229,7 @@ h1 {
   color: transparent;
   font-size: 1.3rem;
   font-weight: 200;
-  animation: titulo 4s 2s ease-in-out 1 forwards;
+  animation: titulo 2s 1s ease-in-out 1 forwards;
   /* margin-left: 1rem; */
   position: absolute;
   top: 20%;
@@ -553,11 +566,7 @@ h1 {
 
 .videos-titulo::after {
   content: "";
-  background-color:
-    /*  rgba(0, 0, 0, 0.76); */
-    peru;
-  /* rgba(0, 0, 0, 0.219); */
-  /* rgba(194, 82, 194, 0.404); */
+  background-color: peru;
   width: 270px;
   height: 100%;
   position: absolute;
@@ -571,7 +580,7 @@ h1 {
   justify-content: center;
   align-items: start;
   text-align: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .videos-copete h4 {
@@ -581,17 +590,24 @@ h1 {
   align-items: start;
 }
 
-.carousel {
-  margin-top: 0.5rem;
-  padding: 0.5rem;
+.videos-grilla {
+  margin-top: 1rem;
+  border: 1px solid peru;
+  padding: .7rem;
+  border-radius: 10px;
+
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 20%;
-  top: 50%;
-  transform: translateY(-50%);
+.video1,
+.video2,
+.video3 {
+  margin-bottom: .5rem;
 }
+.videos-grilla p{
+  color:peru;
+  padding-left: .2rem;
+}
+
 
 /* SECCION AGENDA */
 .agenda-encabezado {
@@ -623,6 +639,10 @@ h1 {
   padding-left: 0px;
 }
 
+#eventos .nombre {
+  color: peru;
+}
+
 #eventos li {
   background: white;
   padding: 15px;
@@ -633,7 +653,10 @@ h1 {
   border: 1px solid peru;
 }
 
-#eventos li:not(:last-child) {
+#eventos li
+
+/* :not(:last-child) */
+  {
   margin-bottom: 15px;
 }
 
@@ -969,44 +992,41 @@ body.dark-mode .footer-titulo:hover {
     margin-bottom: 4rem;
     width: 90vw;
     padding-top: 1rem;
+  }
+
+  .encabezado-grilla {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto 1fr 1fr;
-    gap: 1.5rem;
-    grid-template-areas:
-      "musica-foto musica-foto musica-copete musica-copete"
-      "musica-foto musica-foto musica-copete musica-copete"
-      "spotify spotify spotify spotify"
-      "spotify spotify spotify spotify";
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid peru;
+    padding-bottom: .7rem;
   }
 
-  .musica-copete {
-    grid-area: musica-copete;
-    justify-self: end;
-  }
-
-  .musica-copete h3 {
-    font-size: 1.5rem;
-    color: peru;
-    margin-bottom: .8rem;
+  .musicaFoto {
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 2;
+    align-content: start;
+    justify-content: start;
+    justify-self: start;
+    justify-items: start;
   }
 
   .musica-copete {
     font-size: .9rem;
     padding-top: .2rem;
     padding-right: .2rem;
+    /*   display: flex; */
+    align-items: start;
+    justify-content: start;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: grid;
+    grid-column: span 2;
   }
 
-  .img-container {
-    grid-area: musica-foto;
-  }
-
-  .musica-foto {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
 
   .musica-titulo {
     color: white;
@@ -1017,7 +1037,6 @@ body.dark-mode .footer-titulo:hover {
     left: 12%;
     letter-spacing: 1px;
     z-index: 1;
-
   }
 
   .musica-titulo::before {
@@ -1042,30 +1061,29 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .spotify {
-    grid-area: spotify;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+   /*  grid-template-columns: repeat(2, 1fr); */
     gap: 2rem;
-    width: 80vw;
-    border-top: 1px solid peru;
-    padding-top: 1.5rem;
+    width: 90vw;
+    padding-top: .5rem;
   }
 
   .spotify iframe {
     width: 100%;
-    height: 360px;
+    /* height: 360px; */
+
   }
 
-  .suite {
-    width: 100%;
-    grid-row: span 2;
-  }
-
+  .suite,
   .piano {
     width: 100%;
-    grid-row: span 2;
+   
   }
+
+
+
 
   /* SECCION VIDEOS */
 
@@ -1075,9 +1093,7 @@ body.dark-mode .footer-titulo:hover {
     position: relative;
     overflow: hidden;
     padding-top: 1rem;
-    display: flex;
-    gap: 1.5rem;
-
+    gap: 1rem;
   }
 
   .videos-titulo {
@@ -1120,22 +1136,69 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .videos-copete {
+
     font-size: .9rem;
     padding-top: .2rem;
     padding-right: .2rem;
   }
 
-  .videos-copete1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
+  .encabezado-grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid peru;
+    padding-bottom: .7rem;
+  }
+
+  .videosFoto {
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 2;
+    align-content: start;
+    justify-content: start;
+    justify-self: start;
+    justify-items: start;
+  }
+
+  .videos-copete1 {
+    display: grid;
+    grid-column: span 2;
+    align-content: start;
+    justify-self: start;
+    align-self: start;
 
   }
 
-  .carousel {
-    width: 400px;
-    padding: 0;
+  .videos-copete {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .videos-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+    /*  padding-left: 1rem; */
+    /*    padding-right: 1rem; */
+    /*   width: 100%; */
+    gap: 1rem;
+  }
+
+  .video1,
+  .video2,
+  .video3,
+  .video4 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
   }
 
   /* SECCION  AGENDA */
@@ -1143,6 +1206,10 @@ body.dark-mode .footer-titulo:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+  }
+
+  #eventos .nombre {
+    color: peru;
   }
 
   /* SECCION CONTACTO */
@@ -1337,10 +1404,7 @@ button:hover{
 
 .partituras1-titulo::before {
   content: "";
-  background-color:
-    /* rgba(205, 134, 63, 0.845); */
-    /*  rgba(172, 255, 47, 0.295); */
-    peru;
+  background-color: peru;
   width: 150px;
   height: 100%;
   position: absolute;
@@ -1351,8 +1415,6 @@ button:hover{
 .partituras1-titulo::after {
   content: "";
   background-color: peru;
-  /*   rgba(172, 255, 47, 0.295);  */
-  /*  rgba(205, 134, 63, 0.845) */
   width: 1000px;
   height: 100%;
   position: absolute;
@@ -1473,7 +1535,8 @@ body.dark-mode .piano-descargas:hover {
 
 .suite-titulo,
 .quinteto-titulo,
-.arreglos-titulo {
+.arreglos-titulo,
+.surera-titulo {
   color: peru;
   margin-top: 2.5rem;
   justify-content: start;
@@ -1487,10 +1550,6 @@ body.dark-mode .piano-descargas:hover {
 /* PARTIRURAS DESKTOP */
 @media(min-width: 1200px) {
 
-  /*  .partituras-grilla{
-    display:flex;
-    width: 100%;
-  } */
   .partituras1-titulo {
     font-size: 2.5rem;
     top: 2%;
@@ -1652,9 +1711,15 @@ body.dark-mode .piano-descargas:hover {
   position: absolute;
   left: calc(95% + 1rem);
   top: 0;
-} 
+}
+
+.pedagogia-contenedor {
+  border-top: 1px solid peru;
+  margin-top: 2rem;
+}
+
 .pedagogia-pa {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: black;
   display: flex;
   flex-direction: column;
@@ -1675,47 +1740,59 @@ body.dark-mode .piano-descargas:hover {
   font-size: .9rem;
   margin-bottom: 2rem;
 }
-.workshop{
-    color: peru;
-    font-size: 1.3rem;
-   
+
+.workshop {
+  color: peru;
+  font-size: 1.3rem;
+
 }
-.pedagogia-grilla{
+
+.pedagogia-grilla {
   border: 1px solid peru;
   border-radius: 5px;
   padding: 16px;
+  margin-top: 1rem;
 }
 
-.workshop1, .workshop2, .workshop3{
+.workshop1,
+.workshop2,
+.workshop3 {
   margin-bottom: 1rem;
 }
 
 /* PEDAGOGIA DESKTOP */
-@media(min-width :1200px){
-.pedagogias-titulo {
-  font-size: 2.5rem;
-  top: 2%;
-}
-.workshop{
+@media(min-width :1200px) {
+  .pedagogias-titulo {
+    font-size: 2.5rem;
+    top: 2%;
+  }
+
+  .workshop {
     color: peru;
     font-size: 1.3rem;
   }
-.pedagogia-grilla{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  width: 100%;
-  padding-bottom: .3rem;
-}
-.workshop1,.workshop2{
-  margin-bottom:.3rem ;
-}
-/* .workshop1:hover,.workshop2:hover, .workshop3:hover, .workshop4:hover{
+
+  .pedagogia-grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: .3rem;
+    margin-top: 1rem;
+  }
+
+  .workshop1,
+  .workshop2 {
+    margin-bottom: .3rem;
+  }
+
+  /* .workshop1:hover,.workshop2:hover, .workshop3:hover, .workshop4:hover{
   transform: scale(1.1);
 
 } */
 
 }
+
 /* FOOTER PARTITURAS Y PEDAGOGIA */
 
 .footer {

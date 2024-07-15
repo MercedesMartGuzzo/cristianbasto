@@ -159,10 +159,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+/* 
+document.addEventListener('DOMContentLoaded', function() {
+  const languageOptions = document.querySelectorAll('.language-option');
+
+  languageOptions.forEach(option => {
+      option.addEventListener('click', function(event) {
+          event.preventDefault();
+          const selectedLanguage = this.getAttribute('data-language');
+          changeLanguage(selectedLanguage);
+      });
+  });
+
+  function changeLanguage(language) {
+      if (language === 'en') {
+          // Cambia el texto a inglés
+          document.querySelector('.navbar-brand').textContent = 'CRISTIAN BASTO';
+          document.querySelector('.nav-link[href="#bioContainer"]').textContent = 'BIO';
+          document.querySelector('.nav-link[href="#musicaContainer"]').textContent = 'MUSIC';
+          document.querySelector('.nav-link[href="#videosContainer"]').textContent = 'VIDEOS';
+          document.querySelector('.nav-link.pedagogia').textContent = 'PEDAGOGY';
+          document.querySelector('.nav-link.partitura').textContent = 'SCORES';
+          document.querySelector('.nav-link[href="#agendaContainer"]').textContent = 'AGENDA';
+          document.querySelector('.nav-link[href="#contactoContainer"]').textContent = 'CONTACT';
+      } else if (language === 'es') {
+          // Cambia el texto a español
+          document.querySelector('.navbar-brand').textContent = 'CRISTIAN BASTO';
+          document.querySelector('.nav-link[href="#bioContainer"]').textContent = 'BIO';
+          document.querySelector('.nav-link[href="#musicaContainer"]').textContent = 'MÚSICA';
+          document.querySelector('.nav-link[href="#videosContainer"]').textContent = 'VIDEOS';
+          document.querySelector('.nav-link.pedagogia').textContent = 'PEDAGOGÍA';
+          document.querySelector('.nav-link.partitura').textContent = 'PARTITURAS';
+          document.querySelector('.nav-link[href="#agendaContainer"]').textContent = 'AGENDA';
+          document.querySelector('.nav-link[href="#contactoContainer"]').textContent = 'CONTACTO';
+      }
+  }
+});
 
 
 
 
+ */
 
 
 

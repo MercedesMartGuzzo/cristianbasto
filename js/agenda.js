@@ -4,33 +4,41 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lista de eventos a ser actualizada por el programador
     const eventos = [
         {
-            name: "Quasimodo Trío y Cristian Basto Ensamble",
-            date: "26-06-2024",
+            name: "SOCIAL TANGO PROYECT",
+            date: "17,18,19,20,21-07-2024",
             time: "20:00 hs",
-            location: "La Tierra Invisible",
-            mapUrl: "https:///maps.app.goo.gl/sUn7cwrhY9UWFiiw9"
+            location: "Jacob’s Pillow Dance Festival - Ted Shawn Theatre Becket, Massachusetts (US)",
+            mapUrl:"https://maps.app.goo.gl/5Y561pZwMJhWVvt8A"
         },
         {
-            name: "Feria del Libro",
-            date: "2024-07-10",
-            time: "10:00",
-            location: "Centro de Convenciones",
-            mapUrl: "https://www.google.com/maps?q=Centro+de+Convenciones"
+            name:"SOCIAL TANGO PROYECT",
+            date: "24,25-07-2024",
+            time: "20:00 hs",
+            location: "Ottawa - Ontario (Canada) National Arts Centre (NAC) Babs Asper Theatre",
+            mapUrl: "https://maps.app.goo.gl/s5ZxcdWH3zYGvVop7"
         },
         {
-            name: "Conferencia de Tecnología",
-            date: "2024-08-15",
-            time: "09:00",
-            location: "Hotel Hilton",
-            mapUrl: "https://www.google.com/maps?q=Hotel+Hilton"
+            name: "SOCIAL TANGO PROYECT",
+            date: "27-07-2024",
+            time: "20:00 hs",
+            location: "Saint-Sauveur - Quebec (Canada)  Festival des arts de Saint-Sauveur",
+            mapUrl: "https://maps.app.goo.gl/sbjYGzK3G98htUPSA"
         },
         {
-            name: "Festival de Cine",
-            date: "2024-09-05",
-            time: "20:00",
-            location: "Parque Central",
-            mapUrl: "https://www.google.com/maps?q=Parque+Central"
+            name: "AMORES TANGO",
+            date: "03-08-2024",
+            time: "20: 30 hs",
+            location: "Café Berlín -CABA",
+            mapUrl: "https://maps.app.goo.gl/DUyM2Gc5isybBHBT8"
+        },
+        {
+            name: "MARIANA MAZU CUARTETO",
+            date: "22-08-2024",
+            time: "14:00 hs 18:00 hs",
+            location: "Aéroport Tarbes Lourdes-Francia",
+            mapUrl: "https://maps.app.goo.gl/UUU7ykSHmA71htpd8"
         }
+       
     ];
 
     // Función para agregar un evento a la lista
@@ -38,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const eventItem = document.createElement('li');
 
         eventItem.innerHTML = `
-            <div>
+            <div class= "nombre">
             <span>${name} </span>
             </div>
              <div>
