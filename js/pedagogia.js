@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-/* //ACTIVAR DARK MODE//
-document.addEventListener("DOMContentLoaded", () => {
+//ACTIVAR DARK MODE//
+/* document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
     const body = document.body;
 
@@ -46,4 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
             activarDarkMode();
         }
     });
-}); */
+});  */
