@@ -584,19 +584,20 @@ h1 {
 
 .videos-grilla {
   margin-top: 1rem;
-  border: 1px solid peru;
-  padding: .7rem;
+   border: 1px solid peru; 
+  padding: 1rem;
   border-radius: 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .video1,
 .video2,
 .video3 {
   margin-bottom: .5rem;
-  display :flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .videos-grilla p{
   color:peru;
