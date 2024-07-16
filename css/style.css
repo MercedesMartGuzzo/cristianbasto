@@ -257,8 +257,6 @@ h1 {
   content: "";
   position: absolute;
   background-color: peru;
-  /* rgba(172, 255, 47, 0.295); */
-
   transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
   width: 0;
   height: 0;
@@ -304,7 +302,7 @@ h1 {
     /* rgba(205, 134, 63, 0.845); */
     /*  rgba(172, 255, 47, 0.295); */
     peru;
-  width: 33px;
+  width: 35px;
   height: 100%;
   position: absolute;
   right: calc(76% + 1rem);
@@ -449,7 +447,7 @@ h1 {
 .musica-titulo::after {
   content: "";
   background-color: rgb(255, 255, 255);
-  width: 210px;
+  width: 300px;
   height: 100%;
   position: absolute;
   left: calc(85% + 1rem);
@@ -818,7 +816,7 @@ body.dark-mode .contacto-redes a:hover {
   background-color:
     /*  peru; */
     white;
-  width: 169px;
+  width: 300px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
