@@ -139,14 +139,14 @@ body.dark-mode .pedagogia-pa2 {
 
 .bi-translate {
   margin-left: .3rem;
-  
+
 }
-.bi-moon-stars-fill:hover,.bi-translate:hover {
-  
-    transform: scale(1.1);
-      transition: transform 0.3s; 
-  }
-  
+
+.bi-moon-stars-fill:hover::before,
+.bi-translate:hover::before {
+  transform: scale(1.1);
+}
+
 
 .img-container {
   position: relative;
@@ -205,6 +205,10 @@ body.dark-mode .pedagogia-pa2 {
   .bi-moon-stars-fill {
     margin-right: .3rem;
   }
+
+  .bi-translate:hover {
+    transform: scale(1.1);
+  }
 }
 
 /* index-mobile */
@@ -220,7 +224,6 @@ h1 {
   font-size: 1.3rem;
   font-weight: 200;
   animation: titulo 2s 1s ease-in-out 1 forwards;
-  /* margin-left: 1rem; */
   position: absolute;
   top: 20%;
   left: 8%;
@@ -260,6 +263,7 @@ h1 {
   transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
   width: 0;
   height: 0;
+  border-radius: 0;
 }
 
 .bio::before {
@@ -267,6 +271,7 @@ h1 {
   right: 0;
   width: 0;
   height: 1px;
+
 }
 
 .bio::after {
@@ -274,20 +279,22 @@ h1 {
   right: 0;
   width: 1px;
   height: 0;
+
 }
 
 .border-visible-top::before {
   width: 100%;
+
 }
 
 .border-visible-left::after {
   height: 100%;
+
 }
 
 
 .bio-titulo {
   color: peru;
-  /* rgba(172, 255, 47, 0.473);*/
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -299,8 +306,6 @@ h1 {
 .bio-titulo::before {
   content: "";
   background-color:
-    /* rgba(205, 134, 63, 0.845); */
-    /*  rgba(172, 255, 47, 0.295); */
     peru;
   width: 35px;
   height: 100%;
@@ -312,8 +317,6 @@ h1 {
 .bio-titulo::after {
   content: "";
   background-color: peru;
-  /*   rgba(172, 255, 47, 0.295);  */
-  /*  rgba(205, 134, 63, 0.845) */
   width: 270px;
   height: 100%;
   position: absolute;
@@ -351,14 +354,14 @@ h1 {
 
 .bio-parrafo.open p {
   max-height: 1000px;
-  /* Altura máxima suficiente para mostrar todo el contenido */
+  transition: max-height 1s ease-out;
 }
 
 .bio-parrafo p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-out;
-  /* Transición suave de 0.3 segundos */
+
 }
 
 .bio-parrafo h4 {
@@ -373,9 +376,6 @@ h1 {
   margin-left: 10px;
 }
 
-/* .bio-parrafo p {
-  display: none;
-} */
 
 /* SECCION MUSICA */
 
@@ -436,7 +436,6 @@ h1 {
 .musica-titulo::before {
   content: "";
   background-color: rgb(255, 255, 255);
-  /* rgba(255, 255, 255, 0.507) */
   width: 40px;
   height: 100%;
   position: absolute;
@@ -501,11 +500,7 @@ h1 {
 .videos::after {
   content: "";
   position: absolute;
-  background-color:
-    /* rgba(245, 245, 245, 0.438); */
-    /* black; */
-    peru;
-  /* rgba(194, 82, 194, 0.404) */
+  background-color: peru;
   transition: width 1s ease-in-out, height 1s ease-in-out;
 }
 
@@ -540,7 +535,6 @@ h1 {
   left: 12%;
   letter-spacing: 1px;
 }
-
 
 .videos-titulo::before {
   content: "";
@@ -580,23 +574,29 @@ h1 {
 
 .videos-grilla {
   margin-top: 1rem;
-   border: 1px solid peru; 
+  border: 1px solid peru;
   padding: 1rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
+}
+
+iframe {
+  border-radius: 10px;
 }
 
 .video1,
 .video2,
-.video3 {
+.video3,
+.video4 {
   margin-bottom: .5rem;
 }
-.videos-grilla p{
-  color:peru;
+
+.videos-grilla p {
+  color: peru;
   padding-left: .2rem;
 }
 
@@ -625,6 +625,7 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: 1px solid peru;
+  background: linear-gradient(to bottom, peru, white);
 }
 
 #eventos {
@@ -645,10 +646,7 @@ h1 {
   border: 1px solid peru;
 }
 
-#eventos li
-
-/* :not(:last-child) */
-  {
+#eventos li {
   margin-bottom: 15px;
 }
 
@@ -717,7 +715,6 @@ body.dark-mode .view-more-btn:hover {
   content: "";
   position: absolute;
   background-color: peru;
-  /*  rgba(194, 82, 194, 0.404); */
   transition: width 1s ease-in-out, height 1s ease-in-out;
   width: 0;
   height: 0;
@@ -756,6 +753,7 @@ body.dark-mode .view-more-btn:hover {
 }
 
 .contacto-redes a:hover {
+  transition: 1s ease;
   color: black;
   transform: scale(1.1);
 }
@@ -800,27 +798,26 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::before {
   content: "";
-  background-color:
-    /* peru; */
-    white;
+  background-color: white;
   width: 40px;
   height: 100%;
   position: absolute;
   right: calc(95% + 1rem);
-  /* Ajusta según sea necesario */
   top: 0;
 }
 
 .contacto-titulo::after {
   content: "";
-  background-color:
-    /*  peru; */
-    white;
+  background-color: white;
   width: 300px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
   top: 0;
+}
+
+.resalta {
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -830,9 +827,7 @@ body.dark-mode .contacto-redes a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:
-    /*  rgb(15, 14, 14); */
-    white;
+  background-color: white;
   font-weight: 200;
   border-top: 1px solid peru;
   margin-bottom: 2rem;
@@ -920,6 +915,7 @@ body.dark-mode .footer-titulo:hover {
     font-display: flex;
     flex-direction: column;
     width: 100%;
+
   }
 
   .bio-parrafo h4 {
@@ -942,6 +938,7 @@ body.dark-mode .footer-titulo:hover {
     font-size: 1.5rem;
     display: flex;
     margin-bottom: .8rem;
+
   }
 
   .bio-parrafo1 {
@@ -958,18 +955,19 @@ body.dark-mode .footer-titulo:hover {
     left: 12%;
     letter-spacing: 1px;
     z-index: 10;
+
   }
 
   .bio-titulo::before {
-    width: 65px;
+    width: 1000px;
     height: 100%;
-    right: calc(83% + 1rem);
+    right: calc(100% + 1rem);
     top: 0;
     position: absolute;
   }
 
   .bio-titulo::after {
-    width: 447px;
+    width: 1000px;
     height: 100%;
     position: absolute;
     left: calc(95% + .5rem);
@@ -1034,7 +1032,7 @@ body.dark-mode .footer-titulo:hover {
   .musica-titulo::before {
     content: "";
     background-color: rgb(255, 255, 255);
-    /* rgba(255, 255, 255, 0.507) */
+
     width: 70px;
     height: 100%;
     position: absolute;
@@ -1053,10 +1051,9 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .spotify {
-    display:flex;
+    display: flex;
     flex-direction: row;
     width: 100%;
-   /*  grid-template-columns: repeat(2, 1fr); */
     gap: 2rem;
     width: 90vw;
     padding-top: .5rem;
@@ -1071,7 +1068,7 @@ body.dark-mode .footer-titulo:hover {
   .suite,
   .piano {
     width: 100%;
-   
+
   }
 
 
@@ -1102,7 +1099,6 @@ body.dark-mode .footer-titulo:hover {
   .videos-titulo::before {
     content: "";
     background-color: peru;
-    /* rgba(255, 255, 255, 0.507) */
     width: 70px;
     height: 100%;
     position: absolute;
@@ -1128,10 +1124,12 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .videos-copete {
-
+    position: relative;
+    z-index: 1;
     font-size: .9rem;
     padding-top: .2rem;
     padding-right: .2rem;
+
   }
 
 
@@ -1161,7 +1159,6 @@ body.dark-mode .footer-titulo:hover {
     align-content: start;
     justify-self: start;
     align-self: start;
-
   }
 
   .videos-copete {
@@ -1181,16 +1178,26 @@ body.dark-mode .footer-titulo:hover {
     /*  padding-left: 1rem; */
     /*    padding-right: 1rem; */
     /*   width: 100%; */
-    gap: 1rem;
+    gap: 1.4rem;
   }
 
   .video1,
   .video2,
   .video3,
-  .video4 {
+  .video4,
+  .video5 {
     display: grid;
     justify-content: center;
     width: 100%;
+  }
+
+  iframe {
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .video5 {
+    margin-bottom: .5rem;
   }
 
   /* SECCION  AGENDA */
@@ -1198,6 +1205,11 @@ body.dark-mode .footer-titulo:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+
+  }
+
+  .agenda-lista {
+    background: linear-gradient(to bottom, peru, white);
   }
 
   #eventos .nombre {
@@ -1212,7 +1224,8 @@ body.dark-mode .footer-titulo:hover {
     position: relative;
     overflow: hidden;
     padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 3rem;
     display: flex;
   }
@@ -1233,8 +1246,8 @@ body.dark-mode .footer-titulo:hover {
 
   .contacto-redes {
     display: flex;
-
     margin-left: 0;
+    font-size: 21px;
   }
 
   .contacto-parrafo {
@@ -1245,22 +1258,22 @@ body.dark-mode .footer-titulo:hover {
     text-align: center;
     margin-top: .5rem;
     gap: .3rem;
-    padding-bottom: .3rem;
     border-bottom: 1px solid peru;
-
   }
 
   .contacto-titulo {
     font-size: 2.5rem;
+    top: 2%;
   }
 
   .contacto-titulo::before {
     right: calc(95% + 1rem);
-    width: 80px;
+    width: 1000px;
+
   }
 
   .contacto-titulo::after {
-    width: 400px;
+    width: 1000px;
     left: calc(95% + 1rem);
   }
 
@@ -1805,13 +1818,16 @@ footer h2 {
   color: peru;
   margin-top: 1rem;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 1rem;
   font-weight: 200;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 footer h2:hover {
-  font-weight: 400;
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
   color: black
 }
 
@@ -1821,6 +1837,9 @@ footer h2:hover {
 
 .footer-parrafo {
   color: peru;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: .8rem;
 
 }
 
@@ -1845,13 +1864,16 @@ footer h2:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: .5rem;
+  margin-top: .8rem;
+  margin-bottom: .3rem;
+  font-size: 22px;
 }
 
 /* .contacto-redes:hover {
   color: rgba(205, 134, 63, 0.676);
 } */
 .redes-footer a:hover {
+  transition: 1s ease;
   color: black;
   transform: scale(1.1);
 }
@@ -1861,7 +1883,8 @@ body.dark-mode .redes-footer a:hover {
 }
 
 .copi {
-  font-size: .8rem;
-  margin-bottom: 3rem;
-  margin-top: .5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
 }

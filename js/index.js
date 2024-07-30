@@ -106,20 +106,33 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleIcons.forEach(icon => {
     icon.addEventListener('click', () => {
       const currentParagraph = icon.closest('.bio-parrafo');
-
-      // Toggle 'open' class to expand/collapse the paragraph
-      currentParagraph.classList.toggle('open');
-
+      const isOpen = currentParagraph.classList.toggle('open');
+      
       // Close all other paragraphs except the current one
       paragraphs.forEach(paragraph => {
         if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
           paragraph.classList.remove('open');
         }
       });
+
+      // Adjust scroll to ensure the expanded paragraph is in view
+      if (isOpen) {
+        // Use a small delay to ensure the CSS transition is complete
+        setTimeout(() => {
+          // Get the h4 element inside the current paragraph
+          const title = currentParagraph.querySelector('h4')|| currentParagraph.querySelector('h3');
+          // Get the top position of the h4 relative to the viewport
+          const rect = title.getBoundingClientRect();
+          // Scroll the h4 into view, aligning it to the top of the viewport
+          window.scrollTo({
+            top: window.scrollY + rect.top - 20, // Adjust the offset if necessary
+            behavior: 'smooth'
+          });
+        }, 1000); // Ensure this matches the CSS transition duration
+      }
     });
   });
 });
-
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
 document.addEventListener("DOMContentLoaded", () => {
@@ -129,31 +142,31 @@ document.addEventListener("DOMContentLoaded", () => {
   let darkMode = localStorage.getItem("dark-mode");
 
   function activarDarkMode() {
-      body.classList.add("dark-mode");
-      botonColorMode.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
-      localStorage.setItem("dark-mode", "activado");
+    body.classList.add("dark-mode");
+    botonColorMode.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+    localStorage.setItem("dark-mode", "activado");
   }
 
   function desactivarDarkMode() {
-      body.classList.remove("dark-mode");
-      botonColorMode.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
-      localStorage.setItem("dark-mode", "desactivado");
+    body.classList.remove("dark-mode");
+    botonColorMode.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+    localStorage.setItem("dark-mode", "desactivado");
   }
 
   if (darkMode === "activado") {
-      activarDarkMode();
+    activarDarkMode();
   } else {
-      desactivarDarkMode();
+    desactivarDarkMode();
   }
 
   botonColorMode.addEventListener("click", () => {
-      darkMode = localStorage.getItem("dark-mode");
+    darkMode = localStorage.getItem("dark-mode");
 
-      if (darkMode === "activado") {
-          desactivarDarkMode();
-      } else {
-          activarDarkMode();
-      }
+    if (darkMode === "activado") {
+      desactivarDarkMode();
+    } else {
+      activarDarkMode();
+    }
   });
 });
 
