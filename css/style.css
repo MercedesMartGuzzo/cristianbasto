@@ -93,16 +93,18 @@ body.dark-mode .pedagogia-pa2 {
 }
 
 .navbar-toggler {
-  border: 0;
+  border: 1px solid peru;
+ background-color: rgb(23, 21, 21);
 }
 
 .navbar-toggler:focus {
-  color: transparent
+   color: transparent 
 }
 
 .navbar li a {
   color: peru !important;
   padding-top: .2rem;
+  cursor: pointer;
 }
 
 .navbar li a:hover {
@@ -625,7 +627,7 @@ iframe {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: 1px solid peru;
-  background: linear-gradient(to bottom, peru, white);
+  background: linear-gradient(to bottom, peru, white,peru);
 }
 
 #eventos {
@@ -769,6 +771,8 @@ body.dark-mode .contacto-redes a:hover {
   align-items: center;
   flex-direction: row;
   margin-top: .5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 
