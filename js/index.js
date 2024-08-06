@@ -87,7 +87,7 @@ navLinks.forEach(function (navLink) {
     let target = this.getAttribute("href");
 
     // Excluir los enlaces de "PARTITURAS" y "PEDAGOGIA" del comportamiento de desplazamiento suave
-    if (this.classList.contains("partitura") || this.classList.contains("pedagogia")) {
+    if (this.classList.contains("partitura") || this.classList.contains("pedagogia")|| this.classList("colaboracion")){
       return;
     }
 
