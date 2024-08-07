@@ -480,14 +480,14 @@ h1 {
 .piano {
   margin-top: 1rem;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: .3rem;
   justify-content: center;
-   width: 85vw; 
+  width: 85vw;
   border: 1px solid peru;
   border-radius: 12px;
   padding: .5rem;
- 
+
 }
 
 .suite img,
@@ -498,27 +498,28 @@ h1 {
 }
 
 .spotify {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 80vw;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
-} 
+}
 
-.boton-colab{
- display: flex;
- gap: .4rem;
- margin-top: 1rem;
- padding-left: .5rem;
- font-size: 20px;
- color: peru;
- cursor: pointer;
+.boton-colab {
+  display: flex;
+  gap: .4rem;
+  margin-top: 1rem;
+  padding-left: .5rem;
+  font-size: 20px;
+  color: peru;
+  cursor: pointer;
 }
-.boton-colab:hover{
-text-decoration: underline;
-}
+
+/* .boton-colab:hover {
+  text-decoration: underline;
+} */
 
 /* SECCION VIDEOS */
 
@@ -610,6 +611,7 @@ text-decoration: underline;
   margin-top: 1rem;
   border: 1px solid peru;
   padding: 1rem;
+  padding-bottom: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -627,6 +629,13 @@ iframe {
 .video3,
 .video4 {
   margin-bottom: .5rem;
+  height: 200px;
+  border: 2px solid peru;
+}
+
+.video5 {
+  height: 200px;
+  border: 2px solid peru;
 }
 
 .videos-grilla p {
@@ -821,7 +830,7 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 .contacto-titulo {
-  color:white;
+  color: white;
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -832,7 +841,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::before {
   content: "";
-  background-color: white; 
+  background-color: white;
   width: 40px;
   height: 100%;
   position: absolute;
@@ -842,7 +851,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::after {
   content: "";
-  background-color: white; 
+  background-color: white;
   width: 300px;
   height: 100%;
   position: absolute;
@@ -879,7 +888,7 @@ footer h2 {
 
 footer h2:hover {
   font-weight: 400;
-  color: black;
+  color: peru;
 }
 
 body.dark-mode .footer-titulo:hover {
@@ -1090,8 +1099,9 @@ body.dark-mode .footer-titulo:hover {
     gap: 2rem;
     padding-top: .5rem;
     margin: 1rem;
+    margin-bottom: 0;
     /* margin-left: 0; */
-    justify-content:center;
+    justify-content: center;
     align-content: center;
   }
 
@@ -1100,20 +1110,26 @@ body.dark-mode .footer-titulo:hover {
     width: auto;
     border: 1px solid peru;
   }
-.suite iframe, .piano iframe{
-  height: 400px;
-}
-.colaboraciones{
-  margin-left: 1rem;
-}
+
+  .suite iframe,
+  .piano iframe {
+    height: 400px;
+  }
+
+  .colaboraciones {
+    margin-left: 1rem;
+  }
+
   .discos {
     border-top: 1px solid peru;
     padding-top: .5rem;
 
   }
-.colab{
-  margin-left: 1.8rem;
-}
+
+  .colab {
+    margin-left: 1.8rem;
+  }
+
   /* SECCION VIDEOS */
 
   .videos {
@@ -1226,6 +1242,7 @@ body.dark-mode .footer-titulo:hover {
     display: grid;
     justify-content: center;
     width: 100%;
+    border: 2px solid peru;
   }
 
   iframe {
@@ -1311,7 +1328,7 @@ body.dark-mode .footer-titulo:hover {
   .contacto-titulo::after {
     width: 1000px;
     left: calc(95% + 1rem);
-   
+
   }
 
 }
@@ -1377,7 +1394,7 @@ button:hover{
 }
 */
 
-/* BARRA DE NAVEGACION PARTITURAS Y PEDAGOGIA */
+/* BARRA DE NAVEGACION PARTITURAS, PEDAGOGIA Y COLABORACIONES */
 .nav-pages {
   background-color: rgba(245, 222, 179, 0.16);
 }
@@ -1839,7 +1856,7 @@ body.dark-mode .piano-descargas:hover {
 
 }
 
-/* FOOTER PARTITURAS Y PEDAGOGIA */
+/* FOOTER PARTITURAS Y PEDAGOGIA  COLABORACIONES*/
 
 .footer {
   display: flex;
@@ -1867,9 +1884,9 @@ footer h2 {
 }
 
 footer h2:hover {
-  transition: 1s ease-in-out;
+ /*  transition: 1s ease-in-out; */
   transform: scale(1.1);
-  color: black
+  color:peru;
 }
 
 .body.dark-mode .footer-titulo:hover {
