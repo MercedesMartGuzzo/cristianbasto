@@ -509,7 +509,6 @@ h1 {
 
 .boton-colab{
  display: flex;
-
  gap: .4rem;
  margin-top: 1rem;
  padding-left: .5rem;
@@ -517,7 +516,9 @@ h1 {
  color: peru;
  cursor: pointer;
 }
-
+.boton-colab:hover{
+text-decoration: underline;
+}
 
 /* SECCION VIDEOS */
 
@@ -820,9 +821,7 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 .contacto-titulo {
-  color:
-    /*  peru; */
-    white;
+  color:white;
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -833,7 +832,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::before {
   content: "";
-  background-color: white;
+  background-color: white; 
   width: 40px;
   height: 100%;
   position: absolute;
@@ -843,7 +842,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::after {
   content: "";
-  background-color: white;
+  background-color: white; 
   width: 300px;
   height: 100%;
   position: absolute;
@@ -1091,25 +1090,30 @@ body.dark-mode .footer-titulo:hover {
     gap: 2rem;
     padding-top: .5rem;
     margin: 1rem;
-    margin-left: 0;
-    justify-content: start;
+    /* margin-left: 0; */
+    justify-content:center;
+    align-content: center;
   }
 
   .suite,
   .piano {
     width: auto;
     border: 1px solid peru;
-
   }
 .suite iframe, .piano iframe{
   height: 400px;
+}
+.colaboraciones{
+  margin-left: 1rem;
 }
   .discos {
     border-top: 1px solid peru;
     padding-top: .5rem;
 
   }
-
+.colab{
+  margin-left: 1.8rem;
+}
   /* SECCION VIDEOS */
 
   .videos {
@@ -1302,12 +1306,12 @@ body.dark-mode .footer-titulo:hover {
   .contacto-titulo::before {
     right: calc(95% + 1rem);
     width: 1000px;
-
   }
 
   .contacto-titulo::after {
     width: 1000px;
     left: calc(95% + 1rem);
+   
   }
 
 }
