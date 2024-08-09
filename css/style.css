@@ -422,7 +422,7 @@ h1 {
 }
 
 .musica-titulo {
-  color: rgba(255, 255, 255, 0.795);
+  color:  rgba(255, 255, 255, 0.795);
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
@@ -433,7 +433,7 @@ h1 {
 
 .musica-titulo::before {
   content: "";
-  background-color: rgb(255, 255, 255);
+  background-color:  rgb(255, 255, 255);
   width: 40px;
   height: 100%;
   position: absolute;
@@ -443,7 +443,7 @@ h1 {
 
 .musica-titulo::after {
   content: "";
-  background-color: rgb(255, 255, 255);
+  background-color:   rgb(255, 255, 255 );
   width: 300px;
   height: 100%;
   position: absolute;
@@ -830,18 +830,18 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 .contacto-titulo {
-  color: white;
+  color:/*  white; */peru;
   position: absolute;
   font-weight: 600;
   font-size: 1.3rem;
-  top: 4%;
+  top: 3.6%;
   left: 12%;
   letter-spacing: 1px;
 }
 
 .contacto-titulo::before {
   content: "";
-  background-color: white;
+  background-color: /* white; */peru;
   width: 40px;
   height: 100%;
   position: absolute;
@@ -851,7 +851,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .contacto-titulo::after {
   content: "";
-  background-color: white;
+  background-color:/*  white; */peru;
   width: 300px;
   height: 100%;
   position: absolute;
@@ -980,8 +980,9 @@ body.dark-mode .footer-titulo:hover {
   .bio h3 {
     font-size: 1.5rem;
     display: flex;
-    margin-bottom: .8rem;
-
+    margin-bottom: .8rem; 
+    color:peru;
+  
   }
 
   .bio-parrafo1 {
@@ -989,15 +990,13 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .bio-titulo {
-    color: peru;
-    /* rgba(172, 255, 47, 0.473);*/
+    color:peru;
     position: absolute;
     font-weight: 600;
     font-size: 2.2rem;
-    top: 2%;
+    top:2%;
     left: 12%;
     letter-spacing: 1px;
-    z-index: 10;
 
   }
 
@@ -1075,7 +1074,7 @@ body.dark-mode .footer-titulo:hover {
 
   .musica-titulo::before {
     content: "";
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(255, 255, 255) ;
     width: 70px;
     height: 100%;
     position: absolute;
@@ -1285,7 +1284,7 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .foto {
-    max-width: 50%;
+    max-width: 50%; 
   }
 
   .contacto-desktop {
@@ -1295,7 +1294,6 @@ body.dark-mode .footer-titulo:hover {
     display: flex;
     flex-direction: column;
     margin-left: 9rem;
-
   }
 
   .contacto-redes {
@@ -1317,20 +1315,22 @@ body.dark-mode .footer-titulo:hover {
 
   .contacto-titulo {
     font-size: 2.5rem;
-    top: 2%;
+    top: 3.1%;
+    color:peru;
   }
 
   .contacto-titulo::before {
     right: calc(95% + 1rem);
     width: 1000px;
+    background-color: peru;
   }
 
   .contacto-titulo::after {
     width: 1000px;
     left: calc(95% + 1rem);
+    background-color: peru;
 
   }
-
 }
 
 /* 
