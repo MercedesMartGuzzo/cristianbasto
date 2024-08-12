@@ -223,15 +223,21 @@ body.dark-mode .pedagogia-pa2 {
 
 h1 {
   color: transparent;
-  font-size: 1.3rem;
-  font-weight: 200;
+  font-size:/*  1.3rem; */3rem;
+ /*  font-weight: bold; */
   animation: titulo 2s 1s ease-in-out 1 forwards;
   position: absolute;
   top: 20%;
   left: 8%;
   z-index: 1;
+ 
 }
-
+.h1{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+ /*  font-weight: bold; */
+}
 @keyframes titulo {
   from {
     opacity: 0;
@@ -298,14 +304,15 @@ h1 {
 .bio-titulo {
   color: peru;
   position: absolute;
-  font-weight: 600;
-  font-size: 1.3rem;
-  top: 4%;
-  left: 12%;
-  letter-spacing: 1px;
+  font-weight:/*  600 */bold;
+  font-size: 2rem;
+  top: 2%;
+  left: 4%; 
+/*    letter-spacing: 1px; */
+ 
 }
 
-.bio-titulo::before {
+/* .bio-titulo::before {
   content: "";
   background-color:
     peru;
@@ -324,7 +331,7 @@ h1 {
   position: absolute;
   left: calc(95% + .5rem);
   top: 0;
-}
+} */
 
 .bio-parrafo1 {
   margin-top: 1rem;
@@ -424,14 +431,14 @@ h1 {
 .musica-titulo {
   color:  rgba(255, 255, 255, 0.795);
   position: absolute;
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight:bold;
+  font-size: 1.8rem;
   top: 04%;
-  left: 12%;
+  left: 4%;
   letter-spacing: 1px;
 }
 
-.musica-titulo::before {
+/* .musica-titulo::before {
   content: "";
   background-color:  rgb(255, 255, 255);
   width: 40px;
@@ -449,7 +456,7 @@ h1 {
   position: absolute;
   left: calc(85% + 1rem);
   top: 0;
-}
+} */
 
 .musica-copete {
   margin-top: 1rem;
@@ -564,14 +571,15 @@ h1 {
 .videos-titulo {
   color: peru;
   position: absolute;
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight:bold;
+  font-size: 1.8rem;
   top: 04%;
-  left: 12%;
+  left: 4%;
   letter-spacing: 1px;
+ 
 }
 
-.videos-titulo::before {
+/* .videos-titulo::before {
   content: "";
   background-color: peru;
   width: 32px;
@@ -589,7 +597,7 @@ h1 {
   position: absolute;
   left: calc(90% + 1rem);
   top: 0;
-}
+} */
 
 .videos-copete {
   display: flex;
@@ -667,10 +675,8 @@ iframe {
   border-radius: 10px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid peru;
-  background: linear-gradient(to bottom, peru, white, peru);
+  background-color: peru;
 }
-
 #eventos {
   padding-left: 0px;
 }
@@ -701,6 +707,7 @@ iframe {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  transition: background-color .2s, color .2s;
 }
 
 .view-more-btn:hover {
@@ -829,35 +836,35 @@ body.dark-mode .contacto-redes a:hover {
   margin-left: .6rem;
 }
 
-.contacto-titulo {
-  color:/*  white; */peru;
+ .contacto-titulo {
+  color:peru;
   position: absolute;
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.7rem;
   top: 3.6%;
-  left: 12%;
+  left: 4%;
   letter-spacing: 1px;
 }
 
-.contacto-titulo::before {
+/* .contacto-titulo::before {
   content: "";
-  background-color: /* white; */peru;
+  background-color:peru;
   width: 40px;
   height: 100%;
   position: absolute;
   right: calc(95% + 1rem);
   top: 0;
-}
+} 
 
 .contacto-titulo::after {
   content: "";
-  background-color:/*  white; */peru;
+  background-color:peru;
   width: 300px;
   height: 100%;
   position: absolute;
   left: calc(90% + 1rem);
   top: 0;
-}
+}  */
 
 .resalta {
   font-weight: bold;
@@ -937,9 +944,17 @@ body.dark-mode .footer-titulo:hover {
 
   /* PORTADA */
   h1 {
-    font-size: 4rem;
-    left: 11%;
+    font-size: 8rem;
+   /*  top: 14%;
+    left: 20%; */
+    top:/*  20%; */19%;
+    left:/* 22% */11%;
+    font-weight:100px;
     /*  margin-left: .5rem; */
+  }
+  .h1{
+    font-size: 8rem;
+    
   }
 
   /* SECCION BIO */
@@ -990,17 +1005,16 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .bio-titulo {
-    color:peru;
+    color: white;
     position: absolute;
-    font-weight: 600;
-    font-size: 2.2rem;
-    top:2%;
-    left: 12%;
+    font-weight: bold;
+    font-size: 5rem;
+    top:0%;
+    left: 3%;
     letter-spacing: 1px;
 
   }
-
-  .bio-titulo::before {
+/*   .bio-titulo::before {
     width: 1000px;
     height: 100%;
     right: calc(100% + 1rem);
@@ -1014,7 +1028,7 @@ body.dark-mode .footer-titulo:hover {
     position: absolute;
     left: calc(95% + .5rem);
     top: 0;
-  }
+  } */
 
   /* SECCION MUSICA */
 
@@ -1064,15 +1078,18 @@ body.dark-mode .footer-titulo:hover {
   .musica-titulo {
     color: white;
     position: absolute;
-    font-weight: 600;
-    font-size: 2.5rem;
+    font-weight:/*  600; */bold;
+  /*   font-size: 3rem;
     top: 2%;
-    left: 12%;
-    letter-spacing: 1px;
+    left: 6%; */
+    font-size: 4.5rem;
+    top:0%;
+    left: 3%;
+  /*   letter-spacing: 1px; */
     z-index: 1;
   }
 
-  .musica-titulo::before {
+ /*  .musica-titulo::before {
     content: "";
     background-color:  rgb(255, 255, 255) ;
     width: 70px;
@@ -1090,7 +1107,7 @@ body.dark-mode .footer-titulo:hover {
     position: absolute;
     left: calc(95% + 1rem);
     top: 0;
-  }
+  } */
 
   .spotify {
     display: grid;
@@ -1141,17 +1158,20 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .videos-titulo {
-    color: peru;
+    color: white;
     position: absolute;
-    font-weight: 600;
-    font-size: 2.5rem;
+    font-weight: /* 600; */bold;
+    /* font-size:3rem;
     top: 2%;
-    left: 12%;
-    letter-spacing: 1px;
+    left: 6%; */
+    font-size: 4.5rem;
+    top:0%;
+    left: 3%;
+    letter-spacing: 0px;
     z-index: 1;
   }
 
-  .videos-titulo::before {
+  /* .videos-titulo::before {
     content: "";
     background-color: peru;
     width: 70px;
@@ -1170,7 +1190,7 @@ body.dark-mode .footer-titulo:hover {
     left: calc(95% + 1rem);
     top: 0;
   }
-
+ */
 
   .videos-copete h3 {
     font-size: 1.5rem;
@@ -1262,7 +1282,7 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .agenda-lista {
-    background: linear-gradient(to bottom, peru, white);
+    background-color: peru;
   }
 
   #eventos .nombre {
@@ -1314,12 +1334,16 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .contacto-titulo {
-    font-size: 2.5rem;
-    top: 3.1%;
-    color:peru;
+    font-size: 4.5rem;
+   /*  top: 2%;
+    left: 4%; */
+top:0%;
+left: 3%;
+    color:white;
+    font-weight: bold;
   }
 
-  .contacto-titulo::before {
+/*   .contacto-titulo::before {
     right: calc(95% + 1rem);
     width: 1000px;
     background-color: peru;
@@ -1330,7 +1354,7 @@ body.dark-mode .footer-titulo:hover {
     left: calc(95% + 1rem);
     background-color: peru;
 
-  }
+  } */
 }
 
 /* 
@@ -1569,6 +1593,7 @@ button:hover{
   border-radius: 5px;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  transition: background-color .2s, color .2s;
 }
 
 .piano-descargas:hover {
