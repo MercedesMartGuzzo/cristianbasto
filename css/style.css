@@ -324,10 +324,21 @@ h1 {
   text-align: start;
 }
 
+
 .bio-parrafo1 h3 {
   color: peru;
 }
-
+.about{
+  color:peru;
+}
+.p-about{
+  color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
 .bio-parrafo {
   margin-top: 1.1rem;
   gap: .5rem;
@@ -410,43 +421,32 @@ h1 {
 }
 
 .musica-titulo {
-  color:
-    /*  rgba(255, 255, 255, 0.795); */
-    whitesmoke;
+  color: whitesmoke;
   position: absolute;
   font-weight: 300;
   font-size: 2.3rem;
   top: 03%;
   left: 4%;
-  /*   letter-spacing: 1px; */
 }
-
-/* .musica-titulo::before {
-  content: "";
-  background-color:  rgb(255, 255, 255);
-  width: 40px;
-  height: 100%;
+.titulo-eng{
+  color: rgb(8, 4, 0);
   position: absolute;
-  right: calc(90% + 1rem);
-  top: 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+  top: 19%;
+  left: 4%;
 }
-
-.musica-titulo::after {
-  content: "";
-  background-color:   rgb(255, 255, 255 );
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  left: calc(85% + 1rem);
-  top: 0;
-} */
-
 .musica-copete {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid peru;
 }
-
+.copete-eng{
+  border-top: 1px solid peru;
+   font-size: .9rem;
+  padding-top: .6rem;
+  padding-right: .2rem; 
+  color:rgb(66, 66, 66);
+}
 .musica-copete h3 {
   color: peru;
   display: flex;
@@ -483,8 +483,6 @@ h1 {
 .suite img,
 .piano img {
   border-radius: 12px;
-
-  /*  object-fit: cover; */
 }
 
 .spotify {
@@ -558,29 +556,8 @@ h1 {
   font-size: 2.3rem;
   top: 3%;
   left: 4%;
-  /*  letter-spacing: 1px;
-  */
 }
 
-/* .videos-titulo::before {
-  content: "";
-  background-color: peru;
-  width: 32px;
-  height: 100%;
-  position: absolute;
-  right: calc(90% + 1rem);
-  top: 0;
-}
-
-.videos-titulo::after {
-  content: "";
-  background-color: peru;
-  width: 270px;
-  height: 100%;
-  position: absolute;
-  left: calc(90% + 1rem);
-  top: 0;
-} */
 
 .videos-copete {
   display: flex;
@@ -829,26 +806,14 @@ body.dark-mode .contacto-redes a:hover {
   left: 4%;
   letter-spacing: 1px;
 }
-
-/* .contacto-titulo::before {
-  content: "";
-  background-color:peru;
-  width: 40px;
-  height: 100%;
+.contact{
+  color:peru;
   position: absolute;
-  right: calc(95% + 1rem);
-  top: 0;
-} 
-
-.contacto-titulo::after {
-  content: "";
-  background-color:peru;
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  left: calc(90% + 1rem);
-  top: 0;
-}  */
+  font-weight: 300;
+  font-size: 1.5rem;
+  top: 12%;
+  left: 4%;
+}
 
 .resalta {
   font-weight: bold;
@@ -929,16 +894,9 @@ body.dark-mode .footer-titulo:hover {
   /* PORTADA */
   h1 {
     font-size: 8rem;
-    /*  top: 14%;
-    left: 20%; */
-    top:
-      /*  20%; */
-      15%;
-    left:
-      /* 22% */
-      11%;
+    top: 15%;
+    left:11%;
     font-weight: 300;
-    /*  margin-left: .5rem; */
   }
 
   .h1 {
@@ -988,11 +946,26 @@ body.dark-mode .footer-titulo:hover {
     color: peru;
 
   }
+.about{
+  font-size: 1.3rem;
+  display: flex;
+  margin-bottom: .8rem;
+  color: peru;
 
+}
   .bio-parrafo1 {
-    font-size: .9rem;
+    font-size: 1rem;
+    margin-top:1rem ;
   }
-
+  .p-about{
+  color:rgb(66, 66, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: .9rem;
+  }
   .bio-titulo {
     color: wheat;
     position: absolute;
@@ -1004,21 +977,6 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  /*   .bio-titulo::before {
-    width: 1000px;
-    height: 100%;
-    right: calc(100% + 1rem);
-    top: 0;
-    position: absolute;
-  }
-
-  .bio-titulo::after {
-    width: 1000px;
-    height: 100%;
-    position: absolute;
-    left: calc(95% + .5rem);
-    top: 0;
-  } */
 
   /* SECCION MUSICA */
 
@@ -1036,7 +994,6 @@ body.dark-mode .footer-titulo:hover {
     width: 100%;
     gap: 1rem;
     justify-content: space-between;
-    /*   border-bottom: 1px solid peru; */
     padding-bottom: .7rem;
   }
 
@@ -1051,10 +1008,9 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .musica-copete {
-    font-size: .9rem;
+    font-size: 1rem;
     padding-top: .2rem;
     padding-right: .2rem;
-    /*   display: flex; */
     align-items: start;
     justify-content: start;
     padding-top: 0px;
@@ -1062,9 +1018,15 @@ body.dark-mode .footer-titulo:hover {
     display: grid;
     grid-column: span 2;
     border-bottom: none;
+
   }
-
-
+.copete-eng{
+  border-top: 1px solid peru;
+   font-size: .9rem;
+  padding-top: .6rem;
+  padding-right: .2rem; 
+  color:rgb(66, 66, 66);
+}
   .musica-titulo {
     color: whitesmoke;
     position: absolute;
@@ -1074,27 +1036,15 @@ body.dark-mode .footer-titulo:hover {
     left: 3%;
     z-index: 1;
   }
-
-  /*  .musica-titulo::before {
-    content: "";
-    background-color:  rgb(255, 255, 255) ;
-    width: 70px;
-    height: 100%;
-    position: absolute;
-    right: calc(95% + 1rem);
-    top: 0;
-  }
-
-  .musica-titulo::after {
-    content: "";
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 100%;
-    position: absolute;
-    left: calc(95% + 1rem);
-    top: 0;
-  } */
-
+.titulo-eng{
+  color: rgb(8, 4, 0);
+  position: absolute;
+  font-weight: 300;
+  font-size: 3rem;
+  top: 20%;
+  left: 3.3%;
+  z-index: 1;
+}
   .spotify {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1118,16 +1068,13 @@ body.dark-mode .footer-titulo:hover {
     height: 400px;
   }
 
-  .colaboraciones {
-    margin-left: 1rem;
-  }
 
   .discos {
     border-top: 1px solid peru;
     padding-top: .5rem;
+    font-size: 1.8rem;
 
   }
-
   .colab {
     margin-left: 1.8rem;
   }
@@ -1147,37 +1094,12 @@ body.dark-mode .footer-titulo:hover {
     color: rgb(231, 138, 45);
     position: absolute;
     font-weight: 300;
-    /* font-size:3rem;
-    top: 2%;
-    left: 6%; */
     font-size: 4.5rem;
     top: 0%;
     left: 3%;
     letter-spacing: 0px;
     z-index: 1;
   }
-
-  /* .videos-titulo::before {
-    content: "";
-    background-color: peru;
-    width: 70px;
-    height: 100%;
-    position: absolute;
-    right: calc(95% + 1rem);
-    top: 0;
-  }
-
-  .videos-titulo::after {
-    content: "";
-    background-color: peru;
-    width: 400px;
-    height: 100%;
-    position: absolute;
-    left: calc(95% + 1rem);
-    top: 0;
-  }
- */
-
   .videos-copete h3 {
     font-size: 1.5rem;
     color: peru;
@@ -1187,7 +1109,7 @@ body.dark-mode .footer-titulo:hover {
   .videos-copete {
     position: relative;
     z-index: 1;
-    font-size: .9rem;
+    font-size: 1rem;
     padding-top: .2rem;
     padding-right: .2rem;
 
@@ -1325,6 +1247,14 @@ body.dark-mode .footer-titulo:hover {
     color: wheat;
     font-weight: 300;
   }
+  .contact{
+   color: peru;
+   font-size: 3rem;
+   top: 11%;
+   left: 4%;
+   position: absolute;
+   font-weight: 300;
+  }
 }
 
 /* 
@@ -1457,7 +1387,14 @@ button:hover{
   left: 4%;
 }
 
-
+.sheet-music{
+  color: wheat;
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5rem;
+  top: 19%;
+  left: 4%;
+}
 
 .partituras-grilla {
   border-top: 1px solid peru;
@@ -1594,7 +1531,14 @@ body.dark-mode .piano-descargas:hover {
     top: 2%;
     left: 4%;
   }
-
+  .sheet-music{
+    color: wheat;
+    position: absolute;
+    font-weight: 300;
+    font-size: 3rem;
+    top: 13%;
+    left: 4%;
+  }
   .partituras-pa {
     margin-bottom: 1.6rem;
     font-size: 1rem;
@@ -1712,15 +1656,22 @@ body.dark-mode .piano-descargas:hover {
 
 
 .pedagogias-titulo {
-  color: peru;
+  color: wheat;
   position: absolute;
   font-weight: 300;
   font-size: 2.5rem;
   top: 4%;
-  left: 1%;
+  left: 4%;
 }
 
-
+.pedagogy{
+  font-size: 1.5rem;
+    top: 22%;
+    left: 4%;
+    font-weight: 300;
+    color:peru;
+    position: absolute;
+}
 
 .pedagogia-contenedor {
   border-top: 1px solid peru;
@@ -1736,18 +1687,20 @@ body.dark-mode .piano-descargas:hover {
   align-items: start;
   text-align: start;
   font-size: 1rem;
+  
 }
 
 .pedagogia-pa2 {
   margin-top: 1rem;
-  color: grey;
+  color:black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   text-align: start;
-  font-size: .9rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+ 
 }
 
 .workshop {
@@ -1778,7 +1731,26 @@ body.dark-mode .piano-descargas:hover {
     font-weight: 300;
     color: wheat;
   }
-
+.pedagogy{
+  font-size: 3.5rem;
+    top: 13%;
+    left: 2%;
+    font-weight: 300;
+    color:peru;
+    position: absolute;
+}
+.pedagogia-eng{
+  margin-top: 1rem;
+  color:rgb(66, 66, 66);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  padding-top: 1rem;
+  font-size: .9rem;
+  border-top: 1px solid peru;
+  }
   .workshop {
     color: peru;
     font-size: 1.3rem;
@@ -1807,19 +1779,35 @@ body.dark-mode .piano-descargas:hover {
 .colaboraciones-titulo{
   color:peru;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.3rem;
   top:2%;
-  left: 2%;
+  left: 4%;
   position: absolute;
 }
-
+.colab-eng{
+  font-size: 1.3rem;
+    top: 17%;
+    left: 4%;
+    font-weight: 300;
+    color: wheat;
+    position: absolute;
+  }
   /* COLABORACIONES DESKTOP */
 @media(min-width :1200px){
 .colaboraciones-titulo{
   font-size: 5rem;
   top:2%;
   left: 2%;
+  font-weight: 300;
 }
+.colab-eng{
+  font-size: 3.5rem;
+    top: 13%;
+    left: 2%;
+    font-weight: 300;
+    color: wheat;
+    position: absolute;
+  }
 }
 /* FOOTER PARTITURAS Y PEDAGOGIA  COLABORACIONES*/
 

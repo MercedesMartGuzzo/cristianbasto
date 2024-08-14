@@ -1,0 +1,22 @@
+{
+    "header": {
+        "bio": "BIO",
+        "music": "MUSICA",
+        "collaborations": "COLABORACIONES",
+        "videos": "VIDEOS",
+        "pedagogy": "PEDAGOGIA",
+        "sheet-music": "PARTITURAS",
+        "agenda": "AGENDA",
+        "contact": "CONTACTO"
+    },
+    "parrafo1": {
+        "title": "Sobre Cristian Basto",
+        "text": "Cristian Basto es licenciado en composición, diplomado en música contemporánea y diplomado Compositores de América Latina, arreglador y director de orquestas y ensambles de tango.
+                        Destacado contrabajista y docente, ha colaborado con numerosos artistas reconocidos del
+                        tango, como Diego Schissi, Raúl Lavié, José Colángelo, Hilda Herrera, Susana Rinaldi y Raúl
+                        Garello.
+                        También ha participado en proyectos de música antigua, rock y música urbana. Su música ha
+                        sido presentada en prestigiosos escenarios y festivales de todo el mundo. Ha recibido varios
+                        premios, incluyendo el Premio Carlos Gardel y una mención honorífica por sus composiciones en el SONUS International Music Festival."
+    }
+}
