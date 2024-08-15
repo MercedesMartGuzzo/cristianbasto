@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
     const body = document.body;
 
@@ -106,4 +106,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
  
-
+ 

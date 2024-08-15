@@ -84,7 +84,8 @@ body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
 body.dark-mode .pedagogias,
 body.dark-mode .pedagogia-pa,
-body.dark-mode .pedagogia-pa2 {
+body.dark-mode .pedagogia-pa2,
+ body.dark-mode .colaboraciones {
   background-color: black;
   color: white;
 }

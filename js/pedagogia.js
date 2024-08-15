@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (darkMode === "activado") {
         activarDarkMode();
-    } else {
+    } else 
         desactivarDarkMode();
     } 
 
