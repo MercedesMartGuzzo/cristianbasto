@@ -91,6 +91,7 @@ body.dark-mode .pedagogia-pa2,
 }
 
 /* BARRA DE NAVEGACION */
+
 .navbar {
   background-color: rgb(15, 14, 14);
   border-bottom: 1px solid peru;
@@ -136,10 +137,10 @@ body.dark-mode .pedagogia-pa2,
 
 }
 
-.redes a:hover {
+/* .redes a:hover {
   transform: scale(1.1);
 }
-
+ */
 .iconos {
   gap: .3rem;
 }
@@ -160,6 +161,7 @@ body.dark-mode .pedagogia-pa2,
   overflow: hidden;
   max-width: 100%;
 }
+
 
 /* header-desktop */
 @media (min-width: 1200px) {
@@ -314,7 +316,7 @@ h1 {
   color: wheat;
   position: absolute;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: /* 2.5rem; */10vw;
   top: 2%;
   left: 4%;
 }
@@ -432,7 +434,7 @@ h1 {
   color: whitesmoke;
   position: absolute;
   font-weight: 300;
-  font-size: 2.3rem;
+  font-size: /* 2.3rem */9.5vw;
   top: 03%;
   left: 4%;
 }
@@ -441,7 +443,7 @@ h1 {
   color: rgb(8, 4, 0);
   position: absolute;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: /* 1.6rem; */7.5vw;
   top: 19%;
   left: 4%;
 }
@@ -611,11 +613,13 @@ iframe {
   margin-bottom: .5rem;
   height: 200px;
   border: 2px solid peru;
+  width: 100%;
 }
 
 .video5 {
   height: 200px;
   border: 2px solid peru;
+  width: 100%;
 }
 
 .videos-grilla p {
@@ -812,9 +816,9 @@ body.dark-mode .contacto-redes a:hover {
   color: wheat;
   position: absolute;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: /* 2.2rem */9.4vw;
   top: 2.85%;
-  left: 4%;
+  left: 4.1%;
   letter-spacing: 1px;
 }
 
@@ -822,9 +826,9 @@ body.dark-mode .contacto-redes a:hover {
   color: peru;
   position: absolute;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: /* 1.5rem; */7.3vw;
   top: 12%;
-  left: 4%;
+  left: 4.5%;
 }
 
 .resalta {
@@ -841,7 +845,7 @@ body.dark-mode .contacto-redes a:hover {
   background-color: white;
   font-weight: 200;
   border-top: 1px solid peru;
-  margin-bottom: 2rem;
+/*   margin-bottom: 2rem; */
 }
 
 footer h2 {
@@ -1407,7 +1411,7 @@ button:hover{
   color: peru;
   position: absolute;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size:/*  2.5rem; */9vw;
   top: 1%;
   left: 4%;
 }
@@ -1416,8 +1420,8 @@ button:hover{
   color: wheat;
   position: absolute;
   font-weight: 300;
-  font-size: 1.5rem;
-  top: 19%;
+  font-size:/*  1.5rem; */6.5vw;
+  top: 17%;
   left: 4%;
 }
 
@@ -1700,14 +1704,14 @@ body.dark-mode .piano-descargas:hover {
   color: wheat;
   position: absolute;
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: /* 2.5rem; */9vw;
   top: 4%;
   left: 4%;
 }
 
 .pedagogy {
-  font-size: 1.5rem;
-  top: 22%;
+  font-size: /* 1.5rem; */6.5vw;
+  top: 20%;
   left: 4%;
   font-weight: 300;
   color: peru;
@@ -1821,18 +1825,18 @@ body.dark-mode .piano-descargas:hover {
 .colaboraciones-titulo {
   color: peru;
   font-weight: 300;
-  font-size: 2.3rem;
+  font-size:/*  2.3rem; */8.8vw;
   top: 2%;
   left: 4%;
   position: absolute;
 }
 
 .colab-eng {
-  font-size: 1.3rem;
+  font-size: /* 1.3rem; */6.5vw;
   top: 17%;
-  left: 4%;
+  left: 4.5%;
   font-weight: 300;
-  color: wheat;
+  color: rgb(110, 82, 54);
   position: absolute;
 }
 .colaboraciones{
@@ -1891,7 +1895,8 @@ body.dark-mode .piano-descargas:hover {
   .colab-eng {
     font-size: 3.5rem;
     top: 13%;
-    left: 2%;
+    left: 2.5%;
+    color: rgb(110, 82, 54);
   }
 
 }
@@ -1903,12 +1908,10 @@ body.dark-mode .piano-descargas:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:
-    /*  rgb(15, 14, 14); */
-    white;
+  background-color:whitesmoke;
   font-weight: 200;
   border-top: 1px solid peru;
-  margin-bottom: 2rem;
+ /*  margin-bottom: 2rem; */
 }
 
 footer h2 {
@@ -1934,7 +1937,7 @@ footer h2:hover {
 }
 
 .footer-parrafo {
-  color: peru;
+  color: peru; 
   font-size: 1.2rem;
   text-align: center;
   padding-top: .8rem;
@@ -1948,7 +1951,7 @@ footer h2:hover {
 
 
 .footer-redes {
-  color: peru;
+  color:  peru;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1966,16 +1969,26 @@ footer h2:hover {
   margin-bottom: .3rem;
   font-size: 22px;
 }
-
-/* .contacto-redes:hover {
-  color: rgba(205, 134, 63, 0.676);
-} */
 .redes-footer a:hover {
   transition: 1s ease;
   color: rgb(8, 4, 0);
   transform: scale(1.1);
 }
-
+.bi-spotify:hover{
+  color: green;
+}
+.bi-facebook:hover{
+  color:blue;
+}
+.bi-whatsapp:hover{
+  color:green;
+}
+.bi-youtube:hover{
+  color: red;
+}
+.bi-instagram:hover{
+  color: purple;
+}
 body.dark-mode .redes-footer a:hover {
   color: grey;
 }
