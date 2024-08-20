@@ -8,10 +8,10 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
       navbarToggler.click();
     }
   });
-});
+});  
 
 // Event listener solo para los enlaces dentro del div "redes"
-document.querySelectorAll('.redes a').forEach(item => {
+/*  document.querySelectorAll('.redes a').forEach(item => {
   item.addEventListener('click', event => {
     event.preventDefault();
     const url = item.getAttribute('href');
@@ -19,7 +19,7 @@ document.querySelectorAll('.redes a').forEach(item => {
       window.open(url, '_blank');
     }
   });
-});
+});  */
 
 // Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
@@ -65,7 +65,7 @@ function activarBordesBioContainer(contenedor) {
 }
 
 
- let bioContainer = document.getElementById("bioContainer");
+let bioContainer = document.getElementById("bioContainer");
 activarBordesBioContainer(bioContainer);
 
 function activarBordesColaboraciones(contenedor) {
@@ -81,21 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.log("No se encontró el contenedor de colaboraciones");
   }
-}); 
+});
 
 
-// Función para agregar desplazamiento suave al hacer clic en enlaces de la barra de navegación
 function smoothScroll(target) {
   let targetElement = document.querySelector(target);
   let targetPosition = targetElement.offsetTop;
-  let navbarHeight = document.querySelector(".navbar").offsetHeight; // Obtener la altura de la barra de navegación
+  let navbarHeight = document.querySelector(".navbar").offsetHeight; // Altura de la barra de navegación
 
-  // Usar window.scrollTo() para agregar desplazamiento suave
+  // Ajustar el scroll para que deje suficiente espacio para el header sticky
   window.scrollTo({
-    top: targetPosition - navbarHeight,
-    behavior: "smooth",
+    top: targetPosition - navbarHeight - 20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
+    /*   behavior:"smooth",  */
   });
 }
+
 // Obtener todos los enlaces de la barra de navegación y agregar un evento de clic a cada uno
 let navLinks = document.querySelectorAll(".navbar-nav a");
 navLinks.forEach(function (navLink) {
@@ -103,7 +103,7 @@ navLinks.forEach(function (navLink) {
     let target = this.getAttribute("href");
 
     // Excluir los enlaces de "PARTITURAS" y "PEDAGOGIA" del comportamiento de desplazamiento suave
-    if (this.classList.contains("partitura") || this.classList.contains("pedagogia")|| this.classList("colaboracion")){
+    if (this.classList.contains("partitura") || this.classList.contains("pedagogia") || this.classList.contains("colaboracion")) {
       return;
     }
 
@@ -111,6 +111,7 @@ navLinks.forEach(function (navLink) {
     smoothScroll(target);
   });
 });
+
 
 
 
@@ -123,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     icon.addEventListener('click', () => {
       const currentParagraph = icon.closest('.bio-parrafo');
       const isOpen = currentParagraph.classList.toggle('open');
-      
+
       // Close all other paragraphs except the current one
       paragraphs.forEach(paragraph => {
         if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Use a small delay to ensure the CSS transition is complete
         setTimeout(() => {
           // Get the h4 element inside the current paragraph
-          const title = currentParagraph.querySelector('h4')|| currentParagraph.querySelector('h3');
+          const title = currentParagraph.querySelector('h4') || currentParagraph.querySelector('h3');
           // Get the top position of the h4 relative to the viewport
           const rect = title.getBoundingClientRect();
           // Scroll the h4 into view, aligning it to the top of the viewport
@@ -190,35 +191,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-/* FORMULARIO DE CONNTACTO */
-/* 
-document.getElementById('contactoForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Evita el envío del formulario
-
-  // Obtener los valores del formulario
-  const nombreUsuario = document.getElementById('nombreUsuario').value;
-  const mailUsuario = document.getElementById('mailUsuario').value;
-  const mensajeUsuario = document.getElementById('mensajeUsuario').value;
-
-  // Guardar datos en el localStorage
-  localStorage.setItem("nombreUsuario", nombreUsuario);
-  localStorage.setItem("mailUsuario", mailUsuario);
-  localStorage.setItem("mensajeUsuario", mensajeUsuario);
-
-  // Mostrar el mensaje de agradecimiento y ocultar el formulario
-  const mensajeSaludo = document.getElementById('mensajeSaludo');
-  mensajeSaludo.style.display = 'block';
-  mensajeSaludo.innerHTML = `¡Gracias ${nombreUsuario} por escribirnos!`;
-
-  const formulario = document.getElementById('contactoForm');
-  formulario.style.display = 'none';
-
-  setTimeout(() => {
-    mensajeSaludo.style.display = 'none';
-    formulario.style.display = 'block';
-  }, 8000);
-
-  formulario.reset();
-})*/
