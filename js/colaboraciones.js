@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("No se encontró el contenedor colaboracionesContainer");
     }
-});
+}); 
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
 document.addEventListener("DOMContentLoaded", () => {
@@ -47,6 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             activarDarkMode();
         }
     });
-});
+}); 
  
  

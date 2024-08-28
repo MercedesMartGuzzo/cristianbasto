@@ -21,7 +21,9 @@ a {
 img {
   max-width: 100%;
 }
-
+.active{
+  text-decoration: underline;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -93,38 +95,51 @@ body.dark-mode .colaboraciones {
 /* BARRA DE NAVEGACION */
 
 .navbar {
-  background-color: rgb(15, 14, 14);
+  background-color:  rgb(15, 14, 14);
   border-bottom: 1px solid peru;
   color: peru;
 }
 
-.navbar-toggler {
-  background-color: rgb(23, 21, 21);
+ .navbar-toggler{
+ background-color: /* rgb(23, 21, 21);  */transparent;
   border: 0;
+  border-radius: none;
+} 
+.navbar-toggler:hover{
+ border: 0;
+}
+.open-icon, .close-icon{
+  border: 0;
+  color:peru;
+  background-color: transparent;
 }
 
-.navbar-toggler:focus {
-  color: transparent;
-  border: 0;
+.navbar-toggler:focus, 
+.navbar-toggler:active,
+.navbar-toggler .open-icon:focus,
+.navbar-toggler .close-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
-.navbar li a {
+ .navbar li a {
   color: peru !important;
   padding-top: .2rem;
-}
+} 
 
 .navbar li a:hover {
   text-decoration: underline;
 }
 
-.navbar-brand {
-  color: transparent;
+ .navbar-brand {
+  color: peru !important;
   text-align: center;
 }
 
-.navbar-brand:hover {
+ .navbar-brand:hover {
   color: peru;
-}
+}  
 
 
 
@@ -178,14 +193,6 @@ body.dark-mode .colaboraciones {
     text-align: center;
     color: peru;
   }
-
-
-  /* .navbar{
-  position: absolute;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  background-color: transparent;
-} */
   .menu {
     display: flex;
     justify-content: center;
@@ -876,8 +883,7 @@ footer h2 {
 }
 
 footer h2:hover {
-  font-weight: 400;
-  color: peru;
+  color: rgb(110, 82, 54);
 }
 
 body.dark-mode .footer-titulo:hover {
@@ -1428,15 +1434,16 @@ iframe {
   background-color: rgba(245, 222, 179, 0.16);
 }
 
-.pages {
-  color: peru;
+.close-icon{
+  border: 0;
+  color:peru;
+  background-color: transparent;
 }
-
-.navbar-toggler {
-  background-color: rgba(245, 222, 179, 0.16);
+ .navbar-toggler {
+  background-color: /* rgba(245, 222, 179, 0.16); */transparent;
   border: 0;
 }
-
+ 
 /********SECCION PARTITURAS MOBILE *********/
 
 .partituras1 {
@@ -2015,14 +2022,12 @@ footer h2 {
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 2rem;
 }
 
 footer h2:hover {
-  /*  transition: 1s ease-in-out; */
-  transform: scale(1.1);
-  color: peru;
+  color:  rgb(110, 82, 54);
 }
 
 .body.dark-mode .footer-titulo:hover {
@@ -2040,6 +2045,7 @@ footer h2:hover {
 .encabezado {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 
@@ -2069,24 +2075,8 @@ footer h2:hover {
   transform: scale(1.1);
 }
 
-.bi-spotify:hover {
-  color: green;
-}
-
-.bi-facebook:hover {
-  color: blue;
-}
-
 .bi-whatsapp:hover {
   color: green;
-}
-
-.bi-youtube:hover {
-  color: red;
-}
-
-.bi-instagram:hover {
-  color: purple;
 }
 
 body.dark-mode .redes-footer a:hover {
@@ -2096,6 +2086,6 @@ body.dark-mode .redes-footer a:hover {
 .copi {
   font-size: 1rem;
   margin-bottom: 2rem;
-
+  font-weight: 400;
   text-align: center;
 }

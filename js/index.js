@@ -1,5 +1,5 @@
 // Agregar un evento de clic a todos los enlaces del menú
-
+/* 
 document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
   item.addEventListener("click", () => {
 
@@ -8,10 +8,10 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
       navbarToggler.click();
     }
   });
-});  
+}); */
 
 // Event listener solo para los enlaces dentro del div "redes"
-/*  document.querySelectorAll('.redes a').forEach(item => {
+/* document.querySelectorAll('.redes a').forEach(item => {
   item.addEventListener('click', event => {
     event.preventDefault();
     const url = item.getAttribute('href');
@@ -19,7 +19,47 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
       window.open(url, '_blank');
     }
   });
-});  */
+}); */
+// Script para cerrar el menú al hacer clic en un enlace de navegación
+document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
+  item.addEventListener("click", () => {
+
+    let navbarToggler = document.querySelector(".navbar-toggler");
+    let openIcon = document.querySelector('.open-icon');
+    let closeIcon = document.querySelector('.close-icon');
+
+    if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
+      navbarToggler.click();
+      // Alternar los iconos
+      openIcon.classList.toggle('d-none');
+      closeIcon.classList.toggle('d-none');
+    }
+  });
+});
+
+// Script para abrir enlaces de redes sociales en una nueva pestaña
+document.querySelectorAll('.redes a').forEach(item => {
+  item.addEventListener('click', event => {
+    event.preventDefault();
+    const url = item.getAttribute('href');
+    if (url) {
+      window.open(url, '_blank');
+    }
+  });
+});
+
+// Script para alternar los iconos cuando se hace clic en el navbar-toggler
+document.addEventListener('DOMContentLoaded', function () {
+  let navbarToggler = document.querySelector('.navbar-toggler');
+  let openIcon = document.querySelector('.open-icon');
+  let closeIcon = document.querySelector('.close-icon');
+
+  navbarToggler.addEventListener('click', function () {
+    openIcon.classList.toggle('d-none');
+    closeIcon.classList.toggle('d-none');
+  });
+});
+
 
 // Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
@@ -68,20 +108,6 @@ function activarBordesBioContainer(contenedor) {
 let bioContainer = document.getElementById("bioContainer");
 activarBordesBioContainer(bioContainer);
 
-function activarBordesColaboraciones(contenedor) {
-  contenedor.classList.add("border-visible-top");
-  contenedor.classList.add("border-visible-left");
-  console.log(`Bordes de ${contenedor.id} activados`);
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  let colaboracionesContainer = document.getElementById("colaboracionesContainer");
-  if (colaboracionesContainer) {
-    activarBordesColaboraciones(colaboracionesContainer);
-  } else {
-    console.log("No se encontró el contenedor de colaboraciones");
-  }
-});
 
 
 function smoothScroll(target) {
@@ -142,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const rect = title.getBoundingClientRect();
           // Scroll the h4 into view, aligning it to the top of the viewport
           window.scrollTo({
-            top: window.scrollY + rect.top - 20, // Adjust the offset if necessary
+            top: window.scrollY + rect.top - 66, // Adjust the offset if necessary
             behavior: 'smooth'
           });
         }, 1000); // Ensure this matches the CSS transition duration

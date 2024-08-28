@@ -48,27 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleIcons = document.querySelectorAll('.toggle-icon');
-    const paragraphs = document.querySelectorAll('.bio-parrafo');
-
-    toggleIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-            const currentParagraph = icon.closest('.bio-parrafo');
-
-            // Toggle 'open' class to expand/collapse the paragraph
-            currentParagraph.classList.toggle('open');
-
-            // Close all other paragraphs except the current one
-            paragraphs.forEach(paragraph => {
-                if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
-                    paragraph.classList.remove('open');
-                }
-            });
-        });
-    });
-});
-
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
  document.addEventListener("DOMContentLoaded", () => {
