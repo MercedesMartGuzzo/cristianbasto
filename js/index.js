@@ -21,7 +21,7 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
   });
 }); */
 // Script para cerrar el menú al hacer clic en un enlace de navegación
-document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
+/* document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
   item.addEventListener("click", () => {
 
     let navbarToggler = document.querySelector(".navbar-toggler");
@@ -35,10 +35,10 @@ document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
       closeIcon.classList.toggle('d-none');
     }
   });
-});
+}); */
 
 // Script para abrir enlaces de redes sociales en una nueva pestaña
-document.querySelectorAll('.redes a').forEach(item => {
+/* document.querySelectorAll('.redes a').forEach(item => {
   item.addEventListener('click', event => {
     event.preventDefault();
     const url = item.getAttribute('href');
@@ -46,10 +46,10 @@ document.querySelectorAll('.redes a').forEach(item => {
       window.open(url, '_blank');
     }
   });
-});
+}); */
 
 // Script para alternar los iconos cuando se hace clic en el navbar-toggler
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
   let navbarToggler = document.querySelector('.navbar-toggler');
   let openIcon = document.querySelector('.open-icon');
   let closeIcon = document.querySelector('.close-icon');
@@ -58,7 +58,50 @@ document.addEventListener('DOMContentLoaded', function () {
     openIcon.classList.toggle('d-none');
     closeIcon.classList.toggle('d-none');
   });
+}); */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const openIcon = document.querySelector('.open-icon');
+  const closeIcon = document.querySelector('.close-icon');
+  const navbarCollapse = document.querySelector('#navbarNav');
+
+  if (navbarToggler) {
+    navbarToggler.addEventListener('click', function () {
+      if (navbarCollapse.classList.contains('show')) {
+        // El menú está desplegado, entonces lo colapsamos
+        closeIcon.classList.add('d-none');
+        openIcon.classList.remove('d-none');
+      } else {
+        // El menú está colapsado, entonces lo desplegamos
+        openIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+      }
+    });
+  }
+
+  navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+    // Cuando el menú se colapsa, mostrar el icono de hamburguesa
+    closeIcon.classList.add('d-none');
+    openIcon.classList.remove('d-none');
+  });
+
+  navbarCollapse.addEventListener('shown.bs.collapse', function () {
+    // Cuando el menú se despliega, mostrar el icono de cerrar (X)
+    openIcon.classList.add('d-none');
+    closeIcon.classList.remove('d-none');
+  });
+
+  document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
+    item.addEventListener("click", () => {
+      if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
+        navbarToggler.click();
+      }
+    });
+  });
 });
+
+
 
 
 // Definir una función para activar/desactivar los bordes de una sección
