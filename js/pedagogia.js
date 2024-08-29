@@ -1,4 +1,4 @@
- function activarBordesPedagogia(contenedor) {
+function activarBordesPedagogia(contenedor) {
     contenedor.classList.add("border-visible-top");
     contenedor.classList.add("border-visible-left");
     console.log(`Bordes de ${contenedor.id} activados`);
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (pedagogiasContainer) {
         activarBordesPedagogia(pedagogiasContainer);
     }
-}); 
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
@@ -46,4 +46,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
- 

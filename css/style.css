@@ -94,36 +94,41 @@ body.dark-mode .colaboraciones {
 
 /* BARRA DE NAVEGACION */
 
+/* CSS para la barra de navegación */
 .navbar {
-  background-color:  rgb(15, 14, 14);
+  background-color: rgb(15, 14, 14);
   border-bottom: 1px solid peru;
   color: peru;
 }
 
- .navbar-toggler{
- background-color: /* rgb(23, 21, 21);  */transparent;
-  border: 0;
-  border-radius: none;
-} 
-.navbar-toggler:hover{
- border: 0;
-}
-.open-icon, .close-icon{
-  border: 0;
-  color:peru;
+.navbar-toggler {
   background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.open-icon, .close-icon {
+  border: 0;
+  color: peru;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+.d-none {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .navbar-toggler:focus, 
 .navbar-toggler:active,
 .navbar-toggler .open-icon:focus,
 .navbar-toggler .close-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 
- .navbar li a {
+.navbar li a {
   color: peru !important;
   padding-top: .2rem;
 } 
@@ -132,16 +137,14 @@ body.dark-mode .colaboraciones {
   text-decoration: underline;
 }
 
- .navbar-brand {
+.navbar-brand {
   color: peru !important;
   text-align: center;
 }
 
- .navbar-brand:hover {
+.navbar-brand:hover {
   color: peru;
 }  
-
-
 
 .redes {
   display: flex;
@@ -149,26 +152,32 @@ body.dark-mode .colaboraciones {
   align-items: center;
   margin: 0;
   gap: .3rem;
-
 }
 
-/* .redes a:hover {
-  transform: scale(1.1);
-}
- */
 .iconos {
   gap: .3rem;
 }
 
 .bi-translate {
   margin-left: .3rem;
-
 }
 
 .bi-moon-stars-fill:hover::before,
 .bi-translate:hover::before {
   transform: scale(1.1);
 }
+
+/* CSS para el menú colapsable */
+.collapse {
+  display: none;
+  transition: height 1s ease; /* Ajusta el tiempo y el tipo de transición según tus preferencias */
+}
+
+.collapse.show {
+  display: block;
+ 
+}
+
 
 
 .img-container {
@@ -177,7 +186,6 @@ body.dark-mode .colaboraciones {
   max-width: 100%;
 }
 
-
 /* header-tablet */
 @media(min-width: 768px){
  .nav-link{
@@ -185,7 +193,7 @@ body.dark-mode .colaboraciones {
  }
 }
 /* header-desktop */
-@media (min-width: 1200px) {
+ @media (min-width: 1200px) {
   .navbar-nav {
     width: 100%;
     display: flex;
@@ -193,6 +201,7 @@ body.dark-mode .colaboraciones {
     text-align: center;
     color: peru;
   }
+ 
   .menu {
     display: flex;
     justify-content: center;
@@ -231,7 +240,14 @@ body.dark-mode .colaboraciones {
   .bi-translate:hover {
     transform: scale(1.1);
   }
+  .navbar-toggler,.open-icon,.close-icon{
+    display: none;
+  }
 }
+ 
+
+ 
+
 
 /* index-mobile */
 

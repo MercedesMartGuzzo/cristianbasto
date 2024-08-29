@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(partituras1container); // Verifica si el elemento se obtiene correctamente
     if (partituras1container) {
         activarBordesPartituras(partituras1container);
-    }
+    } 
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -84,6 +84,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
- 
  
  

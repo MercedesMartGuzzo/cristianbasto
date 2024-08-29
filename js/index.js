@@ -1,64 +1,3 @@
-// Agregar un evento de clic a todos los enlaces del menú
-/* 
-document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
-  item.addEventListener("click", () => {
-
-    let navbarToggler = document.querySelector(".navbar-toggler");
-    if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
-      navbarToggler.click();
-    }
-  });
-}); */
-
-// Event listener solo para los enlaces dentro del div "redes"
-/* document.querySelectorAll('.redes a').forEach(item => {
-  item.addEventListener('click', event => {
-    event.preventDefault();
-    const url = item.getAttribute('href');
-    if (url) {
-      window.open(url, '_blank');
-    }
-  });
-}); */
-// Script para cerrar el menú al hacer clic en un enlace de navegación
-/* document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
-  item.addEventListener("click", () => {
-
-    let navbarToggler = document.querySelector(".navbar-toggler");
-    let openIcon = document.querySelector('.open-icon');
-    let closeIcon = document.querySelector('.close-icon');
-
-    if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
-      navbarToggler.click();
-      // Alternar los iconos
-      openIcon.classList.toggle('d-none');
-      closeIcon.classList.toggle('d-none');
-    }
-  });
-}); */
-
-// Script para abrir enlaces de redes sociales en una nueva pestaña
-/* document.querySelectorAll('.redes a').forEach(item => {
-  item.addEventListener('click', event => {
-    event.preventDefault();
-    const url = item.getAttribute('href');
-    if (url) {
-      window.open(url, '_blank');
-    }
-  });
-}); */
-
-// Script para alternar los iconos cuando se hace clic en el navbar-toggler
-/* document.addEventListener('DOMContentLoaded', function () {
-  let navbarToggler = document.querySelector('.navbar-toggler');
-  let openIcon = document.querySelector('.open-icon');
-  let closeIcon = document.querySelector('.close-icon');
-
-  navbarToggler.addEventListener('click', function () {
-    openIcon.classList.toggle('d-none');
-    closeIcon.classList.toggle('d-none');
-  });
-}); */
 
 document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
@@ -70,32 +9,33 @@ document.addEventListener('DOMContentLoaded', function () {
     navbarToggler.addEventListener('click', function () {
       if (navbarCollapse.classList.contains('show')) {
         // El menú está desplegado, entonces lo colapsamos
+        navbarCollapse.classList.remove('show');
         closeIcon.classList.add('d-none');
         openIcon.classList.remove('d-none');
       } else {
         // El menú está colapsado, entonces lo desplegamos
+        navbarCollapse.classList.add('show');
         openIcon.classList.add('d-none');
         closeIcon.classList.remove('d-none');
       }
     });
   }
 
-  navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-    // Cuando el menú se colapsa, mostrar el icono de hamburguesa
-    closeIcon.classList.add('d-none');
-    openIcon.classList.remove('d-none');
-  });
-
-  navbarCollapse.addEventListener('shown.bs.collapse', function () {
-    // Cuando el menú se despliega, mostrar el icono de cerrar (X)
-    openIcon.classList.add('d-none');
-    closeIcon.classList.remove('d-none');
-  });
-
   document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
     item.addEventListener("click", () => {
       if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
         navbarToggler.click();
+      }
+    });
+  });
+
+  // Script para abrir enlaces de redes sociales en una nueva pestaña
+  document.querySelectorAll('.redes a').forEach(item => {
+    item.addEventListener('click', event => {
+      event.preventDefault();
+      const url = item.getAttribute('href');
+      if (url) {
+        window.open(url, '_blank');
       }
     });
   });
@@ -255,7 +195,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 
 
 
