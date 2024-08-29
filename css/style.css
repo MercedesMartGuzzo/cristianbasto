@@ -27,15 +27,11 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  background-color:
-    /*  rgb(29, 26, 26); */
-    white;
+  background-color: white;
 }
 
 body {
-  background-color:
-    /*  rgb(29, 26, 26);  */
-    white;
+  background-color: white;
   transition: background-color .3s, color .3s;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -94,7 +90,6 @@ body.dark-mode .colaboraciones {
 
 /* BARRA DE NAVEGACION */
 
-/* CSS para la barra de navegación */
 .navbar {
   background-color: rgb(15, 14, 14);
   border-bottom: 1px solid peru;
@@ -167,10 +162,9 @@ body.dark-mode .colaboraciones {
   transform: scale(1.1);
 }
 
-/* CSS para el menú colapsable */
 .collapse {
   display: none;
-  transition: height 1s ease; /* Ajusta el tiempo y el tipo de transición según tus preferencias */
+  transition: height 1s ease; 
 }
 
 .collapse.show {
@@ -254,6 +248,7 @@ body.dark-mode .colaboraciones {
 .portada {
   position: relative;
   overflow: hidden;
+  object-fit: cover;
 }
 
 

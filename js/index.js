@@ -100,7 +100,7 @@ function smoothScroll(target) {
 
   // Ajustar el scroll para que deje suficiente espacio para el header sticky
   window.scrollTo({
-    top: targetPosition - navbarHeight - 20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
+    top: targetPosition - navbarHeight -20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
     /*   behavior:"smooth",  */
   });
 }
@@ -143,18 +143,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Adjust scroll to ensure the expanded paragraph is in view
       if (isOpen) {
-        // Use a small delay to ensure the CSS transition is complete
         setTimeout(() => {
-          // Get the h4 element inside the current paragraph
           const title = currentParagraph.querySelector('h4') || currentParagraph.querySelector('h3');
-          // Get the top position of the h4 relative to the viewport
           const rect = title.getBoundingClientRect();
-          // Scroll the h4 into view, aligning it to the top of the viewport
           window.scrollTo({
-            top: window.scrollY + rect.top - 66, // Adjust the offset if necessary
+            top: window.scrollY + rect.top - 66, 
             behavior: 'smooth'
           });
-        }, 1000); // Ensure this matches the CSS transition duration
+        }, 1000); 
       }
     });
   });
