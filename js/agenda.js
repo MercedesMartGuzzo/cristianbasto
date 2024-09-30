@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "SOCIAL TANGO",
             date: " 24, 25, 26-10-2024",
             time: "20:00 hs",
-            location: "Dance House (Vancouver – British Columbia)",
+            location: "Dance House (Vancouver-British Columbia)",
             mapUrl: "https://maps.app.goo.gl/kaGV8gkUmBJFtZvE7"
 
         },
@@ -15,63 +15,63 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "SOCIAL TANGO",
             date: "28-10-2024",
             time: "20:00 hs",
-            location: "The Vernon and District Performing Arts Centre (Vernon – British Columbia",
+            location: "The Vernon and District Performing Arts Centre (Vernon-British Columbia",
             mapUrl: "https://maps.app.goo.gl/BPwxvcnxVqkyzSya6"
         },
         {
             name: "SOCIAL TANGO",
             date: "30-10-2024",
             time: "20:00 hs",
-            location: "Trail & District Arts Council (Trail – British Columbia)",
+            location: "Trail & District Arts Council (Trail-British Columbia)",
             mapUrl: "https://maps.app.goo.gl/nj5unJm8kve2CeYg9"
         },
         {
             name: "SOCIAL TANGO",
             date: "03-11-2024",
             time: "20:00 hs",
-            location: "Arts Commons (Calgary – Alberta",
+            location: "Arts Commons (Calgary-Alberta",
             mapUrl: "https://maps.app.goo.gl/zam1u6tg52okvRGu7"
         },
         {
             name: "SOCIAL TANGO",
             date: "05-11-2024",
             time: "20hs",
-            location: "Centre culturel de l’Université de Sherbrooke (Sherbrooke – Québec",
+            location: "Centre culturel de l Université de Sherbrooke (Sherbrooke-Québec",
             mapUrl: "https://maps.app.goo.gl/CnPnE8h7MDYYLzCq8"
         },
         {
             name: "SOCIAL TANGO",
             date: "09-11-2024",
             time: "20:00 hs",
-            location: "Salle Pauline-Julien (Sainte-Geneviève – Québec)",
+            location: "Salle Pauline-Julien (Sainte-Geneviève-Québec)",
             mapUrl: "https://maps.app.goo.gl/dXNTAx9D1jQCdiRc9"
         },
         {
             name: "SOCIAL TANGO",
             date: "13-11-2024",
             time: "20:00 hs",
-            location: "Place des arts (Montréal – Québec)",
+            location: "Place des arts (Montréal-Québec)",
             mapUrl: "https://maps.app.goo.gl/hhQrhy5L6eKqn51B7"
         },
         {
             name: "SOCIAL TANGO",
             date: "15-11-2024",
             time: "20:00 hs",
-            location: "Flato Markham Theatre (Markham – Ontario)",
+            location: "Flato Markham Theatre (Markham-Ontario)",
             mapUrl: "https://maps.app.goo.gl/XmRzsCE8chab9yZ38"
         },
         {
             name: "SOCIAL TANGO",
             date: "16-11-2024",
             time: "20:00 hs",
-            location: "The Burlington performing Arts Centre (Burlington – Ontario)",
+            location: "The Burlington performing Arts Centre (Burlington-Ontario)",
             mapUrl: "https://maps.app.goo.gl/nrVLodVoMUG42ZfNA"
         },
         {
             name: "SOCIAL TANGO",
             date: "17-11-2024",
             time: "20:00 hs",
-            location: "First Ontario Performing Arts Centre (Ste. Catharines – Ontario)",
+            location: "First Ontario Performing Arts Centre (Ste. Catharines-Ontario)",
             mapUrl: "https://maps.app.goo.gl/Lp5yYSpfxoVg3cJQ7"
         },
         {
