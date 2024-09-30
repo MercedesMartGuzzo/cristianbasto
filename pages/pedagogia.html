@@ -25,9 +25,9 @@
                 <a class="navbar-brand pages" href="../index.html"> CRISTIAN BASTO </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!--     <span class="navbar-toggler-icon"></span> -->
-                <i class="bi bi-list open-icon"></i>
-                <i class="bi bi-x-lg close-icon d-none"></i>
+                    <!--     <span class="navbar-toggler-icon"></span> -->
+                    <i class="bi bi-list open-icon"></i>
+                    <i class="bi bi-x-lg close-icon d-none"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -85,7 +85,8 @@
         <section class="pedagogias container" id="pedagogiasContainer">
             <div>
                 <div class="img-container">
-                    <img class="pedagogias-foto" id="pedagogias-foto" src="../img/portada-partituras.jpg" alt="metodo de contrabajo en el tango">
+                    <img class="pedagogias-foto" id="pedagogias-foto" src="../img/portada-partituras.jpg"
+                        alt="metodo de contrabajo en el tango" loading="eager">
                     <h2 class="pedagogias-titulo">PEDAGOGIA</h2>
                     <h5 class="pedagogy">PEDAGOGY</h5>
                 </div>
@@ -128,7 +129,7 @@
                         Urban, Buenos Aires.
                     </p>
                 </div>
-                <div>
+                <div class="work-contra">
                     <h4 class="workshop">Workshop de Contrabajo</h4>
                     <p class="pedagogia-pa2">
                         La idea principal del Nivel I de este workshop es proporcionar herramientas efectivas para
@@ -155,7 +156,7 @@
                 </div>
                 <div class="partituras-piano">
                     <div class="piano-partes">
-                        <div class="piano-portada">
+                        <div class="piano-portada fade-in1">
                             <img src="../partituras/metodo-contrabajo_page-0001.jpg" alt="Portada" class="portada-img">
                             <div class="mostrar-icono">
                                 <i class="bi bi-plus-circle-fill"></i>
@@ -173,38 +174,67 @@
                         </a>
                     </div>
                 </div>
+                <div class="orquesta">
+                    <h4 class="workshop">Workshop de Tango: Orquestas Típicas de los Años 40 y 50
+                    </h4>
+                    <p class="pedagogia-pa2">
+                        Cristian Basto ha trabajado como docente dirigiendo ensambles y orquestas típicas en la Academia
+                        Nacional del Tango, en el Centro de Desarrollo del Tango y la Cultura Rioplatense (CDTCR)
+                        “Escuela de Tango Orlando Goñi”, y en “La Academia Tango Club”.
+
+                        Si queres aprender a tocar tango, este workshop está enfocado en las orquestas típicas de tango
+                        de las décadas de los años 40 y 50, consideradas la época dorada del tango. Está dirigido tanto
+                        a músicos profesionales y amateurs como a cualquier persona interesada, sin importar el
+                        instrumento que toque, en aprender las técnicas y recursos estilísticos que dieron forma al
+                        sonido inconfundible de estas emblemáticas orquestas.
+
+                        Durante el taller, se trabajará en los gestos y acciones necesarias para recrear el sonido
+                        característico de esas orquestas, logrando capturar su esencia rítmica, melódica y estilística.
+                    </p>
+                    <p class="pedagogia-eng">
+                        Cristian Basto has worked as a teacher directing typical ensembles and orchestras at the
+                        National Academy of Tango, at the Center for the Development of Tango and Rio de la Plata
+                        Culture (CDTCR) “Escuela de Tango Orlando Goñi”, and at “La Academia Tango Club”.
+
+                        If you want to learn to play tango, this workshop is focused on the typical tango orchestras of
+                        the 40s and 50s, considered the golden age of tango. It is aimed at both professional and
+                        amateur musicians as well as anyone interested, regardless of the instrument they play, in
+                        learning the techniques and stylistic resources that shaped the unmistakable sound of these
+                        emblematic orchestras.
+
+                        During the workshop, we will work on the gestures and actions necessary to recreate the
+                        characteristic sound of these orchestras, capturing their rhythmic, melodic and stylistic
+                        essence.
+                    </p>
+                </div>
 
                 <div class="pedagogia-grilla">
-                    <div class="workshop1">
+                    <div class="workshop1 fade-in">
                         <img src="../img/workshop1.jpg" alt="workshop grupal">
                     </div>
-                    <div class="workshop2">
+                    <div class="workshop2 fade-in">
                         <img src="../img/workshop2.jpg" alt="workshop de contrabajo">
                     </div>
-                    <div class="workshop3">
+                    <div class="workshop3 fade-in">
                         <img src="../img/workshop3.jpg" alt="workshop de tango">
                     </div>
-                    <div class="workshop4">
+                    <div class="workshop4 fade-in">
                         <img src="../img/workshop4.jpg" alt="orquesta tipica">
                     </div>
                 </div>
-
-
-
         </section>
     </main>
     <footer class="footer">
         <div>
             <a href="../index.html">
-                <h2 class="footer-titulo"> CRISTIAN BASTO</h2>
+                <h2 class="footer-titulo fade-in"> CRISTIAN BASTO</h2>
             </a>
-            <p class="footer-parrafo encabezado">Contrabajista/Compositor/Arreglador</p>
+            <p class="footer-parrafo encabezado fade-in">Contrabajista/Compositor/Arreglador</p>
         </div>
         <div>
-
             <ul class="footer-redes">
                 <li class="nav-item">
-                    <div class="redes-footer">
+                    <div class="redes-footer fade-in">
                         <a class="nav-link"
                             href="https://open.spotify.com/intl-es/artist/3E3wkeQEQLDeW8T29vBpRz?si=KnFjaQ85T3qEKlw1AbGz9Q"
                             target="_blank"><i class="bi bi-spotify"></i></a>
@@ -226,9 +256,9 @@
         </div>
     </footer>
 
-    <script src="../js/index.js"></script>
-    <script src="../js/partituras.js"></script> 
-   <script src="../js/pedagogia.js"></script>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/partituras.js"></script>
+    <script src="../js/pedagogia.js"></script>
 </body>
 
 </html>

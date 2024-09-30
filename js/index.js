@@ -100,7 +100,7 @@ function smoothScroll(target) {
 
   // Ajustar el scroll para que deje suficiente espacio para el header sticky
   window.scrollTo({
-    top: targetPosition - navbarHeight -20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
+    top: targetPosition - navbarHeight - 20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
     /*   behavior:"smooth",  */
   });
 }
@@ -147,10 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
           const title = currentParagraph.querySelector('h4') || currentParagraph.querySelector('h3');
           const rect = title.getBoundingClientRect();
           window.scrollTo({
-            top: window.scrollY + rect.top - 66, 
+            top: window.scrollY + rect.top - 66,
             behavior: 'smooth'
           });
-        }, 1000); 
+        }, 1000);
       }
     });
   });
@@ -193,5 +193,49 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* FADE-IN */
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Selecciona todos los elementos que deseas animar
+  const elements = document.querySelectorAll('.fade-in');
+
+  // Crear el observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.05// 10% del elemento visible
+  });
+
+  // Observar todos los elementos seleccionados
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Selecciona todos los elementos que deseas animar
+  const elements = document.querySelectorAll('.fade-in1');
+
+  // Crear el observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.20// 10% del elemento visible
+  });
+
+  // Observar todos los elementos seleccionados
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+});
 

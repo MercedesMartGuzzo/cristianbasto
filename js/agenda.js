@@ -4,41 +4,97 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lista de eventos a ser actualizada por el programador
     const eventos = [
         {
-            name: "SOCIAL TANGO PROYECT",
-            date: "17,18,19,20,21-07-2024",
+            name: "SOCIAL TANGO",
+            date: " 24, 25, 26-10-2024",
             time: "20:00 hs",
-            location: "Jacob’s Pillow Dance Festival - Ted Shawn Theatre Becket, Massachusetts (US)",
-            mapUrl:"https://maps.app.goo.gl/5Y561pZwMJhWVvt8A"
+            location: "Dance House (Vancouver – British Columbia)",
+            mapUrl: "https://maps.app.goo.gl/kaGV8gkUmBJFtZvE7"
+
         },
         {
-            name:"SOCIAL TANGO PROYECT",
-            date: "24,25-07-2024",
+            name: "SOCIAL TANGO",
+            date: "28-10-2024",
             time: "20:00 hs",
-            location: "Ottawa - Ontario (Canada) National Arts Centre (NAC) Babs Asper Theatre",
-            mapUrl: "https://maps.app.goo.gl/s5ZxcdWH3zYGvVop7"
+            location: "The Vernon and District Performing Arts Centre (Vernon – British Columbia",
+            mapUrl: "https://maps.app.goo.gl/BPwxvcnxVqkyzSya6"
         },
         {
-            name: "SOCIAL TANGO PROYECT",
-            date: "27-07-2024",
+            name: "SOCIAL TANGO",
+            date: "30-10-2024",
             time: "20:00 hs",
-            location: "Saint-Sauveur - Quebec (Canada)  Festival des arts de Saint-Sauveur",
-            mapUrl: "https://maps.app.goo.gl/sbjYGzK3G98htUPSA"
+            location: "Trail & District Arts Council (Trail – British Columbia)",
+            mapUrl: "https://maps.app.goo.gl/nj5unJm8kve2CeYg9"
         },
         {
-            name: "AMORES TANGO",
-            date: "03-08-2024",
-            time: "20: 30 hs",
-            location: "Café Berlín -CABA",
-            mapUrl: "https://maps.app.goo.gl/DUyM2Gc5isybBHBT8"
+            name: "SOCIAL TANGO",
+            date: "03-11-2024",
+            time: "20:00 hs",
+            location: "Arts Commons (Calgary – Alberta",
+            mapUrl: "https://maps.app.goo.gl/zam1u6tg52okvRGu7"
         },
         {
-            name: "MARIANA MAZU CUARTETO",
-            date: "22-08-2024",
-            time: "14:00 hs 18:00 hs",
-            location: "Aéroport Tarbes Lourdes-Francia",
-            mapUrl: "https://maps.app.goo.gl/UUU7ykSHmA71htpd8"
+            name: "SOCIAL TANGO",
+            date: "05-11-2024",
+            time: "20hs",
+            location: "Centre culturel de l’Université de Sherbrooke (Sherbrooke – Québec",
+            mapUrl: "https://maps.app.goo.gl/CnPnE8h7MDYYLzCq8"
+        },
+        {
+            name: "SOCIAL TANGO",
+            date: "09-11-2024",
+            time: "20:00 hs",
+            location: "Salle Pauline-Julien (Sainte-Geneviève – Québec)",
+            mapUrl: "https://maps.app.goo.gl/dXNTAx9D1jQCdiRc9"
+        },
+        {
+            name: "SOCIAL TANGO",
+            date: "13-11-2024",
+            time: "20:00 hs",
+            location: "Place des arts (Montréal – Québec)",
+            mapUrl: "https://maps.app.goo.gl/hhQrhy5L6eKqn51B7"
+        },
+        {
+            name: "SOCIAL TANGO",
+            date: "15-11-2024",
+            time: "20:00 hs",
+            location: "Flato Markham Theatre (Markham – Ontario)",
+            mapUrl: "https://maps.app.goo.gl/XmRzsCE8chab9yZ38"
+        },
+        {
+            name: "SOCIAL TANGO",
+            date: "16-11-2024",
+            time: "20:00 hs",
+            location: "The Burlington performing Arts Centre (Burlington – Ontario)",
+            mapUrl: "https://maps.app.goo.gl/nrVLodVoMUG42ZfNA"
+        },
+        {
+            name: "SOCIAL TANGO",
+            date: "17-11-2024",
+            time: "20:00 hs",
+            location: "First Ontario Performing Arts Centre (Ste. Catharines – Ontario)",
+            mapUrl: "https://maps.app.goo.gl/Lp5yYSpfxoVg3cJQ7"
+        },
+        {
+            name: "ORQUESTA ASSINTOMATIC",
+            date: "24-11-2024",
+            time: "20:00 hs",
+            location: "Santa Casa, Porto Alegre",
+            mapUrl: "https://maps.app.goo.gl/D58ERuNEZTJ623458"
+        },
+        {
+            name: "ORQUESTA ASSINTOMATIC",
+            date: "8-11-2024",
+            time: "20:00 hs",
+            location: " Café Berlín, CABA",
+            mapUrl: "https://maps.app.goo.gl/BfSAKwoNu81tTGYH8"
+        },
+        {
+            name: "PABLO ESTIGARRIBIA TANGOJAZZHOP",
+            date: "05-1-22024",
+            time: "20:00 hs",
+            location: "La Paz arriba ,CABA",
+            mapUrl: "https://maps.app.goo.gl/Xk6wEHzwXCCib6Tk9"
         }
-       
     ];
 
     // Función para agregar un evento a la lista
@@ -49,10 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class= "nombre">
             <span>${name} </span>
             </div>
-             <div>
+            <div>
             <span>${date}</span> 
-             </div>
-             <div>
+            </div>
+            <div>
             <span>${time} </span>  
             </div>
             <div>

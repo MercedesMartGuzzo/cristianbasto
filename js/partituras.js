@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(partituras1container); // Verifica si el elemento se obtiene correctamente
     if (partituras1container) {
         activarBordesPartituras(partituras1container);
-    } 
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,8 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 //ACTIVAR-DESACTIVAR DARK-MODE//
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const botonColorMode = document.querySelector("#color-mode");
     const body = document.body;
 
@@ -84,5 +85,46 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
- 
- 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todos los elementos que deseas animar
+    const elements = document.querySelectorAll('.fade-in');
+
+    // Crear el observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.05// 10% del elemento visible
+    });
+
+    // Observar todos los elementos seleccionados
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todos los elementos que deseas animar
+    const elements = document.querySelectorAll('.fade-in1');
+
+    // Crear el observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.20// 10% del elemento visible
+    });
+
+    // Observar todos los elementos seleccionados
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
