@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             name: "PABLO ESTIGARRIBIA TANGOJAZZHOP",
-            date: "05-1-22024",
+            date: "05-12-22024",
             time: "20:00 hs",
             location: "La Paz arriba ,CABA",
             mapUrl: "https://maps.app.goo.gl/Xk6wEHzwXCCib6Tk9"

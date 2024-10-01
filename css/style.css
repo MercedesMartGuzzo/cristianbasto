@@ -929,7 +929,7 @@ body.dark-mode .footer-titulo:hover {
 
 .footer-parrafo {
   color: peru;
-
+  text-wrap: balance;
 }
 
 .encabezado {
@@ -939,9 +939,10 @@ body.dark-mode .footer-titulo:hover {
 
 
 .copi {
-  font-size: .8rem;
+  font-size: .6rem;
   margin-bottom: 3rem;
   margin-top: .5rem;
+  text-wrap: balance;
 }
 
 /* INDEX-TABLET */
@@ -1437,7 +1438,7 @@ body.dark-mode .footer-titulo:hover {
 
   .contacto-redes {
     display: flex;
-    margin-left: 0;
+    padding-left: .5rem;
     font-size: 21px;
     margin-top: 0;
   }
