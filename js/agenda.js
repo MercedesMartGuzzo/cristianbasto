@@ -4,8 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lista de eventos a ser actualizada por el programador
     const eventos = [
         {
+            name: "BASTO ENSAMBLE-QUASIMODO TRIO",
+            date: "19-10-2024",
+            time: "23:00 hs",
+            location: "Cafe Vinilo, CABA",
+            mapUrl: "https://maps.app.goo.gl/WSzS97eh13o31bbw5"
+
+        },
+        {
             name: "SOCIAL TANGO",
-            date: " 24, 25, 26-10-2024",
+            date: "24, 25, 26-10-2024",
             time: "20:00 hs",
             location: "Dance House (Vancouver-British Columbia)",
             mapUrl: "https://maps.app.goo.gl/kaGV8gkUmBJFtZvE7"

@@ -1437,8 +1437,7 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .contacto-redes {
-    display: flex;
-    padding-left: .5rem;
+    padding-left: 0;
     font-size: 21px;
     margin-top: 0;
   }
@@ -1452,6 +1451,7 @@ body.dark-mode .footer-titulo:hover {
     margin-top: .5rem;
     gap: .3rem;
     border-bottom: 1px solid peru;
+    padding-left: .4rem;
   }
 
   .contacto-titulo {
