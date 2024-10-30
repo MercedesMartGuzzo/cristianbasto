@@ -1094,10 +1094,25 @@ body.dark-mode .footer-titulo:hover {
     margin-top: 4rem;
     padding-top: 1rem;
     margin-bottom: 4rem;
-    display: flex;
+    display: grid;
     gap: 1.5rem;
     width: 90vw;
     position: relative;
+  }
+
+  .bio-foto {
+    /*  display: grid;
+     grid-column: span 2;
+     grid-row: span 2;
+     align-content: start;
+     justify-content: start;
+     justify-self: start;
+     justify-items: start; */
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    object-position: center;
+    filter: opacity(0.9)
   }
 
   .bio-secciones {
@@ -1188,14 +1203,19 @@ body.dark-mode .footer-titulo:hover {
     padding-bottom: .7rem;
   }
 
-  .musicaFoto {
-    display: grid;
+  .musica-foto {
+    /*  display: grid;
     grid-column: span 2;
     grid-row: span 2;
     align-content: start;
     justify-content: start;
     justify-self: start;
-    justify-items: start;
+    justify-items: start; */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    filter: opacity(0.9)
   }
 
   .musica-copete {
@@ -1327,7 +1347,7 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-
+  /* 
   .encabezado-grilla {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1335,17 +1355,20 @@ body.dark-mode .footer-titulo:hover {
     gap: 1rem;
     justify-content: space-between;
     /*  border-bottom: 1px solid peru;  */
-    padding-bottom: .7rem;
-  }
+  /*  padding-bottom: .7rem; */
+  /*   }  */
 
-  .videosFoto {
-    display: grid;
-    grid-column: span 2;
-    grid-row: span 2;
-    align-content: start;
-    justify-content: start;
-    justify-self: start;
-    justify-items: start;
+  .videos-fotos {
+    /*   display: grid;
+    grid-column: span 4; */
+    /* grid-row: span 2; */
+    /*  align-content: center;
+    justify-content:center;
+    justify-self: center; */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .videos-copete1 {
@@ -1588,7 +1611,8 @@ body.dark-mode .footer-titulo:hover {
   font-size: 1rem;
 }
 
-.sheet-p, .donations {
+.sheet-p,
+.donations {
   margin-top: .5rem;
   padding-top: .2rem;
   color: rgb(66, 66, 66);
@@ -1649,7 +1673,10 @@ body.dark-mode .footer-titulo:hover {
 
 }
 
-.piano-descargas {
+.piano-descargas,
+.btn-videos,
+.btn-musica {
+  position: relative;
   background-color: white;
   padding: 10px;
   color: peru;
@@ -1658,14 +1685,112 @@ body.dark-mode .footer-titulo:hover {
   border-radius: 5px;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  transition: background-color .2s, color .2s ,trasforrm .2s;
+  transition: background-color .2s, color .2s, trasforrm .2s;
 }
 
-.piano-descargas:hover {
+.piano-descargas:hover,
+.btn-videos:hover,
+.btn-musica:hover {
   background-color: peru;
   color: white;
   transform: scale(1.1);
 }
+
+.btn-videos::before {
+  position: absolute;
+  content: "All videos";
+  font-size: .7rem;
+  top: 70%;
+  left: 50%;
+  padding: 0 .2rem;
+  margin-top: .05rem;
+  color: peru;
+  border: 1px solid peru;
+  background-color: wheat;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: .3s;
+}
+
+.piano-descargas::before {
+  position: absolute;
+  content: "Douwnload";
+  font-size: .7rem;
+  top: 70%;
+  left: 30%;
+  padding: 0 .1rem;
+  color: peru;
+  border: 1px solid peru;
+  background-color: wheat;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: .3s;
+
+}
+
+.btn-musica::before {
+  position: absolute;
+  content: "See more";
+  font-size: .7rem;
+  top: 70%;
+  left: 30%;
+  padding: 0 .1rem;
+  color: peru;
+  border: 1px solid peru;
+  background-color: wheat;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: .3s;
+
+}
+
+.donaciones-btn {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  color: peru;
+  border: 1px solid peru;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  transition: background-color .2s, color .2s, trasforrm .2s;
+}
+
+.donaciones-btn:hover {
+  background-color: peru;
+  color: white;
+  transform: scale(1.1);
+}
+
+.donaciones-btn::before {
+  position: absolute;
+  content: "Donations";
+  top: 100%;
+  color: peru;
+  border: 1px solid peru;
+  background-color: wheat;
+  padding: .1rem .2rem;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: .3s;
+  margin-top: .2rem;
+}
+
+.donaciones-btn:hover::before,
+.piano-descargas:hover::before,
+.btn-videos:hover::before,
+.btn-musica:hover::before {
+  transform: scale(1);
+
+}
+
+
+
 
 body.dark-mode .piano-descargas {
   background-color: black;
@@ -1690,7 +1815,8 @@ body.dark-mode .piano-descargas:hover {
 .suite-titulo,
 .quinteto-titulo,
 .arreglos-titulo,
-.surera-titulo, .donaciones-titulo {
+.surera-titulo,
+.donaciones-titulo {
   color: peru;
   margin-top: 2.5rem;
   justify-content: start;
@@ -1701,24 +1827,29 @@ body.dark-mode .piano-descargas:hover {
   padding-top: 1rem;
   text-wrap: balance;
 }
-.donaciones{
+
+.donaciones {
   padding: 1rem;
   text-align: start;
   width: 90vw;
 }
-.donaciones-icon{
-   display:flex;
-  gap: .5rem; 
+
+.donaciones-icon {
+  display: flex;
+  gap: .5rem;
 }
-.img-icon{
+
+.img-icon {
   font-size: 24px;
 }
-.donaciones-icon h3{
+
+.donaciones-icon h3 {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
- 
+
 }
+
 /* PARTIRURAS DESKTOP */
 @media(min-width: 1200px) {
 
@@ -1745,7 +1876,8 @@ body.dark-mode .piano-descargas:hover {
     border-top: none;
   }
 
-  .partituras-pa1, .donaciones-parrafo {
+  .partituras-pa1,
+  .donaciones-parrafo {
     margin-top: 1.1rem;
     color: black;
     display: flex;
@@ -1792,7 +1924,8 @@ body.dark-mode .piano-descargas:hover {
 
   .suite-titulo,
   .quinteto-titulo,
-  .arreglos-titulo,.donaciones-titulo {
+  .arreglos-titulo,
+  .donaciones-titulo {
     color: peru;
     margin-top: 2.5rem;
     justify-content: start;
@@ -1901,7 +2034,7 @@ body.dark-mode .piano-descargas:hover {
 
 }
 
-.workshop{
+.workshop {
   color: peru;
   font-size: 1.3rem;
   border-top: 1px solid peru;
@@ -1933,11 +2066,14 @@ body.dark-mode .piano-descargas:hover {
 .workshop3 {
   margin-bottom: 1rem;
 }
- .work-contra{
+
+.work-contra {
   margin-top: 1.5rem;
- }.orquesta{
+}
+
+.orquesta {
   margin-top: 1rem;
-} 
+}
 
 /* PEDAGOGIA DESKTOP */
 @media(min-width :1200px) {
@@ -2106,7 +2242,7 @@ footer h2:hover {
 }
 
 .footer-parrafo {
-  color: peru; 
+  color: peru;
   font-size: 1.2rem;
   text-align: center;
   padding-top: 1rem;
