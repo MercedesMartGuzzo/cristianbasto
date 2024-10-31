@@ -22,8 +22,9 @@ img {
   max-width: 100%;
 }
 
-.active {
-  text-decoration: underline;
+.navbar li a .active::after {
+  transform: scale(1);
+  width: 100%;
 }
 
 .container {
@@ -39,6 +40,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -55,8 +57,8 @@ body.dark-mode main {
   background-color: black;
 }
 
-header,
-footer {
+header
+ {
   background-color: white;
   transition: background-color .3s, color .3s;
 
@@ -95,8 +97,8 @@ body.dark-mode .colaboraciones {
 
 .navbar {
   background-color: rgb(15, 14, 14);
-  border-bottom: 1px solid peru;
-  color: peru;
+  /*  border-bottom: 1px solid whitesmoke; */
+  color: whitesmoke;
 
 }
 
@@ -109,7 +111,7 @@ body.dark-mode .colaboraciones {
 .open-icon,
 .close-icon {
   border: 0;
-  color: peru;
+  color: whitesmoke;
   background-color: transparent;
   transition: opacity 0.3s ease;
 }
@@ -129,21 +131,42 @@ body.dark-mode .colaboraciones {
 }
 
 .navbar li a {
-  color: peru !important;
+  position: relative;
+  color: whitesmoke !important;
   padding-top: .2rem;
+  display: inline-block;
+  transition: .2s;
 }
 
-.navbar li a:hover {
+/* .navbar li a:hover {
   text-decoration: underline;
+} */
+.navbar li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 1px;
+  background-color: wheat;
+  transform: scaleX(0);
+  transition: .2s;
+  transform-origin: left;
+
+}
+
+.navbar li a:hover::after {
+  transform: scaleX(1);
+
 }
 
 .navbar-brand {
-  color: peru !important;
+  color: whitesmoke !important;
   text-align: center;
 }
 
 .navbar-brand:hover {
-  color: peru;
+  color: whitesmoke;
 }
 
 .redes {
@@ -152,6 +175,14 @@ body.dark-mode .colaboraciones {
   align-items: center;
   margin: 0;
   gap: .3rem;
+}
+
+.redes a::after {
+  display: none;
+}
+
+.bi-moon-stars-fill::after {
+  display: none;
 }
 
 .iconos {
@@ -220,7 +251,20 @@ body.dark-mode .colaboraciones {
     display: flex;
     justify-content: center;
     text-align: center;
-    color: peru;
+    color: whitesmoke;
+  }
+
+  .navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+    transform: scaleX(0);
+    transition: .2s;
+    transform-origin: left;
   }
 
   .menu {
@@ -246,9 +290,6 @@ body.dark-mode .colaboraciones {
     gap: 0.1rem;
   }
 
-  .redes a:hover {
-    transform: scale(1.1);
-  }
 
   .iconos {
     gap: 0.9rem;
@@ -258,9 +299,7 @@ body.dark-mode .colaboraciones {
     margin-right: .3rem;
   }
 
-  .bi-translate:hover {
-    transform: scale(1.1);
-  }
+
 
   .navbar-toggler,
   .open-icon,
@@ -311,7 +350,7 @@ h1 {
 
   to {
     opacity: 1;
-    color: peru;
+    color: whitesmoke;
     letter-spacing: 1px;
   }
 }
@@ -321,12 +360,14 @@ h1 {
 /* SECCION BIO */
 
 .bio {
-  margin-top: 1rem;
-  width: 90vw;
+  margin-top: 0;
+  width: 100%;
   position: relative;
   overflow: hidden;
   padding-top: 1rem;
-  margin-bottom: 2rem;
+  /*   margin-bottom: 2rem; */
+  background-color: gray;
+
 }
 
 .bio::before,
@@ -368,19 +409,21 @@ h1 {
 
 
 .bio-titulo {
-  color: wheat;
-  position: absolute;
+  color: whitesmoke;
+  display: flex;
+  justify-content: start;
+  /*  position: absolute; */
   font-weight: 300;
   font-size:
     /* 2.5rem; */
     10vw;
-  top: 2%;
-  left: 4%;
+  margin-left: 5vw;
+  background-color: grey;
 }
 
 .bio-parrafo1 {
   margin-top: 1rem;
-  color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,11 +433,11 @@ h1 {
 
 
 .bio-parrafo1 h3 {
-  color: peru;
+  color: white
 }
 
 .about {
-  color: peru;
+  color: white;
 }
 
 .p-about {
@@ -414,9 +457,9 @@ h1 {
   justify-content: center;
   align-items: start;
   text-align: start;
-  border-top: 1px solid peru;
+  /*   border-top: 1px solid white; */
   padding-top: .8rem;
-  color: grey;
+  color: whitesmoke;
 
 }
 
@@ -433,10 +476,12 @@ h1 {
 }
 
 .bio-parrafo h4 {
-  color: peru;
+  color: white;
   display: flex;
   justify-content: start;
   align-items: start;
+  border-top: 1px solid white;
+  padding-top: .5rem;
 }
 
 .toggle-icon {
@@ -444,15 +489,22 @@ h1 {
   margin-left: 10px;
 }
 
+.bio-secciones {
+  background-color: grey;
+  width: 90vw;
+}
 
 /* SECCION MUSICA */
 
 .musica {
-  position: relative;
-  margin-top: 1rem;
-  width: 90vw;
+  /*   position: relative; */
+
+  margin-top: 0;
+  width:100%;
   overflow: hidden;
   padding-top: 1rem;
+  background-color: peru;
+  ;
 }
 
 .musica::before,
@@ -489,29 +541,42 @@ h1 {
 
 .musica-titulo {
   color: whitesmoke;
-  position: absolute;
+  display: flex;
+  justify-content: start;
+  margin-left: 4vw;
+  margin-bottom: 1rem;
   font-weight: 300;
   font-size:
     /* 2.3rem */
     9.5vw;
-  top: 03%;
-  left: 4%;
+  background-color: peru;
 }
 
 .titulo-eng {
-  color: rgb(8, 4, 0);
-  position: absolute;
+  color: white;
+  /*  position: absolute; */
+  display: flex;
+  justify-content: start;
+  margin-left: 4vw;
   font-weight: 300;
   font-size:
     /* 1.6rem; */
     7.5vw;
   top: 19%;
   left: 4%;
+  margin-bottom: .5rem;
 }
 
 .musica-copete {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.btn-musica,.btn-videos {
+  background-color: transparent;
+  color: white;
+  margin-left: 2.4rem;
+
 }
 
 .copete-eng {
@@ -523,7 +588,7 @@ h1 {
 }
 
 .musica-copete h3 {
-  color: peru;
+  color: white;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -531,11 +596,19 @@ h1 {
 
 .discos,
 .colaboracione {
-  color: peru;
+  color: white;
   font-size: 1.3rem;
   margin-top: 1rem;
-  border-top: 1px solid peru;
+  /*   border-top: 1px solid white; */
   padding-top: .5rem;
+  margin-left: 4vw;
+  margin-bottom: 1rem;
+}
+
+.discos {
+  margin-top: 0;
+  padding-top: 0;
+  color: rgb(8, 4, 0);
 }
 
 .colaboraciones {
@@ -544,16 +617,16 @@ h1 {
 
 .suite,
 .piano {
-  margin-top: 1rem;
+  /*  margin-top: 1rem; */
   display: flex;
   flex-direction: column;
   gap: .3rem;
   justify-content: center;
   width: 85vw;
-  border: 1px solid peru;
+  border: 1px solid white;
   border-radius: 12px;
   padding: .5rem;
-
+  /* background-color: rgb(66, 66, 66); */
 }
 
 .suite img,
@@ -569,6 +642,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
+  background-color: peru;
 }
 
 .boton-colab {
@@ -577,18 +651,20 @@ h1 {
   margin-top: 1rem;
   padding-left: .5rem;
   font-size: 20px;
-  color: peru;
+  color: white;
   cursor: pointer;
 }
 
 /* SECCION VIDEOS */
 
 .videos {
-  margin-top: 1rem;
-  width: 90vw;
-  position: relative;
+  /*   margin-top: 1rem; */
+  width: 100%;
+  /* position: relative; */
   overflow: hidden;
-  padding-top: 1rem;
+  /*  padding-top: 1rem; */
+  background-color: #556B2F;
+
 }
 
 .videos::before,
@@ -622,12 +698,16 @@ h1 {
 }
 
 .videos-titulo {
-  color: rgb(231, 138, 45);
-  position: absolute;
+  color: whitesmoke;
+  /*  rgb(231, 138, 45) /;
+  display: flex;
+  /* absolute; */
+  justify-content: start;
+  margin-left: 6vw;
   font-weight: 300;
   font-size: 2.3rem;
-  top: 3%;
-  left: 4%;
+  margin-top: 1rem;
+  background-color: #556B2F;
 }
 
 
@@ -649,7 +729,8 @@ h1 {
 
 .videos-grilla {
   margin-top: 1rem;
-  border: 1px solid peru;
+  /*  border: 1px solid  peru  */
+  ;
   padding: 1rem;
   padding-bottom: 0;
   border-radius: 10px;
@@ -657,7 +738,14 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90vw;
+  background-color: #556B2F;
 
+}
+
+.videos-grilla p {
+  color: whitesmoke;
+  padding-left: .2rem;
 }
 
 iframe {
@@ -670,35 +758,52 @@ iframe {
 .video4 {
   margin-bottom: .5rem;
   height: 200px;
-  border: 2px solid peru;
+  border:
+    /* 2px solid peru; */
+    none;
   width: 100%;
 }
 
 .video5 {
   height: 200px;
-  border: 2px solid peru;
+  border:
+    /*  2px solid peru */
+    none;
   width: 100%;
 }
 
-.videos-grilla p {
-  color: peru;
-  padding-left: .2rem;
-}
+
+
 
 
 /* SECCION AGENDA */
-.agenda-encabezado {
+.agenda{
+  width:100%;
+  background-color: #964b00;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+ 
+}
+.agenda-titulo{
+  margin-left: 6vw;
+  font-weight: 300;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  justify-content: start;
+  color :whitesmoke;
+  background-color: #964b00;
+ 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content:start;
+  align-items: start;
   text-align: center;
-  margin-top: 3rem;
   padding-top: 1rem;
-  color: peru;
-  border-top: 1px solid peru;
-}
+  margin-bottom: 1rem;
 
+ 
+}
 .agenda-lista {
   display: flex;
   flex-direction: column;
@@ -707,9 +812,9 @@ iframe {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: peru;
+  width: 90vw;
 }
 
 #eventos {
@@ -785,16 +890,15 @@ body.dark-mode .view-more-btn:hover {
 /* SECCION CONTACTO*/
 
 .contacto {
-  margin-top: 1rem;
-  width: 90vw;
-  position: relative;
+  width: 100%;
+  /* position: relative; */
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: .5rem;
-  margin-bottom: 3rem;
-
+ margin-top: 0;
+  background-color:#7e3333;;
 }
-
+/* 
 .contacto::before,
 .contacto::after {
   content: "";
@@ -826,15 +930,16 @@ body.dark-mode .view-more-btn:hover {
 
 .border-visible-left::after {
   height: 100%;
-}
+} */
 
 .contacto-redes {
-  color: peru;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   padding-left: 0;
+  background-color:#7e3333;
 }
 
 .contacto-redes a:hover {
@@ -853,38 +958,44 @@ body.dark-mode .contacto-redes a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: .5rem;
+  margin-top: 2rem; 
+  margin-bottom: 1rem;
   font-size: 1.3rem;
   text-align: center;
+  background-color: #7e3333;
+}
+.grilla-contacto{
+  background-color: #7e3333;
 }
 
 
-
 .contacto-parrafo {
-  color: peru;
+  color:whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: .5rem;
   gap: .3rem;
-
+  border: 0;
+background-color:#7e3333;
 }
 
 .contacto-titulo {
-  color: wheat;
-  position: absolute;
+  color:whitesmoke;
+ display: flex;
   font-weight: 300;
   font-size:
     /* 2.2rem */
-    9.4vw;
-  top: 2.85%;
-  left: 4.1%;
+   2.3rem;
+ margin-left: 6vw;
   letter-spacing: 1px;
+  background-color:#7e3333;
+  margin-bottom: 2rem;
 }
 
 .contact {
-  color: peru;
+  color: whitesmoke;
   position: absolute;
   font-weight: 300;
   font-size: 7.3vw;
@@ -905,22 +1016,19 @@ body.dark-mode .contacto-redes a:hover {
   align-items: center;
   background-color: white;
   font-weight: 200;
-  border-top: 1px solid peru;
+/*   border-top: 1px solid peru; */
   /*   margin-bottom: 2rem; */
+  color: #7e3333;
 }
 
 footer h2 {
   display: flex;
-  color: peru;
+  color: #7e3333;
   margin-top: 1rem;
   justify-content: center;
   margin-bottom: 1rem;
   font-weight: 200;
   margin-top: 1.5rem;
-}
-
-footer h2:hover {
-  color: rgb(110, 82, 54);
 }
 
 body.dark-mode .footer-titulo:hover {
@@ -929,7 +1037,7 @@ body.dark-mode .footer-titulo:hover {
 }
 
 .footer-parrafo {
-  color: peru;
+  color: #7e3333;
   text-wrap: balance;
 }
 
@@ -940,9 +1048,10 @@ body.dark-mode .footer-titulo:hover {
 
 
 .copi {
-  font-size: .4rem;
-  margin-bottom: 3rem;
+  font-size: .8rem;
+  margin-bottom: 2rem;
   margin-top: .5rem;
+  color: #7e3333;
 }
 
 /* INDEX-TABLET */
@@ -1000,7 +1109,7 @@ body.dark-mode .footer-titulo:hover {
   /* VIDEOS */
   .videos-titulo {
     color: rgb(231, 138, 45);
-    position: absolute;
+    /*   position: absolute; */
     font-weight: 300;
     font-size: 9vw;
     top: 3%;
@@ -1091,13 +1200,14 @@ body.dark-mode .footer-titulo:hover {
   /* SECCION BIO */
 
   .bio {
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
     padding-top: 1rem;
-    margin-bottom: 4rem;
-    display: grid;
+
+
     gap: 1.5rem;
-    width: 90vw;
-    position: relative;
+    width: 100%;
+    /*   position: relative; */
   }
 
   .bio-foto {
@@ -1116,7 +1226,7 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .bio-secciones {
-    font-display: flex;
+    display: flex;
     flex-direction: column;
     width: 100%;
 
@@ -1129,6 +1239,8 @@ body.dark-mode .footer-titulo:hover {
   .bio-parrafo {
     margin-top: .1rem;
     padding-top: .3rem;
+    color: black;
+
   }
 
 
@@ -1156,7 +1268,8 @@ body.dark-mode .footer-titulo:hover {
 
   .bio-parrafo1 {
     font-size: 1rem;
-    margin-top: 1rem;
+    color: whitesmoke;
+    /*  margin-top: 1rem; */
   }
 
   .p-about {
@@ -1170,27 +1283,26 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .bio-titulo {
-    color: wheat;
-    position: absolute;
+    color: whitesmoke;
+    display: flex;
+    justify-content: start;
     font-weight: 300;
     font-size: 5rem;
-    top: -2%;
-    left: 3%;
     letter-spacing: 1px;
-
+    margin-left: 2vw;
+    background-color: grey;
   }
 
 
   /* SECCION MUSICA */
 
   .musica {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    width: 90vw;
+    /*   position: relative; */
+    width: 100%;
     padding-top: 1rem;
-    display: grid;
+    /*  display: grid; */
 
+    overflow: hidden;
 
   }
 
@@ -1242,12 +1354,15 @@ body.dark-mode .footer-titulo:hover {
 
   .musica-titulo {
     color: whitesmoke;
-    position: absolute;
+    /*  position: absolute; */
+    display: flex;
     font-weight: 300;
-    font-size: 4.5rem;
-    top: 0%;
-    left: 3%;
+    font-size: 5rem;
+    margin-left: 2vw;
     z-index: 1;
+    background-color: transparent;
+    letter-spacing: 1px;
+
   }
 
   .titulo-eng {
@@ -1262,20 +1377,18 @@ body.dark-mode .footer-titulo:hover {
 
   .spotify {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:  1fr 1fr;
     gap: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin: 1rem;
     margin-bottom: 0;
     /* margin-left: 0; */
-    justify-content: center;
+    justify-self: center;
     align-content: center;
     border-radius: 10px;
     /*    width: 80vw;   */
-    background-image: url("../img/fondo-spotify1.jpg");
-    background-position: left;
-    background-size: cover;
+    background-color: transparent;
   }
 
   .suite,
@@ -1303,33 +1416,40 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  .colab {
-    margin-left: 1.8rem
-      /* 15vw */
-    ;
+  .btn-musica {
+    display: row;
+    justify-self: start;
+    padding-left: 4rem;
+    /* 15vw */
+
 
   }
 
   /* SECCION VIDEOS */
 
   .videos {
-    margin-top: 1rem;
-    width: 90vw;
-    position: relative;
+    display: grid;
+    width: 100%;
+    /*  position: relative; */
     overflow: hidden;
-    padding-top: 1rem;
+    padding-top: 0;
     gap: 1rem;
+    margin-top: 0;
+    background-color: #556B2F;
+    padding-bottom: .5rem;
   }
 
   .videos-titulo {
-    color: rgb(231, 138, 45);
-    position: absolute;
+    color:
+      /*  rgb(231, 138, 45) */
+      whitesmoke;
     font-weight: 300;
-    font-size: 4.5rem;
-    top: 0%;
-    left: 3%;
-    letter-spacing: 0px;
-    z-index: 1;
+    display: flex;
+    flex-direction: start;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-left: 2vw;
   }
 
   .videos-copete h3 {
@@ -1392,8 +1512,12 @@ body.dark-mode .footer-titulo:hover {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
     gap: 1.4rem;
+    width: 100%;
+    background-color: #556B2F;
+    /* border: 1px solid whitesmoke; */
+    border: none;
   }
 
   .video1,
@@ -1404,7 +1528,11 @@ body.dark-mode .footer-titulo:hover {
     display: grid;
     justify-content: center;
     width: 100%;
-    border: 2px solid peru;
+    border:
+      /* 2px solid peru */
+      none;
+    height: 200px;
+
   }
 
   iframe {
@@ -1412,18 +1540,34 @@ body.dark-mode .footer-titulo:hover {
     border-radius: 10px;
   }
 
+  .videos-grilla p {
+    color: whitesmoke;
+  }
+
   .video5 {
     margin-bottom: .5rem;
   }
 
   /* SECCION  AGENDA */
+  .agenda-titulo{
+    font-weight: 300;
+    display: flex;
+    flex-direction: start;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-left: 2vw;
+    margin-bottom: 2rem;
+  }
   #eventos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-
   }
-
+.agenda{
+  padding-bottom: 2rem;
+  
+}
   .agenda-lista {
     background-color: peru;
   }
@@ -1435,28 +1579,35 @@ body.dark-mode .footer-titulo:hover {
   /* SECCION CONTACTO */
 
   .contacto {
-    margin-top: 1rem;
-    width: 90vw;
-    position: relative;
-    overflow: hidden;
+    
+    width: 100%;
+   height: 55vh;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    margin-bottom: 3rem;
-    display: flex;
+    display: grid;
   }
-
+.grilla-contacto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-self: center;
+  align-items: end;
+  background-color: #7e3333;
+}
   .foto {
     max-width: 50%;
+    position:unset;
   }
 
   .contacto-desktop {
-    justify-content: center;
+    justify-content: start;
     text-align: center;
-    align-items: start;
+    align-items: en;
     display: flex;
     flex-direction: column;
     margin-left: 9rem;
+  background-color: #7e3333;
   }
 
   .contacto-redes {
@@ -1466,23 +1617,26 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .contacto-parrafo {
-    color: peru;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: .5rem;
     gap: .3rem;
-    border-bottom: 1px solid peru;
+    /* border-bottom: 1px solid whitesmoke; */
     padding-left: .4rem;
   }
 
   .contacto-titulo {
-    font-size: 4.5rem;
-    top: 0%;
-    left: 3%;
-    color: wheat;
     font-weight: 300;
+    display: flex;
+    flex-direction: start;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-left: 2vw;
+    margin-bottom: 2rem;
   }
 
   .contact {
@@ -1497,9 +1651,25 @@ body.dark-mode .footer-titulo:hover {
 }
 
 /* BARRA DE NAVEGACION PARTITURAS, PEDAGOGIA Y COLABORACIONES */
-.nav-pages {
-  background-color: rgba(245, 222, 179, 0.16);
+/* .nav-pages {
+ 
+  } */
+
+.close-icon {
+  border: 0;
+  color: peru;
+  background-color: transparent;
 }
+
+.navbar-toggler {
+  background-color:
+    /* rgba(245, 222, 179, 0.16); */
+    transparent;
+  border: 0;
+}
+
+;
+
 
 .close-icon {
   border: 0;
@@ -1673,11 +1843,9 @@ body.dark-mode .footer-titulo:hover {
 
 }
 
-.piano-descargas,
-.btn-videos,
-.btn-musica {
+.piano-descargas {
   position: relative;
-  background-color: white;
+  background-color: transparent;
   padding: 10px;
   color: peru;
   border: 1px solid peru;
@@ -1686,32 +1854,47 @@ body.dark-mode .footer-titulo:hover {
   margin-top: .5rem;
   margin-bottom: .5rem;
   transition: background-color .2s, color .2s, trasforrm .2s;
+  margin-left: 1rem;
 }
 
-.piano-descargas:hover,
-.btn-videos:hover,
-.btn-musica:hover {
+.piano-descargas:hover {
   background-color: peru;
   color: white;
   transform: scale(1.1);
 }
 
-.btn-videos::before {
-  position: absolute;
-  content: "All videos";
-  font-size: .7rem;
-  top: 70%;
-  left: 50%;
-  padding: 0 .2rem;
-  margin-top: .05rem;
-  color: peru;
-  border: 1px solid peru;
-  background-color: wheat;
+.btn-musica,
+.btn-videos{
+  border: 1px solid white;
+  color: white;
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
   border-radius: 5px;
-  transform: scale(0);
-  transform-origin: top;
-  transition: .3s;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left:9rem;
+  transition: background-color .2s, color .2s, trasforrm .2s;
+
 }
+.btn-videos{
+  margin-left:3.2rem;
+}
+.btn-musica:hover {
+  color: peru;
+  background-color: whitesmoke;
+  transform: scale(1.1);
+  border: 1px solid peru;
+}
+
+.btn-videos:hover {
+  color: #556B2F;
+  background-color: white;
+  transform: scale(1.1);
+  border: 1px solid #556B2F;
+}
+
 
 .piano-descargas::before {
   position: absolute;
@@ -1737,9 +1920,25 @@ body.dark-mode .footer-titulo:hover {
   top: 70%;
   left: 30%;
   padding: 0 .1rem;
-  color: peru;
-  border: 1px solid peru;
-  background-color: wheat;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: peru;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: .3s;
+}
+
+.btn-videos::before {
+  position: absolute;
+  content: "See more";
+  font-size: .7rem;
+  top: 70%;
+  right: 0;
+  padding: 0 .1rem;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: #556B2F;
   border-radius: 5px;
   transform: scale(0);
   transform-origin: top;
@@ -2216,14 +2415,14 @@ body.dark-mode .piano-descargas:hover {
   align-items: center;
   background-color: whitesmoke;
   font-weight: 200;
-  border-top: 1px solid peru;
+
   /*  margin-bottom: 2rem; */
 
-}
+ }
 
 footer h2 {
   display: flex;
-  color: peru;
+  color: #7e3333;
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
@@ -2242,7 +2441,7 @@ footer h2:hover {
 }
 
 .footer-parrafo {
-  color: peru;
+  color: #7e3333;
   font-size: 1.2rem;
   text-align: center;
   padding-top: 1rem;
@@ -2257,7 +2456,7 @@ footer h2:hover {
 
 
 .footer-redes {
-  color: peru;
+  color: #7e3333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2295,4 +2494,4 @@ body.dark-mode .redes-footer a:hover {
   margin-bottom: 2rem;
   font-weight: 400;
   text-align: center;
-}
+}  
