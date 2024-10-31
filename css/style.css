@@ -40,7 +40,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: hidden;
+ 
 }
 
 body.dark-mode {
@@ -654,7 +654,9 @@ h1 {
   color: white;
   cursor: pointer;
 }
-
+.btn-musica{
+  margin-left: 3rem;
+}
 /* SECCION VIDEOS */
 
 .videos {
@@ -786,7 +788,7 @@ iframe {
  
 }
 .agenda-titulo{
-  margin-left: 6vw;
+  margin-left: 1rem;
   font-weight: 300;
   font-size: 2.3rem;
   letter-spacing: 1px;
@@ -795,7 +797,7 @@ iframe {
   background-color: #964b00;
  
   display: flex;
-  flex-direction: column;
+ 
   justify-content:start;
   align-items: start;
   text-align: center;
@@ -1415,7 +1417,7 @@ body.dark-mode .footer-titulo:hover {
     font-size: 1.8rem;
 
   }
-
+/* 
   .btn-musica {
     display: row;
     justify-self: start;
@@ -1423,7 +1425,7 @@ body.dark-mode .footer-titulo:hover {
     /* 15vw */
 
 
-  }
+  
 
   /* SECCION VIDEOS */
 
@@ -1558,6 +1560,7 @@ body.dark-mode .footer-titulo:hover {
     margin-bottom: 0;
     margin-left: 2vw;
     margin-bottom: 2rem;
+    
   }
   #eventos {
     display: grid;
@@ -1874,7 +1877,7 @@ body.dark-mode .footer-titulo:hover {
   border-radius: 5px;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  margin-left:9rem;
+/*   margin-left:9rem; */
   transition: background-color .2s, color .2s, trasforrm .2s;
 
 }
