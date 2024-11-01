@@ -40,7 +40,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100dvh;
- 
+
 }
 
 body.dark-mode {
@@ -57,8 +57,7 @@ body.dark-mode main {
   background-color: black;
 }
 
-header
- {
+header {
   background-color: white;
   transition: background-color .3s, color .3s;
 
@@ -500,11 +499,11 @@ h1 {
   /*   position: relative; */
 
   margin-top: 0;
-  width:100%;
+  width: 100%;
   overflow: hidden;
   padding-top: 1rem;
   background-color: peru;
-  ;
+
 }
 
 .musica::before,
@@ -572,10 +571,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.btn-musica,.btn-videos {
+.btn-musica,
+.btn-videos {
   background-color: transparent;
   color: white;
-  margin-left: 2.4rem;
+  margin-left: 2rem;
 
 }
 
@@ -596,12 +596,12 @@ h1 {
 
 .discos,
 .colaboracione {
-  color: white;
+  color:peru;
   font-size: 1.3rem;
-  margin-top: 1rem;
-  /*   border-top: 1px solid white; */
+  margin-top: 1.5em;
+     border-top: 1px solid peru;
   padding-top: .5rem;
-  margin-left: 4vw;
+ margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -643,6 +643,8 @@ h1 {
   align-items: center;
   margin-top: 0.5rem;
   background-color: peru;
+
+
 }
 
 .boton-colab {
@@ -654,9 +656,11 @@ h1 {
   color: white;
   cursor: pointer;
 }
-.btn-musica{
+
+.btn-musica {
   margin-left: 3rem;
 }
+
 /* SECCION VIDEOS */
 
 .videos {
@@ -731,16 +735,17 @@ h1 {
 
 .videos-grilla {
   margin-top: 1rem;
-  /*  border: 1px solid  peru  */
-  ;
+  margin-bottom: 1rem;
+  border: 1px solid whitesmoke;
   padding: 1rem;
+  padding-top: 1rem;
   padding-bottom: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 85vw;
   background-color: #556B2F;
 
 }
@@ -779,33 +784,32 @@ iframe {
 
 
 /* SECCION AGENDA */
-.agenda{
-  width:100%;
+.agenda {
+  width: 100%;
   background-color: #964b00;
   margin-top: 0;
   padding-bottom: 1rem;
   margin-bottom: 0;
- 
+
 }
-.agenda-titulo{
-/*   margin-left: 1rem; */
+
+.agenda-titulo {
+  /*   margin-left: 1rem; */
   font-weight: 300;
   font-size: 2.3rem;
   letter-spacing: 1px;
   justify-content: start;
-  color :whitesmoke;
+  color: whitesmoke;
   background-color: #964b00;
- padding-left: 2rem;
+  padding-left: 2rem;
   display: flex;
- 
-  justify-content:start;
+  justify-content: start;
   align-items: start;
   text-align: center;
   padding-top: 1rem;
   margin-bottom: 1rem;
-
- 
 }
+
 .agenda-lista {
   display: flex;
   flex-direction: column;
@@ -897,9 +901,11 @@ body.dark-mode .view-more-btn:hover {
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: .5rem;
- margin-top: 0;
-  background-color:#7e3333;;
+  margin-top: 0;
+  background-color: #7e3333;
+  ;
 }
+
 /* 
 .contacto::before,
 .contacto::after {
@@ -941,7 +947,7 @@ body.dark-mode .view-more-btn:hover {
   align-items: center;
   margin-top: 1rem;
   padding-left: 0;
-  background-color:#7e3333;
+  background-color: #7e3333;
 }
 
 .contacto-redes a:hover {
@@ -960,19 +966,29 @@ body.dark-mode .contacto-redes a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 2rem; 
+  margin-top: .5rem;
   margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.3rem;
   text-align: center;
   background-color: #7e3333;
 }
-.grilla-contacto{
+
+.grilla-contacto {
   background-color: #7e3333;
+  width: 85vw;
+  border: 1px solid whitesmoke;
+   margin-bottom: 1rem;
+  padding-top: .5rem;
+  border-radius: 10px;
+  justify-content: start;
 }
 
 
+
 .contacto-parrafo {
-  color:whitesmoke;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -980,20 +996,20 @@ body.dark-mode .contacto-redes a:hover {
   margin-top: .5rem;
   gap: .3rem;
   border: 0;
-background-color:#7e3333;
+  background-color: #7e3333;
 }
 
 .contacto-titulo {
-  color:whitesmoke;
- display: flex;
+  color: whitesmoke;
+  display: flex;
   font-weight: 300;
   font-size:
     /* 2.2rem */
-   2.3rem;
- margin-left: 6vw;
+    2.3rem;
+  margin-left: 6vw;
   letter-spacing: 1px;
-  background-color:#7e3333;
-  margin-bottom: 2rem;
+  background-color: #7e3333;
+  margin-bottom: 1rem;
 }
 
 .contact {
@@ -1013,12 +1029,12 @@ background-color:#7e3333;
 
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction:column;
+  justify-content: start;
+  align-items: start;
   background-color: white;
   font-weight: 200;
-/*   border-top: 1px solid peru; */
+  /*   border-top: 1px solid peru; */
   /*   margin-bottom: 2rem; */
   color: #7e3333;
 }
@@ -1027,7 +1043,8 @@ footer h2 {
   display: flex;
   color: #7e3333;
   margin-top: 1rem;
-  justify-content: center;
+  justify-content: start;
+  align-self: start;
   margin-bottom: 1rem;
   font-weight: 200;
   margin-top: 1.5rem;
@@ -1040,6 +1057,8 @@ body.dark-mode .footer-titulo:hover {
 
 .footer-parrafo {
   color: #7e3333;
+flex-direction: start;
+ 
   text-wrap: balance;
 }
 
@@ -1050,10 +1069,11 @@ body.dark-mode .footer-titulo:hover {
 
 
 .copi {
-  font-size: .8rem;
+  font-size: .7rem;
   margin-bottom: 2rem;
   margin-top: .5rem;
   color: #7e3333;
+  
 }
 
 /* INDEX-TABLET */
@@ -1075,7 +1095,7 @@ body.dark-mode .footer-titulo:hover {
   /* MUSUCA */
   .spotify {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-top: .5rem;
     margin: 1rem;
@@ -1083,6 +1103,7 @@ body.dark-mode .footer-titulo:hover {
     /* margin-left: 0; */
     justify-content: center;
     align-content: center;
+    border: 1px solid whitesmoke;
   }
 
   .suite,
@@ -1105,8 +1126,8 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .colab {
-    margin-left: 1.8rem;
-  }
+    margin-left: 8rem;
+  } 
 
   /* VIDEOS */
   .videos-titulo {
@@ -1125,6 +1146,7 @@ body.dark-mode .footer-titulo:hover {
     align-content: center;
     margin-top: 2rem;
     gap: 1.4rem;
+    border: 1px solid whitesmoke;
   }
 
   .video1,
@@ -1379,7 +1401,7 @@ body.dark-mode .footer-titulo:hover {
 
   .spotify {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -1417,7 +1439,8 @@ body.dark-mode .footer-titulo:hover {
     font-size: 1.8rem;
 
   }
-/* 
+
+  /* 
   .btn-musica {
     display: row;
     justify-self: start;
@@ -1425,7 +1448,7 @@ body.dark-mode .footer-titulo:hover {
     /* 15vw */
 
 
-  
+
 
   /* SECCION VIDEOS */
 
@@ -1518,8 +1541,7 @@ body.dark-mode .footer-titulo:hover {
     gap: 1.4rem;
     width: 100%;
     background-color: #556B2F;
-    /* border: 1px solid whitesmoke; */
-    border: none;
+     border: 1px solid whitesmoke;
   }
 
   .video1,
@@ -1551,7 +1573,7 @@ body.dark-mode .footer-titulo:hover {
   }
 
   /* SECCION  AGENDA */
-  .agenda-titulo{
+  .agenda-titulo {
     font-weight: 300;
     display: flex;
     flex-direction: start;
@@ -1560,17 +1582,20 @@ body.dark-mode .footer-titulo:hover {
     margin-bottom: 0;
     margin-left: 2vw;
     margin-bottom: 2rem;
-    
+
   }
+
   #eventos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
-.agenda{
-  padding-bottom: 2rem;
-  
-}
+
+  .agenda {
+    padding-bottom: 2rem;
+
+  }
+
   .agenda-lista {
     background-color: peru;
   }
@@ -1582,25 +1607,28 @@ body.dark-mode .footer-titulo:hover {
   /* SECCION CONTACTO */
 
   .contacto {
-    
+
     width: 100%;
-   height: 55vh;
+    height: 55vh;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
     display: grid;
+   grid-template-columns: 1fr 1fr;
   }
-.grilla-contacto{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-self: center;
-  align-items: end;
-  background-color: #7e3333;
-}
+
+  .grilla-contacto {
+    display:grid;
+    width: 400px;
+   
+    justify-content:center;
+    align-items: end;
+    background-color: #7e3333;
+  }
+
   .foto {
     max-width: 50%;
-    position:unset;
+    position: unset;
   }
 
   .contacto-desktop {
@@ -1609,14 +1637,16 @@ body.dark-mode .footer-titulo:hover {
     align-items: en;
     display: flex;
     flex-direction: column;
-    margin-left: 9rem;
-  background-color: #7e3333;
+    ;
+    background-color: #7e3333;
   }
 
   .contacto-redes {
     padding-left: 0;
     font-size: 21px;
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .contacto-parrafo {
@@ -1625,10 +1655,11 @@ body.dark-mode .footer-titulo:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
     margin-top: .5rem;
     gap: .3rem;
     /* border-bottom: 1px solid whitesmoke; */
-    padding-left: .4rem;
+   margin-left: 0;
   }
 
   .contacto-titulo {
@@ -1867,7 +1898,7 @@ body.dark-mode .footer-titulo:hover {
 }
 
 .btn-musica,
-.btn-videos{
+.btn-videos {
   border: 1px solid white;
   color: white;
   position: relative;
@@ -1876,14 +1907,16 @@ body.dark-mode .footer-titulo:hover {
   cursor: pointer;
   border-radius: 5px;
   margin-top: .5rem;
-  margin-bottom: .5rem;
-/*   margin-left:9rem; */
+  margin-bottom: 1.5rem;
+  /*   margin-left:9rem; */
   transition: background-color .2s, color .2s, trasforrm .2s;
 
 }
-.btn-videos{
-  margin-left:3.2rem;
+
+.btn-videos {
+  margin-left: 3.2rem;
 }
+
 .btn-musica:hover {
   color: peru;
   background-color: whitesmoke;
@@ -2315,6 +2348,7 @@ body.dark-mode .piano-descargas:hover {
 }
 
 /* COLABORACIONES MOBILE */
+/* COLABORACIONES MOBILE */
 .colaboraciones-titulo {
   color: peru;
   font-weight: 300;
@@ -2391,7 +2425,21 @@ body.dark-mode .piano-descargas:hover {
     left: 2%;
     font-weight: 300;
   }
-
+  .spotify1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    /* margin-left: 0; */
+    justify-self: center;
+    align-content: center;
+    border-radius: 10px;
+    /*    width: 80vw;   */
+    background-color: transparent;
+  }
   .colab-eng {
     font-size: 3.5rem;
     top: 13%;
@@ -2414,30 +2462,28 @@ body.dark-mode .piano-descargas:hover {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   background-color: whitesmoke;
   font-weight: 200;
 
   /*  margin-bottom: 2rem; */
 
- }
+}
 
 footer h2 {
   display: flex;
   color: #7e3333;
   margin-top: 1rem;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
+  margin-left: 1rem;
   font-weight: 300;
   margin-top: 2rem;
 }
 
-footer h2:hover {
-  color: rgb(110, 82, 54);
-}
 
 .body.dark-mode .footer-titulo:hover {
   color: grey;
@@ -2448,6 +2494,7 @@ footer h2:hover {
   font-size: 1.2rem;
   text-align: center;
   padding-top: 1rem;
+  margin-left: 1rem;
 
 }
 
@@ -2465,6 +2512,7 @@ footer h2:hover {
   align-items: center;
   margin-top: .3rem;
   padding-left: 0;
+  margin-left: .3rem;
 }
 
 .redes-footer {
@@ -2474,7 +2522,7 @@ footer h2:hover {
   align-items: center;
   flex-direction: row;
   margin-top: 1.3rem;
-
+ margin-left: 1rem;
   font-size: 20px;
 }
 
@@ -2496,5 +2544,5 @@ body.dark-mode .redes-footer a:hover {
   font-size: 1rem;
   margin-bottom: 2rem;
   font-weight: 400;
-  text-align: center;
-}  
+ margin-left: 1rem;
+}

@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/* // Definir una función para activar/desactivar los bordes de una sección
+ // Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
 function activarDesactivarBordes(contenedor) {
   // Obtener las dimensiones y la posición del contenedor con respecto al viewport
@@ -93,7 +93,7 @@ function activarBordesBioContainer(contenedor) {
 let bioContainer = document.getElementById("bioContainer");
 activarBordesBioContainer(bioContainer);
 
- */
+
 
 function smoothScroll(target) {
   let targetElement = document.querySelector(target);
