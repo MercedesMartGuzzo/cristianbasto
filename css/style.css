@@ -135,19 +135,18 @@ body.dark-mode .colaboraciones {
   padding-top: .2rem;
   display: inline-block;
   transition: .2s;
+  font-family: "Bowlby One", sans-serif;
 }
 
-/* .navbar li a:hover {
-  text-decoration: underline;
-} */
+
 .navbar li a::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  top: 100%;
-  height: 1px;
-  background-color: wheat;
+  top: 80%;
+  height: 2px;
+  background-color: whitesmoke;
   transform: scaleX(0);
   transition: .2s;
   transform-origin: left;
@@ -162,6 +161,9 @@ body.dark-mode .colaboraciones {
 .navbar-brand {
   color: whitesmoke !important;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .navbar-brand:hover {
@@ -188,14 +190,19 @@ body.dark-mode .colaboraciones {
   gap: .3rem;
 }
 
+.iconos::after {
+  display: none;
+}
+
 .bi-translate {
   margin-left: .3rem;
 }
 
+/* 
 .bi-moon-stars-fill:hover::before,
 .bi-translate:hover::before {
-  transform: scale(1.1);
-}
+  transform: scaleX(1.1);
+} */
 
 .collapse {
   display: none;
@@ -253,13 +260,24 @@ body.dark-mode .colaboraciones {
     color: whitesmoke;
   }
 
+  .navbar-brand {
+    font-size: 1.5rem;
+    padding-bottom: .220rem;
+    margin-left: .2rem;
+
+  }
+
+  .navbar li a {
+    font-size: .9rem;
+  }
+
   .navbar li a::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
-    height: 1px;
+    top: 95%;
+    height: 2px;
     background-color: whitesmoke;
     transform: scaleX(0);
     transition: .2s;
@@ -287,6 +305,7 @@ body.dark-mode .colaboraciones {
     align-items: center;
     margin: 0;
     gap: 0.1rem;
+
   }
 
 
@@ -323,14 +342,14 @@ body.dark-mode .colaboraciones {
 
 h1 {
   color: transparent;
-  font-size:
-    /*  1.3rem; */
-    2.5rem;
-  font-weight: 300;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
+  ;
   animation: titulo 2s 1s ease-in-out 1 forwards;
   position: absolute;
   top: 15%;
-  left: 8%;
+  left: 4%;
   z-index: 1;
 
 }
@@ -338,8 +357,9 @@ h1 {
 .h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 @keyframes titulo {
@@ -350,7 +370,7 @@ h1 {
   to {
     opacity: 1;
     color: whitesmoke;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 }
 
@@ -366,6 +386,7 @@ h1 {
   padding-top: 1rem;
   /*   margin-bottom: 2rem; */
   background-color: gray;
+
 
 }
 
@@ -412,12 +433,14 @@ h1 {
   display: flex;
   justify-content: start;
   /*  position: absolute; */
-  font-weight: 300;
+  font-weight: 400;
   font-size:
-    /* 2.5rem; */
-    10vw;
-  margin-left: 5vw;
+    4rem;
+  overflow: hidden;
+  margin-left: 1rem;
   background-color: grey;
+  /*   letter-spacing: 1px; */
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .bio-parrafo1 {
@@ -425,9 +448,10 @@ h1 {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   text-align: start;
+  margin-bottom: 0;
 }
 
 
@@ -449,7 +473,7 @@ h1 {
 }
 
 .bio-parrafo {
-  margin-top: 1.1rem;
+  margin-top: .2rem;
   gap: .5rem;
   display: flex;
   flex-direction: column;
@@ -457,7 +481,9 @@ h1 {
   align-items: start;
   text-align: start;
   /*   border-top: 1px solid white; */
-  padding-top: .8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
   color: whitesmoke;
 
 }
@@ -474,13 +500,21 @@ h1 {
 
 }
 
-.bio-parrafo h4 {
+.bio-parrafo h4,
+.span-bio {
   color: white;
   display: flex;
   justify-content: start;
   align-items: start;
   border-top: 1px solid white;
   padding-top: .5rem;
+  font-family: "Bowlby One", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.span-bio {
+  margin-bottom: .5rem;
 }
 
 .toggle-icon {
@@ -542,13 +576,15 @@ h1 {
   color: whitesmoke;
   display: flex;
   justify-content: start;
-  margin-left: 4vw;
+  margin-left: 1rem;
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   font-size:
-    /* 2.3rem */
-    9.5vw;
+    4rem;
   background-color: peru;
+  /* font-family: "Bowlby One", sans-serif; */
+  font-family: "Bebas Neue", sans-serif;
+  overflow: hidden;
 }
 
 .titulo-eng {
@@ -564,6 +600,7 @@ h1 {
   top: 19%;
   left: 4%;
   margin-bottom: .5rem;
+  letter-spacing: 1px;
 }
 
 .musica-copete {
@@ -596,12 +633,12 @@ h1 {
 
 .discos,
 .colaboracione {
-  color:peru;
+  color: peru;
   font-size: 1.3rem;
   margin-top: 1.5em;
-     border-top: 1px solid peru;
+  border-top: 1px solid peru;
   padding-top: .5rem;
- margin-left: 2rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -625,7 +662,7 @@ h1 {
   width: 85vw;
   border: 1px solid white;
   border-radius: 12px;
-  padding: .5rem;
+  padding: 1rem;
   /* background-color: rgb(66, 66, 66); */
 }
 
@@ -637,13 +674,13 @@ h1 {
 .spotify {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 85%;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
   background-color: peru;
-
+  margin-bottom: .5rem;
 
 }
 
@@ -651,7 +688,7 @@ h1 {
   display: flex;
   gap: .4rem;
   margin-top: 1rem;
-  padding-left: .5rem;
+
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -710,10 +747,12 @@ h1 {
   /* absolute; */
   justify-content: start;
   margin-left: 6vw;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.3rem;
   margin-top: 1rem;
   background-color: #556B2F;
+  letter-spacing: 1px;
+  font-family: "Bowlby One", sans-serif;
 }
 
 
@@ -735,17 +774,19 @@ h1 {
 
 .videos-grilla {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   border: 1px solid whitesmoke;
   padding: 1rem;
   padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85vw;
+  width: 85%;
   background-color: #556B2F;
 
 }
@@ -762,7 +803,8 @@ iframe {
 .video1,
 .video2,
 .video3,
-.video4 {
+.video4,
+.video5 {
   margin-bottom: .5rem;
   height: 200px;
   border:
@@ -771,7 +813,7 @@ iframe {
   width: 100%;
 }
 
-.video5 {
+.video6 {
   height: 200px;
   border:
     /*  2px solid peru */
@@ -795,7 +837,7 @@ iframe {
 
 .agenda-titulo {
   /*   margin-left: 1rem; */
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.3rem;
   letter-spacing: 1px;
   justify-content: start;
@@ -808,6 +850,8 @@ iframe {
   text-align: center;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-family: "Bowlby One", sans-serif;
 }
 
 .agenda-lista {
@@ -903,7 +947,7 @@ body.dark-mode .view-more-btn:hover {
   padding-bottom: .5rem;
   margin-top: 0;
   background-color: #7e3333;
-  ;
+  
 }
 
 /* 
@@ -966,9 +1010,9 @@ body.dark-mode .contacto-redes a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: .5rem;
+  /*  margin-top: .5rem; */
   margin-bottom: 1rem;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   padding-right: 1rem;
   font-size: 1.3rem;
   text-align: center;
@@ -978,8 +1022,8 @@ body.dark-mode .contacto-redes a:hover {
 .grilla-contacto {
   background-color: #7e3333;
   width: 85vw;
-  border: 1px solid whitesmoke;
-   margin-bottom: 1rem;
+  /*  border: 1px solid whitesmoke; */
+  margin-bottom: 2rem;
   padding-top: .5rem;
   border-radius: 10px;
   justify-content: start;
@@ -990,19 +1034,21 @@ body.dark-mode .contacto-redes a:hover {
 .contacto-parrafo {
   color: whitesmoke;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   margin-top: .5rem;
   gap: .3rem;
   border: 0;
+  text-wrap: balance;
   background-color: #7e3333;
 }
 
 .contacto-titulo {
   color: whitesmoke;
   display: flex;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
   font-size:
     /* 2.2rem */
     2.3rem;
@@ -1010,6 +1056,7 @@ body.dark-mode .contacto-redes a:hover {
   letter-spacing: 1px;
   background-color: #7e3333;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .contact {
@@ -1029,7 +1076,7 @@ body.dark-mode .contacto-redes a:hover {
 
 .footer {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
   background-color: white;
@@ -1043,11 +1090,14 @@ footer h2 {
   display: flex;
   color: #7e3333;
   margin-top: 1rem;
+  margin-left: 1rem;
   justify-content: start;
   align-self: start;
   margin-bottom: 1rem;
   font-weight: 200;
   margin-top: 1.5rem;
+  font-family: "Bowlby One", sans-serif;
+
 }
 
 body.dark-mode .footer-titulo:hover {
@@ -1057,23 +1107,40 @@ body.dark-mode .footer-titulo:hover {
 
 .footer-parrafo {
   color: #7e3333;
-flex-direction: start;
- 
-  text-wrap: balance;
+  display: flex;
+  align-self: start;
+  flex-direction: nowrap;
+  font-weight: 100;
+  font-size: .9rem;
+  margin-left: 1rem;
+  padding-right: .2rem;
 }
 
 .encabezado {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 200;
+
 }
 
+.mi-mail {
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+
+
+}
 
 .copi {
-  font-size: .7rem;
-  margin-bottom: 2rem;
+  font-size: .8rem;
+  font-weight: 400;
   margin-top: .5rem;
   color: #7e3333;
-  
+  text-wrap: balance;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding-left: .2rem;
 }
 
 /* INDEX-TABLET */
@@ -1084,12 +1151,16 @@ flex-direction: start;
     font-size: 5.5rem;
     top: 15%;
     left: 8%;
-    font-weight: 300;
+    font-weight: 400;
+    /*  font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
   }
 
   .h1 {
     font-size: 5.5rem;
-    font-weight: 300;
+    font-weight: 400;
+    /*     font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
   }
 
   /* MUSUCA */
@@ -1125,18 +1196,17 @@ flex-direction: start;
 
   }
 
-  .colab {
-    margin-left: 8rem;
-  } 
+
 
   /* VIDEOS */
   .videos-titulo {
-    color: rgb(231, 138, 45);
+    color: whitesmoke;
     /*   position: absolute; */
-    font-weight: 300;
+    font-weight: 800;
     font-size: 9vw;
     top: 3%;
     left: 4%;
+    letter-spacing: 1px;
   }
 
   .videos-grilla {
@@ -1157,7 +1227,6 @@ flex-direction: start;
     display: grid;
     justify-content: center;
     width: 100%;
-    border: 2px solid peru;
   }
 
   iframe {
@@ -1210,15 +1279,19 @@ flex-direction: start;
 
   /* PORTADA */
   h1 {
-    font-size: 8rem;
-    top: 15%;
-    left: 11%;
-    font-weight: 300;
+    font-size: 7rem;
+    top: 22%;
+    left: 10%;
+    font-weight: 400;
+    /*  font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
   }
 
   .h1 {
-    font-size: 8rem;
-    font-weight: 300;
+    font-size: 7rem;
+    font-weight: 400;
+    /*  font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
   }
 
   /* SECCION BIO */
@@ -1227,11 +1300,8 @@ flex-direction: start;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-
-
     gap: 1.5rem;
     width: 100%;
-    /*   position: relative; */
   }
 
   .bio-foto {
@@ -1256,20 +1326,25 @@ flex-direction: start;
 
   }
 
-  .bio-parrafo h4 {
+  /* .bio-parrafo h4 {
     font-size: 1rem;
-  }
+  } */
 
-  .bio-parrafo {
+  .bio-parrafo,
+  .bio-parrafo2 {
     margin-top: .1rem;
     padding-top: .3rem;
-    color: black;
+    color: whitesmoke;
 
   }
 
+  .bio-parrafo2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
   .bio-parrafo p {
-    font-size: .8rem;
+    font-size: 1rem;
     padding-top: .2rem;
     padding-right: .2rem;
   }
@@ -1294,6 +1369,7 @@ flex-direction: start;
     font-size: 1rem;
     color: whitesmoke;
     /*  margin-top: 1rem; */
+
   }
 
   .p-about {
@@ -1310,11 +1386,14 @@ flex-direction: start;
     color: whitesmoke;
     display: flex;
     justify-content: start;
-    font-weight: 300;
-    font-size: 5rem;
+    font-weight: 400;
+    /*   font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 7rem;
     letter-spacing: 1px;
     margin-left: 2vw;
     background-color: grey;
+    letter-spacing: 1px;
   }
 
 
@@ -1327,7 +1406,7 @@ flex-direction: start;
     /*  display: grid; */
 
     overflow: hidden;
-
+    padding-bottom: .5rem;
   }
 
   .encabezado-grilla {
@@ -1380,13 +1459,14 @@ flex-direction: start;
     color: whitesmoke;
     /*  position: absolute; */
     display: flex;
-    font-weight: 300;
-    font-size: 5rem;
+    font-weight: 400;
+    /* font-family: "Bowlby One", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 7rem;
     margin-left: 2vw;
     z-index: 1;
     background-color: transparent;
     letter-spacing: 1px;
-
   }
 
   .titulo-eng {
@@ -1406,12 +1486,12 @@ flex-direction: start;
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     /* margin-left: 0; */
     justify-self: center;
     align-content: center;
     border-radius: 10px;
-    /*    width: 80vw;   */
+    width: 100%;
     background-color: transparent;
   }
 
@@ -1440,14 +1520,10 @@ flex-direction: start;
 
   }
 
-  /* 
-  .btn-musica {
-    display: row;
-    justify-self: start;
-    padding-left: 4rem;
-    /* 15vw */
-
-
+  .colab {
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
 
 
   /* SECCION VIDEOS */
@@ -1468,13 +1544,15 @@ flex-direction: start;
     color:
       /*  rgb(231, 138, 45) */
       whitesmoke;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
     display: flex;
     flex-direction: start;
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
     margin-left: 2vw;
+    letter-spacing: 1px;
   }
 
   .videos-copete h3 {
@@ -1541,14 +1619,15 @@ flex-direction: start;
     gap: 1.4rem;
     width: 100%;
     background-color: #556B2F;
-     border: 1px solid whitesmoke;
+    border: 1px solid whitesmoke;
   }
 
   .video1,
   .video2,
   .video3,
   .video4,
-  .video5 {
+  .video5,
+  .video6 {
     display: grid;
     justify-content: center;
     width: 100%;
@@ -1568,13 +1647,14 @@ flex-direction: start;
     color: whitesmoke;
   }
 
-  .video5 {
+  .video6 {
     margin-bottom: .5rem;
   }
 
   /* SECCION  AGENDA */
   .agenda-titulo {
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
     display: flex;
     flex-direction: start;
     letter-spacing: 1px;
@@ -1582,7 +1662,7 @@ flex-direction: start;
     margin-bottom: 0;
     margin-left: 2vw;
     margin-bottom: 2rem;
-
+    letter-spacing: 1px;
   }
 
   #eventos {
@@ -1607,23 +1687,35 @@ flex-direction: start;
   /* SECCION CONTACTO */
 
   .contacto {
-
+  display: flex;
+  flex-direction: column;
     width: 100%;
-    height: 55vh;
+   /*  height: 55vh; */
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    display: grid;
-   grid-template-columns: 1fr 1fr;
+   /*  display: grid;
+    grid-template-columns: 1fr 1fr; */
+ 
   }
 
   .grilla-contacto {
-    display:grid;
+  /*   display: grid;
     width: 400px;
-   
-    justify-content:center;
+
+    justify-content: center;
     align-items: end;
-    background-color: #7e3333;
+    background-color: #7e3333; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:start;
+    align-self: center;
+    margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3rem;
+    gap: 5rem;
+    width: 100vw;
   }
 
   .foto {
@@ -1632,38 +1724,46 @@ flex-direction: start;
   }
 
   .contacto-desktop {
-    justify-content: start;
+  /*   justify-content: start;
     text-align: center;
     align-items: en;
     display: flex;
     flex-direction: column;
-    ;
+    ; */
     background-color: #7e3333;
   }
 
   .contacto-redes {
-    padding-left: 0;
+   
     font-size: 21px;
-    margin-top: 0;
+    /* margin-top: 3rem; */
     margin-bottom: 0;
-    margin-left: 0;
+   padding-right:3rem ;
+    flex-direction: row;
+    display: flex;
+    justify-self:center;
+    align-items: center;
+    padding-top: .2rem;
   }
 
   .contacto-parrafo {
     color: whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     text-align: center;
-    overflow-x: hidden;
-    margin-top: .5rem;
-    gap: .3rem;
-    /* border-bottom: 1px solid whitesmoke; */
-   margin-left: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.1rem;
+   /*  margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+   padding-left: 2rem;
+   padding-bottom: 0; */
   }
 
   .contacto-titulo {
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
     display: flex;
     flex-direction: start;
     letter-spacing: 1px;
@@ -1671,6 +1771,7 @@ flex-direction: start;
     margin-bottom: 0;
     margin-left: 2vw;
     margin-bottom: 2rem;
+    letter-spacing: 1px;
   }
 
   .contact {
@@ -1685,29 +1786,11 @@ flex-direction: start;
 }
 
 /* BARRA DE NAVEGACION PARTITURAS, PEDAGOGIA Y COLABORACIONES */
-/* .nav-pages {
- 
-  } */
-
-.close-icon {
-  border: 0;
-  color: peru;
-  background-color: transparent;
-}
-
-.navbar-toggler {
-  background-color:
-    /* rgba(245, 222, 179, 0.16); */
-    transparent;
-  border: 0;
-}
-
-;
 
 
 .close-icon {
   border: 0;
-  color: peru;
+  color: whitesmoke;
   background-color: transparent;
 }
 
@@ -1767,12 +1850,14 @@ flex-direction: start;
 .partituras1-titulo {
   color: peru;
   position: absolute;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
   font-size:
     /*  2.5rem; */
     9vw;
   top: 1%;
   left: 4%;
+  letter-spacing: 1px;
 }
 
 .sheet-music {
@@ -2090,7 +2175,8 @@ body.dark-mode .piano-descargas:hover {
 
   .partituras1-titulo {
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
     top: 2%;
     left: 4%;
   }
@@ -2220,7 +2306,8 @@ body.dark-mode .piano-descargas:hover {
 .pedagogias-titulo {
   color: wheat;
   position: absolute;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
   font-size:
     /* 2.5rem; */
     9vw;
@@ -2316,7 +2403,8 @@ body.dark-mode .piano-descargas:hover {
     font-size: 5rem;
     top: 2%;
     left: 2%;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
     color: wheat;
   }
 
@@ -2351,7 +2439,8 @@ body.dark-mode .piano-descargas:hover {
 /* COLABORACIONES MOBILE */
 .colaboraciones-titulo {
   color: peru;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
   font-size:
     /*  2.3rem; */
     8.8vw;
@@ -2423,8 +2512,10 @@ body.dark-mode .piano-descargas:hover {
     font-size: 5rem;
     top: 2%;
     left: 2%;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Bowlby One", sans-serif;
   }
+
   .spotify1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2440,6 +2531,7 @@ body.dark-mode .piano-descargas:hover {
     /*    width: 80vw;   */
     background-color: transparent;
   }
+
   .colab-eng {
     font-size: 3.5rem;
     top: 13%;
@@ -2471,7 +2563,7 @@ body.dark-mode .piano-descargas:hover {
 
 }
 
-footer h2 {
+/* footer h2 {
   display: flex;
   color: #7e3333;
   margin-top: 1rem;
@@ -2482,27 +2574,27 @@ footer h2 {
   margin-left: 1rem;
   font-weight: 300;
   margin-top: 2rem;
-}
+} */
 
 
 .body.dark-mode .footer-titulo:hover {
   color: grey;
 }
 
-.footer-parrafo {
+/* .footer-parrafo {
   color: #7e3333;
-  font-size: 1.2rem;
-  text-align: center;
+ /*  font-size: 1.2rem; */
+/*  text-align: center;
   padding-top: 1rem;
   margin-left: 1rem;
 
-}
+} */
 
-.encabezado {
+/* .encabezado {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 400;
-}
+} */
 
 
 .footer-redes {
@@ -2522,7 +2614,7 @@ footer h2 {
   align-items: center;
   flex-direction: row;
   margin-top: 1.3rem;
- margin-left: 1rem;
+  margin-left: 1rem;
   font-size: 20px;
 }
 
@@ -2540,9 +2632,15 @@ body.dark-mode .redes-footer a:hover {
   color: grey;
 }
 
+/*  .mi-mail{
+  margin-left: o;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
 .copi {
   font-size: 1rem;
   margin-bottom: 2rem;
   font-weight: 400;
- margin-left: 1rem;
-}
+  margin-left: 1rem; 
+}  */
