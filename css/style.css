@@ -2654,8 +2654,8 @@ body.dark-mode .piano-descargas:hover {
   border-radius: 10px;
 
 }
-.suite,
-.piano {
+.suite1,
+.piano1 {
   /*  margin-top: 1rem; */
   display: flex;
   flex-direction: column;
