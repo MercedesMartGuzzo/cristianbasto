@@ -387,6 +387,8 @@ h1 {
   margin-bottom: .5rem;
   transition: background-color .2s, color .2s, trasforrm .2s;
   margin-left: 1rem;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 200;
 }
 
 .piano-descargas:hover {
@@ -408,7 +410,8 @@ h1 {
   margin-bottom: 1.5rem;
   /*   margin-left:9rem; */
   transition: background-color .2s, color .2s, trasforrm .2s;
-
+font-family:"Bowlby One", sans-serif ;
+font-weight: 200;
 }
 
 .btn-videos {
@@ -491,6 +494,8 @@ h1 {
   margin-top: .5rem;
   margin-bottom: .5rem;
   transition: background-color .2s, color .2s, trasforrm .2s;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 200;
 }
 
 .donaciones-btn:hover {
@@ -784,8 +789,9 @@ h1 {
   margin-top: 1.5em;
   border-top: 1px solid peru;
   padding-top: .5rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-bottom: 1rem;
+  font-family: "Bowlby One", sans-serif;
 }
 
 .discos {
@@ -820,7 +826,7 @@ h1 {
 .spotify {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 85vw;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -1044,6 +1050,8 @@ iframe {
   border-radius: 5px;
   margin-top: 10px;
   transition: background-color .2s, color .2s;
+  font-family:"Bowlby One", sans-serif ;
+  font-weight: 100;
 }
 
 .view-more-btn:hover {
@@ -2136,11 +2144,9 @@ body.dark-mode .footer-titulo:hover {
   position: absolute;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
-  font-size:
-    /*  2.5rem; */
-    9vw;
-  top: 1%;
-  left: 4%;
+  font-size: 1.5rem;
+   top: 5%;
+  left: 4%; 
   letter-spacing: 1px;
 }
 
@@ -2206,6 +2212,7 @@ body.dark-mode .footer-titulo:hover {
 .partituras1 h4 {
   color: peru;
   font-size: 1.3rem;
+  font-family: "Bowlby One", sans-serif;
 }
 
 .partituras-piano {
@@ -2221,6 +2228,7 @@ body.dark-mode .footer-titulo:hover {
   display: flex;
   border-top: 1px solid peru;
   padding-top: 1rem;
+  font-family:"Bowlby One", sans-serif ;
 }
 
 .piano-portada {
@@ -2283,6 +2291,7 @@ body.dark-mode .piano-descargas:hover {
   border-top: 1px solid peru;
   padding-top: 1rem;
   text-wrap: balance;
+  font-family:"Bowlby One", sans-serif ;
 }
 
 .donaciones {
@@ -2301,7 +2310,7 @@ body.dark-mode .piano-descargas:hover {
 }
 
 .donaciones-icon h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Bowlby One", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
 
@@ -2318,15 +2327,7 @@ body.dark-mode .piano-descargas:hover {
     left: 4%;
   }
 
-  .sheet-music {
-    color: wheat;
-    position: absolute;
-    font-weight: 300;
-    font-size: 3rem;
-    top: 13%;
-    left: 4%;
-  }
-
+ 
   .partituras-pa {
     margin-bottom: 1.6rem;
     font-size: 1rem;
@@ -2348,7 +2349,7 @@ body.dark-mode .piano-descargas:hover {
 
   .partituras1 h4 {
     color: peru;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
 
@@ -2392,6 +2393,7 @@ body.dark-mode .piano-descargas:hover {
     margin-bottom: 1rem;
     border-top: 1px solid peru;
     padding-top: 1rem;
+   
   }
 }
 
@@ -2445,9 +2447,7 @@ body.dark-mode .piano-descargas:hover {
   position: absolute;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
-  font-size:
-    /* 2.5rem; */
-    9vw;
+  font-size:1.5rem; 
   top: 4%;
   left: 4%;
 }
@@ -2498,6 +2498,8 @@ body.dark-mode .piano-descargas:hover {
   font-size: 1.3rem;
   border-top: 1px solid peru;
   padding-top: 1rem;
+  font-family:"Bowlby One", sans-serif ;
+  text-wrap: balance;
 }
 
 .pedagogia-grilla {
@@ -2553,7 +2555,7 @@ body.dark-mode .piano-descargas:hover {
 
   .workshop {
     color: peru;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .pedagogia-grilla {
@@ -2578,18 +2580,15 @@ body.dark-mode .piano-descargas:hover {
   color: peru;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
-  font-size:
-    /*  2.3rem; */
-    8.8vw;
+  font-size:1.5rem; 
+  
   top: 2%;
   left: 4%;
   position: absolute;
 }
 
 .colab-eng {
-  font-size:
-    /* 1.3rem; */
-    6.5vw;
+  font-size: 1.3rem; 
   top: 17%;
   left: 4.5%;
   font-weight: 300;
@@ -2642,6 +2641,32 @@ body.dark-mode .piano-descargas:hover {
 .rock {
   margin-bottom: 1rem;
 }
+.spotify1 {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+ background-color: transparent;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+
+}
+.suite,
+.piano {
+  /*  margin-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  justify-content: center;
+  
+  border: 1px solid peru;
+  border-radius: 12px;
+  padding: 1rem;
+  /* background-color: rgb(66, 66, 66); */
+}
 
 /* COLABORACIONES DESKTOP */
 @media(min-width :1200px) {
@@ -2665,7 +2690,7 @@ body.dark-mode .piano-descargas:hover {
     justify-self: center;
     align-content: center;
     border-radius: 10px;
-    /*    width: 80vw;   */
+      width: 85vw;   
     background-color: transparent;
   }
 
@@ -2683,6 +2708,10 @@ body.dark-mode .piano-descargas:hover {
   .collab1 img {
     display: initial;
 
+  }
+  .colaboracione,.discos{
+    font-size: 1.7rem;
+    padding-top: 1rem;
   }
 }
 
