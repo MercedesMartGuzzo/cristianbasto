@@ -2995,11 +2995,17 @@ body.dark-mode .piano-descargas:hover {
 body.dark-mode .redes-footer a:hover {
   color: grey;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1470px) and (max-width: 1600px) {
   .container {
     max-width: 1400px; /* Ajusta el ancho máximo */
   }
- 
+ .partituras-piano{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
 }
 /*  .mi-mail{
   margin-left: o;
