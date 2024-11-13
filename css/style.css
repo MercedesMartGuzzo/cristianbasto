@@ -2996,16 +2996,21 @@ body.dark-mode .redes-footer a:hover {
   color: grey;
 }
 @media (min-width: 1470px) and (max-width: 1600px) {
-  .container {
-    max-width: 1400px; /* Ajusta el ancho máximo */
-  }
+   .container {
+  max-width: 1400px; /* Ajusta el ancho máximo */
+}
  .partituras-piano{
-  width: 100%;
+  width: auto;
   height: auto;
   object-fit: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr;
- }
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.piano-portada img{
+  height:auto;
+  object-fit: cover;
+ 
+}
 }
 /*  .mi-mail{
   margin-left: o;
@@ -3020,4 +3025,3 @@ body.dark-mode .redes-footer a:hover {
   margin-left: 1rem; 
 
 }
-
