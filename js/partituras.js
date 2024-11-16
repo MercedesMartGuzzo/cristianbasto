@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const previsualizaciones = part.querySelector('.previsualizaciones');
         const previsualizacionImages = previsualizaciones.querySelectorAll('.previsualizacion');
         const portadaContainer = part.querySelector('.piano-portada');
-        const portada = portadaContainer.querySelector('.portada-img');
+        const portada = portadaContainer.querySelector('.portada-img1');
         let currentIndex = 0;
 
         icono.addEventListener('click', function () {
@@ -48,7 +48,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+ document.addEventListener('DOMContentLoaded', function () {
+    const pianoPartes = document.querySelectorAll('.piano-partes1');
 
+    pianoPartes.forEach(part => {
+        const icono1 = part.querySelector('.mostrar-icono1');
+        const previsualizaciones1 = part.querySelector('.previsualizaciones1');
+        const previsualizacionImages1 = previsualizaciones1.querySelectorAll('.previsualizacion1');
+        const portadaContainer1 = part.querySelector('.piano-portada1');
+        const portada1 = portadaContainer1.querySelector('.portada-img1');
+        let currentIndex = 0;
+
+        icono1.addEventListener('click', function () {
+            // Ocultar la portada original o la imagen actual
+            portada1.style.display = 'none';
+            previsualizacionImages1.forEach(image => {
+                image.style.display = 'none';
+            });
+
+            // Mostrar la siguiente previsualización
+            if (currentIndex < previsualizacionImages1.length) {
+                previsualizacionImages1[currentIndex].style.display = 'block';
+                portadaContainer1.appendChild(previsualizacionImages1[currentIndex]);
+                portadaContainer1.appendChild(icono1);  // Asegurar que el icono esté sobre la imagen actual
+                currentIndex++;
+            } else {
+                // Reiniciar al inicio y mostrar la portada original
+                currentIndex = 0;
+                portada1.style.display = 'block';
+                portadaContainer1.appendChild(portada1);
+                portadaContainer1.appendChild(icono1);  // Asegurar que el icono esté sobre la imagen de portada
+            }
+        });
+    });
+}); 
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
 document.addEventListener("DOMContentLoaded", () => {
