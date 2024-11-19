@@ -1,10 +1,13 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP",sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 ul,
@@ -27,13 +30,19 @@ img {
   width: 100%;
 }
 
-.container {
+ .contenedor {
   margin: 0 auto;
   max-width: 1200px;
-  background-color: white;
+
+}  
+/*  .container{
+  display: none;
+}  */
+.contenedor-titulos{
+  margin: 0;
+  margin-inline-start: 1rem; 
+  max-width: inherit;
 }
-
-
 
 body {
   background-color: white;
@@ -388,7 +397,7 @@ h1 {
   margin-top: .5rem;
   margin-bottom: .5rem;
   transition: background-color .2s, color .2s, trasforrm .2s;
-  margin-left: 1rem;
+   margin-left: .3rem; 
   font-family: "Bowlby One", sans-serif;
   font-weight: 200;
 }
@@ -532,65 +541,30 @@ h1 {
 .bio {
   margin-top: 0;
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
   /*   margin-bottom: 2rem; */
   background-color: gray;
 
 
 }
-/* 
-.bio::before,
-.bio::after {
-  content: "";
-  position: absolute;
-  background-color: peru;
-  transition: width 2s 3s ease-in-out, height 2s 3s ease-in-out;
-  width: 0;
-  height: 0;
-  border-radius: 0;
-}
 
-.bio::before {
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 1px;
-
-}
-
-.bio::after {
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 0;
-
-}
-
-.border-visible-top::before {
-  width: 100%;
-
-}
-
-.border-visible-left::after {
-  height: 100%;
-
-} */
 
 
 .bio-titulo {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-   justify-content: start;
+ justify-content: start; 
   
   /*  position: absolute; */
   font-weight: 400;
   font-size:
     2.3rem;
 /*   overflow: hidden; */
-  margin-left: 1rem; 
+ /*  margin-left: 1rem;   */
   background-color: grey;
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
@@ -684,7 +658,8 @@ h1 {
 
 .musica {
   /*   position: relative; */
-
+   display: flex;
+   flex-direction: column;
   margin-top: 0;
   width: 100%;
   overflow: hidden;
@@ -729,7 +704,7 @@ h1 {
   color: whitesmoke;
   display: flex;
   justify-content: start;
-  margin-left: 1rem;
+ /*  margin-left: 1rem; */
   margin-bottom: 1rem;
   font-weight: 400;
   font-size:
@@ -740,21 +715,6 @@ h1 {
   overflow: hidden;
 }
 
-.titulo-eng {
-  color: white;
-  /*  position: absolute; */
-  display: flex;
-  justify-content: start;
-  margin-left: 4vw;
-  font-weight: 300;
-  font-size:
-    /* 1.6rem; */
-    7.5vw;
-  top: 19%;
-  left: 4%;
-  margin-bottom: .5rem;
-  letter-spacing: 1px;
-}
 
 .musica-copete {
   margin-top: 1rem;
@@ -763,13 +723,7 @@ h1 {
 
 
 
-.copete-eng {
-  /* border-top: 1px solid peru; */
-  font-size: .9rem;
-  padding-top: .6rem;
-  padding-right: .2rem;
-  color: rgb(66, 66, 66);
-}
+
 
 .musica-copete h3 {
   color: white;
@@ -846,11 +800,10 @@ h1 {
 /* SECCION VIDEOS */
 
 .videos {
-  /*   margin-top: 1rem; */
+ display: flex;
+ flex-direction: column;
   width: 100%;
-  /* position: relative; */
   overflow: hidden;
-  /*  padding-top: 1rem; */
   background-color: #556B2F;
 
 }
@@ -891,7 +844,7 @@ h1 {
   display: flex;
   /* absolute; */
   justify-content: start;
-  margin-left: 1rem;
+ /*  margin-left: 1rem; */
   font-weight: 400;
   font-size: 2.3rem;
   margin-top: 1rem;
@@ -977,6 +930,9 @@ iframe {
   margin-top: 0;
   padding-bottom: 1rem;
   margin-bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -994,8 +950,8 @@ iframe {
   margin-bottom: 1rem;
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
-  overflow: hidden;
-  margin-left: 1rem;
+/*   overflow: hidden; */
+ /*  margin-left: 1rem; */
 }
 
 .agenda-lista {
@@ -1093,6 +1049,8 @@ body.dark-mode .view-more-btn:hover {
   padding-bottom: .5rem;
   margin-top: 0;
   background-color: #7e3333;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -1152,15 +1110,15 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 .redes-contacto {
-  gap: .7rem;
+  gap: 1.6rem;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: row;
   /*  margin-top: .5rem; */
-  margin-bottom: 1rem;
-  /* padding-left: 1rem; */
-  padding-right: 1rem;
+/*   margin-bottom: 1rem; */
+ 
+ /*  padding-right: 1rem; */
   font-size: 1.3rem;
   text-align: center;
   background-color: #7e3333;
@@ -1168,12 +1126,15 @@ body.dark-mode .contacto-redes a:hover {
 
 .grilla-contacto {
   background-color: #7e3333;
-  width: 85vw;
-  /*  border: 1px solid whitesmoke; */
+  width: 90%;
+ border: 1px solid whitesmoke; 
   margin-bottom: 2rem;
   padding-top: .5rem;
   border-radius: 10px;
   justify-content: start;
+  padding-left: .9rem;
+  padding-right: 1.7rem;
+  padding-bottom: .5rem;
 }
 
 
@@ -1181,14 +1142,14 @@ body.dark-mode .contacto-redes a:hover {
 .contacto-parrafo {
   color: whitesmoke;
   display: flex;
-  flex-direction: column;
+  flex-direction: start;
   justify-self: start;
   align-items: start;
   text-align: center;
   margin-top: .5rem;
   gap: .3rem;
   border: 0;
-  text-wrap: balance;
+  text-wrap: wrap;
   background-color: #7e3333;
 }
 
@@ -1200,7 +1161,7 @@ body.dark-mode .contacto-redes a:hover {
   font-size:
     /* 2.2rem */
     2.3rem;
-  margin-left: 6vw;
+ /*  margin-left: 6vw; */
   letter-spacing: 1px;
   background-color: #7e3333;
   margin-bottom: 1rem;
@@ -1221,7 +1182,9 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 /* FOOTER */
-
+footer{
+  padding-left: .5rem;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -1319,7 +1282,7 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  .portada-img1 {
+  .portada-img {
     position: absolute;
     height: 100vh;
     object-fit: cover;
@@ -1377,7 +1340,6 @@ body.dark-mode .footer-titulo:hover {
   .contacto-titulo,
   .musica-titulo {
     color: whitesmoke;
-    /*   position: absolute; */
     font-weight: 400;
     font-size: 3rem;
     letter-spacing: 1px;
@@ -1544,172 +1506,13 @@ body.dark-mode .footer-titulo:hover {
 }
 
 /*********** INDEX DESKTOP ************/
-/*  @media (min-width: 990px) and (max-width: 1199px){
-  .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: whitesmoke;
-  }
-
-  .navbar-brand {
-    font-size: .8rem;
-     padding-top: .5rem; 
-    margin-left: .2rem;
-    font-family: "Bowlby One", sans-serif;
-  }
-
-  .navbar li a {
-    font-size: .7rem;
-  }
-
-  .navbar li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 95%;
-    height: 2px;
-    background-color: whitesmoke;
-    transform: scaleX(0);
-    transition: .2s;
-    transform-origin: left;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-right: 5px;
-  }
-
-  .nav-link {
-    margin: 0;
-    padding: 0;
-  }
-
-  .redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 0;
-    gap: 0.1rem;
-
-  }
-
-
-  .iconos {
-    gap: 0.9rem;
-  }
-
-  .bi-moon-stars-fill {
-    margin-right: .3rem;
-  }
-
-
-
-  .navbar-toggler,
-  .open-icon,
-  .close-icon {
-    display: none;
-  }
-  .bio {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    gap: 1.5rem;
-    width: 100%;
-  }
-
-  .bio-foto {
-     display: grid;
-     grid-column: span 2;
-     grid-row: span 2;
-     align-content: start;
-     justify-content: start;
-     justify-self: start;
-     justify-items: start; 
-width: 100%;
-    height: 410px;
-    object-fit: cover;
-    object-position: center;
-    filter: opacity(0.9)
-  }
-
-  .bio-secciones {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   
-  }
-
-   .bio-parrafo h4 {
-    font-size: 1rem;
-  } 
-
- .bio-parrafo,
-  .bio-parrafo2 {
-    margin-top: .1rem;
-    padding-top: .3rem;
-    color: whitesmoke;
-
-  }
-.bio-parrafo h4{
-  margin-left: 2rem;
-}
-  .bio-parrafo2 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
-  .bio-parrafo p {
-    font-size: 1rem;
-    padding-top: .2rem;
-   margin-left: 2rem;
-   margin-right: 1rem;
-  }
-
-  .bio h3 {
-    font-size: 1.5rem;
-    display: flex;
-    margin-bottom: .8rem;
-    color: peru;
-   
-  }
-
-
-  .bio-parrafo1 {
-    font-size: 1rem;
-    color: whitesmoke;  
-     margin-top: 1rem; 
-    margin-left: 2rem;
-   margin-right: 1rem;
-  }
-
- 
-
-  .bio-titulo {
-    color: whitesmoke;
-    display: flex;
-    justify-content: start;
-    font-weight: 400;
-      font-family: "Bowlby One", sans-serif; 
-  
-    font-size: 5rem;
-    letter-spacing: 1px;
-    margin-left: 2rem;
-    background-color: grey;
-    letter-spacing: 1px;
-  }
-
-}  */
 
 @media(min-width: 1200px) {
-
+ .contenedor-titulos{
+  margin: 0 auto;
+    margin-inline-start: 1.3rem; 
+    max-width:inherit;
+} 
   /* PORTADA */
   h1 {
     font-size: 4.5rem;
@@ -1734,7 +1537,7 @@ width: 100%;
 
   }
 
-  .portada-img1 {
+  .portada-img {
     position: absolute;
     height: 91vh;
     object-fit: cover;
@@ -1753,13 +1556,6 @@ width: 100%;
   }
 
   .bio-foto {
-    /*  display: grid;
-     grid-column: span 2;
-     grid-row: span 2;
-     align-content: start;
-     justify-content: start;
-     justify-self: start;
-     justify-items: start; */
     width: 100%;
     height: 410px;
     object-fit: cover;
@@ -1783,6 +1579,7 @@ width: 100%;
     margin-top: .1rem;
     padding-top: .3rem;
     color: whitesmoke;
+    padding-bottom: .5rem;
 
   }
 
@@ -1836,10 +1633,9 @@ width: 100%;
     justify-content: start; 
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
-
     font-size: 5rem;
     letter-spacing: 1px;
-     margin-left: 2rem; 
+   /*   margin-left: 2rem;  */
     background-color: grey;
     letter-spacing: 1px;
   }
@@ -1850,7 +1646,8 @@ width: 100%;
   /* SECCION MUSICA */
 
   .musica {
-    /*   position: relative; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-top: 1rem;
     /*  display: grid; */
@@ -1913,7 +1710,7 @@ width: 100%;
     font-family: "Bowlby One", sans-serif;
 
     font-size: 5rem;
-    margin-left: 2rem;
+   /*  margin-left: 2rem; */
     z-index: 1;
     background-color: transparent;
     letter-spacing: 1px;
@@ -1935,11 +1732,11 @@ width: 100%;
     gap: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    margin: 1rem;
+   /*   margin: 1rem;  */
     margin-bottom: 1rem;
     /* margin-left: 0; */
-    justify-self: center;
-    align-content: center;
+    justify-content: center;
+    align-self: center;
     border-radius: 10px;
     width: 100%;
     background-color: transparent;
@@ -1971,7 +1768,7 @@ width: 100%;
   }
 
   .colab {
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-top: 1rem;
   }
 
@@ -1979,9 +1776,9 @@ width: 100%;
   /* SECCION VIDEOS */
 
   .videos {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    /*  position: relative; */
     overflow: hidden;
     padding-top: 0;
     gap: 1rem;
@@ -2001,7 +1798,7 @@ width: 100%;
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
-    margin-left: 2rem;
+  /*   margin-left: 2rem; */
     letter-spacing: 1px;
   }
 
@@ -2070,6 +1867,7 @@ width: 100%;
     width: 100%;
     background-color: #556B2F;
     border: 1px solid whitesmoke;
+    padding-bottom: .5rem;
   }
 
   .video1,
@@ -2102,7 +1900,7 @@ width: 100%;
   }
 
   .btn-videos {
-    margin-left: 3.5rem;
+    margin-left: 4rem;
   }
 
   /* SECCION  AGENDA */
@@ -2114,7 +1912,7 @@ width: 100%;
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
-    margin-left: 2rem;
+   /*  margin-left: 2rem; */
     margin-bottom: 2rem;
 
   }
@@ -2127,6 +1925,8 @@ width: 100%;
 
   .agenda {
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -2157,10 +1957,11 @@ width: 100%;
   .grilla-contacto {
     /*   display: grid;
     width: 400px;
-
+  
     justify-content: center;
     align-items: end;
     background-color: #7e3333; */
+    border: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
@@ -2179,19 +1980,19 @@ width: 100%;
   }
 
   .contacto-desktop {
-    /*   justify-content: start;
+     justify-content: start;
     text-align: center;
     align-items: en;
     display: flex;
     flex-direction: column;
-    ; */
+    ; 
     background-color: #7e3333;
   }
 
   .contacto-redes {
 
     font-size: 21px;
-    /* margin-top: 3rem; */
+     margin-top: 0;
     margin-bottom: 0;
     padding-right: 3rem;
     flex-direction: row;
@@ -2205,7 +2006,9 @@ width: 100%;
     gap: 2rem;
     padding-right: 0;
   }
-
+.contacto p{
+  margin-bottom: 0;
+} */
   .contacto-parrafo {
     color: whitesmoke;
     display: flex;
@@ -2213,12 +2016,13 @@ width: 100%;
     align-items: end;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.1rem;
-    /*  margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-   padding-left: 2rem;
-   padding-bottom: 0; */
+    font-size: 1.rem;
+      margin-left: 0;
+   padding-bottom: 0; 
+   text-wrap: nowrap;
+   margin-top:0;
+   margin-bottom:0;
+   padding-left: .5rem;
   }
 
   .contacto-titulo {
@@ -2229,7 +2033,7 @@ width: 100%;
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
-    margin-left: 2vw;
+    /*  margin-left: 2vw;  */
     margin-bottom: 2rem;
     letter-spacing: 1px;
   }
@@ -2417,9 +2221,8 @@ width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
-
+ /*  width: 100%; */
+  
 }
 
 
@@ -2538,7 +2341,7 @@ body.dark-mode .piano-descargas:hover {
     font-size: 20px;
     color: peru;
     bottom: 0;
-    right: 0%;
+    right: 8%;
   }
 
  .partituras-piano {
@@ -2548,7 +2351,7 @@ body.dark-mode .piano-descargas:hover {
     width: 980px; 
   }
 .piano-partes img{
-  height:350px;
+  height:400px;
   object-fit: cover;
  object-position: center;
 }
@@ -3057,7 +2860,7 @@ body.dark-mode .redes-footer a:hover {
 }
 
  @media (min-width: 1440px) and (max-width: 1600px) {
-   .container {
+   .contenedor {
     max-width: 1440px; 
     /* Ajusta el ancho máximo */
    } 
@@ -3069,9 +2872,9 @@ body.dark-mode .redes-footer a:hover {
 /*  .portada-img{
   height: 100vh;
 } */
-.portada{
+/* .portada{
   height: 100vh;
-} 
+}  */
  }
  /* .spotify,.videos-grilla,.agenda-lista{
   width: 90vw;
