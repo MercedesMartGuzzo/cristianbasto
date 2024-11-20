@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans JP",sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 *::before,
@@ -30,17 +30,18 @@ img {
   width: 100%;
 }
 
- .contenedor {
+.contenedor {
   margin: 0 auto;
   max-width: 1200px;
 
-}  
+}
+
 /*  .container{
   display: none;
 }  */
-.contenedor-titulos{
+.contenedor-titulos {
   margin: 0;
-  margin-inline-start: 1rem; 
+  margin-inline-start: 1rem;
   max-width: inherit;
 }
 
@@ -397,7 +398,7 @@ h1 {
   margin-top: .5rem;
   margin-bottom: .5rem;
   transition: background-color .2s, color .2s, trasforrm .2s;
-   margin-left: .3rem; 
+  margin-left: .3rem;
   font-family: "Bowlby One", sans-serif;
   font-weight: 200;
 }
@@ -409,7 +410,7 @@ h1 {
 }
 
 .btn-musica,
-.btn-videos {
+.btn-videos,.btn-prensa{
   border: 1px solid white;
   color: white;
   position: relative;
@@ -425,7 +426,16 @@ h1 {
   font-weight: 200;
 }
 
+.btn-prensa{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  width: 200px;
 
+}
 
 .btn-musica:hover {
   color: peru;
@@ -441,7 +451,12 @@ h1 {
   border: 1px solid #556B2F;
 }
 
-
+.btn-prensa:hover{
+  color: #2b212b;
+  background-color: white;
+  transform: scale(1.1);
+  border: 1px solid #2b212b;; 
+}
 .piano-descargas::before {
   position: absolute;
   content: "Douwnload";
@@ -557,14 +572,14 @@ h1 {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
- justify-content: start; 
-  
+  justify-content: start;
+
   /*  position: absolute; */
   font-weight: 400;
   font-size:
     2.3rem;
-/*   overflow: hidden; */
- /*  margin-left: 1rem;   */
+  /*   overflow: hidden; */
+  /*  margin-left: 1rem;   */
   background-color: grey;
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
@@ -658,8 +673,8 @@ h1 {
 
 .musica {
   /*   position: relative; */
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin-top: 0;
   width: 100%;
   overflow: hidden;
@@ -704,7 +719,7 @@ h1 {
   color: whitesmoke;
   display: flex;
   justify-content: start;
- /*  margin-left: 1rem; */
+  /*  margin-left: 1rem; */
   margin-bottom: 1rem;
   font-weight: 400;
   font-size:
@@ -800,8 +815,8 @@ h1 {
 /* SECCION VIDEOS */
 
 .videos {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   overflow: hidden;
   background-color: #556B2F;
@@ -844,7 +859,7 @@ h1 {
   display: flex;
   /* absolute; */
   justify-content: start;
- /*  margin-left: 1rem; */
+  /*  margin-left: 1rem; */
   font-weight: 400;
   font-size: 2.3rem;
   margin-top: 1rem;
@@ -950,8 +965,8 @@ iframe {
   margin-bottom: 1rem;
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
-/*   overflow: hidden; */
- /*  margin-left: 1rem; */
+  /*   overflow: hidden; */
+  /*  margin-left: 1rem; */
 }
 
 .agenda-lista {
@@ -1116,9 +1131,9 @@ body.dark-mode .contacto-redes a:hover {
   align-items: center;
   flex-direction: row;
   /*  margin-top: .5rem; */
-/*   margin-bottom: 1rem; */
- 
- /*  padding-right: 1rem; */
+  /*   margin-bottom: 1rem; */
+
+  /*  padding-right: 1rem; */
   font-size: 1.3rem;
   text-align: center;
   background-color: #7e3333;
@@ -1127,7 +1142,7 @@ body.dark-mode .contacto-redes a:hover {
 .grilla-contacto {
   background-color: #7e3333;
   width: 90%;
- border: 1px solid whitesmoke; 
+  border: 1px solid whitesmoke;
   margin-bottom: 2rem;
   padding-top: .5rem;
   border-radius: 10px;
@@ -1149,7 +1164,7 @@ body.dark-mode .contacto-redes a:hover {
   margin-top: .5rem;
   gap: .3rem;
   border: 0;
-  text-wrap: wrap;
+   text-wrap: wrap; 
   background-color: #7e3333;
 }
 
@@ -1161,7 +1176,7 @@ body.dark-mode .contacto-redes a:hover {
   font-size:
     /* 2.2rem */
     2.3rem;
- /*  margin-left: 6vw; */
+  /*  margin-left: 6vw; */
   letter-spacing: 1px;
   background-color: #7e3333;
   margin-bottom: 1rem;
@@ -1181,10 +1196,22 @@ body.dark-mode .contacto-redes a:hover {
   font-weight: bold;
 }
 
-/* FOOTER */
-footer{
+/* SECCION PRENSA */
+
+.prensa{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b212b;
+height: auto;
+
+}
+
+/************FOOTER***********/
+footer {
   padding-left: .5rem;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -1254,8 +1281,9 @@ body.dark-mode .footer-titulo:hover {
   padding-left: .2rem;
 }
 
-/* INDEX-TABLET */
-@media(min-width:768px) {
+/********* INDEX-TABLET******* */
+
+@media (min-width:768px) {
 
   /* PORTADA */
   h1 {
@@ -1303,6 +1331,7 @@ body.dark-mode .footer-titulo:hover {
     align-content: center;
     border: 1px solid whitesmoke;
     border-radius: 10px;
+    width: 100%;
   }
 
   .suite,
@@ -1343,7 +1372,6 @@ body.dark-mode .footer-titulo:hover {
     font-weight: 400;
     font-size: 3rem;
     letter-spacing: 1px;
-  /*   margin-left: 2.5rem; */
 
   }
 
@@ -1357,6 +1385,7 @@ body.dark-mode .footer-titulo:hover {
     margin-top: 1rem;
     gap: 1.4rem;
     border: 1px solid whitesmoke;
+    width: 100%;
   }
 
   .video1,
@@ -1405,22 +1434,12 @@ body.dark-mode .footer-titulo:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*  height: 55vh; */
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    /*  display: grid;
-  grid-template-columns: 1fr 1fr; */
-
   }
 
   .grilla-contacto {
-    /*   display: grid;
-  width: 400px;
-
-  justify-content: center;
-  align-items: end;
-  background-color: #7e3333; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
@@ -1508,11 +1527,12 @@ body.dark-mode .footer-titulo:hover {
 /*********** INDEX DESKTOP ************/
 
 @media(min-width: 1200px) {
- .contenedor-titulos{
-  margin: 0 auto;
-    margin-inline-start: 1.3rem; 
-    max-width:inherit;
-} 
+  .contenedor-titulos {
+    margin: 0 auto;
+    margin-inline-start: 4.1rem;
+    max-width: inherit;
+  }
+
   /* PORTADA */
   h1 {
     font-size: 4.5rem;
@@ -1630,19 +1650,20 @@ body.dark-mode .footer-titulo:hover {
   .bio-titulo {
     color: whitesmoke;
     display: flex;
-    justify-content: start; 
+    justify-content: start;
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
     font-size: 5rem;
     letter-spacing: 1px;
-   /*   margin-left: 2rem;  */
+    /*   margin-left: 2rem;  */
     background-color: grey;
     letter-spacing: 1px;
   }
 
-.container-bio{
-  padding-left: .2rem;
-}
+  .container-bio {
+    padding-left: .2rem;
+  }
+
   /* SECCION MUSICA */
 
   .musica {
@@ -1694,14 +1715,6 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  .copete-eng {
-    border-top: 1px solid peru;
-    font-size: .9rem;
-    padding-top: .6rem;
-    padding-right: .2rem;
-    color: rgb(66, 66, 66);
-  }
-
   .musica-titulo {
     color: whitesmoke;
     /*  position: absolute; */
@@ -1710,20 +1723,10 @@ body.dark-mode .footer-titulo:hover {
     font-family: "Bowlby One", sans-serif;
 
     font-size: 5rem;
-   /*  margin-left: 2rem; */
+    /*  margin-left: 2rem; */
     z-index: 1;
     background-color: transparent;
     letter-spacing: 1px;
-  }
-
-  .titulo-eng {
-    color: rgb(8, 4, 0);
-    position: absolute;
-    font-weight: 300;
-    font-size: 3rem;
-    top: 20%;
-    left: 3.3%;
-    z-index: 1;
   }
 
   .spotify {
@@ -1732,7 +1735,7 @@ body.dark-mode .footer-titulo:hover {
     gap: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-   /*   margin: 1rem;  */
+    /*   margin: 1rem;  */
     margin-bottom: 1rem;
     /* margin-left: 0; */
     justify-content: center;
@@ -1798,7 +1801,7 @@ body.dark-mode .footer-titulo:hover {
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
-  /*   margin-left: 2rem; */
+    /*   margin-left: 2rem; */
     letter-spacing: 1px;
   }
 
@@ -1817,24 +1820,7 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  /* 
-  .encabezado-grilla {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    gap: 1rem;
-    justify-content: space-between;
-    /*  border-bottom: 1px solid peru;  */
-  /*  padding-bottom: .7rem; */
-  /*   }  */
-
   .videos-fotos {
-    /*   display: grid;
-    grid-column: span 4; */
-    /* grid-row: span 2; */
-    /*  align-content: center;
-    justify-content:center;
-    justify-self: center; */
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -1912,7 +1898,7 @@ body.dark-mode .footer-titulo:hover {
     letter-spacing: 1px;
     font-size: 5rem;
     margin-bottom: 0;
-   /*  margin-left: 2rem; */
+    /*  margin-left: 2rem; */
     margin-bottom: 2rem;
 
   }
@@ -1949,18 +1935,9 @@ body.dark-mode .footer-titulo:hover {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    /*  display: grid;
-    grid-template-columns: 1fr 1fr; */
-
   }
 
   .grilla-contacto {
-    /*   display: grid;
-    width: 400px;
-  
-    justify-content: center;
-    align-items: end;
-    background-color: #7e3333; */
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1980,36 +1957,39 @@ body.dark-mode .footer-titulo:hover {
   }
 
   .contacto-desktop {
-     justify-content: start;
+    justify-content: start;
     text-align: center;
     align-items: en;
     display: flex;
     flex-direction: column;
-    ; 
+    ;
     background-color: #7e3333;
   }
 
   .contacto-redes {
 
     font-size: 21px;
-     margin-top: 0;
+    margin-top: 0;
     margin-bottom: 0;
-    padding-right: 3rem;
+   margin-left: 3rem;
     flex-direction: row;
     display: flex;
     justify-self: center;
-    align-items: center;
+    align-items: end;
     padding-top: .2rem;
   }
 
   .redes-contacto {
-    gap: 2rem;
+    gap: 2.5rem;
     padding-right: 0;
+   
   }
-.contacto p{
-  margin-bottom: 0;
-} */
-  .contacto-parrafo {
+
+  .contacto p {
+    margin-bottom: 0;
+  }
+
+   .contacto-parrafo {
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -2017,12 +1997,13 @@ body.dark-mode .footer-titulo:hover {
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.rem;
-      margin-left: 0;
-   padding-bottom: 0; 
-   text-wrap: nowrap;
-   margin-top:0;
-   margin-bottom:0;
-   padding-left: .5rem;
+    margin-left: 0;
+    padding-bottom: 0;
+    text-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: .5rem;
+    text-wrap: nowrap;
   }
 
   .contacto-titulo {
@@ -2212,7 +2193,7 @@ body.dark-mode .footer-titulo:hover {
   margin-top: .5rem;
   border: 1px solid peru;
   border-radius: 5px;
- /*  min-width: 100%; */
+  /*  min-width: 100%; */
   position: relative;
 }
 
@@ -2221,8 +2202,8 @@ body.dark-mode .footer-titulo:hover {
   position: absolute;
   top: 0;
   left: 0;
- /*  width: 100%; */
-  
+  /*  width: 100%; */
+
 }
 
 
@@ -2344,17 +2325,19 @@ body.dark-mode .piano-descargas:hover {
     right: 8%;
   }
 
- .partituras-piano {
+  .partituras-piano {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    width: 980px; 
+    width: 980px;
   }
-.piano-partes img{
-  height:400px;
-  object-fit: cover;
- object-position: center;
-}
+
+  .piano-partes img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .suite-titulo,
   .quinteto-titulo,
   .arreglos-titulo,
@@ -2482,7 +2465,7 @@ body.dark-mode .piano-descargas:hover {
   margin-top: 1.5rem;
 }
 
- .mostrar-icono1 {
+.mostrar-icono1 {
   cursor: pointer;
   margin: 10px;
   position: absolute;
@@ -2491,10 +2474,13 @@ body.dark-mode .piano-descargas:hover {
   bottom: 0;
   right: 1%;
   z-index: 10;
-} 
-.portada-img1,.piano-portada1{
+}
+
+.portada-img1,
+.piano-portada1 {
   position: relative;
 }
+
 .workshop1,
 .workshop2,
 .workshop3 {
@@ -2508,6 +2494,7 @@ body.dark-mode .piano-descargas:hover {
 .orquesta {
   margin-top: 1rem;
 }
+
 .piano-portada {
   position: relative;
 
@@ -2517,7 +2504,7 @@ body.dark-mode .piano-descargas:hover {
   margin-top: .5rem;
   border: 1px solid peru;
   border-radius: 5px;
- /*  min-width: 100%; */
+  /*  min-width: 100%; */
   position: relative;
 }
 
@@ -2552,20 +2539,23 @@ body.dark-mode .piano-descargas:hover {
     color: peru;
     font-size: 1.5rem;
   }
+
   .partituras-piano1 {
     position: relative;
     display: flex;
-   width: 400px;
+    width: 400px;
   }
-  .piano-portada1{
+
+  .piano-portada1 {
     position: relative;
   }
-  .piano-partes1 img{
+
+  .piano-partes1 img {
     border: 1px solid peru;
     height: 400px;
-    position: relative; 
+    position: relative;
   }
-  
+
 
   .pedagogia-grilla {
     display: grid;
@@ -2859,37 +2849,29 @@ body.dark-mode .redes-footer a:hover {
   color: grey;
 }
 
- @media (min-width: 1440px) and (max-width: 1600px) {
-   .contenedor {
-    max-width: 1440px; 
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .contenedor {
+    max-width: 1440px;
     /* Ajusta el ancho máximo */
-   } 
-
-.portada-img1{
-  max-height: 600px;
-  object-fit: cover;
-}
-/*  .portada-img{
-  height: 100vh;
-} */
-/* .portada{
-  height: 100vh;
-}  */
- }
- /* .spotify,.videos-grilla,.agenda-lista{
-  width: 90vw;
- }
-
-  .partituras-piano {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
   }
+.contenedor-titulos{
+  margin-inline-start: 4.7rem;
+}
+  .portada-img1 {
+    max-height: 600px;
+    object-fit: cover;
+  }
+  .portada{
+    height: 100vh;
+  }
+  .portada img{
+    height: 100vh;
+  }
+  .colab,.btn-videos{
+    margin-left: 4.4rem;
+  }
+}
 
-
-  } */ 
 
 
 
