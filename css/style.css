@@ -255,6 +255,105 @@ body.dark-mode .colaboraciones {
   transform: translateY(0);
 }
 
+/* Grilla de fotos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 800px;
+  /* Ajusta la altura para que no sea demasiado grande */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  color:#556B2F;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.modal .close-button:hover {
+  font-family: 35px;
+  transition: 0.3s;
+}
+
+
+.swiper-button-next, 
+.swiper-button-prev {
+  
+  color:#556B2F;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+  transform: scale(1.1); 
+}
+
+/* Cambiar el color de la paginación */
+.swiper-pagination-bullet {
+  background-color: #ffffff; /* Color de los puntos */
+  opacity: 0.7; /* Transparencia */
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:#556B2F; 
+  opacity: 1; /* Puntos activos completamente visibles */
+  transform: scale(1.2); /* Punto activo ligeramente más grande */
+}
+
+/* Cambiar tamaño de las flechas */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+  font-size: 30px; 
+}
+
 /* header-tablet */
 @media(min-width: 768px) {
   .nav-link {
@@ -410,7 +509,8 @@ h1 {
 }
 
 .btn-musica,
-.btn-videos,.btn-prensa{
+.btn-videos,
+.btn-prensa {
   border: 1px solid white;
   color: white;
   position: relative;
@@ -426,7 +526,7 @@ h1 {
   font-weight: 200;
 }
 
-.btn-prensa{
+.btn-prensa {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -451,12 +551,14 @@ h1 {
   border: 1px solid #556B2F;
 }
 
-.btn-prensa:hover{
+.btn-prensa:hover {
   color: #2b212b;
   background-color: white;
   transform: scale(1.1);
-  border: 1px solid #2b212b;; 
+  border: 1px solid #2b212b;
+  ;
 }
+
 .piano-descargas::before {
   position: absolute;
   content: "Douwnload";
@@ -1109,7 +1211,7 @@ body.dark-mode .view-more-btn:hover {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-   padding:0;
+  padding: 0;
   background-color: #7e3333;
 
 }
@@ -1127,7 +1229,7 @@ body.dark-mode .contacto-redes a:hover {
 .redes-contacto {
   gap: 1.6rem;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-self: center;
   flex-direction: row;
   /*  margin-top: .5rem; */
@@ -1166,7 +1268,7 @@ body.dark-mode .contacto-redes a:hover {
   margin-top: .5rem;
   gap: .3rem;
   border: 0;
-   text-wrap: wrap; 
+  text-wrap: wrap;
   background-color: #7e3333;
 }
 
@@ -1200,12 +1302,12 @@ body.dark-mode .contacto-redes a:hover {
 
 /* SECCION PRENSA */
 
-.prensa{
+.prensa {
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #2b212b;
-height: auto;
+  height: auto;
 
 }
 
@@ -1973,7 +2075,7 @@ body.dark-mode .footer-titulo:hover {
     font-size: 21px;
     margin-top: 0;
     margin-bottom: 0;
-   margin-left: 3rem;
+    margin-left: 3rem;
     flex-direction: row;
     display: flex;
     justify-self: center;
@@ -1985,14 +2087,14 @@ body.dark-mode .footer-titulo:hover {
   .redes-contacto {
     gap: 3rem;
     padding-right: 0;
-   font-size: 18px;
+    font-size: 18px;
   }
 
   .contacto p {
     margin-bottom: 0;
   }
 
-   .contacto-parrafo {
+  .contacto-parrafo {
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -2210,8 +2312,6 @@ body.dark-mode .footer-titulo:hover {
 }
 
 
-
-
 body.dark-mode .piano-descargas {
   background-color: black;
 }
@@ -2403,24 +2503,13 @@ body.dark-mode .piano-descargas:hover {
 
 
 .pedagogias-titulo {
-  color: wheat;
+  color: peru;
   position: absolute;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
   font-size: 1.5rem;
   top: 4%;
   left: 4%;
-}
-
-.pedagogy {
-  font-size:
-    /* 1.5rem; */
-    6.5vw;
-  top: 20%;
-  left: 4%;
-  font-weight: 300;
-  color: peru;
-  position: absolute;
 }
 
 .pedagogia-contenedor {
@@ -2529,7 +2618,7 @@ body.dark-mode .piano-descargas:hover {
     left: 2%;
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
-    color: wheat;
+    color: peru;
   }
 
   .pedagogy {
@@ -2717,7 +2806,7 @@ body.dark-mode .piano-descargas:hover {
   .spotify1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 1.3rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin: 1rem;
@@ -2739,11 +2828,20 @@ body.dark-mode .piano-descargas:hover {
 
   .collab {
     background-image: none;
+
+  }
+
+  .collab1 {
+    height: 400px;
+
   }
 
   .collab1 img {
     display: initial;
+    object-fit: cover;
 
+    width: 100%;
+    height: 300px;
   }
 
   .colaboracione,
@@ -2753,22 +2851,21 @@ body.dark-mode .piano-descargas:hover {
   }
 
   .piano1 {
-    /*  margin-top: 1rem; */
     display: flex;
     flex-direction: column;
     gap: .3rem;
     justify-content: center;
-
+    align-items: center;
     border: 1px solid peru;
     border-radius: 12px;
     padding: 1rem;
-    /* background-color: rgb(66, 66, 66); */
+    height: 500px;
+
   }
 
   .piano1 iframe {
     height: 400px;
   }
-
 }
 
 /* FOOTER PARTITURAS Y PEDAGOGIA  COLABORACIONES*/
@@ -2857,22 +2954,41 @@ body.dark-mode .redes-footer a:hover {
     max-width: 1440px;
     /* Ajusta el ancho máximo */
   }
-.contenedor-titulos{
-  margin-inline-start: 4.7rem;
-}
+
+  .contenedor-titulos {
+    margin-inline-start: 4.7rem;
+  }
+
+  .portada {
+    height: 100vh;
+  }
+
+  .portada img {
+    height: 100vh;
+  }
+
+  /* PEDAGOGIA /PARTITURAS */
   .portada-img1 {
     max-height: 600px;
     object-fit: cover;
   }
-  .portada{
-    height: 100vh;
-  }
-  .portada img{
-    height: 100vh;
-  }
-  .colab,.btn-videos{
+
+
+  /* BOTONES */
+  .colab,
+  .btn-videos {
     margin-left: 4.4rem;
   }
+
+  /* COLABORACIONES */
+  .collab1 img {
+    height: 350px;
+  }
+
+  .piano1 {
+    height: 550px;
+  }
+
 }
 
 

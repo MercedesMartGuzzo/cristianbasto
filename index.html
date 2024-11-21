@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Noto+Sans+JP:wght@100..900&display=swap"
@@ -36,7 +37,7 @@
     <header class="header-wrapper sticky-top">
         <!-- bootstrap nav -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid"> 
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#"> CRISTIAN BASTO </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +104,7 @@
             </h1>
         </section>
         <section class="bio" id="bioContainer">
-            
+
             <div class="contenedor-titulos">
                 <h2 class="bio-titulo">BIO</h2>
             </div>
@@ -178,12 +179,41 @@
                 </div>
             </div>
         </section>
+        <section class="galeria container">
+            <div class="photo-grid">
+                <img src="./img/crischus-contra.jpg" alt="Foto 1" data-index="0">
+                <img src="./img/foto-bioNueva.jpg" alt="Foto 2" data-index="1">
+                <img src="./img/colab.jpg" alt="Foto 3" data-index="2">
+                <img src="./img/ensambleswiper.jpg" alt="Foto 4" data-index="3">
+                <img src="./img/orsai9.jpg" alt="Foto 5" data-index="4">
+                <img src="./img/fondo-videos.jpg" alt="Foto 6" data-index="5">
+               <!--  <img src="./img/swipper2.jpg" alt="Foto 7" data-index="6"> -->
+            </div>
 
+            <!-- Modal con slider -->
+            <div class="modal" id="photo-modal">
+                <span class="close-button" id="close-modal">&times;</span>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/crischus-contra.jpg" alt="Foto 1"></div>
+                        <div class="swiper-slide"><img src="./img/foto-bioNueva.jpg" alt="Foto 2"></div>
+                        <div class="swiper-slide"><img src="./img/colab.jpg" alt="Foto 3"></div>
+                        <div class="swiper-slide"><img src="./img/ensambleswiper.jpg" alt="Foto 4"></div>
+                        <div class="swiper-slide"><img src="./img/orsai9.jpg" alt="Foto 5"></div>
+                        <div class="swiper-slide"><img src="./img/fondo-videos.jpg" alt="Foto 6"></div>
+                     <!--    <div class="swiper-slide"><img src="./img/swipper2.jpg" alt="Foto 7"></div> -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
         <section class="musica fade-in" id="musicaContainer">
             <div class="contenedor-titulos">
                 <h2 class="musica-titulo">MUSICA</h2>
             </div>
-        
+
             <div class="spotify container">
                 <div class="suite fade-in1">
                     <img src="./img/foto-suite.png" alt="suite villa urquiza">
@@ -334,6 +364,11 @@
 
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+
 
     <script src="./js/index.js"></script>
     <script src="./js/agenda.js"></script>
