@@ -1106,10 +1106,10 @@ body.dark-mode .view-more-btn:hover {
 .contacto-redes {
   color: whitesmoke;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  padding-left: 0;
+   padding:0;
   background-color: #7e3333;
 
 }
@@ -1127,8 +1127,8 @@ body.dark-mode .contacto-redes a:hover {
 .redes-contacto {
   gap: 1.6rem;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content:center;
+  align-self: center;
   flex-direction: row;
   /*  margin-top: .5rem; */
   /*   margin-bottom: 1rem; */
@@ -1148,8 +1148,10 @@ body.dark-mode .contacto-redes a:hover {
   border-radius: 10px;
   justify-content: start;
   padding-left: .9rem;
-  padding-right: 1.7rem;
+  padding-right: .9rem;
   padding-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -1977,12 +1979,13 @@ body.dark-mode .footer-titulo:hover {
     justify-self: center;
     align-items: end;
     padding-top: .2rem;
+    margin-right: 0;
   }
 
   .redes-contacto {
-    gap: 2.5rem;
+    gap: 3rem;
     padding-right: 0;
-   
+   font-size: 18px;
   }
 
   .contacto p {
@@ -1996,7 +1999,7 @@ body.dark-mode .footer-titulo:hover {
     align-items: end;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.rem;
+    font-size: 1rem;
     margin-left: 0;
     padding-bottom: 0;
     text-wrap: nowrap;
