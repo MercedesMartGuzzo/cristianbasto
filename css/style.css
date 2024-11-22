@@ -258,9 +258,17 @@ body.dark-mode .colaboraciones {
 /* Grilla de fotos */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns:
+    /* repeat(auto-fill, minmax(150px, 1fr)) */
+    1fr 1fr;
   gap: 10px;
   padding: 10px;
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-self: center;
 }
 
 .photo-grid img {
@@ -296,7 +304,6 @@ body.dark-mode .colaboraciones {
 .swiper-container {
   width: 100%;
   max-width: 800px;
-  /* Ajusta la altura para que no sea demasiado grande */
 }
 
 .swiper-slide img {
@@ -309,7 +316,7 @@ body.dark-mode .colaboraciones {
   position: absolute;
   top: 60px;
   right: 15px;
-  color:#556B2F;
+  color: #556B2F;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -322,36 +329,35 @@ body.dark-mode .colaboraciones {
 }
 
 
-.swiper-button-next, 
+.swiper-button-next,
 .swiper-button-prev {
-  
-  color:#556B2F;
+  color: #556B2F;
   padding: 10px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.swiper-button-next:hover, 
+.swiper-button-next:hover,
 .swiper-button-prev:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
-/* Cambiar el color de la paginación */
+
 .swiper-pagination-bullet {
-  background-color: #ffffff; /* Color de los puntos */
-  opacity: 0.7; /* Transparencia */
+  background-color: #ffffff;
+  opacity: 0.7;
   transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 .swiper-pagination-bullet-active {
-  background-color:#556B2F; 
-  opacity: 1; /* Puntos activos completamente visibles */
-  transform: scale(1.2); /* Punto activo ligeramente más grande */
+  background-color: #556B2F;
+  opacity: 1;
+  transform: scale(1.2);
 }
 
-/* Cambiar tamaño de las flechas */
-.swiper-button-next::after, 
+
+.swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 /* header-tablet */
@@ -435,6 +441,35 @@ body.dark-mode .colaboraciones {
   .close-icon {
     display: none;
   }
+
+  /* swipper */
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  }
+
+  /* Ajustes específicos para desktop */
+
+  @media (min-width: 1200px) {
+    .swiper-container {
+      width: 50%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+    }
+  }
+
+
+  .modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 }
 
 
@@ -669,8 +704,20 @@ h1 {
 }
 
 
+.galeria {
 
-.bio-titulo {
+  margin-top: 0;
+  width: 100%;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  /*   margin-bottom: 2rem; */
+  background-color: whitesmoke;
+}
+
+.bio-titulo,
+.galeria-titulo {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -685,6 +732,11 @@ h1 {
   background-color: grey;
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
+}
+
+.galeria-titulo {
+  background-color: transparent;
+  color: gray;
 }
 
 .bio-parrafo1 {
@@ -771,6 +823,10 @@ h1 {
   width: 90vw;
 }
 
+/* galeria */
+/*  .galeria{
+    background-color:#2b212b ;
+  } */
 /* SECCION MUSICA */
 
 .musica {
@@ -1471,14 +1527,16 @@ body.dark-mode .footer-titulo:hover {
   .agenda-titulo,
   .bio-titulo,
   .contacto-titulo,
-  .musica-titulo {
+  .musica-titulo,.galeria-titulo {
     color: whitesmoke;
     font-weight: 400;
     font-size: 3rem;
     letter-spacing: 1px;
 
+  }.galeria-titulo{
+    color:gray;
+    background-color: transparent;
   }
-
 
 
   .videos-grilla {
@@ -1751,7 +1809,7 @@ body.dark-mode .footer-titulo:hover {
     font-size: .9rem;
   }
 
-  .bio-titulo {
+  .bio-titulo,.galeria-titulo {
     color: whitesmoke;
     display: flex;
     justify-content: start;
@@ -1763,7 +1821,10 @@ body.dark-mode .footer-titulo:hover {
     background-color: grey;
     letter-spacing: 1px;
   }
-
+.galeria-titulo{
+  color: gray;
+  background-color: transparent;
+}
   .container-bio {
     padding-left: .2rem;
   }
@@ -2989,6 +3050,10 @@ body.dark-mode .redes-footer a:hover {
     height: 550px;
   }
 
+  /* galeria */
+  .photo.grid {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  }
 }
 
 
