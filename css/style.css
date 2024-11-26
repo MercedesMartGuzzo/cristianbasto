@@ -75,13 +75,26 @@ header {
 
 }
 
-body.dark-mode header,
-body.dark-mode footer {
+body.dark-mode header,body.dark-mode footer
+ {
   background-color: black;
 }
-
 body.dark-mode .bio,
-body.dark-mode .bio-secciones p,
+body.dark-mode .galeria,
+body.dark-mode .bio-titulo,
+body.dark-mode .musica-titulo,
+body.dark-mode .videos-titulo,
+body.dark-mode .agenda-titulo,
+ body.dark-mode .contacto-titulo, 
+body.dark-mode .prensa, 
+body.dark-mode .videos-grilla,
+ body.dark-mode .grilla-contacto,
+body.dark-mode .contacto-parrafo,
+body.dark-mode .contacto-desktop,
+body.dark-mode .contacto-redes,
+body.dark-mode .redes-contacto, 
+body.dark-mode .donaciones-btn,
+body.dark-mode .bio-secciones,
 body.dark-mode .musica,
 body.dark-mode .spotify,
 body.dark-mode .videos,
@@ -91,8 +104,7 @@ body.dark-mode .agenda-lista,
 body.dark-mode #eventos li
 
 /* ,body.dark-mode .agenda button */
-,
-body.dark-mode .contacto,
+,body.dark-mode .contacto, 
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
@@ -714,7 +726,7 @@ h1 {
   flex-direction: column;
   padding-top: 1rem;
   /*   margin-bottom: 2rem; */
-  background-color:#2b212b;
+  background-color: #2b212b;
 }
 
 .bio-titulo,
@@ -723,7 +735,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: start;
-margin-bottom: .5rem;
+  margin-bottom: .5rem;
 
   /*  position: absolute; */
   font-weight: 400;
@@ -1123,11 +1135,11 @@ iframe {
   align-items: start;
   text-align: center;
   padding-top: 1rem;
-  
+
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
   /*   overflow: hidden; */
-   margin-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 
 .agenda-lista {
@@ -1377,8 +1389,8 @@ body.dark-mode .contacto-redes a:hover {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   background-color: white;
   font-weight: 200;
   /*   border-top: 1px solid peru; */
@@ -1500,7 +1512,7 @@ body.dark-mode .footer-titulo:hover {
   .suite,
   .piano {
     width: auto;
-    border: 1px solid peru;
+     border: none;
   }
 
   .suite iframe,
@@ -1530,14 +1542,17 @@ body.dark-mode .footer-titulo:hover {
   .agenda-titulo,
   .bio-titulo,
   .contacto-titulo,
-  .musica-titulo,.galeria-titulo {
+  .musica-titulo,
+  .galeria-titulo {
     color: whitesmoke;
     font-weight: 400;
     font-size: 3rem;
     letter-spacing: 1px;
 
-  }.galeria-titulo{
-    color:whitesmoke;
+  }
+
+  .galeria-titulo {
+    color: whitesmoke;
     background-color: transparent;
   }
 
@@ -1736,7 +1751,7 @@ body.dark-mode .footer-titulo:hover {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-  /*   gap: 1.5rem; */
+    /*   gap: 1.5rem; */
     width: 100%;
   }
 
@@ -1812,7 +1827,8 @@ body.dark-mode .footer-titulo:hover {
     font-size: .9rem;
   }
 
-  .bio-titulo,.galeria-titulo {
+  .bio-titulo,
+  .galeria-titulo {
     color: whitesmoke;
     display: flex;
     justify-content: start;
@@ -1824,10 +1840,12 @@ body.dark-mode .footer-titulo:hover {
     background-color: grey;
     letter-spacing: 1px;
   }
-.galeria-titulo{
-  color: whitesmoke;
-  background-color: transparent;
-}
+
+  .galeria-titulo {
+    color: whitesmoke;
+    background-color: transparent;
+  }
+
   .container-bio {
     padding-left: .2rem;
   }
@@ -1915,7 +1933,7 @@ body.dark-mode .footer-titulo:hover {
 
   .suite,
   .piano {
-    border: 1px solid peru;
+  /*   border: 1px solid peru; */
     width: auto;
   }
 
@@ -1952,7 +1970,7 @@ body.dark-mode .footer-titulo:hover {
     width: 100%;
     overflow: hidden;
     padding-top: 0;
-  
+
     margin-top: 0;
     background-color: #556B2F;
     padding-bottom: .5rem;
@@ -2197,7 +2215,7 @@ body.dark-mode .footer-titulo:hover {
     font-weight: 300;
   }
 
-/* FOOOTER INDEX */
+  /* FOOOTER INDEX */
   .footer {
     display: flex;
     flex-direction: column;
@@ -2291,14 +2309,14 @@ body.dark-mode .footer-titulo:hover {
 
 .partituras-pa {
   margin-top: 1rem;
-  color:#7e3333;
+  color: #7e3333;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   text-align: start;
   font-size: 1rem;
-  font-family: "Bowlby One", sans-serif; 
+  font-family: "Bowlby One", sans-serif;
 }
 
 .partituras-pa1 {
@@ -2431,10 +2449,12 @@ body.dark-mode .piano-descargas:hover {
   font-weight: 600;
   font-size: 1.2rem;
 }
- .donaciones-p{
+
+.donaciones-p {
   font-family: "Bowlby One", sans-serif;
- /*  color: #7e3333; */
-} 
+  /*  color: #7e3333; */
+}
+
 /* PARTIRURAS DESKTOP */
 @media(min-width: 1200px) {
 
@@ -2581,7 +2601,7 @@ body.dark-mode .piano-descargas:hover {
 
 .pedagogia-pa {
   margin-top: 1rem;
-  color:#7e3333;
+  color: #7e3333;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2936,120 +2956,51 @@ body.dark-mode .piano-descargas:hover {
 .footer2 {
   display: flex;
   width: 100%;
-flex-direction: column;
+  flex-direction: column;
   background-color: whitesmoke;
   font-weight: 200;
 
-} 
-
-
-.footer-parrafo2{
-font-size: .9rem;
 }
-.encabezado2{
+
+
+.footer-parrafo2 {
+  font-size: .9rem;
+}
+
+.encabezado2 {
   margin-left: 1rem;
   color: #7e3333;
   font-family: "Bowlby One", sans-serif;
   margin-bottom: 0;
 }
+
 .footer-redes2 {
-color: #7e3333;
-margin-top: .3rem;
-padding-left: 0;
+  color: #7e3333;
+  margin-top: .3rem;
+  padding-left: 0;
 
-flex-direction: row;
-}
-.footer2-wrapp{
-display: flex;
-justify-content: start;
-align-content: start;
-margin-top: 0;
-margin-left: 1rem;
-padding-left: .2rem;
-}
-.redes-footer2 {
-gap: 2.1rem;
-display: flex;
-justify-content: center;
-flex-direction: row;
- margin-top: 1rem;
-/*  margin-right: 4rem; */
-font-size: 17px;
-align-content: end;
-justify-content: end;
-
+  flex-direction: row;
 }
 
-.redes-footer2 a:hover {
-transition: 1s ease;
-color: rgb(8, 4, 0);
-transform: scale(1.1);
+.footer2-wrapp {
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  margin-top: 0;
+  margin-left: 1rem;
+  padding-left: .2rem;
 }
-
-.bi-whatsapp:hover {
-color: green;
-}
-.copi{
-  font-size: .8rem;
-
-}
-@media(min-width:768px){
 
 .redes-footer2 {
-  gap: 1.3rem;
+  gap: 2.1rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 1rem;
- /*  margin-right: 4rem; */
- font-size: 16px;
-align-content: end;
-justify-content: end;
-}
-}
-@media(min-width:1200px){
-  .footer2 {
-    display: grid;
-    width: 100%;
-  grid-template-columns: 1fr 1fr;
-    background-color: whitesmoke;
-    font-weight: 200;
- 
-  } 
-  .footer2 h2{
-    margin-left: 4rem;
-  }
-  .footer-parrafo2{
-    margin-left: 4rem;
-  }
-  .encabezado2{
-    margin-left: 4rem;
-    color: #7e3333;
-    font-family: "Bowlby One", sans-serif;
-  }
-.footer-redes2 {
-  color: #7e3333;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-self: end;
-  margin-top: .3rem;
-  padding-left: 0;
-}
-.footer2-wrapp{
-  display: grid;
-  justify-content: center;
+  /*  margin-right: 4rem; */
+  font-size: 17px;
   align-content: end;
-margin-top: 3rem;
-}
-.redes-footer2 {
-  gap: 2.5rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-   margin-top: 1rem; 
-
-  font-size: 18px;
+  justify-content: end;
 
 }
 
@@ -3062,7 +3013,90 @@ margin-top: 3rem;
 .bi-whatsapp:hover {
   color: green;
 }
+
+.copi {
+  font-size: .8rem;
+
 }
+
+@media(min-width:768px) {
+
+  .redes-footer2 {
+    gap: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    /*  margin-right: 4rem; */
+    font-size: 16px;
+    align-content: end;
+    justify-content: end;
+  }
+}
+
+@media(min-width:1200px) {
+  .footer2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    font-weight: 200;
+
+  }
+
+  .footer2 h2 {
+    margin-left: 4rem;
+  }
+
+  .footer-parrafo2 {
+    margin-left: 4rem;
+  }
+
+  .encabezado2 {
+    margin-left: 4rem;
+    color: #7e3333;
+    font-family: "Bowlby One", sans-serif;
+  }
+
+  .footer-redes2 {
+    color: #7e3333;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: end;
+    margin-top: .3rem;
+    padding-left: 0;
+  }
+
+  .footer2-wrapp {
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    margin-top: 3rem;
+  }
+
+  .redes-footer2 {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    font-size: 18px;
+
+  }
+
+  .redes-footer2 a:hover {
+    transition: 1s ease;
+    color: rgb(8, 4, 0);
+    transform: scale(1.1);
+  }
+
+  .bi-whatsapp:hover {
+    color: green;
+  }
+}
+
 @media (min-width: 1440px) and (max-width: 1600px) {
   .contenedor {
     max-width: 1440px;
@@ -3106,10 +3140,11 @@ margin-top: 3rem;
   .photo.grid {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
+
   /* FOOTER */
-.footer2-wrapp{
-  margin-top: 3.3rem;
-}
+  .footer2-wrapp {
+    margin-top: 3.3rem;
+  }
 }
 
 
