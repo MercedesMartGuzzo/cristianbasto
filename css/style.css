@@ -1372,20 +1372,19 @@ body.dark-mode .contacto-redes a:hover {
 }
 
 /************FOOTER***********/
-footer {
-  padding-left: .5rem;
-}
+
 
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   font-weight: 200;
   /*   border-top: 1px solid peru; */
   /*   margin-bottom: 2rem; */
   color: #7e3333;
+  padding-left: .5rem;
 }
 
 footer h2 {
@@ -2198,6 +2197,17 @@ body.dark-mode .footer-titulo:hover {
     font-weight: 300;
   }
 
+/* FOOOTER INDEX */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-weight: 200;
+    color: #7e3333;
+    padding-left: .5rem;
+    margin-left: 1rem;
+  }
 }
 
 /* BARRA DE NAVEGACION PARTITURAS, PEDAGOGIA Y COLABORACIONES */
@@ -2232,8 +2242,6 @@ body.dark-mode .footer-titulo:hover {
   content: "";
   position: absolute;
   background-color: peru;
-  /* rgba(172, 255, 47, 0.295); */
-
   transition: width 2s ease-in-out, height 2s ease-in-out;
   width: 0;
   height: 0;
@@ -2273,19 +2281,9 @@ body.dark-mode .footer-titulo:hover {
   letter-spacing: 1px;
 }
 
-.sheet-music {
-  color: wheat;
-  position: absolute;
-  font-weight: 300;
-  font-size:
-    /*  1.5rem; */
-    6.5vw;
-  top: 17%;
-  left: 4%;
-}
+
 
 .partituras-grilla {
- /*  border-top: 1px solid peru; */
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -2314,7 +2312,7 @@ body.dark-mode .footer-titulo:hover {
   font-size: 1rem;
 }
 
-.sheet-p,
+
 .donations {
   margin-top: .5rem;
   padding-top: .2rem;
@@ -2365,7 +2363,6 @@ body.dark-mode .footer-titulo:hover {
   margin-top: .5rem;
   border: 1px solid peru;
   border-radius: 5px;
-  /*  min-width: 100%; */
   position: relative;
 }
 
@@ -2374,8 +2371,6 @@ body.dark-mode .footer-titulo:hover {
   position: absolute;
   top: 0;
   left: 0;
-  /*  width: 100%; */
-
 }
 
 
@@ -2435,9 +2430,11 @@ body.dark-mode .piano-descargas:hover {
   font-family: "Bowlby One", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
-
 }
-
+ .donaciones-p{
+  font-family: "Bowlby One", sans-serif;
+ /*  color: #7e3333; */
+} 
 /* PARTIRURAS DESKTOP */
 @media(min-width: 1200px) {
 
@@ -2936,72 +2933,127 @@ body.dark-mode .piano-descargas:hover {
 
 /* FOOTER PARTITURAS Y PEDAGOGIA  COLABORACIONES*/
 
-.footer {
+.footer2 {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  width: 100%;
+flex-direction: column;
   background-color: whitesmoke;
   font-weight: 200;
 
+} 
+
+
+.footer-parrafo2{
+font-size: .9rem;
+}
+.encabezado2{
+  margin-left: 1rem;
+  color: #7e3333;
+  font-family: "Bowlby One", sans-serif;
+  margin-bottom: 0;
+}
+.footer-redes2 {
+color: #7e3333;
+margin-top: .3rem;
+padding-left: 0;
+
+flex-direction: row;
+}
+.footer2-wrapp{
+display: flex;
+justify-content: start;
+align-content: start;
+margin-top: 0;
+margin-left: 1rem;
+padding-left: .2rem;
+}
+.redes-footer2 {
+gap: 2.1rem;
+display: flex;
+justify-content: center;
+flex-direction: row;
+ margin-top: 1rem;
+/*  margin-right: 4rem; */
+font-size: 17px;
+align-content: end;
+justify-content: end;
+
 }
 
-/* footer h2 {
-  display: flex;
-  color: #7e3333;
-  margin-top: 1rem;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  font-weight: 300;
-  margin-top: 2rem;
-} */
-
-
-.body.dark-mode .footer-titulo:hover {
-  color: grey;
+.redes-footer2 a:hover {
+transition: 1s ease;
+color: rgb(8, 4, 0);
+transform: scale(1.1);
 }
 
-/* .footer-parrafo {
-  color: #7e3333;
- /*  font-size: 1.2rem; */
-/*  text-align: center;
-  padding-top: 1rem;
-  margin-left: 1rem;
+.bi-whatsapp:hover {
+color: green;
+}
+.copi{
+  font-size: .8rem;
 
-} */
+}
+@media(min-width:768px){
 
-/* .encabezado {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-} */
-
-
-.footer-redes {
-  color: #7e3333;
+.redes-footer2 {
+  gap: 1.3rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+ /*  margin-right: 4rem; */
+ font-size: 16px;
+align-content: end;
+justify-content: end;
+}
+}
+@media(min-width:1200px){
+  .footer2 {
+    display: grid;
+    width: 100%;
+  grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    font-weight: 200;
+ 
+  } 
+  .footer2 h2{
+    margin-left: 4rem;
+  }
+  .footer-parrafo2{
+    margin-left: 4rem;
+  }
+  .encabezado2{
+    margin-left: 4rem;
+    color: #7e3333;
+    font-family: "Bowlby One", sans-serif;
+  }
+.footer-redes2 {
+  color: #7e3333;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: end;
   margin-top: .3rem;
   padding-left: 0;
-  margin-left: .3rem;
 }
-
-.redes-footer {
-  gap: 1.5rem;
+.footer2-wrapp{
+  display: grid;
+  justify-content: center;
+  align-content: end;
+margin-top: 3rem;
+}
+.redes-footer2 {
+  gap: 2.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
-  margin-top: 1.3rem;
-  margin-left: 1rem;
-  font-size: 20px;
+   margin-top: 1rem; 
+
+  font-size: 18px;
+
 }
 
-.redes-footer a:hover {
+.redes-footer2 a:hover {
   transition: 1s ease;
   color: rgb(8, 4, 0);
   transform: scale(1.1);
@@ -3010,15 +3062,10 @@ body.dark-mode .piano-descargas:hover {
 .bi-whatsapp:hover {
   color: green;
 }
-
-body.dark-mode .redes-footer a:hover {
-  color: grey;
 }
-
 @media (min-width: 1440px) and (max-width: 1600px) {
   .contenedor {
     max-width: 1440px;
-    /* Ajusta el ancho máximo */
   }
 
   .contenedor-titulos {
@@ -3059,6 +3106,10 @@ body.dark-mode .redes-footer a:hover {
   .photo.grid {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
+  /* FOOTER */
+.footer2-wrapp{
+  margin-top: 3.3rem;
+}
 }
 
 
