@@ -115,7 +115,12 @@ body.dark-mode .colaboraciones {
   background-color: black;
   color: white;
 }
-
+body.dark-mode .prensa,body.dark-mode .contacto{
+  border-top: 1px solid whitesmoke;
+}
+body.dark-mode .donaciones-btn{
+  border: 1px solid whitesmoke;
+}
 /* BARRA DE NAVEGACION */
 
 .navbar {
@@ -155,7 +160,7 @@ body.dark-mode .colaboraciones {
 
 .navbar li a {
   position: relative;
-  color: whitesmoke !important;
+   color: whitesmoke !important ;
   padding-top: .2rem;
   display: inline-block;
   transition: .2s;
@@ -183,7 +188,7 @@ body.dark-mode .colaboraciones {
 }
 
 .navbar-brand {
-  color: whitesmoke !important;
+  color: whitesmoke !important; 
   text-align: center;
   font-family: "Bowlby One", sans-serif;
   font-weight: 400;
@@ -222,11 +227,6 @@ body.dark-mode .colaboraciones {
   margin-left: .3rem;
 }
 
-/* 
-.bi-moon-stars-fill:hover::before,
-.bi-translate:hover::before {
-  transform: scaleX(1.1);
-} */
 
 .collapse {
   display: none;
@@ -266,17 +266,14 @@ body.dark-mode .colaboraciones {
   /*   opacity: 1;  */
   transform: translateY(0);
 }
-
-/* Grilla de fotos */
-.photo-grid {
+/* GRILLA DE FOTOS GALERIA */
+  .photo-grid {
   display: grid;
-  grid-template-columns:
-    /* repeat(auto-fill, minmax(150px, 1fr)) */
-    1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   padding: 10px;
   width: 90%;
-  border: 1px solid whitesmoke;
+   border: 1px solid whitesmoke; 
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -290,11 +287,23 @@ body.dark-mode .colaboraciones {
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.3s ease;
-}
+  object-fit: cover;
+} 
 
 .photo-grid img:hover {
   transform: scale(1.05);
+} 
+
+
+/* Diferenciación de clases */
+.photo-grid img.vertical {
+  grid-row: span 2; /* Las imágenes verticales ocupan dos filas */
 }
+
+.photo-grid img.horizontal {
+  grid-column: span 1; /* Las imágenes horizontales ocupan dos columnas */
+}
+
 
 /* Modal */
 .modal {
@@ -314,16 +323,30 @@ body.dark-mode .colaboraciones {
   display: flex;
 }
 
+
 .swiper-container {
   width: 100%;
   max-width: 800px;
 }
+ .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 500px; 
+   overflow: hidden;
+}
+
+
+
 
 .swiper-slide img {
-  width: 100%;
-  height: auto;
+  width: auto; 
+  height: 100%;
+  object-fit: contain; 
   border-radius: 5px;
 }
+
 
 .modal .close-button {
   position: absolute;
@@ -371,7 +394,15 @@ body.dark-mode .colaboraciones {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 30px;
+} 
+
+
+/* Íconos de navegación */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
 }
+
 
 /* header-tablet */
 @media(min-width: 768px) {
@@ -498,39 +529,27 @@ body.dark-mode .colaboraciones {
 }
 
 
-h1 {
-  color: transparent;
-  font-size: 1.8rem;
+ h1 {
+  font-size: 1.6rem;
   font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-
-  animation: titulo 2s 1s ease-in-out 1 forwards;
+  font-family: "Bowlby One", sans-serif; 
   position: absolute;
-  top: 25%;
-  left: 5%;
-  z-index: 1;
+   top: 25%;
+  left: 3%; 
+  z-index: 1; 
 
 }
+
 
 .h1 {
   display: flex;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
+  font-family: "Bowlby One", sans-serif; 
 }
 
-@keyframes titulo {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-    color: whitesmoke;
-    letter-spacing: 1px;
-  }
-}
 
 /* BOTONES */
 
@@ -661,8 +680,8 @@ h1 {
   position: relative;
   background-color: white;
   padding: 10px;
-  color: peru;
-  border: 1px solid peru;
+  color: #7e3333;
+  border: 1px solid #7e3333;
   cursor: pointer;
   border-radius: 5px;
   margin-top: .5rem;
@@ -673,7 +692,7 @@ h1 {
 }
 
 .donaciones-btn:hover {
-  background-color: peru;
+  background-color:#7e3333;
   color: white;
   transform: scale(1.1);
 }
@@ -682,9 +701,9 @@ h1 {
   position: absolute;
   content: "Donations";
   top: 100%;
-  color: peru;
-  border: 1px solid peru;
-  background-color: wheat;
+  color:#7e3333;
+  border: 1px solid #7e3333;
+  background-color: whitesmoke;
   padding: .1rem .2rem;
   border-radius: 5px;
   transform: scale(0);
@@ -837,10 +856,7 @@ h1 {
   width: 90vw;
 }
 
-/* galeria */
-/*  .galeria{
-    background-color:#2b212b ;
-  } */
+
 /* SECCION MUSICA */
 
 .musica {
@@ -1027,11 +1043,7 @@ h1 {
 
 .videos-titulo {
   color: whitesmoke;
-  /*  rgb(231, 138, 45) /;
-  display: flex;
-  /* absolute; */
   justify-content: start;
-  /*  margin-left: 1rem; */
   font-weight: 400;
   font-size: 2.3rem;
   margin-top: 1rem;
@@ -1232,7 +1244,6 @@ body.dark-mode .view-more-btn:hover {
 
 .contacto {
   width: 100%;
-  /* position: relative; */
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: .5rem;
@@ -1243,39 +1254,6 @@ body.dark-mode .view-more-btn:hover {
 
 }
 
-/* 
-.contacto::before,
-.contacto::after {
-  content: "";
-  position: absolute;
-  background-color: peru;
-  transition: width 1s ease-in-out, height 1s ease-in-out;
-  width: 0;
-  height: 0;
-}
-
-.contacto::before {
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 1px;
-}
-
-.contacto::after {
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 0;
-}
-
-
-.border-visible-top::before {
-  width: 100%;
-}
-
-.border-visible-left::after {
-  height: 100%;
-} */
 
 .contacto-redes {
   color: whitesmoke;
@@ -1284,18 +1262,18 @@ body.dark-mode .view-more-btn:hover {
   align-items: center;
   margin-top: 1rem;
   padding: 0;
-  background-color: #7e3333;
+  background-color:#7e3333;
 
 }
 
 .contacto-redes a:hover {
   transition: 1s ease;
-  color: rgb(8, 4, 0);
+  color:#2b212b;/* rgb(8, 4, 0); */
   transform: scale(1.1);
 }
 
 body.dark-mode .contacto-redes a:hover {
-  color: grey;
+  color:#2b212b;
 }
 
 .redes-contacto {
@@ -1304,10 +1282,6 @@ body.dark-mode .contacto-redes a:hover {
   justify-content: center;
   align-self: center;
   flex-direction: row;
-  /*  margin-top: .5rem; */
-  /*   margin-bottom: 1rem; */
-
-  /*  padding-right: 1rem; */
   font-size: 1.3rem;
   text-align: center;
   background-color: #7e3333;
@@ -1349,10 +1323,7 @@ body.dark-mode .contacto-redes a:hover {
   display: flex;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
-  font-size:
-    /* 2.2rem */
-    2.3rem;
-  /*  margin-left: 6vw; */
+  font-size:2.3rem;
   letter-spacing: 1px;
   background-color: #7e3333;
   margin-bottom: 1rem;
@@ -1374,7 +1345,7 @@ body.dark-mode .contacto-redes a:hover {
 
 /* SECCION PRENSA */
 
-.prensa {
+.prensa{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1391,10 +1362,8 @@ body.dark-mode .contacto-redes a:hover {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  background-color: white;
+  background-color: whitesmoke;
   font-weight: 200;
-  /*   border-top: 1px solid peru; */
-  /*   margin-bottom: 2rem; */
   color: #7e3333;
   padding-left: .5rem;
 }
@@ -1412,12 +1381,24 @@ footer h2 {
   font-family: "Bowlby One", sans-serif;
 
 }
+footer h2:hover{
+color: #2b212b;
+transition: color 1s;
+}
 
 body.dark-mode .footer-titulo:hover {
   font-weight: 400;
-  color: grey;
+  color:peru;
 }
-
+body.dark-mode .body.dark-mode .redes-footer2:hover{
+color: peru;
+}
+body.dark-mode .prensa{
+  border-bottom: 1px solid whitesmoke;
+}
+body.dark-mode .donaciones,body.dark-mode .colaboraciones,body.dark-mode .pedagogias{
+  border-bottom: 1px solid peru;
+}
 .footer-parrafo {
   color: #7e3333;
   display: flex;
@@ -1463,8 +1444,8 @@ body.dark-mode .footer-titulo:hover {
   /* PORTADA */
   h1 {
     font-size: 3.5rem;
-    top: 35%;
-    left: 8%;
+     top: 35%;
+    left: 8%; 
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
 
@@ -1717,7 +1698,7 @@ body.dark-mode .footer-titulo:hover {
   h1 {
     font-size: 4.5rem;
     top: 40%;
-    left: 10%;
+    left: 10%; 
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
 
@@ -1770,10 +1751,6 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  /* .bio-parrafo h4 {
-    font-size: 1rem;
-  } */
-
   .bio-parrafo,
   .bio-parrafo2 {
     margin-top: .1rem;
@@ -1802,13 +1779,6 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  .about {
-    font-size: 1.3rem;
-    display: flex;
-    margin-bottom: .8rem;
-    color: peru;
-
-  }
 
   .bio-parrafo1 {
     font-size: 1rem;
@@ -1817,15 +1787,6 @@ body.dark-mode .footer-titulo:hover {
 
   }
 
-  .p-about {
-    color: rgb(66, 66, 66);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    font-size: .9rem;
-  }
 
   .bio-titulo,
   .galeria-titulo {
@@ -2428,7 +2389,10 @@ body.dark-mode .piano-descargas:hover {
   text-wrap: balance;
   font-family: "Bowlby One", sans-serif;
 }
-
+.donaciones-titulo{
+  color: #7e3333;
+  border-top: 1px solid #7e3333;
+}
 .donaciones {
   padding: 1rem;
   text-align: start;
@@ -2538,6 +2502,10 @@ body.dark-mode .piano-descargas:hover {
     padding-top: 1rem;
 
   }
+  .donaciones-titulo{
+    color:#7e3333;
+    border-top: 1px solid #7e3333;
+  }
 }
 
 
@@ -2549,7 +2517,9 @@ body.dark-mode .piano-descargas:hover {
   position: relative;
   overflow: hidden;
   padding-top: 1rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .pedagogias:before,
@@ -2692,6 +2662,10 @@ body.dark-mode .piano-descargas:hover {
   height: auto;
 
 }
+.pedagogias{
+  margin-bottom: 1rem;
+  
+}
 
 /* PEDAGOGIA DESKTOP */
 @media(min-width :1200px) {
@@ -2704,11 +2678,6 @@ body.dark-mode .piano-descargas:hover {
     color: peru;
   }
 
-  .pedagogy {
-    font-size: 3.5rem;
-    top: 13%;
-    left: 2%;
-  }
 
   .workshop {
     color: peru;
@@ -2739,6 +2708,7 @@ body.dark-mode .piano-descargas:hover {
     width: 100%;
     padding-bottom: .3rem;
     margin-top: 2rem;
+    
   }
 
   .workshop1,
@@ -2761,14 +2731,6 @@ body.dark-mode .piano-descargas:hover {
   position: absolute;
 }
 
-.colab-eng {
-  font-size: 1.3rem;
-  top: 17%;
-  left: 4.5%;
-  font-weight: 300;
-  color: rgb(110, 82, 54);
-  position: absolute;
-}
 
 .colaboraciones {
   margin-top: 1rem;
@@ -2885,7 +2847,9 @@ body.dark-mode .piano-descargas:hover {
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
   }
-
+.colaboraciones{
+  margin-bottom: 1rem;
+}
   .spotify1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2902,12 +2866,6 @@ body.dark-mode .piano-descargas:hover {
     background-color: transparent;
   }
 
-  .colab-eng {
-    font-size: 3.5rem;
-    top: 13%;
-    left: 2.5%;
-    color: rgb(110, 82, 54);
-  }
 
   .collab {
     background-image: none;
@@ -2959,12 +2917,14 @@ body.dark-mode .piano-descargas:hover {
   flex-direction: column;
   background-color: whitesmoke;
   font-weight: 200;
-
+ padding-left: .5rem; 
+justify-content: start;
+align-items: start;
 }
-
 
 .footer-parrafo2 {
   font-size: .9rem;
+
 }
 
 .encabezado2 {
@@ -2972,31 +2932,40 @@ body.dark-mode .piano-descargas:hover {
   color: #7e3333;
   font-family: "Bowlby One", sans-serif;
   margin-bottom: 0;
+
 }
 
 .footer-redes2 {
   color: #7e3333;
   margin-top: .3rem;
   padding-left: 0;
-
   flex-direction: row;
 }
-
-.footer2-wrapp {
+.copi2 {
+  font-size: .8rem;
+  font-weight: 400;
+ margin-top: .2rem;
+  color: #7e3333;
+  text-wrap: nowrap;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: .2rem;
+}
+ .footer2-wrapp {
   display: flex;
   justify-content: start;
   align-content: start;
   margin-top: 0;
   margin-left: 1rem;
   padding-left: .2rem;
-}
+} 
 
 .redes-footer2 {
   gap: 2.1rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: .5rem;
   /*  margin-right: 4rem; */
   font-size: 17px;
   align-content: end;
@@ -3006,18 +2975,17 @@ body.dark-mode .piano-descargas:hover {
 
 .redes-footer2 a:hover {
   transition: 1s ease;
-  color: rgb(8, 4, 0);
+  color:#2b212b;
   transform: scale(1.1);
 }
-
+body.dark-mode .redes-footer2 a:hover{
+  color: #964b00;
+}
 .bi-whatsapp:hover {
   color: green;
 }
 
-.copi {
-  font-size: .8rem;
 
-}
 
 @media(min-width:768px) {
 
@@ -3088,7 +3056,7 @@ body.dark-mode .piano-descargas:hover {
 
   .redes-footer2 a:hover {
     transition: 1s ease;
-    color: rgb(8, 4, 0);
+    color: #2b212b;
     transform: scale(1.1);
   }
 

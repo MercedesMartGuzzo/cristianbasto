@@ -43,10 +43,122 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+/* gsap */
+
+;
+
+gsap.from("h1", {
+  scale: 1,
+  x: -1000,
+  duration: 3,
+  delay: 0,
+  ease: "power3.out",
+  
+})
+gsap.fromTo("h1",
+  { color: "rgba(150, 75, 0, 1)" },
+    {color: "rgb(245, 245, 245)",
+    duration: 10
+  },
+);
+
+gsap.from(".h1", {
+  scale: 1,
+  y: -1000,
+  duration: 3,
+  delay: 0,
+  ease: "power4.out",
+  
+})
+gsap.fromTo(".h1",
+  // Color inicial
+  { color: "rgba(126, 51, 51, 1)" },
+  {
+    color: "rgb(245, 245, 245)",
+    duration: 10
+  },
+);
+
+gsap.from(".nav-item", {
+  y: -100,
+  duration: 1,
+  ease: "power3.out",
+  stagger: 0.15,
+
+})
+
+// Selecciona el contenedor y aplica la animación
 
 
 
- // Definir una función para activar/desactivar los bordes de una sección
+
+
+/* 
+const text = new SplitType('.animacion', {types: "words, chars"});
+
+text.chars.forEach((char, index) => {
+
+    let charsTl = gsap.timeline();
+
+    charsTl.from(char, {
+        y: gsap.utils.random(-150, 150),
+        x: gsap.utils.random(-300, 300),
+        rotate: gsap.utils.random(-360, 360),
+        scale: gsap.utils.random(0, 2),
+        opacity: 0,
+        duration: 2,
+        ease: "back.out",
+        delay: index * 0.01
+    })
+    charsTl.from(char, {
+        color: `rgb(${gsap.utils.random(0, 255)}, ${gsap.utils.random(0, 255)}, ${gsap.utils.random(0, 255)})`,
+        duration: 1,
+    }, "-=.25")
+
+
+    char.addEventListener("mouseenter", charsHover);
+
+    let charOriginalColor = window.getComputedStyle(char).color;
+
+    function charsHover() {
+
+        gsap.timeline()
+        .to(char, {
+            y: gsap.utils.random(-50, 50),
+            x: gsap.utils.random(-50, 50),
+            rotate: gsap.utils.random(-90, 90),
+            scale: gsap.utils.random(0.5, 1.5),
+            duration: .5,
+            ease: "back.out",
+            color: `rgb(${gsap.utils.random(0, 255)}, ${gsap.utils.random(0, 255)}, ${gsap.utils.random(0, 255)})`,
+            onStart: () => {
+                char.removeEventListener("mouseenter", charsHover);
+            }
+        })
+        .to(char, {
+            y: 0,
+            x: 0,
+            rotate: 0,
+            scale: 1,
+            color: charOriginalColor,
+            delay: 1,
+            duration: .5,
+            ease: "back.out",
+            onComplete: () => {
+                setTimeout(() => {
+                    char.addEventListener("mouseenter", charsHover);
+                }, 100);
+            }
+        })
+    }
+
+})
+ */
+
+
+
+
+// Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
 function activarDesactivarBordes(contenedor) {
   // Obtener las dimensiones y la posición del contenedor con respecto al viewport
