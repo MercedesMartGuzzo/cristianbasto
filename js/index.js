@@ -55,29 +55,17 @@ gsap.from("h1", {
   ease: "power3.out",
   
 })
-gsap.fromTo("h1",
-  { color: "rgba(150, 75, 0, 1)" },
-    {color: "rgb(245, 245, 245)",
-    duration: 10
-  },
-);
+
 
 gsap.from(".h1", {
   scale: 1,
-  y: -1000,
+  x: -1000,
   duration: 3,
   delay: 0,
   ease: "power4.out",
   
 })
-gsap.fromTo(".h1",
-  // Color inicial
-  { color: "rgba(126, 51, 51, 1)" },
-  {
-    color: "rgb(245, 245, 245)",
-    duration: 10
-  },
-);
+
 
 gsap.from(".nav-item", {
   y: -100,

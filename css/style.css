@@ -537,7 +537,7 @@ body.dark-mode .donaciones-btn{
    top: 25%;
   left: 3%; 
   z-index: 1; 
-
+ color: whitesmoke;
 }
 
 
@@ -547,6 +547,7 @@ body.dark-mode .donaciones-btn{
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif; 
+  color: whitesmoke;
 }
 
 
