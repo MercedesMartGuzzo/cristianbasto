@@ -45,28 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* gsap */
 
-;
-
-gsap.from("h1", {
-  scale: 1,
-  x: -1000,
-  duration: 3,
-  delay: 0,
-  ease: "power3.out",
-  
-})
-
-
-gsap.from(".h1", {
-  scale: 1,
-  x: -1000,
-  duration: 3,
-  delay: 0,
-  ease: "power4.out",
-  
-})
-
-
 gsap.from(".nav-item", {
   y: -100,
   duration: 1,

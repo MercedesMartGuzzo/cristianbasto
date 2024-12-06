@@ -4,105 +4,33 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lista de eventos a ser actualizada por el programador
     const eventos = [
         {
-            name: "BASTO ENSAMBLE-QUASIMODO TRIO",
-            date: "19-10-2024",
-            time: "23:00 hs",
-            location: "Cafe Vinilo, CABA",
-            mapUrl: "https://maps.app.goo.gl/WSzS97eh13o31bbw5"
-
+            name: "SOCIAL TANGO PROJECT",
+            date: "11-12-2024",
+            time: "18:30 hs",
+            location: "Teatro San Martín, CABA",
+            mapUrl: "https://maps.app.goo.gl/1bqZTtGgMjtRarQLA",
         },
         {
-            name: "SOCIAL TANGO",
-            date: "24, 25, 26-10-2024",
-            time: "20:00 hs",
-            location: "Dance House (Vancouver-British Columbia)",
-            mapUrl: "https://maps.app.goo.gl/kaGV8gkUmBJFtZvE7"
-
+            name: "LA CHICANA",
+            date: "28-12-2024",
+            time: "21:00 hs",
+            location: "Torcuato Tasso, CABA",
+            mapUrl: "https://maps.app.goo.gl/DkvU2mM38BE4snZy6"
         },
         {
-            name: "SOCIAL TANGO",
-            date: "28-10-2024",
-            time: "20:00 hs",
-            location: "The Vernon and District Performing Arts Centre (Vernon-British Columbia",
-            mapUrl: "https://maps.app.goo.gl/BPwxvcnxVqkyzSya6"
+            name: "NOELIA SINKUNAS CUARTETO",
+            date: "04-05-2025",
+            time: "14:00 hs",
+            location: "La Locura Tango Musik Festival ,Innsbruk",
+            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
         },
         {
-            name: "SOCIAL TANGO",
-            date: "30-10-2024",
-            time: "20:00 hs",
-            location: "Trail & District Arts Council (Trail-British Columbia)",
-            mapUrl: "https://maps.app.goo.gl/nj5unJm8kve2CeYg9"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "03-11-2024",
-            time: "20:00 hs",
-            location: "Arts Commons (Calgary-Alberta",
-            mapUrl: "https://maps.app.goo.gl/zam1u6tg52okvRGu7"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "05-11-2024",
-            time: "20hs",
-            location: "Centre culturel de l Université de Sherbrooke (Sherbrooke-Québec",
-            mapUrl: "https://maps.app.goo.gl/CnPnE8h7MDYYLzCq8"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "09-11-2024",
-            time: "20:00 hs",
-            location: "Salle Pauline-Julien (Sainte-Geneviève-Québec)",
-            mapUrl: "https://maps.app.goo.gl/dXNTAx9D1jQCdiRc9"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "13-11-2024",
-            time: "20:00 hs",
-            location: "Place des arts (Montréal-Québec)",
-            mapUrl: "https://maps.app.goo.gl/hhQrhy5L6eKqn51B7"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "15-11-2024",
-            time: "20:00 hs",
-            location: "Flato Markham Theatre (Markham-Ontario)",
-            mapUrl: "https://maps.app.goo.gl/XmRzsCE8chab9yZ38"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "16-11-2024",
-            time: "20:00 hs",
-            location: "The Burlington performing Arts Centre (Burlington-Ontario)",
-            mapUrl: "https://maps.app.goo.gl/nrVLodVoMUG42ZfNA"
-        },
-        {
-            name: "SOCIAL TANGO",
-            date: "17-11-2024",
-            time: "20:00 hs",
-            location: "First Ontario Performing Arts Centre (Ste. Catharines-Ontario)",
-            mapUrl: "https://maps.app.goo.gl/Lp5yYSpfxoVg3cJQ7"
-        },
-        {
-            name: "ORQUESTA ASSINTOMATIC",
-            date: "24-11-2024",
-            time: "20:00 hs",
-            location: "Santa Casa, Porto Alegre",
-            mapUrl: "https://maps.app.goo.gl/D58ERuNEZTJ623458"
-        },
-        {
-            name: "ORQUESTA ASSINTOMATIC",
-            date: "8-11-2024",
-            time: "20:00 hs",
-            location: " Café Berlín, CABA",
-            mapUrl: "https://maps.app.goo.gl/BfSAKwoNu81tTGYH8"
-        },
-        {
-            name: "PABLO ESTIGARRIBIA TANGOJAZZHOP",
-            date: "05-12-22024",
-            time: "20:00 hs",
-            location: "La Paz arriba ,CABA",
-            mapUrl: "https://maps.app.goo.gl/Xk6wEHzwXCCib6Tk9"
-        }
+            name: "CLAUDIA SERENI CUARTETO",
+            date: "04-05-2025",
+            time: "15:45 hs",
+            location: "La Locura Tango Musik Festival ,Innsbruk",
+            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
+        } 
     ];
 
     // Función para agregar un evento a la lista
