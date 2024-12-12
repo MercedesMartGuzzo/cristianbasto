@@ -126,7 +126,9 @@ body.dark-mode .contacto {
 body.dark-mode .donaciones-btn {
   border: 1px solid whitesmoke;
 }
-
+body.dark-mode .bio{
+  border-bottom: 1px solid whitesmoke;
+}
 /* BARRA DE NAVEGACION */
 
 .navbar {
@@ -678,7 +680,7 @@ h1 {
 
 .btn-musica,
 .btn-videos,
-.btn-prensa {
+.btn-prensa  {
   border: 1px solid white;
   color: white;
   position: relative;
@@ -692,9 +694,14 @@ h1 {
   transition: background-color .2s, color .2s, trasforrm .2s;
   font-family: "Bowlby One", sans-serif;
   font-weight: 200;
+  
 }
-
-.btn-prensa {
+.prensa a{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.btn-prensa  {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -821,6 +828,10 @@ h1 {
   transform: scale(1);
 
 }
+
+
+
+
 
 /* SECCION BIO */
 
@@ -1269,15 +1280,26 @@ iframe {
   width: 90vw;
   margin-top: 1rem;
 }
-
+body.dark-mode .agenda-lista{
+  border: 1px solid whitesmoke;
+}
 #eventos {
   padding-left: 0px;
 }
-
-#eventos .nombre {
-  color: peru;
+body.dark-mode #eventos li{
+  border: 1px solid whitesmoke;
+ 
 }
 
+#eventos .nombre {
+  color: peru; 
+}
+.nombre span{
+  font-family:"Bowlby One", sans-serif;
+}
+body.dark-mode #eventos .nombre{
+  color: whitesmoke;
+}
 #eventos li {
   background: white;
   padding: 15px;
@@ -1312,10 +1334,12 @@ iframe {
 
 body.dark-mode .view-more-btn {
   background-color: black;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
 }
 
 body.dark-mode .view-more-btn:hover {
-  background-color: peru;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -1333,10 +1357,13 @@ body.dark-mode .view-more-btn:hover {
 .location-map {
   display: block;
   margin-top: 10px;
-  color: black;
+  color: peru;
   text-decoration: none;
+  font-family:"Bowlby One", sans-serif; ;
 }
-
+body.dark-mode .location-map{
+  color: whitesmoke;
+}
 .location-map:hover {
   text-decoration: underline;
   color: peru;
@@ -1451,7 +1478,7 @@ body.dark-mode .contacto-redes a:hover {
 .prensa {
   width: 100%;
   display: flex;
-  flex-direction: column;
+   flex-direction: column; 
   background-color: #2b212b;
   height: auto;
 
