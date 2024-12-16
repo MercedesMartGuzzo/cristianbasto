@@ -126,6 +126,27 @@ body.dark-mode .contacto {
 body.dark-mode .donaciones-btn {
   border: 1px solid whitesmoke;
 }
+body.dark-mode .donaciones-btn::before{
+  color:black;
+  border: 1px solid black;
+}
+body.dark-mode .btn-videos:hover{
+color:black;
+}
+body.dark-mode .btn-videos::before{
+
+  border: 1px solid whitesmoke;
+  background-color: black;
+}
+body.dark-mode .btn-musica:hover{
+  color:black;
+  border: 1px solid whitesmoke;
+}
+body.dark-mode .btn-musica:before{
+  background-color:black;
+  border: 1px solid whitesmoke;
+
+}
 body.dark-mode .bio{
   border-bottom: 1px solid whitesmoke;
 }
@@ -739,12 +760,12 @@ h1 {
   position: absolute;
   content: "Douwnload";
   font-size: .7rem;
-  top: 70%;
+  top: 80%;
   left: 30%;
   padding: 0 .1rem;
   color: peru;
   border: 1px solid peru;
-  background-color: wheat;
+  background-color:whitesmoke;
   border-radius: 5px;
   transform: scale(0);
   transform-origin: top;
@@ -809,7 +830,7 @@ h1 {
 .donaciones-btn::before {
   position: absolute;
   content: "Donations";
-  top: 100%;
+  top: 75%;
   color: #7e3333;
   border: 1px solid #7e3333;
   background-color: whitesmoke;
@@ -2504,7 +2525,10 @@ body.dark-mode .piano-descargas:hover {
   background-color: peru;
   color: black;
 }
-
+body.dark-mode .piano-descargas::before{
+  background-color: black;
+  color:peru;
+}
 .mostrar-icono {
   cursor: pointer;
   margin: 10px;
