@@ -126,30 +126,37 @@ body.dark-mode .contacto {
 body.dark-mode .donaciones-btn {
   border: 1px solid whitesmoke;
 }
-body.dark-mode .donaciones-btn::before{
-  color:black;
+
+body.dark-mode .donaciones-btn::before {
+  color: black;
   border: 1px solid black;
 }
-body.dark-mode .btn-videos:hover{
-color:black;
+
+body.dark-mode .btn-videos:hover {
+  color: black;
 }
-body.dark-mode .btn-videos::before{
+
+body.dark-mode .btn-videos::before {
 
   border: 1px solid whitesmoke;
   background-color: black;
 }
-body.dark-mode .btn-musica:hover{
-  color:black;
+
+body.dark-mode .btn-musica:hover {
+  color: black;
   border: 1px solid whitesmoke;
 }
-body.dark-mode .btn-musica:before{
-  background-color:black;
+
+body.dark-mode .btn-musica:before {
+  background-color: black;
   border: 1px solid whitesmoke;
 
 }
-body.dark-mode .bio{
+
+body.dark-mode .bio {
   border-bottom: 1px solid whitesmoke;
 }
+
 /* BARRA DE NAVEGACION */
 
 .navbar {
@@ -336,6 +343,10 @@ body.dark-mode .bio{
   /* Las imágenes horizontales ocupan dos columnas */
 }
 
+.photo-grid img.horizontal1 {
+
+  grid-column: span 2;
+}
 
 /* Modal */
 .modal {
@@ -442,6 +453,15 @@ body.dark-mode .bio{
   .nav-link {
     padding-left: .3rem;
   }
+  .photo-grid img.horizontal1 {
+
+    grid-column: span 2;
+    object-fit: cover;
+    height: 115px;
+  }
+  .photo-grid img.horizontal1:hover {
+    transform: scale(01.01);
+  }
 }
 
 @media(min-width:992px) {
@@ -520,7 +540,15 @@ body.dark-mode .bio{
   .close-icon {
     display: none;
   }
+  .photo-grid img.horizontal1 {
 
+    grid-column: span 2;
+    object-fit: cover;
+    height: 135px;
+  }
+  .photo-grid img.horizontal1:hover {
+    transform: scale(01.01);
+  }
 }
 
 /* header-desktop */
@@ -600,10 +628,19 @@ body.dark-mode .bio{
 
   /* swipper */
   .photo-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 
   }
 
+  .photo-grid img.horizontal1 {
+
+    grid-column: span 2;
+    object-fit: cover;
+    height: 175px;
+  }
+  .photo-grid img.horizontal1:hover {
+    transform: scale(01.01);
+  }
   /* Ajustes específicos para desktop */
 
   @media (min-width: 1200px) {
@@ -625,6 +662,7 @@ body.dark-mode .bio{
     align-items: center;
   }
 }
+
 /* index-mobile */
 
 .portada {
@@ -701,7 +739,7 @@ h1 {
 
 .btn-musica,
 .btn-videos,
-.btn-prensa  {
+.btn-prensa {
   border: 1px solid white;
   color: white;
   position: relative;
@@ -715,14 +753,16 @@ h1 {
   transition: background-color .2s, color .2s, trasforrm .2s;
   font-family: "Bowlby One", sans-serif;
   font-weight: 200;
-  
+
 }
-.prensa a{
+
+.prensa a {
   display: flex;
   justify-content: center;
   align-self: center;
 }
-.btn-prensa  {
+
+.btn-prensa {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -765,7 +805,7 @@ h1 {
   padding: 0 .1rem;
   color: peru;
   border: 1px solid peru;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 5px;
   transform: scale(0);
   transform-origin: top;
@@ -1301,26 +1341,32 @@ iframe {
   width: 90vw;
   margin-top: 1rem;
 }
-body.dark-mode .agenda-lista{
+
+body.dark-mode .agenda-lista {
   border: 1px solid whitesmoke;
 }
+
 #eventos {
   padding-left: 0px;
 }
-body.dark-mode #eventos li{
+
+body.dark-mode #eventos li {
   border: 1px solid whitesmoke;
- 
+
 }
 
 #eventos .nombre {
-  color: peru; 
+  color: peru;
 }
-.nombre span{
-  font-family:"Bowlby One", sans-serif;
+
+.nombre span {
+  font-family: "Bowlby One", sans-serif;
 }
-body.dark-mode #eventos .nombre{
+
+body.dark-mode #eventos .nombre {
   color: whitesmoke;
 }
+
 #eventos li {
   background: white;
   padding: 15px;
@@ -1380,11 +1426,14 @@ body.dark-mode .view-more-btn:hover {
   margin-top: 10px;
   color: peru;
   text-decoration: none;
-  font-family:"Bowlby One", sans-serif; ;
+  font-family: "Bowlby One", sans-serif;
+  ;
 }
-body.dark-mode .location-map{
+
+body.dark-mode .location-map {
   color: whitesmoke;
 }
+
 .location-map:hover {
   text-decoration: underline;
   color: peru;
@@ -1499,7 +1548,7 @@ body.dark-mode .contacto-redes a:hover {
 .prensa {
   width: 100%;
   display: flex;
-   flex-direction: column; 
+  flex-direction: column;
   background-color: #2b212b;
   height: auto;
 
@@ -1584,16 +1633,17 @@ body.dark-mode .pedagogias {
 
 }
 
-.copi {
+ .copi {
   font-size: .8rem;
   font-weight: 400;
   margin-top: .5rem;
   color: #7e3333;
-  text-wrap: balance;
+  text-wrap:balance;
   margin-left: 1rem;
   margin-bottom: 2rem;
   padding-left: .2rem;
-}
+} 
+
 
 /********* INDEX-TABLET******* */
 
@@ -2525,10 +2575,12 @@ body.dark-mode .piano-descargas:hover {
   background-color: peru;
   color: black;
 }
-body.dark-mode .piano-descargas::before{
+
+body.dark-mode .piano-descargas::before {
   background-color: black;
-  color:peru;
+  color: peru;
 }
+
 .mostrar-icono {
   cursor: pointer;
   margin: 10px;
