@@ -157,6 +157,7 @@ body.dark-mode .bio {
   border-bottom: 1px solid whitesmoke;
 }
 
+
 /* BARRA DE NAVEGACION */
 
 .navbar {
@@ -263,6 +264,26 @@ body.dark-mode .bio {
   margin-left: .3rem;
 }
 
+.languages {
+  display: flex;
+  gap: .5rem;
+  /*  position: fixed;
+  top:10%;
+  right: 0.2%; */
+
+}
+
+.lang-button {
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  /*   padding: .2rem;
+  border-radius: 5px; */
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+  padding: 0;
+}
 
 .collapse {
   display: none;
@@ -453,12 +474,14 @@ body.dark-mode .bio {
   .nav-link {
     padding-left: .3rem;
   }
+
   .photo-grid img.horizontal1 {
 
     grid-column: span 2;
     object-fit: cover;
     height: 115px;
   }
+
   .photo-grid img.horizontal1:hover {
     transform: scale(01.01);
   }
@@ -540,12 +563,14 @@ body.dark-mode .bio {
   .close-icon {
     display: none;
   }
+
   .photo-grid img.horizontal1 {
 
     grid-column: span 2;
     object-fit: cover;
     height: 135px;
   }
+
   .photo-grid img.horizontal1:hover {
     transform: scale(01.01);
   }
@@ -638,9 +663,16 @@ body.dark-mode .bio {
     object-fit: cover;
     height: 175px;
   }
+
   .photo-grid img.horizontal1:hover {
     transform: scale(01.01);
   }
+
+  .lang-button {
+    padding-top: .2rem;
+    margin-left: .2rem;
+  }
+
   /* Ajustes específicos para desktop */
 
   @media (min-width: 1200px) {
@@ -1016,11 +1048,12 @@ h1 {
   font-size: 1.5rem;
 }
 
+
 .span-bio {
   margin-bottom: .5rem;
 }
 
-.toggle-icon {
+.span-bio .toggle-icon {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -1633,16 +1666,16 @@ body.dark-mode .pedagogias {
 
 }
 
- .copi {
+.copi {
   font-size: .8rem;
   font-weight: 400;
   margin-top: .5rem;
   color: #7e3333;
-  text-wrap:balance;
+  text-wrap: balance;
   margin-left: 1rem;
   margin-bottom: 2rem;
   padding-left: .2rem;
-} 
+}
 
 
 /********* INDEX-TABLET******* */

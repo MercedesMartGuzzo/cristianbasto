@@ -1,0 +1,80 @@
+{
+    "header": {
+        "bio": "BIO",
+        "music": "MUSIC",
+        "colaborations": "COLLABORATIONS",
+        "videos": "VIDEOS",
+        "classes": "CLASSES",
+        "sheet-music": "SHEET MUSIC",
+        "agenda": "AGENDA",
+        "contact": "CONTACT"
+    },
+    "bio": {
+        "title": "BIO",
+        "text": "Cristian Basto is an Argentine musician with a Bachelor's Degree in Composition, a Diploma in Contemporary Music and specialized in Composers from Latin America. He is an arranger and director of orchestras and tango ensembles, and currently divides his time between Buenos Aires and Barcelona. As a double bassist, he has He has collaborated with prominent tango artists and has participated in early music, rock and urban music projects. His work has been presented on prestigious stages and festivals around the world, achieving nominations. to the Latin Grammy and receiving recognitions such as the Carlos Gardel Award and an honorable mention at the SONUS International Music Festival.",
+        "text1": {
+            "title-icon": "See more",
+            "text-p1": "Cristian Basto is an Argentine musician born in Quilmes, Province of Buenos Aires. He is a double bassist, teacher and graduate in Composition, as well as an outstanding arranger and director of tango orchestras. Graduated from the Maimónides University, he has a Contemporary Music Diploma awarded by the Manuel de Falla Superior Conservatory and in “Composers of Latin America: Convergent Views” by the National Autonomous University of Mexico (UNAM). His training also includes studies at the Municipal School of Fine Arts (E.M.B.A.) “Carlos Morel” of Quilmes and at the Popular Music School of Avellaneda (E.M.P.A.). He has had the privilege of perfecting himself in composition and arrangements under the guidance of renowned teachers such as Daniel Montes, Laura. Baade, Diego Schissi, Daniel Ruggiero, Ricardo Hegman and Ariel Hagman. As a double bassist, his training was led by prominent musicians such as Gerardo. Ponce, Daniel Buono, Juan Pablo Navarro and Daniel Falasca. Their solid academic and professional training has been fundamental to consolidate their contribution to tango, standing out for their creative vision and their ability to enrich this genre with artistic depth."
+        },
+        "text2": {
+            "text-p2": "Throughout his career, Cristian has collaborated with prominent tango artists such as Amelita Baltar, Amores Tangos, Diego Schissi, Guillermo Fernández, Hernán Possetti, Hilda Herrera, Horacio Romo, José Colángelo, Julieta Laso, La Chicana, Lidia Borda, LuisBorda , Nacha Guevara, Nicolás Guerschberg, Nicolás Ledesma, Noelia Sinkunas, OsvaldoPiro, Pablo Mainetti, “Limón García”, Quasimodo Trío, Quinteto Real, Raúl Garello, RaúlLavié, Rascasuelos, Susana Rinaldi, Sur del Sur Ensamble and the Assintomática Orchestra. His versatility has also led him to early music, rock and urban music projects , collaborating on stages and studios with figures such as Antonio Birabent, Chango Spasiuk, Dancing Mood, Lito Vitale, Los Caligaris, Los Fabulosos Cadillacs, Luis Alberto Spinetta, You Signemelo and Ysy-A.Cristian have performed in renowned venues and festivals worldwide, including Carnegie Hall and the John F. Kennedy Center for the Performing Arts in the United States, the National Arts Center (NAC ) in Canada, the Teatro Colón in Argentina, the Moscow International House of Music in Russia, the Oriental Art Center in China, the Teatro Sofía in Bulgaria, and festivals such as La Villette in France, the Roskilde Festival in Denmark, Lollapalooza Argentina and the Buenos Aires International Tango Festival.",
+            "title-span2": "Artistic performance"
+        },
+        "text3": {
+            "text-p3": "Throughout his career, Cristian Basto has been awarded numerous awards and mentions. Among them, two Carlos Gardel Awards stand out: one for his work as arranger and musician on the album La caldera by Julieta Laso, and another for the album Salve de Noelia Sinkunas, also as an arranger and musician. Likewise, his work Surera fordouble bass and piano received an honorable mention at the SONUS International Music Festival.In 2020, he was a beneficiary of the Patronage of the Ministry of Culture of the City of Buenos Aires.Aires for the recording of his work Suite Villa Urquiza. In 2024, he was nominated for theLatin Grammy for his work as arranger on the album ¿Y el fin del amor? of Mariana Mazu..",
+            "title-span3": "Recognitions"
+        }
+    },
+    "gallery": {
+        "title-g": "GALLERY"
+    },
+    "music": {
+        "title-m": "MUSIC"
+    },
+    "videos": {
+        "title-v": "VIDEOS"
+    },
+    "agenda": {
+        "title-a": "AGENDA"
+    },
+    "contact": {
+        "title-c": "CONTACT",
+        "contact-p": "To communicate with Cristian, write to cristianbasto79@gmail.com"
+    },
+    "press": {
+        "kit": "Press Kit"
+    },
+    "footer": {
+        "footer-p": "Double Bassist/Composer/Arranger"
+    },
+    "colaborations": {
+        "title-colab": "COLLABORATIONS",
+        "colab": "Contemporary Tango",
+        "colab1": "Argentine Folk Music",
+        "colab2": "Academic Music",
+        "colab3": "Rock"
+    },
+    "classes": {
+        "title-class": "CLASSES",
+        "class-p": "I share my passion for music through personalized classes of double bass, composition, arrangements and orchestration, adapted for musicians of different levels. I also conduct double bass and typical orchestra workshops, where we explore the techniques and characteristic gestures of those great orchestras. In production, I work as a team with the artists, from the creation of arrangements to the direction of recordings and my participation as a double bassist, always seeking an authentic result.",
+        "title-class1": "Double Bass Workshop",
+        "class-p2": "The main idea of ​​Level I of this workshop is to provide effective tools to approach tango, understand the essential function of the double bass within the genre and encourage the search for each musician's own and distinctive musicality. The focus will be on the repertoire of the most influential typical orchestras that marked the golden era of tango in the 1940s and 1950s, such as those of Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán and Juan D'Arienzo. These orchestras not only defined the style and sound of tango, but also consolidated two fundamental accompaniment models that form the backbone of the orchestra both in harmonic terms as rhythmic: Marcato and syncopation.",
+        "title-class2": "Tango Workshop: Typical Orchestras of the 40s and 50s",
+        "class-p3": "Cristian Basto has worked as a teacher directing typical ensembles and orchestras at the National Academy of Tango, at the Center for the Development of Tango and Rioplatense Culture (CDTCR) “Escuela de Tango Orlando Goñi”, and at “La Academia Tango Club”.If you want to learn to play tango, this workshop is focused on the typical tango orchestras of the 40s and 50s, considered the golden age of tango. It is aimed at both professional and amateur musicians as well as anyone interested, regardless of the instrument they play, in learning the techniques and stylistic resources that shaped the unmistakable sound of these emblematic orchestras. During the workshop, we will work on the gestures and actions necessary to recreate the characteristic sound of these orchestras, capturing their rhythmic, melodic and stylistic essence."
+    },
+    "sheet-music": {
+        "title-sheet": "SHEET MUSIC",
+        "sheet-music-p": "Here I share a selection of scores that range from tango and Argentine popular music to contemporary compositions and arrangements of different genres. Each piece reflects my interest in creating versatile and accessible music, without neglecting depth and quality .",
+        "title-sheet1": "Compositions and arrangements",
+        "sheet-music-p1": "My compositions explore innovative sounds and textures, influenced by contemporary music and current technologies. Each work is an invitation to discover the unexpected within the familiar. In my arrangements, the focus is to transform and reinventing known melodies, adapting them to explore new musical perspectives I have collaborated on albums such as Pasa by Limón García, A Berisso by Noelia Sinkunas, ¿Y el fin del amor? Laso, among others, providing a distinctive touch to each piece. In this section, you will find arrangements designed for various groups and styles, such as orchestras, ensembles and quartets. If you have a musical project or group and are looking for original arrangements or compositions, you can count on me. to give a unique and professional twist to each performance.",
+        "title-sheet2": "Piano Solo",
+        "title-sheet3": "Suite for string ensemble, bandoneon, cello and piano",
+        "title-sheet4": "Dance for piano and double bass",
+        "title-sheet5": "Works for string quintet and piano",
+        "title-sheet6": "Arrangements for different formats"
+    },
+    "donations": {
+        "title-donations": "DONATIONS",
+        "donations-p": "You can support my content by making a small monthly or one-time contribution, to be able to make more and better content."
+    }
+}

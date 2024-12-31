@@ -44,28 +44,28 @@
                     <ul class="navbar-nav">
                         <div class="menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="..#bioContainer">BIO</a>
+                                <a class="nav-link" href="..#bioContainer"data-section="header"data-value="bio">BIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="..#musicaContainer">MUSICA</a>
+                                <a class="nav-link" aria-current="page" href="..#musicaContainer"data-section="header"data-value="music">MUSICA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link colaboracion" href="./colaboraciones.html">COLABORACIONES</a>
+                                <a class="nav-link colaboracion" href="./colaboraciones.html"data-section="header"data-value="colaborations">COLABORACIONES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#videosContainer">VIDEOS</a>
+                                <a class="nav-link" href="..#videosContainer"data-section="header"data-value="videos">VIDEOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pedagogia" href="./pedagogia.html">CLASES</a>
+                                <a class="nav-link pedagogia" href="./pedagogia.html"data-section="header"data-value="classes">CLASES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link partitura active" href="./partituras.html">PARTITURAS</a>
+                                <a class="nav-link partitura active" href="./partituras.html"data-section="header"data-value="sheet-music">PARTITURAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#agendaContainer">AGENDA</a>
+                                <a class="nav-link" href="..#agendaContainer"data-section="header"data-value="agenda">AGENDA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#contactoContainer">CONTACTO</a>
+                                <a class="nav-link" href="..#contactoContainer"data-section="header"data-value="contact">CONTACTO</a>
                             </li>
                         </div>
                         <li class="nav-item">
@@ -81,6 +81,10 @@
                                 <a class="nav-link" href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w"
                                     target="_blank"><i class="bi bi-youtube"></i></a>
                             </div>
+                        </li>
+                        <li class="nav-item languages">
+                            <button class="lang-button" data-language="es">ES</button>
+                            <button class="lang-button" data-language="en">EN</button> 
                         </li>
                         <li class="nav-item ms-lg-auto">
                             <a class="nav-link iconos" href="#">
@@ -99,28 +103,28 @@
                 <div class="img-container">
                     <img class="partituras1-foto" id="partituras1-foto" src="../img/bio-fondo.jpg"
                         alt="partituras, composiciones y arreglos" loading="eager">
-                    <h2 class="partituras1-titulo">PARTITURAS</h2>
+                    <h2 class="partituras1-titulo" data-section="sheet-music"data-value="title-sheet">PARTITURAS</h2>
                     <!--    <h5 class="sheet-music">SHEET MUSIC</h5> -->
                 </div>
             </div>
             <div class="partituras-grilla">
                 <div>
-                    <p class="partituras-pa">
+                    <p class="partituras-pa"data-section="sheet-music"data-value="sheet-music-p">Aquí comparto una selección de partituras que abarcan desde tango y música popular argentina
                         Aquí comparto una selección de partituras que abarcan desde tango y música popular argentina
                         hasta composiciones contemporáneas y arreglos de distintos géneros. Cada pieza refleja mi
                         interés por crear música versátil y accesible, sin dejar de lado la profundidad y calidad.
                     </p>
                 </div>
                 <div class="arreglos">
-                    <h4>Composiciones y arreglos</h4>
-                    <p class="partituras-pa1">Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar.
+                    <h4 data-section="sheet-music" data-value="title-sheet1">Composiciones y arreglos</h4>
+                    <p class="partituras-pa1"data-section="sheet-music"data-value="sheet-music-p1">Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar.
                         En mis arreglos, el enfoque es transformar y reinventar melodías conocidas, adaptándolas para explorar nuevas perspectivas musicales. He colaborado en discos como Pasa de Limón García, A Berisso de Noelia Sinkunas, ¿Y el fin del amor? de Mariana Mazu, La Caldera de Julieta Laso, entre otros, aportando un toque distintivo a cada pieza.
                         En esta sección, encontrarás arreglos pensados para diversos grupos y estilos, como orquestas, ensambles y cuartetos.
                         Si tenés un proyecto o grupo musical y buscás arreglos o composiciones originales, podés contar conmigo para darle un giro único y profesional a cada interpretación.
                         </p>
                 </div>
                 <div>
-                    <h4 class="piano-titulo fade-in1"> Piano Solo</h4>
+                    <h4 class="piano-titulo fade-in1"data-section="sheet-music"data-value="title-sheet2"> Piano Solo</h4>
                 </div>
                 <div class="partituras-piano">
                     <div class="piano-partes">
@@ -182,7 +186,7 @@
                 </div>
 
                 <div>
-                    <h4 class="suite-titulo fade-in1"> Suite para ensamble de cuerdas, bandoneón, cello y piano</h4>
+                    <h4 class="suite-titulo fade-in1"data-section="sheet-music"data-value="title-sheet3"> Suite para ensamble de cuerdas, bandoneón, cello y piano</h4>
                 </div>
                 <div class="partituras-suite">
 
@@ -210,7 +214,7 @@
                 </div>
 
                 <div>
-                    <h4 class="surera-titulo fade-in1"> Danza para piano y contrabajo</h4>
+                    <h4 class="surera-titulo fade-in1"data-section="sheet-music"data-value="title-sheet4"> Danza para piano y contrabajo</h4>
                 </div>
                 <div class="partituras-surera">
 
@@ -237,7 +241,7 @@
                 </div>
 
                 <div>
-                    <h4 class="quinteto-titulo fade-in1"> Obras para quinteto de cuerdas y piano</h4>
+                    <h4 class="quinteto-titulo fade-in1"data-section="sheet-music"data-value="title-sheet5"> Obras para quinteto de cuerdas y piano</h4>
                 </div>
                 <div class="partituras-quinteto">
 
@@ -328,7 +332,7 @@
 
 
                 <div>
-                    <h4 class="arreglos-titulo fade-in1">Arreglos para distintos formatos</h4>
+                    <h4 class="arreglos-titulo fade-in1"data-section="sheet-music"data-value="title-sheet6">Arreglos para distintos formatos</h4>
                 </div>
                 <div class="partituras-arreglos">
 
@@ -396,9 +400,9 @@
             </div>
         </section>
         <section class="donaciones container">
-            <h3 class="donaciones-titulo">DONACIONES
+            <h3 class="donaciones-titulo" data-section="donations"data-value="title-donations">DONACIONES
             </h3>
-            <p class="donaciones-p">Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder
+            <p class="donaciones-p" data-section="donations" data-value="donations-p">Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder
                 hacer más y mejor contenido.
             </p>
             <div class="donaciones-icon">
@@ -415,7 +419,7 @@
             <a href="../index.html">
                 <h2 class="footer-titulo fade-in"> CRISTIAN BASTO</h2>
             </a>
-            <p class="footer-parrafo2 encabezado2 fade-in">Contrabajista/Compositor/Arreglador</p>
+            <p class="footer-parrafo2 encabezado2 fade-in"data-section="footer" data-value="footer-p">Contrabajista/Compositor/Arreglador</p>
         </div>
         <div class="footer2-wrapp">
 
@@ -453,6 +457,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
+    <script src="../js/language.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/partituras.js"></script>
 </body>

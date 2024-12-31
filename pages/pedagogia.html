@@ -46,28 +46,28 @@
                     <ul class="navbar-nav">
                         <div class="menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="..#bioContainer">BIO</a>
+                                <a class="nav-link" href="..#bioContainer"data-section="header"data-value="bio">BIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="..#musicaContainer">MUSICA</a>
+                                <a class="nav-link" aria-current="page" href="..#musicaContainer"data-section="header"data-value="music">MUSICA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link colaboracion" href="./colaboraciones.html">COLABORACIONES</a>
+                                <a class="nav-link colaboracion" href="./colaboraciones.html"data-section="header"data-value="colaborations">COLABORACIONES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#videosContainer">VIDEOS</a>
+                                <a class="nav-link" href="..#videosContainer"data-section="header"data-value="videos">VIDEOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pedagogia active" href="./pedagogia.html">CLASES</a>
+                                <a class="nav-link pedagogia active" href="./pedagogia.html"data-section="header"data-value="classes">CLASES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link partitura" href="./partituras.html">PARTITURAS</a>
+                                <a class="nav-link partitura" href="./partituras.html"data-section="header"data-value="sheet-music">PARTITURAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#agendaContainer">AGENDA</a>
+                                <a class="nav-link" href="..#agendaContainer"data-section="header"data-value="agenda">AGENDA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="..#contactoContainer">CONTACTO</a>
+                                <a class="nav-link" href="..#contactoContainer"data-section="header"data-value="contact">CONTACTO</a>
                             </li>
                         </div>
                         <li class="nav-item">
@@ -83,6 +83,10 @@
                                 <a class="nav-link" href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w"
                                     target="_blank"><i class="bi bi-youtube"></i></a>
                             </div>
+                        </li>
+                        <li class="nav-item languages">
+                            <button class="lang-button" data-language="es">ES</button>
+                            <button class="lang-button" data-language="en">EN</button> 
                         </li>
                         <li class="nav-item ms-lg-auto">
                             <a class="nav-link iconos" href="#">
@@ -100,19 +104,18 @@
                 <div class="img-container">
                     <img class="pedagogias-foto" id="pedagogias-foto" src="../img/portada-partituras.jpg"
                         alt="metodo de contrabajo en el tango" loading="eager">
-                    <h2 class="pedagogias-titulo">CLASES</h2>
+                    <h2 class="pedagogias-titulo" data-section="classes"data-value="title-class">CLASES</h2>
                 </div>
             </div>
             <div class="pedagogia-contenedor">
                 <div>
-                    <p class="pedagogia-pa">Comparto mi pasión por la música a través de clases personalizadas de contrabajo, composición, arreglos y orquestación, adaptadas para músicos de diferentes niveles. También realizo workshops de contrabajo y orquesta típica, donde exploramos las técnicas y gestos característicos de esas grandes orquestas.
-                        En producción, trabajo en equipo con los artistas, desde la creación de arreglos hasta la dirección de grabaciones y mi participación como contrabajista, siempre buscando un resultado auténtico.
-                        
+                    <p class="pedagogia-pa" data-section="classes" data-value="class-p">Comparto mi pasión por la música a través de clases personalizadas de contrabajo, composición, arreglos y orquestación, adaptadas para músicos de diferentes niveles. También realizo workshops de contrabajo y orquesta típica, donde exploramos las técnicas y gestos característicos de esas grandes orquestas.
+                        En producción, trabajo en equipo con los artistas, desde la creación de arreglos hasta la dirección de grabaciones y mi participación como contrabajista, siempre buscando un resultado auténtico.    
                     </p>
                 </div>
                 <div class="work-contra">
-                    <h4 class="workshop">Workshop de Contrabajo</h4>
-                    <p class="pedagogia-pa2">
+                    <h4 class="workshop"data-section="classes"data-value="title-class1">Workshop de Contrabajo</h4>
+                    <p class="pedagogia-pa2"data-section="classes"data-value="class-p2">
                         La idea principal del Nivel I de este workshop es proporcionar herramientas efectivas para
                         abordar el tango, comprender la función esencial del contrabajo dentro del género y
                         fomentar la búsqueda de una musicalidad propia y distintiva en cada músico. El enfoque
@@ -146,9 +149,9 @@
                     </div>
                 </div>
                 <div class="orquesta">
-                    <h4 class="workshop">Workshop de Tango: Orquestas Típicas de los Años 40 y 50
+                    <h4 class="workshop"data-section="classes"data-value="title-class2">Workshop de Tango: Orquestas Típicas de los Años 40 y 50
                     </h4>
-                    <p class="pedagogia-pa2">
+                    <p class="pedagogia-pa2"data-section="classes"data-value="class-p3">
                         Cristian Basto ha trabajado como docente dirigiendo ensambles y orquestas típicas en la Academia
                         Nacional del Tango, en el Centro de Desarrollo del Tango y la Cultura Rioplatense (CDTCR)
                         “Escuela de Tango Orlando Goñi”, y en “La Academia Tango Club”.
@@ -186,7 +189,7 @@
             <a href="../index.html">
                 <h2 class="footer-titulo fade-in"> CRISTIAN BASTO</h2>
             </a>
-            <p class="footer-parrafo2 encabezado2 fade-in">Contrabajista/Compositor/Arreglador</p>
+            <p class="footer-parrafo2 encabezado2 fade-in"data-section="footer"data-value="footer-p">Contrabajista/Compositor/Arreglador</p>
         </div>
         <div class="footer2-wrapp">
             <ul class="footer-redes2">
@@ -220,7 +223,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
    
-
+    <script src="../js/language.js" ></script>
     <script src="../js/index.js" defer></script>
     <script src="../js/partituras.js"></script>
     <script src="../js/pedagogia.js"></script>

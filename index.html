@@ -45,29 +45,35 @@
                     <ul class="navbar-nav">
                         <div class="menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="#bioContainer">BIO</a>
+                                <a class="nav-link" href="#bioContainer" data-section="header" data-value="bio">BIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#musicaContainer">MUSICA</a>
+                                <a class="nav-link" aria-current="page" href="#musicaContainer" data-section="header"
+                                    data-value="music">MUSICA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link colaboracion" aria-current="page"
-                                    href="./pages/colaboraciones.html">COLABORACIONES</a>
+                                <a class="nav-link colaboracion" aria-current="page" href="./pages/colaboraciones.html"
+                                    data-section="header" data-value="colaborations">COLABORACIONES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#videosContainer">VIDEOS</a>
+                                <a class="nav-link" href="#videosContainer" data-section="header"
+                                    data-value="videos">VIDEOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pedagogia" href="./pages/pedagogia.html">CLASES</a>
+                                <a class="nav-link pedagogia" href="./pages/pedagogia.html" data-section="header"
+                                    data-value="classes">CLASES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link partitura" href="./pages/partituras.html">PARTITURAS</a>
+                                <a class="nav-link partitura" href="./pages/partituras.html" data-section="header"
+                                    data-value="sheet-music">PARTITURAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#agendaContainer">AGENDA</a>
+                                <a class="nav-link" href="#agendaContainer" data-section="header"
+                                    data-value="agenda">AGENDA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contactoContainer">CONTACTO</a>
+                                <a class="nav-link" href="#contactoContainer" data-section="header"
+                                    data-value="contact">CONTACTO</a>
                             </li>
                         </div>
                         <li class="nav-item">
@@ -84,6 +90,10 @@
                                     target="_blank"><i class="bi bi-youtube"></i></a>
                             </div>
                         </li>
+                        <li class="nav-item languages">
+                            <button class="lang-button" data-language="es">ES</button>
+                            <button class="lang-button" data-language="en">EN</button>
+                        </li>
                         <li class="nav-item ms-lg-auto">
                             <a class="nav-link iconos" href="#">
                                 <i id="color-mode" class="bi bi-moon-stars-fill"></i>
@@ -93,6 +103,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
         <section class="portada">
@@ -103,13 +114,12 @@
         <section class="bio" id="bioContainer">
 
             <div class="contenedor-titulos">
-                <h2 class="bio-titulo fade-in">BIO</h2>
+                <h2 class="bio-titulo fade-in" data-section="bio" data-value="title">BIO</h2>
             </div>
-
             <div class="bio-secciones container">
-
                 <div class="bio-parrafo1 fade-in" id="parrafo1">
-                    <p>Cristian Basto es un músico argentino con Licenciatura en Composición, Diplomado en Música
+                    <p data-section="bio" data-value="text">
+                        Cristian Basto es un músico argentino con Licenciatura en Composición, Diplomado en Música
                         Contemporánea y especializado en Compositores de América Latina. Es arreglador y director de
                         orquestas y ensambles de tango, y actualmente divide su tiempo entre Buenos Aires y Barcelona.
                         Como contrabajista, ha colaborado con destacados artistas de tango y ha participado en proyectos
@@ -117,76 +127,72 @@
                         festivales alrededor del mundo, logrando nominaciones a los Latin Grammy y recibiendo
                         reconocimientos como el Premio Carlos Gardel y una mención honorífica en el SONUS International
                         Music Festival.
-
                     </p>
                 </div>
 
                 <div>
-                    <div class="bio-parrafo">
-                        <h4>Ver más
+                    <div class="bio-parrafo" data-section="bio" data-value="text1">
+                        <h4 data-section="bio" data-value="title-icon">Ver más
                             <i class="bi bi-chevron-down toggle-icon"></i>
                         </h4>
-                        <p>Cristian Basto es un músico argentino nacido en Quilmes, Provincia de Buenos Aires. Es
+                        <p data-section="bio" data-value="text-p1">
+                            Cristian Basto es un músico argentino nacido en Quilmes, Provincia de Buenos Aires. Es
                             contrabajista, docente y Licenciado en Composición, además de un destacado arreglador y
                             director de orquestas de tango. Graduado de la Universidad Maimónides, posee un Diploma en
                             Música Contemporánea otorgado por el Conservatorio Superior Manuel de Falla y en
                             “Compositores de América Latina: Miradas Convergentes” por la Universidad Nacional Autónoma
-                            de México (UNAM).
-                            Su formación también incluye estudios en la Escuela Municipal de Bellas Artes (E.M.B.A.)
-                            "Carlos Morel" de Quilmes y en la Escuela de Música Popular de Avellaneda (E.M.P.A.). Ha
-                            tenido el privilegio de perfeccionarse en composición y arreglos bajo la guía de reconocidos
-                            maestros como Daniel Montes, Laura Baade, Diego Schissi, Daniel Ruggiero, Ricardo Hegman y
-                            Ariel Hagman.
-                            Como contrabajista, su formación estuvo a cargo de destacados músicos como Gerardo Ponce,
-                            Daniel Buono, Juan Pablo Navarro y Daniel Falasca. Su sólida formación académica y
-                            profesional ha sido fundamental para consolidar su aporte al tango, destacándose por su
-                            visión creativa y su capacidad para enriquecer este género con profundidad artística.
-
+                            de México (UNAM). Su formación también incluye estudios en la Escuela Municipal de Bellas
+                            Artes (E.M.B.A.) "Carlos Morel" de Quilmes y en la Escuela de Música Popular de Avellaneda
+                            (E.M.P.A.). Ha tenido el privilegio de perfeccionarse en composición y arreglos bajo la guía
+                            de reconocidos maestros como Daniel Montes, Laura Baade, Diego Schissi, Daniel Ruggiero,
+                            Ricardo Hegman y Ariel Hagman. Como contrabajista, su formación estuvo a cargo de destacados
+                            músicos como Gerardo Ponce, Daniel Buono, Juan Pablo Navarro y Daniel Falasca. Su sólida
+                            formación académica y profesional ha sido fundamental para consolidar su aporte al tango,
+                            destacándose por su visión creativa y su capacidad para enriquecer este género con
+                            profundidad artística.
                         </p>
+                    </div>
+                    <div class="bio-parrafo" data-section="bio" data-value="text2">
+                        <p data-section="bio" data-value="text-p2">
+                            <span class="span-bio" data-section="bio" data-value="title-span2">Desempeño
+                                artístico</span>
+                            A lo largo de su carrera, Cristian ha colaborado con destacados artistas de tango como
+                            Amelita Baltar, Amores Tangos, Diego Schissi, Guillermo Fernández, Hernán Possetti, Hilda
+                            Herrera, Horacio Romo, José Colángelo, Julieta Laso, La Chicana, Lidia Borda, Luis Borda,
+                            Nacha Guevara, Nicolás Guerschberg, Nicolás Ledesma, Noelia Sinkunas, Osvaldo Piro, Pablo
+                            Mainetti, "Limón" García, Quasimodo Trío, Quinteto Real, Raúl Garello, Raúl Lavié,
+                            Rascasuelos, Susana Rinaldi, Sur del Sur Ensamble y la Orquesta Assintomática. Su
+                            versatilidad lo ha llevado también a proyectos de música antigua, rock y música urbana,
+                            colaborando en escenarios y estudios con figuras como Antonio Birabent, Chango Spasiuk,
+                            Dancing Mood, Lito Vitale, Los Caligaris, Los Fabulosos Cadillacs, Luis Alberto Spinetta,
+                            Usted Señalemelo y Ysy-A. Cristian ha actuado en reconocidas salas y festivales a nivel
+                            mundial, incluyendo Carnegie Hall y el John F. Kennedy Center for the Performing Arts en
+                            Estados Unidos, el National Arts Centre (NAC) en Canadá, el Teatro Colón en Argentina, el
+                            Moscow International House of Music en Rusia, el Oriental Art Center en China, el Teatro
+                            Sofía en Bulgaria, y festivales como La Villette en Francia, el Roskilde Festival en
+                            Dinamarca, Lollapalooza Argentina y el Festival Internacional de Tango de Buenos Aires.
+                        </p>
+                    </div>
 
-                        <div class="bio-parrafo">
-                            <p>
-                                <span class="span-bio">Desempeño artístico </span>
-                                A lo largo de su carrera, Cristian ha colaborado con destacados artistas de tango como
-                                Amelita Baltar, Amores Tangos, Diego Schissi, Guillermo Fernández, Hernán Possetti,
-                                Hilda Herrera, Horacio Romo, José Colángelo, Julieta Laso, La Chicana, Lidia Borda, Luis
-                                Borda, Nacha Guevara, Nicolás Guerschberg, Nicolás Ledesma, Noelia Sinkunas, Osvaldo
-                                Piro, Pablo Mainetti, "Limón" García, Quasimodo Trío, Quinteto Real, Raúl Garello, Raúl
-                                Lavié, Rascasuelos, Susana Rinaldi, Sur del Sur Ensamble y la Orquesta Assintomática.
-                                Su versatilidad lo ha llevado también a proyectos de música antigua, rock y música
-                                urbana, colaborando en escenarios y estudios con figuras como Antonio Birabent, Chango
-                                Spasiuk, Dancing Mood, Lito Vitale, Los Caligaris, Los Fabulosos Cadillacs, Luis Alberto
-                                Spinetta, Usted Señalemelo y Ysy-A.
-                                Cristian ha actuado en reconocidas salas y festivales a nivel mundial, incluyendo
-                                Carnegie Hall y el John F. Kennedy Center for the Performing Arts en Estados Unidos, el
-                                National Arts Centre (NAC) en Canadá, el Teatro Colón en Argentina, el Moscow
-                                International House of Music en Rusia, el Oriental Art Center en China, el Teatro Sofía
-                                en Bulgaria, y festivales como La Villette en Francia, el Roskilde Festival en
-                                Dinamarca, Lollapalooza Argentina y el Festival Internacional de Tango de Buenos Aires.
-                            </p>
-                        </div>
-                        <div class="bio-parrafo">
-                            <p>
-                                <span class="span-bio">Reconocimientos</span>
-                                A lo largo de su carrera, Cristian Basto ha sido galardonado con numerosos premios y
-                                menciones. Entre ellos se destacan dos Premios Carlos Gardel: uno por su trabajo como
-                                arreglador y músico en el disco La caldera de Julieta Laso, y otro por el disco Salve de
-                                Noelia Sinkunas, también como arreglador y músico. Asimismo, su obra Surera para
-                                contrabajo y piano recibió una mención honorífica en el SONUS International Music
-                                Festival.
-                                En 2020, fue beneficiario del Mecenazgo del Ministerio de Cultura de la Ciudad de Buenos
-                                Aires para la grabación de su obra Suite Villa Urquiza. En 2024, fue nominado a los
-                                Latin Grammy por su labor como arreglador en el disco ¿Y el fin del amor? de Mariana
-                                Mazú.
-                            </p>
-                        </div>
+                    <div class="bio-parrafo" data-section="bio" data-value="text3">
+                        <p data-section="bio" data-value="text-p3">
+                            <span class="span-bio" data-section="bio" data-value="title-span3">Reconocimientos</span>
+                            A lo largo de su carrera, Cristian Basto ha sido galardonado con numerosos premios y
+                            menciones. Entre ellos se destacan dos Premios Carlos Gardel: uno por su trabajo como
+                            arreglador y músico en el disco La caldera de Julieta Laso, y otro por el disco Salve de
+                            Noelia Sinkunas, también como arreglador y músico. Asimismo, su obra Surera para contrabajo
+                            y piano recibió una mención honorífica en el SONUS International Music Festival. En 2020,
+                            fue beneficiario del Mecenazgo del Ministerio de Cultura de la Ciudad de Buenos Aires para
+                            la grabación de su obra Suite Villa Urquiza. En 2024, fue nominado a los Latin Grammy por su
+                            labor como arreglador en el disco ¿Y el fin del amor? de Mariana Mazú.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="galeria">
             <div class="contenedor-titulos">
-                <h2 class="galeria-titulo fade-in">GALERIA</h2>
+                <h2 class="galeria-titulo fade-in" data-section="gallery" data-value="title-g">GALERIA</h2>
             </div>
             <div class="photo-grid">
                 <img src="./img/orsay2.jpg" alt="Foto 1" class="vertical" data-index="0">
@@ -204,7 +210,7 @@
                 <img src="./img/crischusswipper3.jpg" alt="Foto 13" class="horizontal" data-index="12">
                 <img src="./img/swiper6.jpg" alt="Foto 14" class="horizontal" data-index="13">
                 <img src="./img/vivo.jpg" alt="Foto 15" class="horizontal" data-index="14">
-                <img src="./img/swiper7.jpg" alt="Foto 16" class="horizontal1" data-index="15"> 
+                <img src="./img/swiper7.jpg" alt="Foto 16" class="horizontal1" data-index="15">
                 <!-- Modal con slider -->
                 <div class="modal" id="photo-modal">
                     <span class="close-button" id="close-modal">&times;</span>
@@ -235,7 +241,7 @@
         </section>
         <section class="musica fade-in" id="musicaContainer">
             <div class="contenedor-titulos">
-                <h2 class="musica-titulo">MUSICA</h2>
+                <h2 class="musica-titulo" data-section="music" data-value="title-m">MUSICA</h2>
             </div>
 
             <div class="spotify container">
@@ -270,7 +276,7 @@
 
         <section class="videos fade-in" id="videosContainer">
             <div class="contenedor-titulos">
-                <h2 class="videos-titulo fade-in">VIDEOS</h2>
+                <h2 class="videos-titulo fade-in" data-section="videos" data-value="title-v">VIDEOS</h2>
             </div>
 
             <div class="videos-grilla container">
@@ -326,7 +332,7 @@
 
         <section class="agenda fade-in" id="agendaContainer">
             <div class="contenedor-titulos">
-                <h2 class="agenda-titulo">AGENDA</h2>
+                <h2 class="agenda-titulo" data-section="agenda" data-value="title-a">AGENDA</h2>
             </div>
             <div class="agenda-lista container">
                 <div id="eventos"></div>
@@ -335,12 +341,13 @@
 
         <section class="contacto fade-in" id="contactoContainer">
             <div class="contenedor-titulos">
-                <h2 class="contacto-titulo">CONTACTO</h2>
+                <h2 class="contacto-titulo" data-section="contact" data-value="title-c">CONTACTO</h2>
             </div>
 
             <div class="grilla-contacto container">
                 <div class="contacto-parrafo fade-in">
-                    <p>Para comunicarte con Cristian, escribí a <span class="resalta">cristianbasto79@gmail.com</span>
+                    <p data-section="contact" data-value="contact-p">Para comunicarte con Cristian, escribí a <span
+                            class="resalta">cristianbasto79@gmail.com</span>
                     </p>
                 </div>
 
@@ -371,7 +378,9 @@
         </section>
 
         <section class="prensa fade-in">
-            <a href="https://drive.google.com/drive/folders/1fO3UmAaiDd9gILMsroXK5R0KamD1E_jg?usp=drive_link"target="_blank"><button class="btn-prensa">Kit de Prensa</button></a>
+            <a href="https://drive.google.com/drive/folders/1fO3UmAaiDd9gILMsroXK5R0KamD1E_jg?usp=drive_link"
+                target="_blank"><button class="btn-prensa" data-section="press" data-value="kit">Kit de
+                    Prensa</button></a>
         </section>
 
     </main>
@@ -380,7 +389,8 @@
             <a href="./index.html">
                 <h2 class="footer-titulo fade-in"> CRISTIAN BASTO</h2>
             </a>
-            <p class="footer-parrafo encabezado fade-in">Contrabajista/Compositor/Arreglador</p>
+            <p class="footer-parrafo encabezado fade-in" data-section="footer" data-value="footer-p">
+                Contrabajista/Compositor/Arreglador</p>
         </div>
         <div>
             <p class="copi"><i class="bi bi-c-circle"></i>2024 |Todos los derechos reservados
@@ -400,8 +410,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-
-
+    <script src="./js/language.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/agenda.js"></script>
 </body>

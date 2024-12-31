@@ -1,0 +1,81 @@
+{
+    "header": {
+        "bio": "BIO",
+        "music": "MUSICA",
+        "colaborations": "COLABORACIONES",
+        "videos": "VIDEOS",
+        "classes": "CLASES",
+        "sheet-music": "PARTITURAS",
+        "agenda": "AGENDA",
+        "contact": "CONTACTO"
+    },
+    "bio": {
+        "title": "BIO",
+        "text": "Cristian Basto es un músico argentino con Licenciatura en Composición, Diplomado en Música Contemporánea y especializado en Compositores de América Latina. Es arreglador y director de orquestas y ensambles de tango, y actualmente divide su tiempo entre Buenos Aires y Barcelona. Como contrabajista, ha colaborado con destacados artistas de tango y ha participado en proyecto de música antigua, rock y música urbana. Su obra ha sido presentada en prestigiosos escenarios y festivales alrededor del mundo, logrando nominaciones a los Latin Grammy y recibiendo reconocimientos como el Premio Carlos Gardel y una mención honorífica en el SONUS International Music Festival.",
+        "text1": {
+            "title-icon": "Ver más",
+            "text-p1": "Cristian Basto es un músico argentino nacido en Quilmes, Provincia de Buenos Aires. Es contrabajista, docente y Licenciado en Composición, además de un destacado arreglador y director de orquestas de tango. Graduado de la Universidad Maimónides, posee un Diploma Música Contemporánea otorgado por el Conservatorio Superior Manuel de Falla y en “Compositores de América Latina: Miradas Convergentes” por la Universidad Nacional Autónoma de México (UNAM) Su formación también incluye estudios en la Escuela Municipal de Bellas Artes (E.M.B.A.) “Carlos Morel” de Quilmes y en la Escuela de Música Popular de Avellaneda (E.M.P.A.). Hatenido el privilegio de perfeccionarse en composición y arreglos bajo la guía de reconocidos maestros como Daniel Montes, Laura Baade, Diego Schissi, Daniel Ruggiero, Ricardo Hegman y Ariel Hagman. Como contrabajista, su formación estuvo a cargo de destacados músicos como Gerardo Ponce, Daniel Buono, Juan Pablo Navarro y Daniel Falasca. Su sólida formación académica y profesional ha sido fundamental para consolidar su aporte al tango, destacándose por su visión creativa y su capacidad para enriquecer este género con profundidad artística."
+        },
+        "text2": {
+            "text-p2": "A lo largo de su carrera, Cristian ha colaborado con destacados artistas de tango como Amelita Baltar, Amores Tangos, Diego Schissi, Guillermo Fernández, Hernán Possetti,Hilda Herrera, Horacio Romo, José Colángelo, Julieta Laso, La Chicana, Lidia Borda, LuisBorda, Nacha Guevara, Nicolás Guerschberg, Nicolás Ledesma, Noelia Sinkunas, OsvaldoPiro, Pablo Mainetti, “Limón García”, Quasimodo Trío, Quinteto Real, Raúl Garello, RaúlLavié, Rascasuelos, Susana Rinaldi, Sur del Sur Ensamble y la Orquesta Assintomática.Su versatilidad lo ha llevado también a proyectos de música antigua, rock y músicaurbana, colaborando en escenarios y estudios con figuras como Antonio Birabent, Chango Spasiuk, Dancing Mood, Lito Vitale, Los Caligaris, Los Fabulosos Cadillacs, Luis AlbertoSpinetta, Usted Señalemelo y Ysy-A.Cristian ha actuado en reconocidas salas y festivales a nivel mundial, incluyendoCarnegie Hall y el John F. Kennedy Center for the Performing Arts en Estados Unidos, elNational Arts Centre (NAC) en Canadá, el Teatro Colón en Argentina, el Moscow International House of Music en Rusia, el Oriental Art Center en China, el Teatro Sofía en Bulgaria, y festivales como La Villette en Francia, el Roskilde Festival enDinamarca, Lollapalooza Argentina y el Festival Internacional de Tango de Buenos Aires.",
+            "title-span2": "Desempeño artístico"
+        },
+        "text3": {
+            "text-p3": "A lo largo de su carrera, Cristian Basto ha sido galardonado con numerosos premios y menciones. Entre ellos se destacan dos Premios Carlos Gardel: uno por su trabajo como arreglador y músico en el disco La caldera de Julieta Laso, y otro por el disco Salve deNoelia Sinkunas, también como arreglador y músico. Asimismo, su obra Surera paracontrabajo y piano recibió una mención honorífica en el SONUS International Music Festival.En 2020, fue beneficiario del Mecenazgo del Ministerio de Cultura de la Ciudad de BuenosAires para la grabación de su obra Suite Villa Urquiza. En 2024, fue nominado a losLatin Grammy por su labor como arreglador en el disco ¿Y el fin del amor? de MarianaMazú.",
+            "title-span3": "Reconocimientos"
+        }
+    },
+    "gallery": {
+        "title-g": "GALERIA"
+    },
+    "music": {
+        "title-m": "MUSICA"
+    },
+    "videos": {
+        "title-v": "VIDEOS"
+    },
+    "agenda": {
+        "title-a": "AGENDA"
+    },
+    "contact": {
+        "title-c": "CONTACTO",
+        "contact-p": "Para comunicarte con Cristian, escribí a cristianbasto79@gmail.com"
+    },
+    "press": {
+        "kit": "Kit de Prensa"
+    },
+    "footer": {
+        "footer-p": "Contrabajista/Compositor/Arreglador"
+    },
+    "colaborations": {
+        "title-colab": "COLABORACIONES",
+        "colab": "Tango Contemporáneo",
+        "colab1": "Música Popular Argentina",
+        "colab2": "Música Académica",
+        "colab3": "Rock"
+    },
+    "classes": {
+        "title-class": "CLASES",
+        "class-p": "Comparto mi pasión por la música a través de clases personalizadas de contrabajo, composición, arreglos y orquestación, adaptadas para músicos de diferentes niveles. También realizo workshops de contrabajo y orquesta típica, donde exploramos las técnicas y gestos característicos de esas grandes orquestas. En producción, trabajo en equipo con los artistas, desde la creación de arreglos hasta la dirección de grabaciones y mi participación como contrabajista, siempre buscando un resultado auténtico.",
+        "title-class1": "Workshop de Contrabajo",
+        "class-p2": "La idea principal del Nivel I de este workshop es proporcionar herramientas efectivas para abordar el tango, comprender la función esencial del contrabajo dentro del género y fomentar la búsqueda de una musicalidad propia y distintiva en cada músico. El enfoque estará en el repertorio de las orquestas típicas más influyentes que marcaron la era dorada del tango en las décadas de 1940 y 1950, tales como las de Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán y Juan D’Arienzo. Estas orquestas no sólo definieron el estilo y la sonoridad del tango, sino que también consolidaron dos modelos de acompañamiento fundamentales que forman la columna vertebral de la orquesta tanto en términos armónicos como rítmicos: el marcato y la síncopa.",
+        "title-class2": "Workshop de Tango: Orquestas Típicas de los Años 40 y 50",
+        "class-p3": "Cristian Basto ha trabajado como docente dirigiendo ensambles y orquestas típicas en la Academia Nacional del Tango, en el Centro de Desarrollo del Tango y la Cultura Rioplatense (CDTCR)“Escuela de Tango Orlando Goñi”, y en “La Academia Tango Club” Si queres aprender a tocar tango, este workshop está enfocado en las orquestas típicas de tango de las décadas de los años 40 y 50, consideradas la época dorada del tango. Está dirigido tanto a músicos profesionales y amateurs como a cualquier persona interesada, sin importar el instrumento que toque, en aprender las técnicas y recursos estilísticos que dieron forma al sonido inconfundible de estas emblemáticas orquestas. Durante el taller, se trabajará en los gestos y acciones necesarias para recrear el sonido característico de esas orquestas, logrando capturar su esencia rítmica, melódica y estilística."
+    },
+    "sheet-music": {
+        "title-sheet": "PARTITURAS",
+        "sheet-music-p": "Aquí comparto una selección de partituras que abarcan desde tango y música popular argentina hasta composiciones contemporáneas y arreglos de distintos géneros. Cada pieza refleja mi interés por crear música versátil y accesible, sin dejar de lado la profundidad y calidad.",
+        "title-sheet1": "Composiciones y arreglos",
+        "sheet-music-p1":"Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar. En mis arreglos, el enfoque es transformar y reinventar melodías conocidas, adaptándolas para explorar nuevas perspectivas musicales. He colaborado en discos como Pasa de Limón García, A Berisso de Noelia Sinkunas, ¿Y el fin del amor? de Mariana Mazu, La Caldera de Julieta Laso, entre otros, aportando un toque distintivo a cada pieza. En esta sección, encontrarás arreglos pensados para diversos grupos y estilos, como orquestas, ensambles y cuartetos.Si tenés un proyecto o grupo musical y buscás arreglos o composiciones originales, podés contar conmigo para darle un giro único y profesional a cada interpretación.",
+        "title-sheet2":"Piano Solo",
+        "title-sheet3":"Suite para ensamble de cuerdas, bandoneón, cello y piano",
+        "title-sheet4":"Danza para piano y contrabajo",
+        "title-sheet5": "Obras para quinteto de cuerdas y piano",
+        "title-sheet6": "Arreglos para distintos formatos"
+    },
+    "donations": {
+        "title-donations": "DONACIONES",
+        "donations-p": "Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder hacer más y mejor contenido."
+    }
+    
+}
