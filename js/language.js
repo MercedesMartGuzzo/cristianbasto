@@ -110,5 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-    assignBioToggleEvents();
+    assignBioToggleEvents()
 });
