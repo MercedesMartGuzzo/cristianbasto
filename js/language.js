@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Reasignar los eventos después de actualizar el contenido
         textsToChange = document.querySelectorAll('[data-section]');
         assignBioToggleEvents();
     }
@@ -74,8 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Asignar eventos para el toggle de los párrafos y títulos
     function assignBioToggleEvents() {
         const toggleIcons = document.querySelectorAll('.bio .toggle-icon');
-        const paragraphs = document.querySelectorAll('.bio-parrafo, .span-bio'); // Incluye .span-bio
-
+        const paragraphs = document.querySelectorAll('.bio-parrafo, .span-bio'); 
         toggleIcons.forEach(icon => {
             icon.addEventListener('click', () => {
                 const currentParagraph = icon.closest('.bio-parrafo');
@@ -112,6 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
     assignBioToggleEvents();
 });
