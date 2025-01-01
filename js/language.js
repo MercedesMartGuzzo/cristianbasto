@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleLanguageChange(language) {
-        fetch(`../languages/${language}.json`)
+        fetch(`/languages/${language}.json`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
