@@ -48,11 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleLanguageChange(language) {
-        const baseUrl = window.location.origin;
-        const jsonPath = `${baseUrl}/languages/${language}.json`;
-        console.log(`Fetching JSON from: ${jsonPath}`);
-        
-        fetch(jsonPath)
+        // Detectar si estamos en un subdirectorio
+        const isInSubdirectory = window.location.pathname.includes('/pages/');
+        const basePath = isInSubdirectory ? '../languages/' : './languages/';
+        const fetchUrl = `${basePath}${language}.json`;
+
+        fetch(fetchUrl)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
