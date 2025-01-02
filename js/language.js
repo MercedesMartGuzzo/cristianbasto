@@ -48,7 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleLanguageChange(language) {
-        fetch(`./languages/${language}.json`)
+        const baseUrl = window.location.origin;
+        const jsonPath = `${baseUrl}/languages/${language}.json`;
+        console.log(`Fetching JSON from: ${jsonPath}`);
+        
+        fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
@@ -110,5 +114,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-    assignBioToggleEvents()
+    assignBioToggleEvents();
 });
