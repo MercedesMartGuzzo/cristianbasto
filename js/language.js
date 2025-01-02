@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleLanguageChange(language) {
+        // Guardar el idioma seleccionado en localStorage
+        localStorage.setItem('selectedLanguage', language);
+
         // Detectar si estamos en un subdirectorio
         const isInSubdirectory = window.location.pathname.includes('/pages/');
         const basePath = isInSubdirectory ? '../languages/' : './languages/';
@@ -67,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Error al procesar el cambio de idioma:', error);
             });
     }
+
+    // Leer el idioma guardado en localStorage al cargar la página
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es'; // Por defecto 'es'
+    handleLanguageChange(savedLanguage);
 
     langButtons.forEach(button => {
         button.addEventListener('click', () => {
