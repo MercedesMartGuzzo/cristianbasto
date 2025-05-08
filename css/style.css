@@ -36,9 +36,6 @@ img {
 
 }
 
-/*  .container{
-  display: none;
-}  */
 .contenedor-titulos {
   margin: 0;
   margin-inline-start: 1.6rem;
@@ -267,10 +264,6 @@ body.dark-mode .bio {
 .languages {
   display: flex;
   gap: .5rem;
-  /*  position: fixed;
-  top:10%;
-  right: 0.2%; */
-
 }
 
 .lang-button {
@@ -278,8 +271,6 @@ body.dark-mode .bio {
   border: 0;
   cursor: pointer;
   background-color: transparent;
-  /*   padding: .2rem;
-  border-radius: 5px; */
   color: whitesmoke;
   font-family: "Bowlby One", sans-serif;
   padding: 0;
@@ -304,23 +295,19 @@ body.dark-mode .bio {
 
 .fade-in {
   opacity: 0;
-  /*   transform: translateY(20px); */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.show {
   opacity: 1;
-  /*    transform: translateY(0);  */
 }
 
 .fade-in1 {
-  /*    opacity: 0;  */
   transform: translateY(20px);
   transition: transform 1s ease-out;
 }
 
 .fade-in1.show {
-  /*   opacity: 1;  */
   transform: translateY(0);
 }
 
@@ -356,16 +343,13 @@ body.dark-mode .bio {
 /* Diferenciación de clases */
 .photo-grid img.vertical {
   grid-row: span 2;
-  /* Las imágenes verticales ocupan dos filas */
 }
 
 .photo-grid img.horizontal {
   grid-column: span 1;
-  /* Las imágenes horizontales ocupan dos columnas */
 }
 
 .photo-grid img.horizontal1 {
-
   grid-column: span 2;
 }
 
@@ -703,7 +687,21 @@ body.dark-mode .bio {
   object-fit: cover;
 }
 
+/* .portada {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.portada-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 75% top
+} 
+ */
 h1 {
   font-size: 1.6rem;
   font-weight: 400;
@@ -1309,7 +1307,7 @@ iframe {
 .video2,
 .video3,
 .video4,
-.video5 {
+.video5,.video6,.video7 {
   margin-bottom: .5rem;
   height: 200px;
   border:
@@ -1318,7 +1316,7 @@ iframe {
   width: 100%;
 }
 
-.video6 {
+.video8 {
   height: 200px;
   border:
     /*  2px solid peru */
@@ -1680,7 +1678,7 @@ body.dark-mode .pedagogias {
 
 /********* INDEX-TABLET******* */
 
-@media (min-width:768px) {
+@media (min-width:768px)  {
   .contenedor-titulos {
     max-width: 768px;
     margin: 0 auto;
@@ -1799,7 +1797,7 @@ body.dark-mode .pedagogias {
   .video2,
   .video3,
   .video4,
-  .video5 {
+  .video5,.video6,.video7 {
     display: grid;
     justify-content: center;
     width: 100%;
@@ -1810,9 +1808,9 @@ body.dark-mode .pedagogias {
     border-radius: 10px;
   }
 
-  .video5 {
-    margin-bottom: .5rem;
-  }
+   .video8 {
+    margin-bottom: .2rem;
+  } 
 
   /*  .tablet {
     margin-left: 4.5rem;
@@ -1835,6 +1833,7 @@ body.dark-mode .pedagogias {
   #eventos .nombre {
     color: peru;
   }
+
 
   /* CONTACTO */
   .contacto {
@@ -2254,7 +2253,7 @@ body.dark-mode .pedagogias {
   .video3,
   .video4,
   .video5,
-  .video6 {
+  .video6,.video7 {
     display: grid;
     justify-content: center;
     width: 100%;
@@ -2264,7 +2263,9 @@ body.dark-mode .pedagogias {
     height: 200px;
 
   }
-
+.video8{
+  margin-bottom: .15rem;
+}
   iframe {
     height: 300px;
     border-radius: 10px;
@@ -2274,9 +2275,7 @@ body.dark-mode .pedagogias {
     color: whitesmoke;
   }
 
-  .video6 {
-    margin-bottom: .5rem;
-  }
+  
 
   .btn-videos {
     margin-left: 4rem;

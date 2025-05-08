@@ -1,27 +1,13 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const eventosLista = document.getElementById('eventos');
 
-    // Lista de eventos a ser actualizada por el programador
     const eventos = [
         {
-            name: "SOCIAL TANGO PROJECT",
-            date: "11-12-2024",
+            name: "UNIÓN Y PERSEVERANCIA / COMUNA 12",
+            date: "03-05-2025",
             time: "18:30 hs",
-            location: "Teatro San Martín, CABA",
-            mapUrl: "https://maps.app.goo.gl/1bqZTtGgMjtRarQLA",
-        },
-        {
-            name: "LA CHICANA",
-            date: "28-12-2024",
-            time: "21:00 hs",
-            location: "Torcuato Tasso, CABA",
-            mapUrl: "https://maps.app.goo.gl/DkvU2mM38BE4snZy6"
-        },
-        {
-            name: "NOELIA SINKUNAS CUARTETO",
-            date: "04-05-2025",
-            time: "14:00 hs",
-            location: "La Locura Tango Musik Festival ,Innsbruk",
+            location: "La Locura Tango Musik Festival – Innsbruck",
             mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
         },
         {
@@ -30,26 +16,91 @@ document.addEventListener("DOMContentLoaded", () => {
             time: "15:45 hs",
             location: "La Locura Tango Musik Festival ,Innsbruk",
             mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
-        } 
+        },
+        {
+            name: "UNIÓN Y PERSEVERANCIA",
+            date: "04-05-2025",
+            time: "14:00 hs",
+            location: "La Locura Tango Musik Festival ,Innsbruk",
+            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
+        },
+        {
+            name: "UNIÓN Y PERSEVERANCIA",
+            date: "06-05-2025",
+            time: "19:00 hs",
+            location: "Café Stockwerk – Graz",
+            mapUrl: "https://maps.app.goo.gl/h8hj3RsvVf2Py8BR7"
+        },
+        {
+            name: "UNIÓN Y PERSEVERANCIA",
+            date: "07-05-2025",
+            time: "19:00 hs",
+            location: "Sargfabrik – Viena",
+            mapUrl: "https://maps.app.goo.gl/5qcUUUzUZ6rLiDjZ8"
+        },
+        {
+            name: "WORKSHOP – ORQUESTRA LISBOA TANGUERA",
+            date: "13-05-2025",
+            time: "19:00 hs",
+            location: "A Voz do Operário – Lisboa",
+            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
+        },
+        {
+            name: "ORQUESTRA ASSINTOMÁTICA",
+            date: "14-05-2025",
+            time: "19:00 hs",
+            location: "A Voz do Operário – Lisboa",
+            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
+        },
+        {
+            name: "MARIANO SICCARDI TRÍO",
+            date: "17-05-2025",
+            time: "19:00 hs",
+            location: "Múnich",
+            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
+        },
+        {
+            name: "ALTERTANGO + DIEGO VAINER",
+            date: "21-05-2025",
+            time: "19:00 hs",
+            location: "Sala Paral·lel 62 – Barcelona",
+            mapUrl: "https://maps.app.goo.gl/UynrSFxbghoZYnp47"
+        },
+        {
+            name: "INVITADO DE NOELIA SINKUNAS",
+            date: "22-05-2025",
+            time: "19:00 hs",
+            location: "Librería Byron – Barcelona",
+            mapUrl: "https://maps.app.goo.gl/ZqgbvhET3X5HZ8ft7"
+        },
+        {
+            name: "SONDER TANGO",
+            date: "25-05-2025",
+            time: "19:30 hs",
+            location: "Daje Festival – Roma",
+            mapUrl: "https://maps.app.goo.gl/mXLU85q1VhNA2R576"
+        }
     ];
 
-    // Función para agregar un evento a la lista
     function addEvent(name, date, time, location, mapUrl) {
         const eventItem = document.createElement('li');
 
+        // Convertir fecha a formato Date
+        const [day, month, year] = date.split('-');
+        const eventDate = new Date(`${year}-${month}-${day}`);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // ignorar hora
+
+        const isPast = eventDate < today;
+        if (isPast) {
+            return; // no agregar el evento si ya pasó
+        }
+
         eventItem.innerHTML = `
-            <div class= "nombre">
-            <span>${name} </span>
-            </div>
-            <div>
-            <span>${date}</span> 
-            </div>
-            <div>
-            <span>${time} </span>  
-            </div>
-            <div>
-            <span> ${location} </span> 
-            </div>
+            <div class="nombre"><span>${name}</span></div>
+            <div><span>${date}</span></div>
+            <div><span>${time}</span></div>
+            <div><span>${location}</span></div>
             <button class="view-more-btn">Ver más</button>
             <div class="event-details" style="display: none;">
                 <a href="${mapUrl}" target="_blank" class="location-map">Ver en el mapa</a>
@@ -72,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
         eventosLista.appendChild(eventItem);
     }
 
-    // Recorrer y agregar cada evento de la lista al DOM
     eventos.forEach(event => {
         addEvent(event.name, event.date, event.time, event.location, event.mapUrl);
     });
