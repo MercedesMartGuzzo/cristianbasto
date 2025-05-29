@@ -3,27 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventos = [
         {
-            name: "UNIÓN Y PERSEVERANCIA / COMUNA 12",
-            date: "03-05-2025",
-            time: "18:30 hs",
-            location: "La Locura Tango Musik Festival – Innsbruck",
-            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
-        },
-        {
-            name: "CLAUDIA SERENI CUARTETO",
-            date: "04-05-2025",
-            time: "15:45 hs",
-            location: "La Locura Tango Musik Festival ,Innsbruk",
-            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
-        },
-        {
-            name: "UNIÓN Y PERSEVERANCIA",
-            date: "04-05-2025",
-            time: "14:00 hs",
-            location: "La Locura Tango Musik Festival ,Innsbruk",
-            mapUrl: "https://maps.app.goo.gl/Lc3PWEADmLYDYxC37"
-        },
-        {
             name: "UNIÓN Y PERSEVERANCIA",
             date: "06-05-2025",
             time: "19:00 hs",
@@ -78,6 +57,27 @@ document.addEventListener("DOMContentLoaded", () => {
             time: "19:30 hs",
             location: "Daje Festival – Roma",
             mapUrl: "https://maps.app.goo.gl/mXLU85q1VhNA2R576"
+        },
+        {
+            name: "CRISTIAN BASTO ENSAMBLE",
+            date: "02-06-2025",
+            time: "18:30 hs",
+            location: "Barcelona",
+            mapUrl: "https://maps.app.goo.gl/ZqgbvhET3X5HZ8ft7"
+        },
+        {
+            name: "ORQUESTA ASSINTOMÁTICA",
+            date: "25-06-2025",
+            time: "20:00 hs",
+            location: "La Fábrica ,Lisboa",
+            mapUrl: "https://maps.app.goo.gl/DSMAwgUsWgnuoS4FA"
+        },
+        {
+            name: "NOELIA TOMASSI Y PABLO WOIZ ENSAMBLE",
+            date: "27-06-2025",
+            time: "19:00 hs",
+            location: "Ingolstadt",
+            mapUrl: "https://maps.app.goo.gl/KiFCEitt5Z5y6QUB7"
         }
     ];
 
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const isPast = eventDate < today;
         if (isPast) {
-            eventItem.classList.add('evento-pasado'); 
+            eventItem.classList.add('evento-pasado');
         }
 
         eventItem.innerHTML = `
