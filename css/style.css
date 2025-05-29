@@ -638,7 +638,7 @@ body.dark-mode .bio {
   /* swipper */
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   .photo-grid img.horizontal1 {
@@ -1073,7 +1073,6 @@ h1 {
   overflow: hidden;
   padding-top: 1rem;
   background-color: peru;
-
 }
 
 .musica::before,
@@ -1191,7 +1190,7 @@ h1 {
   margin-top: 0.5rem;
   background-color: peru;
   margin-bottom: .5rem;
-
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .boton-colab {
@@ -1291,6 +1290,7 @@ h1 {
   align-items: center;
   width: 85%;
   background-color: #556B2F;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
 
 }
 
@@ -1314,6 +1314,7 @@ iframe {
     /* 2px solid peru; */
     none;
   width: 100%;
+
 }
 
 .video8 {
@@ -1371,6 +1372,7 @@ iframe {
   background-color: peru;
   width: 90vw;
   margin-top: 1rem;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode .agenda-lista {
@@ -1444,7 +1446,10 @@ body.dark-mode .view-more-btn:hover {
 .event-details {
   margin-top: 10px;
 }
-
+.evento-pasado {
+  opacity: 0.6;
+  color: #aaa;
+}
 .location-image {
   width: 100%;
   max-height: 200px;

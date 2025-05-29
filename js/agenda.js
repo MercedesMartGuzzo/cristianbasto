@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const eventosLista = document.getElementById('eventos');
 
@@ -93,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const isPast = eventDate < today;
         if (isPast) {
-            return; // no agregar el evento si ya pasó
+            eventItem.classList.add('evento-pasado'); 
         }
 
         eventItem.innerHTML = `
