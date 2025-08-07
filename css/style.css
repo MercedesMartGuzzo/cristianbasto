@@ -70,6 +70,7 @@ header {
   background-color: white;
   transition: background-color .3s, color .3s;
 
+
 }
 
 body.dark-mode header,
@@ -159,10 +160,82 @@ body.dark-mode .bio {
 
 .navbar {
   background-color: rgb(15, 14, 14);
-  /*  border-bottom: 1px solid whitesmoke; */
   color: whitesmoke;
-
+  width: 100%;
 }
+
+@media (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.65rem;
+    gap: .5rem;
+    padding-top: 2rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .nav-item .lang-button {
+    font-size: 1.8rem;
+    padding-bottom: .3rem;
+  }
+
+  h1,
+  .h1 {
+    display: none;
+  } .redes{
+  padding-bottom: .3rem;
+} 
+.navbar-brand{
+  font-size: 1.65rem;
+}
+}
+@media (min-width :481px) and (max-width: 992px) {
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: 1.8rem;
+  }
+
+  .nav-item .lang-button {
+    font-size: 1.8rem;
+    padding-bottom: .3rem;
+  }
+.navbar-brand{
+  font-size: 1.8rem;
+}
+h1,.h1{
+  display: none;
+}
+}
+/*   .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: black; 
+  }
+
+   .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  } 
+} 
+ */
+/* .navbar-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-size: 1.8rem; 
+  gap: .5rem;
+  margin-top: 1rem; 
+}  */
 
 .navbar-toggler {
   background-color: transparent;
@@ -226,7 +299,7 @@ body.dark-mode .bio {
   text-align: center;
   font-family: "Bowlby One", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .navbar-brand:hover {
@@ -238,7 +311,7 @@ body.dark-mode .bio {
   justify-content: start;
   align-items: center;
   margin: 0;
-  gap: .3rem;
+  gap: .5em;
 }
 
 .redes a::after {
@@ -283,7 +356,7 @@ body.dark-mode .bio {
 
 .collapse.show {
   display: block;
-
+  height: 100vh;
 }
 
 .img-container {
@@ -681,17 +754,18 @@ body.dark-mode .bio {
 
 /* index-mobile */
 
-.portada {
+/* .portada {
   position: relative;
   overflow: hidden;
   object-fit: cover;
-}
+} */
 
-/* .portada {
+.portada {
   position: relative;
   z-index: 1;
   height: 100vh;
   overflow: hidden;
+
 }
 
 .portada-img {
@@ -700,9 +774,9 @@ body.dark-mode .bio {
   height: 100%;
   object-fit: cover;
   object-position: 75% top
-} 
- */
-h1 {
+}
+
+/* h1 {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
@@ -712,17 +786,30 @@ h1 {
   z-index: 1;
   color: whitesmoke;
   animation: titulo 2s 1s ease-in-out 1 forwards;
+} */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 1;
+  color: whitesmoke;
+  animation: titulo 2s 1s ease-in-out 1 forwards;
+
+  letter-spacing: 2px;
 }
-
-
 
 .h1 {
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
   color: whitesmoke;
+  letter-spacing: 2px;
 }
 
 
@@ -737,6 +824,7 @@ h1 {
     letter-spacing: 1px;
   }
 }
+
 
 
 
@@ -1307,7 +1395,9 @@ iframe {
 .video2,
 .video3,
 .video4,
-.video5,.video6,.video7 {
+.video5,
+.video6,
+.video7 {
   margin-bottom: .5rem;
   height: 200px;
   border:
@@ -1446,10 +1536,12 @@ body.dark-mode .view-more-btn:hover {
 .event-details {
   margin-top: 10px;
 }
+
 .evento-pasado {
   opacity: 0.6;
   color: #aaa;
 }
+
 .location-image {
   width: 100%;
   max-height: 200px;
@@ -1683,7 +1775,7 @@ body.dark-mode .pedagogias {
 
 /********* INDEX-TABLET******* */
 
-@media (min-width:768px)  {
+@media (min-width:768px) {
   .contenedor-titulos {
     max-width: 768px;
     margin: 0 auto;
@@ -1706,7 +1798,9 @@ body.dark-mode .pedagogias {
     font-family: "Bowlby One", sans-serif;
 
   }
-
+/* h1,.h1{
+  display: block;
+} */
   .portada {
     position: relative;
     z-index: 1;
@@ -1720,7 +1814,7 @@ body.dark-mode .pedagogias {
     height: 100vh;
     object-fit: cover;
     width: 100%;
-    object-position: top;
+    object-position: 75% top;
   }
 
   /* MUSUCA */
@@ -1802,7 +1896,10 @@ body.dark-mode .pedagogias {
   .video2,
   .video3,
   .video4,
-  .video5,.video6,.video7,.video8 {
+  .video5,
+  .video6,
+  .video7,
+  .video8 {
     display: grid;
     justify-content: center;
     width: 100%;
@@ -1813,9 +1910,9 @@ body.dark-mode .pedagogias {
     border-radius: 10px;
   }
 
-   .video8 {
+  .video8 {
     margin-bottom: .2rem;
-  } 
+  }
 
   /*  .tablet {
     margin-left: 4.5rem;
@@ -1959,18 +2056,19 @@ body.dark-mode .pedagogias {
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
   }
-
+/* h1,.h1{
+  display:none
+} */
   .portada {
     position: relative;
     z-index: 1;
-    height: 91vh;
+    height: 100vh;
     overflow: hidden;
-
   }
 
   .portada-img {
     position: absolute;
-    height: 91vh;
+    height: 100vh;
     object-fit: cover;
     object-position: top;
 
@@ -2258,7 +2356,9 @@ body.dark-mode .pedagogias {
   .video3,
   .video4,
   .video5,
-  .video6,.video7,.video8 {
+  .video6,
+  .video7,
+  .video8 {
     display: grid;
     justify-content: center;
     width: 100%;
@@ -2268,9 +2368,11 @@ body.dark-mode .pedagogias {
     height: 200px;
 
   }
-.video8{
-  margin-bottom: .15rem;
-}
+
+  .video8 {
+    margin-bottom: .15rem;
+  }
+
   iframe {
     height: 300px;
     border-radius: 10px;
@@ -2280,7 +2382,7 @@ body.dark-mode .pedagogias {
     color: whitesmoke;
   }
 
-  
+
 
   .btn-videos {
     margin-left: 4rem;
@@ -3345,10 +3447,12 @@ body.dark-mode .redes-footer2 a:hover {
 
   .portada {
     height: 100vh;
+
   }
 
   .portada img {
     height: 100vh;
+    object-position: 30% top;
   }
 
   /* PEDAGOGIA /PARTITURAS */

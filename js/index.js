@@ -56,14 +56,6 @@ gsap.from(".nav-item", {
 // Selecciona el contenedor y aplica la animación
 
 
-
-
-
-
-
-
-
-
 // Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
 function activarDesactivarBordes(contenedor) {
@@ -116,8 +108,7 @@ activarBordesBioContainer(bioContainer);
 function smoothScroll(target) {
   let targetElement = document.querySelector(target);
   let targetPosition = targetElement.offsetTop;
-  let navbarHeight = document.querySelector(".navbar").offsetHeight; // Altura de la barra de navegación
-
+  let navbarHeight = document.querySelector(".navbar").offsetHeight; 
   // Ajustar el scroll para que deje suficiente espacio para el header sticky
   window.scrollTo({
     top: targetPosition - navbarHeight - 20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio
@@ -144,37 +135,7 @@ navLinks.forEach(function (navLink) {
 
 
 
-/* ICONOS PARA MOSTRAR PARRAFOS DE BIO */
-/* document.addEventListener('DOMContentLoaded', () => {
-  const toggleIcons = document.querySelectorAll('.toggle-icon');
-  const paragraphs = document.querySelectorAll('.bio-parrafo', ".span-bio");
 
-  toggleIcons.forEach(icon => {
-    icon.addEventListener('click', () => {
-      const currentParagraph = icon.closest('.bio-parrafo');
-      const isOpen = currentParagraph.classList.toggle('open');
-
-      // Close all other paragraphs except the current one
-      paragraphs.forEach(paragraph => {
-        if (paragraph !== currentParagraph && paragraph.classList.contains('open')) {
-          paragraph.classList.remove('open');
-        }
-      });
-
-      // Adjust scroll to ensure the expanded paragraph is in view
-      if (isOpen) {
-        setTimeout(() => {
-          const title = currentParagraph.querySelector('h4') || currentParagraph.querySelector('h3');
-          const rect = title.getBoundingClientRect();
-          window.scrollTo({
-            top: window.scrollY + rect.top - 66,
-            behavior: 'smooth'
-          });
-        }, 1000);
-      }
-    });
-  });
-}); */
 
 //ACTIVAR-DESACTIVAR DARK-MODE//
 document.addEventListener("DOMContentLoaded", () => {
