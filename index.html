@@ -31,8 +31,7 @@
 </head>
 
 <body>
-     <header class="header-wrapper sticky-top"> 
-   <!--  <header class="header-wrapper"> -->
+    <header class="header-wrapper sticky-top">
 
         <!-- bootstrap nav -->
         <nav class="navbar navbar-expand-lg">
@@ -110,13 +109,13 @@
     <main>
         <section class="portada">
             <img class="portada-img" src="./img/portadaWeb(1).jpg" alt="Cristian Basto" loading="eager">
-     <!--     <h1>CRISTIAN <p class="h1">BASTO </p>
-            </h1> -->
+            <h1>CRISTIAN <p class="h1">BASTO </p>
+            </h1>
         </section>
         <section class="bio" id="bioContainer">
 
             <div class="contenedor-titulos">
-                <h2 class="bio-titulo fade-in" data-section="bio" data-value="title">BIO</h2>
+                <h2 class="bio-titulo" data-section="bio" data-value="title">BIO</h2>
             </div>
             <div class="bio-secciones container">
                 <div class="bio-parrafo1 fade-in" id="parrafo1">
@@ -194,46 +193,61 @@
         </section>
         <section class="galeria">
             <div class="contenedor-titulos">
-                <h2 class="galeria-titulo fade-in" data-section="gallery" data-value="title-g">GALERIA</h2>
+                <h2 class="galeria-titulo" data-section="gallery" data-value="title-g">GALERIA</h2>
             </div>
             <div class="photo-grid">
-                <img src="./img/orsay2.jpg" alt="Foto 1" class="vertical" data-index="0">
-                <img src="./img/foto-bioNueva.jpg" alt="Foto 2" class="horizontal" data-index="1">
+                <img src="./img/foto-bioNueva.jpg" alt="Foto 1" class="horizontal" data-index="0">
+                <img src="./img/orsay2.jpg" alt="Foto 2" class="vertical" data-index="1">
                 <img src="./img/colab.jpg" alt="Foto 3" class="horizontal" data-index="2">
-                <img src="./img/ensambleswiper.jpg" alt="Foto 4" class="horizontal" data-index="3">
-                <img src="./img/crischus-contra.jpg" alt="Foto 5" class="horizontal" data-index="4">
-                <img src="./img/swipper-v.jpg" alt="Foto 6" class="vertical" data-index="5">
-                <img src="./img/fondo-videos.jpg" alt="Foto 7" class="horizontal" data-index="6">
-                <img src="./img/quasimodo-swipper.jpg" alt="Foto 8" class="horizontal" data-index="7">
-                <img src="./img/swipper2.jpg" alt="Foto 9" class="horizontal" data-index="8">
-                <img src="./img/swiper8.jpg" alt="Foto 10" class="vertical" data-index="9">
+                <img src="./img/tocando3.jpeg" alt="Foto 4" class="vertical" data-index="3">
+                <img src="./img/ensambleswiper.jpg" alt="Foto 5" class="horizontal" data-index="4">
+                <img src="./img/crischus-contra.jpg" alt="Foto 6" class="horizontal" data-index="5">
+                <img src="./img/swipper-v.jpg" alt="Foto 7" class="vertical" data-index="6">
+                <img src="./img/fondo-videos.jpg" alt="Foto 8" class="horizontal" data-index="7">
+                <img src="./img/swiper8.jpg" alt="Foto 9" class="vertical" data-index="8">
+                <img src="./img/swipper2.jpg" alt="Foto 10" class="horizontal" data-index="9">
                 <img src="./img/crischus-swipper.jpg" alt="Foto 11" class="horizontal" data-index="10">
-                <img src="./img/crischusswipper2.jpg" alt="Foto 12" class="horizontal" data-index="11">
-                <img src="./img/crischusswipper3.jpg" alt="Foto 13" class="horizontal" data-index="12">
-                <img src="./img/swiper6.jpg" alt="Foto 14" class="horizontal" data-index="13">
-                <img src="./img/vivo.jpg" alt="Foto 15" class="horizontal" data-index="14">
-                <img src="./img/swiper7.jpg" alt="Foto 16" class="horizontal1" data-index="15">
+                <img src="./img/crischusswipper3.jpg" alt="Foto 12" class="horizontal" data-index="11">
+                <img src="./img/swiper6.jpg" alt="Foto 13" class="horizontal" data-index="12">
+                <img src="./img/vivo.jpg" alt="Foto 14" class="horizontal" data-index="13">
+                <img src="./img/swiper7.jpg" alt="Foto 15" class="horizontal" data-index="14">
+                <img src="./img/sonriendo.jpg" alt="Foto 16" class="vertical" data-index="15">
+                <img src="./img/byn.jpeg" alt="Foto 17" class="horizontal" data-index="16">
+                <img src="./img/aire-libre2.jpg" alt="Foto 18" class="vertical" data-index="17">
+                <img src="./img/aire-libre.jpg" alt="Foto 19" class="horizontal" data-index="18">
+                <img src="./img/tocando.jpeg" alt="Foto 20" class="vertical" data-index="19">
+                <img src="./img/tocando2.jpeg" alt="Foto 21" class="vertical" data-index="20">
+                <img src="./img/quasimodo-swipper.jpg" alt="Foto 22" class="horizontal desktop" data-index="21">
+                <img src="./img/crischusswipper2.jpg" alt="Foto 23" class="horizontal1" data-index="22">
+
                 <!-- Modal con slider -->
                 <div class="modal" id="photo-modal">
                     <span class="close-button" id="close-modal">&times;</span>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./img/orsay2.jpg" alt="Foto 1"></div>
-                            <div class="swiper-slide"><img src="./img/foto-bioNueva.jpg" alt="Foto 2"> </div>
+                            <div class="swiper-slide"><img src="./img/foto-bioNueva.jpg" alt="Foto 1"></div>
+                            <div class="swiper-slide"><img src="./img/orsay2.jpg" alt="Foto 2"> </div>
                             <div class="swiper-slide"><img src="./img/colab.jpg" alt="Foto 3"></div>
-                            <div class="swiper-slide"><img src="./img/ensambleswiper.jpg" alt="Foto 4"></div>
-                            <div class="swiper-slide"><img src="./img/crischus-contra.jpg" alt="Foto 5"></div>
-                            <div class="swiper-slide"><img src="./img/swipper-v.jpg" alt="Foto 6"></div>
-                            <div class="swiper-slide"><img src="./img/fondo-videos.jpg" alt="Foto 7"></div>
-                            <div class="swiper-slide"><img src="./img/quasimodo-swipper.jpg" alt="Foto 8"></div>
-                            <div class="swiper-slide"><img src="./img/swipper2.jpg" alt="Foto 9"></div>
-                            <div class="swiper-slide"><img src="./img/swiper8.jpg" alt="Foto 10"></div>
+                            <div class="swiper-slide"><img src="./img/tocando3.jpeg" alt="Foto 4"></div>
+                            <div class="swiper-slide"><img src="./img/ensambleswiper.jpg" alt="Foto 5"></div>
+                            <div class="swiper-slide"><img src="./img/crischus-contra.jpg" alt="Foto 6"></div>
+                            <div class="swiper-slide"><img src="./img/swipper-v.jpg" alt="Foto 7"></div>
+                            <div class="swiper-slide"><img src="./img/fondo-videos.jpg" alt="Foto 8"></div>
+                            <div class="swiper-slide"><img src="./img/swiper8.jpg" alt="Foto 9"></div>
+                            <div class="swiper-slide"><img src="./img/swipper2.jpg" alt="Foto 10"></div>
                             <div class="swiper-slide"><img src="./img/crischus-swipper.jpg" alt="Foto 11"></div>
-                            <div class="swiper-slide"><img src="./img/crischusswipper2.jpg" alt="Foto 12"></div>
-                            <div class="swiper-slide"><img src="./img/crischusswipper3.jpg" alt="Foto 13"></div>
-                            <div class="swiper-slide"><img src="./img/swiper6.jpg" alt="Foto 14"></div>
-                            <div class="swiper-slide"><img src="./img/vivo.jpg" alt="Foto 15"></div>
-                            <div class="swiper-slide"><img src="./img/swiper7.jpg" alt="Foto 16"></div>
+                            <div class="swiper-slide"><img src="./img/crischus-swipper3.jpg" alt="Foto 12"></div>
+                            <div class="swiper-slide"><img src="./img/swiper6.jpg" alt="Foto 13"></div>
+                            <div class="swiper-slide"><img src="./img/vivo.jpg" alt="Foto 14"></div>
+                            <div class="swiper-slide"><img src="./img/swiper7.jpg" alt="Foto 15"></div>
+                            <div class="swiper-slide"><img src="./img/sonriendo.jpg" alt="Foto 16"></div>
+                            <div class="swiper-slide"><img src="./img/byn.jpeg" alt="Foto 17"></div>
+                            <div class="swiper-slide"><img src="./img/aire-libre2.jpg" alt="Foto 18"></div>
+                            <div class="swiper-slide"><img src="./img/aire-libre.jpg" alt="Foto 19"></div>
+                            <div class="swiper-slide"><img src="./img/tocando.jpeg" alt="Foto 20"></div>
+                            <div class="swiper-slide"><img src="./img/tocando2.jpeg" alt="Foto 21"></div>
+                            <div class="swiper-slide"><img src="./img/quasimodo-swipper.jpg" alt="Foto 22"></div>
+                            <div class="swiper-slide"><img src="./img/crischusswipper2.jpg" alt="Foto 23"></div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -278,7 +292,7 @@
 
         <section class="videos fade-in" id="videosContainer">
             <div class="contenedor-titulos">
-                <h2 class="videos-titulo fade-in" data-section="videos" data-value="title-v">VIDEOS</h2>
+                <h2 class="videos-titulo" data-section="videos" data-value="title-v">VIDEOS</h2>
             </div>
 
             <div class="videos-grilla container">
@@ -318,19 +332,24 @@
                     <p>Tema de la Nube(2024)</p>
                 </div>
                 <div>
-                    <iframe class="video6 fade-in"
-                        src="https://www.youtube.com/embed/8n32tQMw6jk?si=WHMzhC4C9BBlcXZJ" title="YouTube video player"
-                        frameborder="0"
+                    <iframe class="video6 fade-in" src="https://www.youtube.com/embed/8n32tQMw6jk?si=WHMzhC4C9BBlcXZJ"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Piso Mojado(2020)</p>
                 </div>
                 <div>
-                    <iframe class="video7 fade-in" src="https://www.youtube.com/embed/ZXwnQY4hEn4?si=aRnNoLDhAkfWsvAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="video7 fade-in" src="https://www.youtube.com/embed/ZXwnQY4hEn4?si=aRnNoLDhAkfWsvAb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Sheldon(2024)</p>
                 </div>
                 <div>
-                    <iframe class="video8 fade-in" src="https://www.youtube.com/embed/yyAd8UQtXTo?si=tYkN0_8PEmIYbOAh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="video8 fade-in" src="https://www.youtube.com/embed/yyAd8UQtXTo?si=tYkN0_8PEmIYbOAh"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Michelangelo 70(2025)</p>
                 </div>
             </div>

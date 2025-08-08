@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, {
-        threshold: 0.20// 10% del elemento visible
+        threshold: 0.20
     });
 
     // Observar todos los elementos seleccionados
@@ -72,10 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Selecciona todos los elementos que deseas animar
     const elements = document.querySelectorAll('.fade-in');
 
-    // Crear el observer
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -83,10 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, {
-        threshold: 0.05// 10% del elemento visible
+        threshold: 0.05
     });
 
-    // Observar todos los elementos seleccionados
     elements.forEach(element => {
         observer.observe(element);
     });
