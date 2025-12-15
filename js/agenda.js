@@ -1,85 +1,157 @@
 document.addEventListener("DOMContentLoaded", () => {
     const eventosLista = document.getElementById('eventos');
 
+
     const eventos = [
         {
-            name: "UNIÓN Y PERSEVERANCIA",
-            date: "06-05-2025",
-            time: "19:00 hs",
-            location: "Café Stockwerk – Graz",
-            mapUrl: "https://maps.app.goo.gl/h8hj3RsvVf2Py8BR7"
-        },
-        {
-            name: "UNIÓN Y PERSEVERANCIA",
-            date: "07-05-2025",
-            time: "19:00 hs",
-            location: "Sargfabrik – Viena",
-            mapUrl: "https://maps.app.goo.gl/5qcUUUzUZ6rLiDjZ8"
-        },
-        {
-            name: "WORKSHOP – ORQUESTRA LISBOA TANGUERA",
-            date: "13-05-2025",
-            time: "19:00 hs",
-            location: "A Voz do Operário – Lisboa",
-            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
-        },
-        {
-            name: "ORQUESTRA ASSINTOMÁTICA",
-            date: "14-05-2025",
-            time: "19:00 hs",
-            location: "A Voz do Operário – Lisboa",
-            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
-        },
-        {
-            name: "MARIANO SICCARDI TRÍO",
-            date: "17-05-2025",
-            time: "19:00 hs",
-            location: "Múnich",
-            mapUrl: "https://maps.app.goo.gl/V5QpVwrdjyUJY7PMA"
-        },
-        {
-            name: "ALTERTANGO + DIEGO VAINER",
-            date: "21-05-2025",
-            time: "19:00 hs",
-            location: "Sala Paral·lel 62 – Barcelona",
-            mapUrl: "https://maps.app.goo.gl/UynrSFxbghoZYnp47"
-        },
-        {
-            name: "INVITADO DE NOELIA SINKUNAS",
-            date: "22-05-2025",
-            time: "19:00 hs",
-            location: "Librería Byron – Barcelona",
-            mapUrl: "https://maps.app.goo.gl/ZqgbvhET3X5HZ8ft7"
-        },
-        {
             name: "SONDER TANGO",
-            date: "25-05-2025",
-            time: "19:30 hs",
-            location: "Daje Festival – Roma",
-            mapUrl: "https://maps.app.goo.gl/mXLU85q1VhNA2R576"
+            date: "27-12-2025",
+            time: "",
+            location: "Oeiras Tango Festival – Oeiras, Portugal",
+            mapUrl: "https://maps.app.goo.gl/9DnBqrVv8RGLhqNq8"
         },
         {
-            name: "CRISTIAN BASTO ENSAMBLE",
-            date: "02-06-2025",
-            time: "18:30 hs",
-            location: "Barcelona",
-            mapUrl: "https://maps.app.goo.gl/ZqgbvhET3X5HZ8ft7"
-        },
-        {
-            name: "ORQUESTA ASSINTOMÁTICA",
-            date: "25-06-2025",
+            name: "CUARTETO INSURGENTE & CUARTETO PRIMAVERA",
+            date: "24-01-2026",
             time: "20:00 hs",
-            location: "La Fábrica ,Lisboa",
-            mapUrl: "https://maps.app.goo.gl/DSMAwgUsWgnuoS4FA"
+            location: "Museo Europeo de Arte Moderno (MEAM) – Barcelona, España",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Museo+Europeo+de+Arte+Moderno+Barcelona"
         },
         {
-            name: "NOELIA TOMASSI Y PABLO WOIZ ENSAMBLE",
-            date: "27-06-2025",
-            time: "19:00 hs",
-            location: "Ingolstadt",
-            mapUrl: "https://maps.app.goo.gl/KiFCEitt5Z5y6QUB7"
+            name: "PATRICIO BONFIGLIO & EL SINDICATO MILONGUERO",
+            date: "12-02-2026",
+            time: "",
+            location: "París, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Paris+France"
+        },
+        {
+            name: "PATRICIO BONFIGLIO & EL SINDICATO MILONGUERO",
+            date: "13-02-2026",
+            time: "",
+            location: "París, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Paris+France"
+        },
+        {
+            name: "PATRICIO BONFIGLIO & EL SINDICATO MILONGUERO",
+            date: "14-02-2026",
+            time: "",
+            location: "París, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Paris+France"
+        },
+        {
+            name: "PATRICIO BONFIGLIO & EL SINDICATO MILONGUERO",
+            date: "15-02-2026",
+            time: "",
+            location: "París, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Paris+France"
+        },
+        {
+            name: "PATRICIO BONFIGLIO & EL SINDICATO MILONGUERO",
+            date: "16-02-2026",
+            time: "",
+            location: "París, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Paris+France"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "22-02-2026",
+            time: "",
+            location: "Wiener Konzerthaus – Viena, Austria",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Wiener+Konzerthaus+Viena+Austria"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "24-02-2026",
+            time: "",
+            location: "Philharmonie Berlin – Berlín, Alemania",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Philharmonie+Berlin"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "26-02-2026",
+            time: "",
+            location: "De Roma – Borgerhout, Bélgica",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=De+Roma+Borgerhout+Belgium"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "28-02-2026",
+            time: "",
+            location: "Prinzregententheater – Múnich, Alemania",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Prinzregententheater+Munich+Germany"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "01-03-2026",
+            time: "",
+            location: "Het Koninklijk Concertgebouw – Ámsterdam, Países Bajos",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Concertgebouw+Amsterdam"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "02-03-2026",
+            time: "",
+            location: "Scala Club – Leverkusen, Alemania",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Scala+Club+Leverkusen+Germany"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "03-03-2026",
+            time: "",
+            location: "Karlstorbahnhof – Heidelberg, Alemania",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Karlstorbahnhof+Heidelberg"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "04-03-2026",
+            time: "",
+            location: "Treibhaus – Innsbruck, Austria",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Treibhaus+Innsbruck+Austria"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "07-03-2026",
+            time: "",
+            location: "Teatro Municipal da Guarda – Guarda, Portugal",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Teatro+Municipal+da+Guarda+Portugal"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "08-03-2026",
+            time: "",
+            location: "Casa da Cultura de Loulé – Loulé, Portugal",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Casa+da+Cultura+de+Loule+Portugal"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "10-03-2026",
+            time: "",
+            location: "Anthroposophisches Zentrum – Kassel, Alemania",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Anthroposophisches+Zentrum+Kassel"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "12-03-2026",
+            time: "",
+            location: "La Seine Musicale – Boulogne-Billancourt, Francia",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=La+Seine+Musicale+Boulogne+Billancourt"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "15-03-2026",
+            time: "",
+            location: "Straz Center for the Performing Arts – Tampa, Florida, EE.UU.",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Straz+Center+for+the+Performing+Arts+Tampa"
+        },
+        {
+            name: "QUINTETO ASTOR PIAZZOLLA",
+            date: "21-03-2026",
+            time: "",
+            location: "The Soraya – Northridge, California, EE.UU.",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Soraya+Northridge+California"
         }
     ];
+
 
     function addEvent(name, date, time, location, mapUrl) {
         const eventItem = document.createElement('li');

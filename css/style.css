@@ -793,8 +793,7 @@ body.dark-mode .bio {
   object-fit: cover;
   object-position: 75% top
 }
-
-/* h1 {
+/*  h1 {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
@@ -804,9 +803,9 @@ body.dark-mode .bio {
   z-index: 1;
   color: whitesmoke;
   animation: titulo 2s 1s ease-in-out 1 forwards;
-} */
-
-/* h1 {
+}  */
+/* 
+ h1 {
   font-size: 3rem;
   font-weight: 400;
   font-family: "Bowlby One", sans-serif;
@@ -828,7 +827,7 @@ body.dark-mode .bio {
   font-family: "Bowlby One", sans-serif;
   color: whitesmoke;
   letter-spacing: 2px;
-} */
+}  */
 
 
 @keyframes titulo {

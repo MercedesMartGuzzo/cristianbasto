@@ -1,45 +1,66 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('#navbarNav');
   const openIcon = document.querySelector('.open-icon');
   const closeIcon = document.querySelector('.close-icon');
-  const navbarCollapse = document.querySelector('#navbarNav');
 
-  if (navbarToggler) {
-    navbarToggler.addEventListener('click', function () {
-      if (navbarCollapse.classList.contains('show')) {
-        // El menú está desplegado, entonces lo colapsamos
+  if (!navbarToggler || !navbarCollapse) return;
+
+  /* ===============================
+     Toggle menú (solo mobile)
+  =============================== */
+  navbarToggler.addEventListener('click', function () {
+    if (window.innerWidth >= 992) return; // ⛔ desktop no toca nada
+
+    const isOpen = navbarCollapse.classList.contains('show');
+
+    if (isOpen) {
+      navbarCollapse.classList.remove('show');
+      openIcon.classList.remove('d-none');
+      closeIcon.classList.add('d-none');
+    } else {
+      navbarCollapse.classList.add('show');
+      openIcon.classList.add('d-none');
+      closeIcon.classList.remove('d-none');
+    }
+  });
+
+  /* ===============================
+     Cerrar menú al click (mobile)
+  =============================== */
+  document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
         navbarCollapse.classList.remove('show');
-        closeIcon.classList.add('d-none');
         openIcon.classList.remove('d-none');
-      } else {
-        // El menú está colapsado, entonces lo desplegamos
-        navbarCollapse.classList.add('show');
-        openIcon.classList.add('d-none');
-        closeIcon.classList.remove('d-none');
-      }
-    });
-  }
-
-  document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
-    item.addEventListener("click", () => {
-      if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
-        navbarToggler.click();
+        closeIcon.classList.add('d-none');
       }
     });
   });
 
-  // Script para abrir enlaces de redes sociales en una nueva pestaña
+  /* ===============================
+     Reset al pasar a desktop
+  =============================== */
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992) {
+      navbarCollapse.classList.remove('show');
+      openIcon.classList.remove('d-none');
+      closeIcon.classList.add('d-none');
+    }
+  });
+
+  /* ===============================
+     Redes → nueva pestaña
+  =============================== */
   document.querySelectorAll('.redes a').forEach(item => {
-    item.addEventListener('click', event => {
-      event.preventDefault();
+    item.addEventListener('click', e => {
+      e.preventDefault();
       const url = item.getAttribute('href');
-      if (url) {
-        window.open(url, '_blank');
-      }
+      if (url) window.open(url, '_blank');
     });
   });
 });
+
 
 
 
@@ -108,7 +129,7 @@ activarBordesBioContainer(bioContainer);
 function smoothScroll(target) {
   let targetElement = document.querySelector(target);
   let targetPosition = targetElement.offsetTop;
-  let navbarHeight = document.querySelector(".navbar").offsetHeight; 
+  let navbarHeight = document.querySelector(".navbar").offsetHeight;
   // Ajustar el scroll para que deje suficiente espacio para el header sticky
   window.scrollTo({
     top: targetPosition - navbarHeight - 20, // Ajusta el valor "20" según sea necesario para mayor o menor espacio

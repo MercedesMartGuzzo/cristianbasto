@@ -35,7 +35,10 @@
         "title-v": "VIDEOS"
     },
     "agenda": {
-        "title-a": "AGENDA"
+        "title-a": "AGENDA",
+        "view-more": "Ver más",
+        "view-less": "Ver menos",
+        "view-map": "Ver en el mapa"
     },
     "contact": {
         "title-c": "CONTACTO",
@@ -66,10 +69,10 @@
         "title-sheet": "PARTITURAS",
         "sheet-music-p": "Aquí comparto una selección de partituras que abarcan desde tango y música popular argentina hasta composiciones contemporáneas y arreglos de distintos géneros. Cada pieza refleja mi interés por crear música versátil y accesible, sin dejar de lado la profundidad y calidad.",
         "title-sheet1": "Composiciones y arreglos",
-        "sheet-music-p1":"Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar. En mis arreglos, el enfoque es transformar y reinventar melodías conocidas, adaptándolas para explorar nuevas perspectivas musicales. He colaborado en discos como Pasa de Limón García, A Berisso de Noelia Sinkunas, ¿Y el fin del amor? de Mariana Mazu, La Caldera de Julieta Laso, entre otros, aportando un toque distintivo a cada pieza. En esta sección, encontrarás arreglos pensados para diversos grupos y estilos, como orquestas, ensambles y cuartetos.Si tenés un proyecto o grupo musical y buscás arreglos o composiciones originales, podés contar conmigo para darle un giro único y profesional a cada interpretación.",
-        "title-sheet2":"Piano Solo",
-        "title-sheet3":"Suite para ensamble de cuerdas, bandoneón, cello y piano",
-        "title-sheet4":"Danza para piano y contrabajo",
+        "sheet-music-p1": "Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar. En mis arreglos, el enfoque es transformar y reinventar melodías conocidas, adaptándolas para explorar nuevas perspectivas musicales. He colaborado en discos como Pasa de Limón García, A Berisso de Noelia Sinkunas, ¿Y el fin del amor? de Mariana Mazu, La Caldera de Julieta Laso, entre otros, aportando un toque distintivo a cada pieza. En esta sección, encontrarás arreglos pensados para diversos grupos y estilos, como orquestas, ensambles y cuartetos.Si tenés un proyecto o grupo musical y buscás arreglos o composiciones originales, podés contar conmigo para darle un giro único y profesional a cada interpretación.",
+        "title-sheet2": "Piano Solo",
+        "title-sheet3": "Suite para ensamble de cuerdas, bandoneón, cello y piano",
+        "title-sheet4": "Danza para piano y contrabajo",
         "title-sheet5": "Obras para quinteto de cuerdas y piano",
         "title-sheet6": "Arreglos para distintos formatos"
     },
@@ -77,5 +80,4 @@
         "title-donations": "DONACIONES",
         "donations-p": "Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder hacer más y mejor contenido."
     }
-    
 }
