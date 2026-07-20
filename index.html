@@ -115,7 +115,7 @@
         </section>
         <section class="bio" id="bioContainer">
 
-            <div class="contenedor-titulos">
+            <div class="container">
                 <h2 class="bio-titulo" data-section="bio" data-value="title"></h2>
             </div>
 
@@ -245,72 +245,83 @@
 
         <section class="videos fade-in" id="videosContainer">
             <div class="contenedor-titulos">
-                <h2 class="videos-titulo" data-section="videos" data-value="title-v">VIDEOS</h2>
+                <h2 class="videos-titulo" data-section="videos" data-value="title-v">MEDIA</h2>
             </div>
+            <!-- ================= CREACIÓN ================= -->
 
-            <div class="videos-grilla container">
-                <div>
-                    <iframe class="video1 fade-in" src="https://www.youtube.com/embed/4ZF4WjQQCyg?si=QMcFjFqZFw3aoR6O"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen> </iframe>
-                    <p>Suite Villa Urquiza (2002)</p>
-                </div>
-                <div>
-                    <iframe class="video2 fade-in" src="https://www.youtube.com/embed/b2CMxg6wspE?si=YbNH9qPnQiXzRp_X"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <p>Suite Villa Urquiza (2002)</p>
-                </div>
-                <div>
-                    <iframe class="video3 fade-in" src="https://www.youtube.com/embed/cS7g1r8yc38?si=JzznhLX8nCXRnT6C"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <p>New York-Carnagie Hall(2016)</p>
-                </div>
-                <div>
-                    <iframe class="video4 fade-in" src="https://www.youtube.com/embed/C0Yyg5bmKg4?si=B_-Pz3a_FYBmWwNR"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <p>One the Roman Sinitsyn(2023)</p>
-                </div>
-                <div>
-                    <iframe class="video5 fade-in" src="https://www.youtube.com/embed/aEtsrS7AGZM?si=AskbN1g4p2iKcAU_"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>Tema de la Nube(2024)</p>
-                </div>
-                <div>
-                    <iframe class="video6 fade-in" src="https://www.youtube.com/embed/8n32tQMw6jk?si=WHMzhC4C9BBlcXZJ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>Piso Mojado(2020)</p>
-                </div>
-                <div>
-                    <iframe class="video7 fade-in" src="https://www.youtube.com/embed/ZXwnQY4hEn4?si=aRnNoLDhAkfWsvAb"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>Sheldon(2024)</p>
-                </div>
-                <div>
-                    <iframe class="video8 fade-in" src="https://www.youtube.com/embed/yyAd8UQtXTo?si=tYkN0_8PEmIYbOAh"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>Michelangelo 70(2025)</p>
+            <div class="videos-categoria container">
+                <h3 class="videos-subtitulo">Creación</h3>
+                <div class="videos-grilla">
+                    <article class="video-card">
+                        <iframe src="https://www.youtube.com/embed/4ZF4WjQQCyg?si=QMcFjFqZFw3aoR6O"
+                            title="Suite Villa Urquiza" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <h4>Suite Villa Urquiza</h4>
+                        <p>Obra original para ensamble.</p>
+                    </article>
+                    <article class="video-card">
+                        <iframe src="https://www.youtube.com/embed/ZXwnQY4hEn4?si=aRnNoLDhAkfWsvAb" title="Sheldon"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <h4>Sheldon</h4>
+                        <p>Obra original con videoclip oficial.</p>
+                    </article>
+                    <article class="video-card">
+                        <iframe src="https://www.youtube.com/embed/yyAd8UQtXTo?si=tYkN0_8PEmIYbOAh"
+                            title="Michelangelo 70" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <h4>Michelangelo 70</h4>
+                        <p>Arreglo sobre una obra de Astor Piazzolla interpretado por Basto Ensamble.</p>
+                    </article>
+                    <article class="video-card">
+                        <iframe src="https://www.youtube.com/embed/aEtsrS7AGZM?si=AskbN1g4p2iKcAU_"
+                            title="Tema de la Nube" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <h4>Tema de la Nube</h4>
+                        <p>Arreglo sobre una obra de Gerardo Gandini.</p>
+                    </article>
                 </div>
             </div>
-            <a href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w" target="_blank"> <button
-                    class="btn-videos tablet">Ver más</button></a>
+            <!-- ================= SEGUNDA FILA ================= -->
+            <div class="videos-secundarias container">
+                <!-- COLABORACIONES -->
+                <div class="videos-categoria">
+                    <h3 class="videos-subtitulo">Colaboraciones</h3>
+                    <div class="videos-grilla-sec">
+                        <article class="video-card">
+                            <iframe src="https://www.youtube.com/embed/8n32tQMw6jk?si=WHMzhC4C9BBlcXZJ"
+                                title="Piso Mojado" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <h4>Piso Mojado</h4>
+                            <p>Colaboración artística.</p>
+                        </article>
+                    </div>
+                </div>
+                <!-- EN VIVO -->
+                <div class="videos-categoria">
+                    <h3 class="videos-subtitulo">En vivo</h3>
+                    <div class="videos-grilla-sec">
+                        <article class="video-card">
+                            <iframe src="https://www.youtube.com/embed/cS7g1r8yc38?si=JzznhLX8nCXRnT6C"
+                                title="Carnegie Hall" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <h4>Carnegie Hall</h4>
+                            <p>Presentación junto a Rascasuelos en Carnegie Hall (Nueva York).</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w" target="_blank">
+                <button class="btn-videos tablet">Ver más</button>
+            </a>
+
         </section>
-
-
         <section class="agenda fade-in" id="agendaContainer">
             <div class="contenedor-titulos">
                 <h2 class="agenda-titulo" data-section="agenda" data-value="title-a">AGENDA</h2>
