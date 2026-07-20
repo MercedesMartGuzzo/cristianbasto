@@ -1,6 +1,6 @@
 {
     "header": {
-        "bio": "BIO",
+        "bio": "PERFIL",
         "music": "MUSICA",
         "colaborations": "COLABORACIONES",
         "videos": "VIDEOS",
@@ -9,30 +9,36 @@
         "agenda": "AGENDA",
         "contact": "CONTACTO"
     },
-    "bio": {
-        "title": "BIO",
-        "text": "Cristian Basto es un músico argentino con Licenciatura en Composición, Diplomado en Música Contemporánea y especializado en Compositores de América Latina. Es arreglador y director de orquestas y ensambles de tango, y actualmente divide su tiempo entre Buenos Aires y Barcelona. Como contrabajista, ha colaborado con destacados artistas de tango y ha participado en proyecto de música antigua, rock y música urbana. Su obra ha sido presentada en prestigiosos escenarios y festivales alrededor del mundo, logrando nominaciones a los Latin Grammy y recibiendo reconocimientos como el Premio Carlos Gardel y una mención honorífica en el SONUS International Music Festival.",
-        "text1": {
-            "title-icon": "Ver más",
-            "text-p1": "Cristian Basto es un músico argentino nacido en Quilmes, Provincia de Buenos Aires. Es contrabajista, docente y Licenciado en Composición, además de un destacado arreglador y director de orquestas de tango. Graduado de la Universidad Maimónides, posee un Diploma Música Contemporánea otorgado por el Conservatorio Superior Manuel de Falla y en “Compositores de América Latina: Miradas Convergentes” por la Universidad Nacional Autónoma de México (UNAM) Su formación también incluye estudios en la Escuela Municipal de Bellas Artes (E.M.B.A.) “Carlos Morel” de Quilmes y en la Escuela de Música Popular de Avellaneda (E.M.P.A.). Hatenido el privilegio de perfeccionarse en composición y arreglos bajo la guía de reconocidos maestros como Daniel Montes, Laura Baade, Diego Schissi, Daniel Ruggiero, Ricardo Hegman y Ariel Hagman. Como contrabajista, su formación estuvo a cargo de destacados músicos como Gerardo Ponce, Daniel Buono, Juan Pablo Navarro y Daniel Falasca. Su sólida formación académica y profesional ha sido fundamental para consolidar su aporte al tango, destacándose por su visión creativa y su capacidad para enriquecer este género con profundidad artística."
-        },
-        "text2": {
-            "text-p2": "A lo largo de su carrera, Cristian ha colaborado con destacados artistas de tango como Amelita Baltar, Amores Tangos, Diego Schissi, Guillermo Fernández, Hernán Possetti,Hilda Herrera, Horacio Romo, José Colángelo, Julieta Laso, La Chicana, Lidia Borda, Luis Borda, Nacha Guevara, Nicolás Guerschberg, Nicolás Ledesma, Noelia Sinkunas, Osvaldo Piro, Pablo Mainetti, “Limón García”, Quasimodo Trío, Quinteto Real, Raúl Garello, Raúl Lavié, Rascasuelos, Susana Rinaldi, Sur del Sur Ensamble y la Orquesta Assintomática.Su versatilidad lo ha llevado también a proyectos de música antigua, rock y música urbana, colaborando en escenarios y estudios con figuras como Antonio Birabent, Chango Spasiuk, Dancing Mood, Lito Vitale, Los Caligaris, Los Fabulosos Cadillacs, Luis Alberto Spinetta, Usted Señalemelo y Ysy-A.Cristian ha actuado en reconocidas salas y festivales a nivel mundial, incluyendo Carnegie Hall y el John F. Kennedy Center for the Performing Arts en Estados Unidos, el National Arts Centre (NAC) en Canadá, el Teatro Colón en Argentina, el Moscow International House of Music en Rusia, el Oriental Art Center en China, el Teatro Sofía en Bulgaria, y festivales como La Villette en Francia, el Roskilde Festival en Dinamarca, Lollapalooza Argentina y el Festival Internacional de Tango de Buenos Aires.",
-            "title-span2": "Desempeño artístico"
-        },
-        "text3": {
-            "text-p3": "A lo largo de su carrera, Cristian Basto ha sido galardonado con numerosos premios y menciones. Entre ellos se destacan dos Premios Carlos Gardel: uno por su trabajo como arreglador y músico en el disco La caldera de Julieta Laso, y otro por el disco Salve deNoelia Sinkunas, también como arreglador y músico. Asimismo, su obra Surera para contrabajo y piano recibió una mención honorífica en el SONUS International Music Festival.En 2020, fue beneficiario del Mecenazgo del Ministerio de Cultura de la Ciudad de Buenos Aires para la grabación de su obra Suite Villa Urquiza. En 2024, fue nominado a los Latin Grammy por su labor como arreglador en el disco ¿Y el fin del amor? de Mariana Mazú.",
-            "title-span3": "Reconocimientos"
-        }
+   "bio": {
+    "title": "PERFIL",
+    "subtitle": "Un creador de proyectos musicales",
+    "text": "  Cristian Basto es un contrabajista, compositor, arreglador y director argentino radicado en Barcelona. Su trabajo integra interpretación, composición, arreglos, dirección y docencia en una búsqueda artística que toma la música argentina como punto de partida para dialogar con la creación contemporánea.",
+    "text-extra": "Más que desarrollar una carrera centrada en un único rol, su actividad se construye a través de proyectos donde creación e interpretación forman parte de un mismo proceso artístico. Desde una identidad profundamente arraigada en la tradición musical argentina, explora nuevas formas de encuentro con el jazz, la música de concierto y otras expresiones musicales de América Latina.",
+    "text1": {
+        "title-span1": "Trayectoria y colaboraciones",
+        "text-p1": "<p>Integra el <span class='bio-highlight'>Quinteto Astor Piazzolla</span>, formación que continúa el legado de una de las obras fundamentales de la música argentina y con la que desarrolla giras por Europa y América. Paralelamente forma parte de la <span class='bio-highlight'>Orquestra Assintomática</span> (Lisboa), un colectivo artístico internacional que reúne músicos de distintas tradiciones.</p><p>En ese ámbito ha colaborado con artistas como <span class='bio-highlight'>António Zambujo, Salvador Sobral, Maria João, Cristina Branco, Mario Laginha, Yamandu Costa, Guinga</span> y <span class='bio-highlight'>Aaron Parks</span>, ampliando su actividad hacia nuevos lenguajes y escenas musicales.</p><p>A lo largo de su carrera también ha compartido escenario y proyectos con referentes como <span class='bio-highlight'>Susana Rinaldi, Amelita Baltar, Diego Schissi, Julieta Laso, Noelia Sinkunas, Chango Spasiuk, Andrea Motis, Luis Alberto Spinetta, Los Fabulosos Cadillacs</span> y <span class='bio-highlight'>YSY A</span>, construyendo un recorrido caracterizado por el diálogo entre el tango, el folklore, el jazz, el rock y la música popular contemporánea.</p>"
+},
+    "text2": {
+        "title-span2": "Proyectos",
+        "text-p2": "<p>La creación constituye el eje central de su trabajo.</p><p>Es fundador y director artístico de <span class='bio-highlight'> Cuarteto Insurgente </span>, un ensamble de cuerdas con sede en Barcelona dedicado a explorar nuevas posibilidades para la música argentina contemporánea, y dirige  <span class='bio-highlight'>Basto Ensamble </span>, espacio desde el cual desarrolla sus composiciones, arreglos y producciones originales.</p><p>Paralelamente mantiene una intensa actividad como director de ensambles y docente en Argentina, España y Portugal, entendiendo la formación musical como una extensión natural de su práctica artística.</p>"
     },
+    "text3": {
+        "title-span3": "Escenarios y festivales",
+        "text-p3": "<p>Su música se ha presentado en algunas de las principales salas de Europa y América, entre ellas <span class='bio-highlight'>Carnegie Hall</span> (Nueva York),<span class='bio-highlight'>Concertgebouw </span> (Ámsterdam),<span class='bio-highlight'> Philharmonie Berlin (Berlín) </span>,<span class='bio-highlight'> Wiener Konzerthaus</span> (Viena),<span class='bio-highlight'> CKennedy Center </span>(Washington D. C.),<span class='bio-highlight'> National Arts Centre (Ottawa)</span>, <span class='bio-highlight'>Teatro Colón</span> (Buenos Aires), <span class='bio-highlight'>Maison symphonique – Place des Arts</span> (Montréal) y <span class='bio-highlight'>La Seine Musicale</span> (París).</p><p>También ha participado en festivales internacionales como <span class='bio-highlight'>Festival International de Jazz de Montréal</span>, <span class='bio-highlight'>Jazzaldia San Sebastián</span>, <span class='bio-highlight'>La Villette</span>, <span class='bio-highlight'>Roskilde Festival</span>, <span class='bio-highlight'>Lollapalooza Argentina</span>, <span class='bio-highlight'>Expo Dubái 2020</span> y el <span class='bio-highlight'>Festival Internacional de Tango de Buenos Aires</span>.</p>"
+    },
+    "text4": {
+        "title-span4": "Reconocimientos",
+        "text-p4": "<p>Su trabajo como compositor, arreglador e intérprete recibió <span class='bio-highlight'> dos Premios Carlos </span>,<span class= 'bio-highlight'> dos nominaciones a los Latin Grammy </span>, una <span class= 'bio-highlight'>  Mención Honorífica </span> en el <span class= 'bio-highlight'>  SONUS International Music Festival </span>, y el apoyo del programa  <span class= 'bio-highlight'> Mecenazgo </span> del Ministerio de Cultura de la Ciudad de Buenos Aires para la realización de Suite Villa Urquiza.</p>"
+    }
+},
     "gallery": {
-        "title-g": "GALERIA"
+        "title-g": "FOTOS"
     },
     "music": {
         "title-m": "MUSICA"
     },
-    "videos": {
-        "title-v": "VIDEOS"
+    "media": {
+        "title-v": "MULTIMEDIA"
     },
     "agenda": {
         "title-a": "AGENDA",

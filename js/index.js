@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
      Toggle menú (solo mobile)
   =============================== */
   navbarToggler.addEventListener('click', function () {
-    if (window.innerWidth >= 992) return; // ⛔ desktop no toca nada
+    if (window.innerWidth >= 992) return; 
 
     const isOpen = navbarCollapse.classList.contains('show');
 
@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ===============================
-     Cerrar menú al click (mobile)
-  =============================== */
+
   document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
     link.addEventListener('click', () => {
       if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
@@ -38,9 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ===============================
-     Reset al pasar a desktop
-  =============================== */
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 992) {
       navbarCollapse.classList.remove('show');
@@ -49,9 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ===============================
-     Redes → nueva pestaña
-  =============================== */
   document.querySelectorAll('.redes a').forEach(item => {
     item.addEventListener('click', e => {
       e.preventDefault();

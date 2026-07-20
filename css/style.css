@@ -84,7 +84,7 @@ body.dark-mode .bio-titulo,
 body.dark-mode .musica-titulo,
 body.dark-mode .videos-titulo,
 body.dark-mode .agenda-titulo,
-body.dark-mode .contacto-titulo,
+body.dark-mode .donaciones-titulo,
 body.dark-mode .prensa,
 body.dark-mode .videos-grilla,
 body.dark-mode .grilla-contacto,
@@ -100,22 +100,29 @@ body.dark-mode .videos,
 body.dark-mode .videos p,
 body.dark-mode .agenda,
 body.dark-mode .agenda-lista,
-body.dark-mode #eventos li
-
-/* ,body.dark-mode .agenda button */
-,
-body.dark-mode .contacto,
+body.dark-mode #eventos li,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
 body.dark-mode .pedagogias,
 body.dark-mode .pedagogia-pa,
 body.dark-mode .pedagogia-pa2,
-body.dark-mode .colaboraciones {
+body.dark-mode .colaboraciones,
+body.dark-mode .footer-parrafo,
+body.dark-mode .copi,
+body.dark-mode .footer h2,
+body.dark-mode .footer-titulo,
+body.dark-mode .footer-redes2,
+body.dark-mode .footer-parrafo2 {
   background-color: black;
   color: white;
 }
 
+body.dark-mode .contacto-titulo {
+  background-color: transparent;
+}
+
+body.dark-mode .footer2,
 body.dark-mode .prensa,
 body.dark-mode .contacto {
   border-top: 1px solid whitesmoke;
@@ -156,7 +163,7 @@ body.dark-mode .bio {
 }
 
 
-/* BARRA DE NAVEGACION */
+/******** BARRA DE NAVEGACION ********/
 
 .navbar {
   background-color: rgb(15, 14, 14);
@@ -206,16 +213,16 @@ body.dark-mode .bio {
     display: flex;
     flex-direction: column;
     gap: .8rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .nav-item .lang-button {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding-bottom: .3rem;
   }
 
   .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   h1,
@@ -223,27 +230,6 @@ body.dark-mode .bio {
     display: none;
   }
 }
-
-/*   .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    color: black; 
-  }
-
-   .navbar-nav .nav-item {
-    width: 100%;
-    text-align: center;
-  } 
-} 
- */
-/* .navbar-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  font-size: 1.8rem; 
-  gap: .5rem;
-  margin-top: 1rem; 
-}  */
 
 .navbar-toggler {
   background-color: transparent;
@@ -392,7 +378,7 @@ body.dark-mode .bio {
   transform: translateY(0);
 }
 
-/* GRILLA DE FOTOS GALERIA */
+/****** GRILLA DE FOTOS GALERIA ******/
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -421,7 +407,7 @@ body.dark-mode .bio {
 }
 
 
-/* Diferenciación de clases */
+/**** Diferenciación de clases *****/
 .photo-grid img.vertical {
   grid-row: span 2;
 }
@@ -435,7 +421,7 @@ body.dark-mode .bio {
 }
 
 
-/* Modal */
+/**** Modal ****/
 .modal {
   display: none;
   position: fixed;
@@ -528,14 +514,14 @@ body.dark-mode .bio {
 }
 
 
-/* Íconos de navegación */
+/**** Íconos de navegación *****/
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 30px;
 }
 
 
-/* header-tablet */
+/***** header-tablet *****/
 @media(min-width: 768px) {
   .nav-link {
     padding-left: .3rem;
@@ -654,14 +640,14 @@ body.dark-mode .bio {
   }
 
   .navbar-brand {
-    font-size: 1.1rem;
-    padding-top: .5rem;
+    font-size: 1rem;
+    padding-top: .478rem;
     margin-left: .2rem;
     font-family: "Bowlby One", sans-serif;
   }
 
   .navbar li a {
-    font-size: .9rem;
+    font-size:.9rem;
   }
 
   .navbar li a::after {
@@ -692,22 +678,27 @@ body.dark-mode .bio {
     padding: 0;
   }
 
-  .redes {
+  .redes a i {
     display: flex;
     justify-content: end;
     align-items: center;
     margin: 0;
     gap: 0.1rem;
-
+    font-size: .9rem;
+    padding-top: .234rem;
   }
 
 
   .iconos {
-    gap: 0.9rem;
+    gap: .9rem;
+  
   }
 
   .bi-moon-stars-fill {
-    margin-right: .3rem;
+  
+      font-size: .8rem;
+      padding-top: 0;
+      vertical-align: .05rem;
   }
 
   .navbar-toggler,
@@ -715,8 +706,13 @@ body.dark-mode .bio {
   .close-icon {
     display: none;
   }
+.lang-button {
+ font-size: .9rem;
 
-  /* swipper */
+ 
+
+}
+  /**** swipper *****/
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
@@ -775,7 +771,7 @@ body.dark-mode .bio {
   }
 }
 
-/* index-mobile */
+/**** index-mobile *****/
 
 
 .portada {
@@ -793,42 +789,6 @@ body.dark-mode .bio {
   object-fit: cover;
   object-position: 75% top
 }
-/*  h1 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-  position: absolute;
-  top: 25%;
-  left: 3%;
-  z-index: 1;
-  color: whitesmoke;
-  animation: titulo 2s 1s ease-in-out 1 forwards;
-}  */
-/* 
- h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  z-index: 1;
-  color: whitesmoke;
-  animation: titulo 2s 1s ease-in-out 1 forwards;
-
-  letter-spacing: 2px;
-}
-
-.h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-  color: whitesmoke;
-  letter-spacing: 2px;
-}  */
-
 
 @keyframes titulo {
   from {
@@ -842,13 +802,7 @@ body.dark-mode .bio {
   }
 }
 
-
-
-
-
-
-
-/* BOTONES */
+/**** BOTONES *****/
 
 .piano-descargas {
   position: relative;
@@ -1029,20 +983,172 @@ body.dark-mode .bio {
 
 
 
-/* SECCION BIO */
+/**** SECCION BIO *****/
+/* ============================================
+   SECCIÓN BIO / PERFIL
+   ============================================ */
 
 .bio {
   margin-top: 0;
   width: 100%;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
-  /*   margin-bottom: 2rem; */
   background-color: gray;
-
-
 }
+
+.bio-foto {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: center;
+  filter: opacity(0.9);
+}
+
+.bio-titulo {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: .5rem;
+  font-weight: 400;
+  font-size: 2.3rem;
+  background-color: grey;
+  letter-spacing: 1px;
+  font-family: "Bowlby One", sans-serif;
+}
+
+.bio h3 {
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: .8rem;
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+}
+
+.bio-secciones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ---- Intro fija (sin toggle) ---- */
+.bio-parrafo1 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.bio-parrafo1 h3 {
+  color: white;
+}
+
+/* ---- Grilla de secciones plegables ---- */
+.bio-toggle-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0;
+  align-items: start; /* clave: cada item alto según su contenido, no estira la fila */
+}
+
+.bio-parrafo {
+  padding: 0;
+  margin-top: 0;
+  color: whitesmoke;
+}
+
+.bio-parrafo:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ---- Encabezado (título + ícono) ---- */
+.bio-parrafo h4,
+.bio-parrafo .span-bio-header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bio-parrafo .toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.bio-parrafo.open .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* ---- Contenido plegable (empuja el flujo, ya no flota) ---- */
+.bio-parrafo p[data-value^="text-p"] {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0;
+  margin: 0;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.bio-parrafo.open p[data-value^="text-p"] {
+  max-height: 1000px;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.bio-highlight {
+  font-weight: 900;
+}
+ .span-bio {
+font-family: "Bowlby One", sans-serif;
+letter-spacing: 0px
+}
+
+/* ============================================
+   BIO — TABLET (min-width: 768px)
+/* /*    ============================================ */
+/* @media (min-width: 768px) {
+  .bio-titulo {
+    font-size: 3rem;
+  }
+} */
+
+
+/* ============================================
+   BIO — DESKTOP (min-width: 1200px)
+   ============================================ */
+/* @media (min-width: 1200px) {
+  .bio {
+    padding-top: 1rem;
+  }
+
+  .bio-titulo {
+    font-size: 5rem;
+    background-color: grey;
+  }
+
+  .bio-toggle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  .bio-parrafo:last-child {
+    border-bottom: none;
+  } */
+
+ /*  .bio-parrafo:nth-last-child(-n+2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  } */
+/* } */
 
 
 .galeria {
@@ -1081,7 +1187,7 @@ body.dark-mode .bio {
 
 }
 
-.bio-parrafo1 {
+/* .bio-parrafo1 {
   margin-top: 1rem;
   color: whitesmoke;
   display: flex;
@@ -1119,12 +1225,12 @@ body.dark-mode .bio {
   align-items: start;
   text-align: start;
   /*   border-top: 1px solid white; */
-  padding-top: 0;
+/*   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
   color: whitesmoke;
 
-}
+} */
 
 .bio-parrafo.open p {
   max-height: 1000px;
@@ -1138,25 +1244,25 @@ body.dark-mode .bio {
 
 }
 
-.bio-parrafo h4,
-.span-bio {
+.bio-parrafo h4
+ {
   color: white;
   display: flex;
   justify-content: start;
   align-items: start;
-  border-top: 1px solid white;
+  border-top: 1px solid white; 
   padding-top: .5rem;
   font-family: "Bowlby One", sans-serif;
   letter-spacing: 1px;
   font-size: 1.5rem;
-}
+} */
 
 
-.span-bio {
+/* .span-bio {
   margin-bottom: .5rem;
 }
-
-.span-bio .toggle-icon {
+ */
+/* .span-bio .toggle-icon {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -1165,9 +1271,22 @@ body.dark-mode .bio {
   background-color: grey;
   width: 90vw;
 }
+.bio-toggle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+}
 
-
-/* SECCION MUSICA */
+@media (max-width: 768px) {
+    .bio-toggle-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+} */
+.bio-highlight {
+    font-weight: 900;
+}
+/**** SECCION MUSICA *****/
 
 .musica {
   /*   position: relative; */
@@ -1227,15 +1346,10 @@ body.dark-mode .bio {
   overflow: hidden;
 }
 
-
 .musica-copete {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
-
-
-
 
 .musica-copete h3 {
   color: white;
@@ -1268,7 +1382,6 @@ body.dark-mode .bio {
 
 .suite,
 .piano {
-  /*  margin-top: 1rem; */
   display: flex;
   flex-direction: column;
   gap: .3rem;
@@ -1277,7 +1390,6 @@ body.dark-mode .bio {
   border: 1px solid white;
   border-radius: 12px;
   padding: 1rem;
-  /* background-color: rgb(66, 66, 66); */
 }
 
 .suite img,
@@ -1307,9 +1419,7 @@ body.dark-mode .bio {
   cursor: pointer;
 }
 
-
-
-/* SECCION VIDEOS */
+/**** SECCION VIDEOS ****/
 
 .videos {
   display: flex;
@@ -1317,7 +1427,6 @@ body.dark-mode .bio {
   width: 100%;
   overflow: hidden;
   background-color: #556B2F;
-
 }
 
 .videos::before,
@@ -1361,7 +1470,6 @@ body.dark-mode .bio {
   font-family: "Bowlby One", sans-serif;
   margin-bottom: .5rem;
 }
-
 
 .videos-copete {
   display: flex;
@@ -1417,26 +1525,17 @@ iframe {
 .video7 {
   margin-bottom: .5rem;
   height: 200px;
-  border:
-    /* 2px solid peru; */
-    none;
+  border: none;
   width: 100%;
-
 }
 
 .video8 {
   height: 200px;
-  border:
-    /*  2px solid peru */
-    none;
+  border: none;
   width: 100%;
 }
 
-
-
-
-
-/* SECCION AGENDA */
+/* **** SECCION AGENDA **** */
 .agenda {
   width: 100%;
   background-color: #964b00;
@@ -1460,10 +1559,8 @@ iframe {
   align-items: start;
   text-align: center;
   padding-top: 1rem;
-
   letter-spacing: 1px;
   font-family: "Bowlby One", sans-serif;
-  /*   overflow: hidden; */
   margin-bottom: .5rem;
 }
 
@@ -1584,7 +1681,7 @@ body.dark-mode .location-map {
   color: peru;
 }
 
-/* SECCION CONTACTO*/
+/***** SECCION CONTACTO *****/
 
 .contacto {
   width: 100%;
@@ -1592,75 +1689,252 @@ body.dark-mode .location-map {
   padding-top: 1rem;
   padding-bottom: .5rem;
   margin-top: 0;
-  background-color: #7e3333;
   display: flex;
   flex-direction: column;
-
 }
 
-
-.contacto-redes {
-  color: whitesmoke;
+.contacto-bg {
+  position: relative;
+  min-height: 380px;
+  background-image: url('../img/_MG_9875.jpg');
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  padding: 0;
-  background-color: #7e3333;
-
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
 }
 
-.contacto-redes a:hover {
-  transition: 1s ease;
-  color: #2b212b;
-  /* rgb(8, 4, 0); */
+.contacto-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(40, 12, 12, 0.2), rgba(40, 12, 12, 0.38));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contacto-contenido {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.contacto-form-wrap {
+  width: min(100%, 480px);
+  margin-top: .2rem;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+}
+
+.contacto-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+}
+
+.contacto-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  text-align: left;
+}
+
+.contacto-form-label {
+  font-family: "Bowlby One", sans-serif;
+  font-size: .8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: .75rem .8rem;
+  background: rgba(255, 255, 255, 0.14);
+  color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: whitesmoke;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.18);
+}
+
+.contacto-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contacto-form-btn {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 999px;
+  padding: .8rem 1rem;
+  background: #7e3333;
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+  font-size: .95rem;
+  cursor: pointer;
+  transition: transform .2s ease, background-color .2s ease;
+}
+
+.contacto-form-btn:hover {
+  background: peru;
+  transform: translateY(-1px);
+}
+
+.contacto-titulo {
+  color: whitesmoke;
+  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.contacto-iconos {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacto-iconos .nav-link {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  opacity: .9;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.contacto-iconos .nav-link:hover {
+  opacity: 1;
   transform: scale(1.1);
 }
 
-body.dark-mode .contacto-redes a:hover {
-  color: #2b212b;
-}
-
-.redes-contacto {
-  gap: 1.6rem;
+.btn-whatsapp-icon {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-self: center;
-  flex-direction: row;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: #7e3333;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: whitesmoke;
+  color: #7e3333;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform .2s ease;
 }
 
-.grilla-contacto {
-  background-color: #7e3333;
-  width: 90%;
-  border: 1px solid whitesmoke;
-  margin-bottom: 2rem;
-  padding-top: .5rem;
-  border-radius: 10px;
-  justify-content: start;
-  padding-left: .9rem;
-  padding-right: .9rem;
-  padding-bottom: .5rem;
-  display: flex;
-  flex-direction: column;
+.btn-whatsapp-icon:hover {
+  transform: scale(1.08);
 }
 
+@media (max-width: 768px) {
+  .contacto-bg {
+    min-height: 360px;
+    background-position: center 15%;
+    width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 0.8rem;
+  }
 
+  .contacto-contenido {
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
 
-.contacto-parrafo {
-  color: whitesmoke;
-  display: flex;
-  flex-direction: start;
-  justify-self: start;
-  align-items: start;
-  text-align: center;
-  margin-top: .5rem;
-  gap: .3rem;
-  border: 0;
-  text-wrap: wrap;
-  background-color: #7e3333;
+  .contacto-form-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .contacto-form {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .contacto-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-titulo {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto-contenido {
+    align-items: flex-start;
+    text-align: left;
+    padding: 2.5rem 3rem;
+    width: 100%;
+  }
+
+  .contacto-titulo {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .contacto-iconos {
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .contacto-form-wrap {
+    width: min(100%, 420px);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .contacto-form {
+    margin-left: auto;
+  }
 }
 
 .contacto-titulo {
@@ -1670,25 +1944,11 @@ body.dark-mode .contacto-redes a:hover {
   font-family: "Bowlby One", sans-serif;
   font-size: 2.3rem;
   letter-spacing: 1px;
-  background-color: #7e3333;
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
 
-.contact {
-  color: whitesmoke;
-  position: absolute;
-  font-weight: 300;
-  font-size: 7.3vw;
-  top: 12%;
-  left: 4.5%;
-}
-
-.resalta {
-  font-weight: bold;
-}
-
-/* SECCION PRENSA */
+/**** SECCION PRENSA ****/
 
 .prensa {
   width: 100%;
@@ -1725,20 +1985,6 @@ footer h2 {
   margin-top: 1.5rem;
   font-family: "Bowlby One", sans-serif;
 
-}
-
-footer h2:hover {
-  color: #2b212b;
-  transition: color 1s;
-}
-
-body.dark-mode .footer-titulo:hover {
-  font-weight: 400;
-  color: peru;
-}
-
-body.dark-mode .body.dark-mode .redes-footer2:hover {
-  color: peru;
 }
 
 body.dark-mode .prensa {
@@ -1799,14 +2045,13 @@ body.dark-mode .pedagogias {
     margin-inline-start: 2rem;
   }
 
-  /* PORTADA */
+  /***** PORTADA *****/
   h1 {
     font-size: 3.5rem;
     top: 35%;
     left: 8%;
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
-
   }
 
   .h1 {
@@ -1816,9 +2061,6 @@ body.dark-mode .pedagogias {
 
   }
 
-  /* h1,.h1{
-  display: block;
-} */
   .portada {
     position: relative;
     z-index: 1;
@@ -2142,7 +2384,7 @@ body.dark-mode .pedagogias {
     font-size: 1.5rem;
     display: flex;
     margin-bottom: .8rem;
-    color: peru;
+    color:whitesmoke;
 
   }
 
@@ -3505,21 +3747,4 @@ body.dark-mode .redes-footer2 a:hover {
   .footer2-wrapp {
     margin-top: 3.3rem;
   }
-}
-
-
-
-
-/*  .mi-mail{
-  margin-left: o;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-}
-.copi {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-  margin-left: 1rem; 
-
 }
