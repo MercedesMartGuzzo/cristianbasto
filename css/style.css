@@ -52,6 +52,10 @@ body {
 
 }
 
+/* body.fixed-header {
+  grid-template-rows: 0 1fr auto;
+} */
+
 body.dark-mode {
   background-color: black;
   color: white;
@@ -67,7 +71,7 @@ body.dark-mode main {
 }
 
 header {
-  background-color: white;
+  background-color: transparent;
   transition: background-color .3s, color .3s;
 
 
@@ -165,27 +169,74 @@ body.dark-mode .bio {
 
 /******** BARRA DE NAVEGACION ********/
 
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: transparent;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        background-color .35s ease,
+        backdrop-filter .35s ease;
+}
+
+.header-wrapper.show-header {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+    background: rgba(16, 13, 13, 0.48);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
 .navbar {
-  background-color: rgb(15, 14, 14);
-  color: whitesmoke;
-  width: 100%;
+    width: 100%;
+}
+
+.navbar.nav-pages,
+.nav-pages .navbar-collapse,
+.nav-pages .navbar-nav {
+    background-color: rgba(8, 8, 8, 0.01) !important;
 }
 
 @media (max-width: 480px) {
   .navbar-nav {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-size: 1.65rem;
     gap: .5rem;
     padding-top: 2rem;
+    width: 100%;
   }
 
   .menu {
     display: flex;
     flex-direction: column;
     gap: .8rem;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem 0;
   }
 
   .nav-item .lang-button {
@@ -193,13 +244,26 @@ body.dark-mode .bio {
     padding-bottom: .3rem;
   }
 
-  h1,
-  .h1 {
-    display: none;
-  }
 
   .redes {
     padding-bottom: .3rem;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.25rem;
+  }
+
+  .redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 0 0.2rem;
+  }
+
+  .redes a i {
+    font-size: 1.9rem;
+    line-height: 1;
   }
 
   .navbar-brand {
@@ -257,6 +321,14 @@ body.dark-mode .bio {
   outline: none;
   box-shadow: none;
   border: none;
+}
+
+.navbar li a,
+.navbar-nav .nav-link,
+.navbar-nav .nav-item .nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: whitesmoke !important;
 }
 
 .navbar li a {
@@ -343,7 +415,7 @@ body.dark-mode .bio {
   padding: 0;
 }
 
-.collapse {
+ .collapse {
   display: none;
   transition: height 1s ease;
 }
@@ -358,7 +430,7 @@ body.dark-mode .bio {
   overflow: hidden;
   max-width: 100%;
 
-}
+} 
 
 .fade-in {
   opacity: 0;
@@ -624,7 +696,7 @@ body.dark-mode .bio {
 /********* HEADER DESKTOP NAV, PHOTO GRID Y SWIPPER*********/
 
 @media (min-width: 1200px) {
-  .navbar-nav {
+ /*  .navbar-nav {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -701,7 +773,7 @@ body.dark-mode .bio {
   .lang-button {
     font-size: .9rem;
   }
-
+ */
   /**** swipper *****/
 
   .photo-grid {
@@ -763,34 +835,84 @@ body.dark-mode .bio {
 }
 
 /**** index-mobile *****/
-
-
-.portada {
-  position: relative;
-  z-index: 1;
-  height: 100vh;
-  overflow: hidden;
-
+.hero {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.portada-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 75% top
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    object-fit: cover;
+    object-position: 75% top;
+
+    transform: translate3d(0, 0, 0) scale(1.05);
+    will-change: transform;
+    transition: transform .2s ease-out;
 }
 
-@keyframes titulo {
-  from {
-    opacity: 0;
-  }
+.hero-title {
+    position: absolute;
+    z-index: 2;
 
-  to {
-    opacity: 1;
+    left: 2rem;
+    top: 75%;
+    transform: translateY(-50%);
+
     color: whitesmoke;
-    letter-spacing: 1px;
-  }
+    text-transform: uppercase;
+    text-shadow: 0 0 18px rgba(0,0,0,.75);
+
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    line-height: .9;
+}
+
+.hero-title span {
+    display: block;
+    font-family: "Bowlby One", sans-serif;
+}
+
+@media (max-width:480px){
+
+    .hero-title{
+        left:1.5rem;
+        top:75%;
+        font-size:2rem;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:991px){
+
+    .hero-title{
+        left:2rem;
+        top:75%;
+        font-size:4rem;
+    }
+
+}
+
+@media (min-width:992px){
+
+    .hero-title{
+        left:15%;
+        top:55%;
+        font-size:4rem;
+    }
+.hero-img{
+  object-position: center 30%;
+}
 }
 
 /**** BOTONES *****/
@@ -1220,10 +1342,10 @@ body.dark-mode .bio {
 
 .discos,
 .colaboracione {
-  color: peru;
+  color: #7e3333;
   font-size: 1.3rem;
   margin-top: 1.5em;
-  border-top: 1px solid peru;
+  border-top: 1px solid #7e3333;
   padding-top: .5rem;
   /* margin-left: 2rem; */
   margin-bottom: 1rem;
@@ -1886,7 +2008,7 @@ body.dark-mode .pedagogias {
   }
 
   /***** PORTADA *****/
-  h1 {
+ /*  h1 {
     font-size: 3.5rem;
     top: 35%;
     left: 8%;
@@ -1916,7 +2038,7 @@ body.dark-mode .pedagogias {
     width: 100%;
     object-position: 75% top;
   }
-
+ */
   /* MUSUCA */
   .spotify {
     display: grid;
@@ -2142,7 +2264,7 @@ body.dark-mode .pedagogias {
   }
 
   /* PORTADA */
-  h1 {
+/*   h1 {
     font-size: 4.5rem;
     top: 40%;
     left: 10%;
@@ -2156,11 +2278,11 @@ body.dark-mode .pedagogias {
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
   }
-
+ */
   /* h1,.h1{
   display:none
 } */
-  .portada {
+/*   .portada {
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -2173,7 +2295,7 @@ body.dark-mode .pedagogias {
     object-fit: cover;
     object-position: top;
 
-  }
+  } */
 
   /* SECCION BIO */
 
@@ -3179,17 +3301,97 @@ body.dark-mode .piano-descargas::before {
 
 /* COLABORACIONES MOBILE */
 /* COLABORACIONES MOBILE */
-.colaboraciones-titulo {
-  color: peru;
-  font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-  font-size: 1.5rem;
+/* .header-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: rgba(8, 8, 8, 0.45) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+} */
+ .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
-  top: 2%;
-  left: 4%;
-  position: absolute;
+    background:transparent;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        backdrop-filter .35s ease,
+        background-color .35s ease;
 }
 
+.header-wrapper.show-header {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+    background: rgba(16, 13, 13, 0.486) !important;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.navbar.nav-pages,
+.nav-pages .navbar-collapse,
+.nav-pages .navbar-nav {
+  background-color: rgba(8, 8, 8, 0.01) !important;
+}
+
+.portada-colaboraciones {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.portada-img-colaboraciones {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  transform: translate3d(0, 0, 0) scale(1.05);
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+
+.colaboraciones-titulo {
+  position: absolute;
+  z-index: 2;
+  left: 2rem;
+  top: 80%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.75);
+  width: calc(100% - 4rem);
+  font-family: "Bowlby One", sans-serif;
+}
 
 .colaboraciones {
   margin-top: 1rem;
@@ -3257,13 +3459,25 @@ body.dark-mode .piano-descargas::before {
   flex-direction: column;
   gap: .3rem;
   justify-content: center;
-  border: 1px solid peru;
+  border: 1px solid  #7e3333;
   border-radius: 12px;
   padding: 1rem;
   /* background-color: rgb(66, 66, 66); */
 }
 
 @media(min-width :768px) {
+  .portada-img-colaboraciones {
+    object-position: 35% 20%;
+  }
+
+  .colaboraciones-titulo {
+    font-size: 3.4rem;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+  }
+
   .spotify1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -3286,7 +3500,7 @@ body.dark-mode .piano-descargas::before {
     flex-direction: column;
     gap: .3rem;
     justify-content: center;
-    border: 1px solid peru;
+    border: 1px solid  #7e3333;
     border-radius: 12px;
     padding: 1rem;
 
@@ -3299,12 +3513,21 @@ body.dark-mode .piano-descargas::before {
 
 /* COLABORACIONES DESKTOP */
 @media(min-width :1200px) {
+  .portada-img-colaboraciones {
+    object-position: 30% 18%;
+  }
+
   .colaboraciones-titulo {
-    font-size: 5rem;
-    top: 2%;
-    left: 2%;
+    font-size: 3rem;
+    right: 2rem;
+    top: 80%;
+    left: auto;
+    bottom: auto;
+    transform: translateY(-50%);
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
+    color:whitesmoke;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.221);
   }
 
   .colaboraciones {
@@ -3358,7 +3581,7 @@ body.dark-mode .piano-descargas::before {
     gap: .3rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid peru;
+    border: 1px solid  #7e3333;
     border-radius: 12px;
     padding: 1rem;
     height: 500px;

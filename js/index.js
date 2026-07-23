@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('#navbarNav');
   const openIcon = document.querySelector('.open-icon');
   const closeIcon = document.querySelector('.close-icon');
 
-  if (!navbarToggler || !navbarCollapse) return;
+  if (!navbarToggler || !navbarCollapse) return; 
 
   /* ===============================
      Toggle menú (solo mobile)
   =============================== */
-  navbarToggler.addEventListener('click', function () {
+   navbarToggler.addEventListener('click', function () {
     if (window.innerWidth >= 992) return; 
 
     const isOpen = navbarCollapse.classList.contains('show');
@@ -51,9 +51,55 @@ document.addEventListener('DOMContentLoaded', function () {
       if (url) window.open(url, '_blank');
     });
   });
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header-wrapper");
+    const hero = document.querySelector(".hero");
+    const imagen = document.querySelector(".hero-img");
+    const titulo = document.querySelector(".hero-title");
+
+    function actualizarScroll() {
+        const scrollY = window.scrollY;
+
+        // Mostrar header
+        if (scrollY > 20) {
+            header.classList.add("show-header");
+        } else {
+            header.classList.remove("show-header");
+        }
+
+        if (hero && imagen) {
+            const rect = hero.getBoundingClientRect();
+
+            if (rect.bottom > 0) {
+
+                const desplazamiento = scrollY * 0.45;
+
+                const escala = Math.max(
+                    1.20 - scrollY * 0.0007,
+                    1
+                );
+
+                imagen.style.transform =
+                    `translate3d(0, ${desplazamiento}px, 0) scale(${escala})`;
+
+                if (titulo) {
+                    const movimientoTitulo = scrollY * 0.65;
+
+                    titulo.style.transform =
+                        `translateY(calc(-50% + ${movimientoTitulo}px))`;
+
+                    titulo.style.opacity =
+                        Math.max(1 - scrollY / 500, 0);
+                }
+            }
+        }
+    }
+
+    actualizarScroll();
+    window.addEventListener("scroll", actualizarScroll, { passive: true });
 });
-
-
 
 
 /* gsap */
@@ -71,11 +117,11 @@ gsap.from(".nav-item", {
 
 // Definir una función para activar/desactivar los bordes de una sección
 // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
-function activarDesactivarBordes(contenedor) {
-  // Obtener las dimensiones y la posición del contenedor con respecto al viewport
+/* function activarDesactivarBordes(contenedor) {
+ 
   let rect = contenedor.getBoundingClientRect();
 
-  // Aparecer borde superior cuando el borde superior del contenedor está dentro del viewport
+  
   if (rect.top <= window.innerHeight) {
     contenedor.classList.add("border-visible-top");
     console.log(`Borde superior de ${contenedor.id} activado`);
@@ -84,7 +130,7 @@ function activarDesactivarBordes(contenedor) {
     console.log(`Borde superior de ${contenedor.id} desactivado`);
   }
 
-  // Aparecer borde izquierdo cuando el borde superior del contenedor está dentro del viewport
+ 
   if (rect.top <= window.innerHeight) {
     contenedor.classList.add("border-visible-left");
     console.log(`Borde izquierdo de ${contenedor.id} activado`);
@@ -92,9 +138,9 @@ function activarDesactivarBordes(contenedor) {
     contenedor.classList.remove("border-visible-left");
     console.log(`Borde izquierdo de ${contenedor.id} desactivado`);
   }
-}
+} */
 
-
+/* 
 window.addEventListener("scroll", function () {
   let videosContainer = document.getElementById("videosContainer");
   activarDesactivarBordes(videosContainer);
@@ -114,7 +160,7 @@ function activarBordesBioContainer(contenedor) {
 
 
 let bioContainer = document.getElementById("bioContainer");
-activarBordesBioContainer(bioContainer);
+activarBordesBioContainer(bioContainer); */
 
 
 
@@ -128,23 +174,31 @@ function smoothScroll(target) {
     /*   behavior:"smooth",  */
   });
 }
-
-// Obtener todos los enlaces de la barra de navegación y agregar un evento de clic a cada uno
 let navLinks = document.querySelectorAll(".navbar-nav a");
-navLinks.forEach(function (navLink) {
-  navLink.addEventListener("click", function (event) {
-    let target = this.getAttribute("href");
 
-    // Excluir los enlaces de "PARTITURAS" y "PEDAGOGIA" del comportamiento de desplazamiento suave
-    if (this.classList.contains("partitura") || this.classList.contains("pedagogia") || this.classList.contains("colaboracion")) {
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function (event) {
+
+    const href = this.getAttribute("href");
+
+    // Si el enlace NO empieza con #, dejar que navegue normalmente
+    if (!href.startsWith("#")) {
+      return;
+    }
+
+    // Excluir páginas independientes
+    if (
+      this.classList.contains("partitura") ||
+      this.classList.contains("pedagogia") ||
+      this.classList.contains("colaboracion")
+    ) {
       return;
     }
 
     event.preventDefault();
-    smoothScroll(target);
+    smoothScroll(href);
   });
 });
-
 
 
 
