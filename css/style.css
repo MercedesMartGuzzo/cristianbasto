@@ -854,7 +854,7 @@ body.dark-mode .bio {
     min-height: 100vh;
 
     object-fit: cover;
-    object-position: 75% top;
+    object-position: 50% top;
 
     transform: translate3d(0, 0, 0) scale(1.05);
     will-change: transform;
