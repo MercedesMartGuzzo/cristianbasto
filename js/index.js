@@ -1,16 +1,16 @@
- document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('#navbarNav');
   const openIcon = document.querySelector('.open-icon');
   const closeIcon = document.querySelector('.close-icon');
 
-  if (!navbarToggler || !navbarCollapse) return; 
+  if (!navbarToggler || !navbarCollapse) return;
 
   /* ===============================
      Toggle menú (solo mobile)
   =============================== */
-   navbarToggler.addEventListener('click', function () {
-    if (window.innerWidth >= 992) return; 
+  navbarToggler.addEventListener('click', function () {
+    if (window.innerWidth >= 992) return;
 
     const isOpen = navbarCollapse.classList.contains('show');
 
@@ -51,54 +51,54 @@
       if (url) window.open(url, '_blank');
     });
   });
-}); 
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".header-wrapper");
-    const hero = document.querySelector(".hero");
-    const imagen = document.querySelector(".hero-img");
-    const titulo = document.querySelector(".hero-title");
+  const header = document.querySelector(".header-wrapper");
+  const hero = document.querySelector(".hero");
+  const imagen = document.querySelector(".hero-img");
+  const titulo = document.querySelector(".hero-title");
 
-    function actualizarScroll() {
-        const scrollY = window.scrollY;
+  function actualizarScroll() {
+    const scrollY = window.scrollY;
 
-        // Mostrar header
-        if (scrollY > 20) {
-            header.classList.add("show-header");
-        } else {
-            header.classList.remove("show-header");
-        }
-
-        if (hero && imagen) {
-            const rect = hero.getBoundingClientRect();
-
-            if (rect.bottom > 0) {
-
-                const desplazamiento = scrollY * 0.45;
-
-                const escala = Math.max(
-                    1.20 - scrollY * 0.0007,
-                    1
-                );
-
-                imagen.style.transform =
-                    `translate3d(0, ${desplazamiento}px, 0) scale(${escala})`;
-
-                if (titulo) {
-                    const movimientoTitulo = scrollY * 0.65;
-
-                    titulo.style.transform =
-                        `translateY(calc(-50% + ${movimientoTitulo}px))`;
-
-                    titulo.style.opacity =
-                        Math.max(1 - scrollY / 500, 0);
-                }
-            }
-        }
+    // Mostrar header
+    if (scrollY > 20) {
+      header.classList.add("show-header");
+    } else {
+      header.classList.remove("show-header");
     }
 
-    actualizarScroll();
-    window.addEventListener("scroll", actualizarScroll, { passive: true });
+    if (hero && imagen) {
+      const rect = hero.getBoundingClientRect();
+
+      if (rect.bottom > 0) {
+
+        const desplazamiento = scrollY * 0.45;
+
+        const escala = window.innerWidth <= 768
+          ? Math.max(1.05 - scrollY * 0.0005, 1)
+          : Math.max(1.20 - scrollY * 0.0007, 1);
+
+
+        imagen.style.transform =
+          `translate3d(0, ${desplazamiento}px, 0) scale(${escala})`;
+
+        if (titulo) {
+          const movimientoTitulo = scrollY * 0.65;
+
+          titulo.style.transform =
+            `translateY(calc(-50% + ${movimientoTitulo}px))`;
+
+          titulo.style.opacity =
+            Math.max(1 - scrollY / 500, 0);
+        }
+      }
+    }
+  }
+
+  actualizarScroll();
+  window.addEventListener("scroll", actualizarScroll, { passive: true });
 });
 
 
