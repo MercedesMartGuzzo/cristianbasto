@@ -4,33 +4,33 @@
         "music": "MUSICA",
         "colaborations": "COLABORACIONES",
         "videos": "MEDIA",
-        "classes": "CLASES",
+        "classes": "DOCENCIA",
         "sheet-music": "PARTITURAS",
         "agenda": "AGENDA",
         "contact": "CONTACTO"
     },
-   "bio": {
-    "title": "PERFIL",
-    "subtitle": "Un creador de proyectos musicales",
-    "text": "  Cristian Basto es un contrabajista, compositor, arreglador y director argentino radicado en Barcelona. Su trabajo integra interpretación, composición, arreglos, dirección y docencia en una búsqueda artística que toma la música argentina como punto de partida para dialogar con la creación contemporánea.",
-    "text-extra": "Más que desarrollar una carrera centrada en un único rol, su actividad se construye a través de proyectos donde creación e interpretación forman parte de un mismo proceso artístico. Desde una identidad profundamente arraigada en la tradición musical argentina, explora nuevas formas de encuentro con el jazz, la música de concierto y otras expresiones musicales de América Latina.",
-    "text1": {
-        "title-span1": "Trayectoria y colaboraciones",
-        "text-p1": "<p>Integra el <span class='bio-highlight'>Quinteto Astor Piazzolla</span>, formación que continúa el legado de una de las obras fundamentales de la música argentina y con la que desarrolla giras por Europa y América. Paralelamente forma parte de la <span class='bio-highlight'>Orquestra Assintomática</span> (Lisboa), un colectivo artístico internacional que reúne músicos de distintas tradiciones.</p><p>En ese ámbito ha colaborado con artistas como <span class='bio-highlight'>António Zambujo, Salvador Sobral, Maria João, Cristina Branco, Mario Laginha, Yamandu Costa, Guinga</span> y <span class='bio-highlight'>Aaron Parks</span>, ampliando su actividad hacia nuevos lenguajes y escenas musicales.</p><p>A lo largo de su carrera también ha compartido escenario y proyectos con referentes como <span class='bio-highlight'>Susana Rinaldi, Amelita Baltar, Diego Schissi, Julieta Laso, Noelia Sinkunas, Chango Spasiuk, Andrea Motis, Luis Alberto Spinetta, Los Fabulosos Cadillacs</span> y <span class='bio-highlight'>YSY A</span>, construyendo un recorrido caracterizado por el diálogo entre el tango, el folklore, el jazz, el rock y la música popular contemporánea.</p>"
-},
-    "text2": {
-        "title-span2": "Proyectos",
-        "text-p2": "<p>La creación constituye el eje central de su trabajo.</p><p>Es fundador y director artístico de <span class='bio-highlight'> Cuarteto Insurgente </span>, un ensamble de cuerdas con sede en Barcelona dedicado a explorar nuevas posibilidades para la música argentina contemporánea, y dirige  <span class='bio-highlight'>Basto Ensamble </span>, espacio desde el cual desarrolla sus composiciones, arreglos y producciones originales.</p><p>Paralelamente mantiene una intensa actividad como director de ensambles y docente en Argentina, España y Portugal, entendiendo la formación musical como una extensión natural de su práctica artística.</p>"
+    "bio": {
+        "title": "PERFIL",
+        "subtitle": "Un creador de proyectos musicales",
+        "text": "  Cristian Basto es un contrabajista, compositor, arreglador y director argentino radicado en Barcelona. Su trabajo integra interpretación, composición, arreglos, dirección y docencia en una búsqueda artística que toma la música argentina como punto de partida para dialogar con la creación contemporánea.",
+        "text-extra": "Más que desarrollar una carrera centrada en un único rol, su actividad se construye a través de proyectos donde creación e interpretación forman parte de un mismo proceso artístico. Desde una identidad profundamente arraigada en la tradición musical argentina, explora nuevas formas de encuentro con el jazz, la música de concierto y otras expresiones musicales de América Latina.",
+        "text1": {
+            "title-span1": "Trayectoria y colaboraciones",
+            "text-p1": "<p>Integra el <span class='bio-highlight'>Quinteto Astor Piazzolla</span>, formación que continúa el legado de una de las obras fundamentales de la música argentina y con la que desarrolla giras por Europa y América. Paralelamente forma parte de la <span class='bio-highlight'>Orquestra Assintomática</span> (Lisboa), un colectivo artístico internacional que reúne músicos de distintas tradiciones.</p><p>En ese ámbito ha colaborado con artistas como <span class='bio-highlight'>António Zambujo, Salvador Sobral, Maria João, Cristina Branco, Mario Laginha, Yamandu Costa, Guinga</span> y <span class='bio-highlight'>Aaron Parks</span>, ampliando su actividad hacia nuevos lenguajes y escenas musicales.</p><p>A lo largo de su carrera también ha compartido escenario y proyectos con referentes como <span class='bio-highlight'>Susana Rinaldi, Amelita Baltar, Diego Schissi, Julieta Laso, Noelia Sinkunas, Chango Spasiuk, Andrea Motis, Luis Alberto Spinetta, Los Fabulosos Cadillacs</span> y <span class='bio-highlight'>YSY A</span>, construyendo un recorrido caracterizado por el diálogo entre el tango, el folklore, el jazz, el rock y la música popular contemporánea.</p>"
+        },
+        "text2": {
+            "title-span2": "Proyectos",
+            "text-p2": "<p>La creación constituye el eje central de su trabajo.</p><p>Es fundador y director artístico de <span class='bio-highlight'> Cuarteto Insurgente </span>, un ensamble de cuerdas con sede en Barcelona dedicado a explorar nuevas posibilidades para la música argentina contemporánea, y dirige  <span class='bio-highlight'>Basto Ensamble </span>, espacio desde el cual desarrolla sus composiciones, arreglos y producciones originales.</p><p>Paralelamente mantiene una intensa actividad como director de ensambles y docente en Argentina, España y Portugal, entendiendo la formación musical como una extensión natural de su práctica artística.</p>"
+        },
+        "text3": {
+            "title-span3": "Escenarios y festivales",
+            "text-p3": "<p>Su música se ha presentado en algunas de las principales salas de Europa y América, entre ellas <span class='bio-highlight'>Carnegie Hall</span> (Nueva York),<span class='bio-highlight'>Concertgebouw </span> (Ámsterdam),<span class='bio-highlight'> Philharmonie Berlin (Berlín) </span>,<span class='bio-highlight'> Wiener Konzerthaus</span> (Viena),<span class='bio-highlight'> CKennedy Center </span>(Washington D. C.),<span class='bio-highlight'> National Arts Centre (Ottawa)</span>, <span class='bio-highlight'>Teatro Colón</span> (Buenos Aires), <span class='bio-highlight'>Maison symphonique – Place des Arts</span> (Montréal) y <span class='bio-highlight'>La Seine Musicale</span> (París).</p><p>También ha participado en festivales internacionales como <span class='bio-highlight'>Festival International de Jazz de Montréal</span>, <span class='bio-highlight'>Jazzaldia San Sebastián</span>, <span class='bio-highlight'>La Villette</span>, <span class='bio-highlight'>Roskilde Festival</span>, <span class='bio-highlight'>Lollapalooza Argentina</span>, <span class='bio-highlight'>Expo Dubái 2020</span> y el <span class='bio-highlight'>Festival Internacional de Tango de Buenos Aires</span>.</p>"
+        },
+        "text4": {
+            "title-span4": "Reconocimientos",
+            "text-p4": "<p>Su trabajo como compositor, arreglador e intérprete recibió <span class='bio-highlight'> dos Premios Carlos </span>,<span class= 'bio-highlight'> dos nominaciones a los Latin Grammy </span>, una <span class= 'bio-highlight'>  Mención Honorífica </span> en el <span class= 'bio-highlight'>  SONUS International Music Festival </span>, y el apoyo del programa  <span class= 'bio-highlight'> Mecenazgo </span> del Ministerio de Cultura de la Ciudad de Buenos Aires para la realización de Suite Villa Urquiza.</p>"
+        }
     },
-    "text3": {
-        "title-span3": "Escenarios y festivales",
-        "text-p3": "<p>Su música se ha presentado en algunas de las principales salas de Europa y América, entre ellas <span class='bio-highlight'>Carnegie Hall</span> (Nueva York),<span class='bio-highlight'>Concertgebouw </span> (Ámsterdam),<span class='bio-highlight'> Philharmonie Berlin (Berlín) </span>,<span class='bio-highlight'> Wiener Konzerthaus</span> (Viena),<span class='bio-highlight'> CKennedy Center </span>(Washington D. C.),<span class='bio-highlight'> National Arts Centre (Ottawa)</span>, <span class='bio-highlight'>Teatro Colón</span> (Buenos Aires), <span class='bio-highlight'>Maison symphonique – Place des Arts</span> (Montréal) y <span class='bio-highlight'>La Seine Musicale</span> (París).</p><p>También ha participado en festivales internacionales como <span class='bio-highlight'>Festival International de Jazz de Montréal</span>, <span class='bio-highlight'>Jazzaldia San Sebastián</span>, <span class='bio-highlight'>La Villette</span>, <span class='bio-highlight'>Roskilde Festival</span>, <span class='bio-highlight'>Lollapalooza Argentina</span>, <span class='bio-highlight'>Expo Dubái 2020</span> y el <span class='bio-highlight'>Festival Internacional de Tango de Buenos Aires</span>.</p>"
-    },
-    "text4": {
-        "title-span4": "Reconocimientos",
-        "text-p4": "<p>Su trabajo como compositor, arreglador e intérprete recibió <span class='bio-highlight'> dos Premios Carlos </span>,<span class= 'bio-highlight'> dos nominaciones a los Latin Grammy </span>, una <span class= 'bio-highlight'>  Mención Honorífica </span> en el <span class= 'bio-highlight'>  SONUS International Music Festival </span>, y el apoyo del programa  <span class= 'bio-highlight'> Mecenazgo </span> del Ministerio de Cultura de la Ciudad de Buenos Aires para la realización de Suite Villa Urquiza.</p>"
-    }
-},
     "gallery": {
         "title-g": "FOTOS"
     },
@@ -64,12 +64,13 @@
         "colab3": "Rock"
     },
     "classes": {
-        "title-class": "CLASES",
-        "class-p": "Comparto mi pasión por la música a través de clases personalizadas de contrabajo, composición, arreglos y orquestación, adaptadas para músicos de diferentes niveles. También realizo workshops de contrabajo y orquesta típica, donde exploramos las técnicas y gestos característicos de esas grandes orquestas. En producción, trabajo en equipo con los artistas, desde la creación de arreglos hasta la dirección de grabaciones y mi participación como contrabajista, siempre buscando un resultado auténtico.",
-        "title-class1": "Workshop de Contrabajo",
-        "class-p2": "La idea principal del Nivel I de este workshop es proporcionar herramientas efectivas para abordar el tango, comprender la función esencial del contrabajo dentro del género y fomentar la búsqueda de una musicalidad propia y distintiva en cada músico. El enfoque estará en el repertorio de las orquestas típicas más influyentes que marcaron la era dorada del tango en las décadas de 1940 y 1950, tales como las de Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán y Juan D’Arienzo. Estas orquestas no sólo definieron el estilo y la sonoridad del tango, sino que también consolidaron dos modelos de acompañamiento fundamentales que forman la columna vertebral de la orquesta tanto en términos armónicos como rítmicos: el marcato y la síncopa.",
-        "title-class2": "Workshop de Tango: Orquestas Típicas de los Años 40 y 50",
-        "class-p3": "Cristian Basto ha trabajado como docente dirigiendo ensambles y orquestas típicas en la Academia Nacional del Tango, en el Centro de Desarrollo del Tango y la Cultura Rioplatense (CDTCR)“Escuela de Tango Orlando Goñi”, y en “La Academia Tango Club” Si queres aprender a tocar tango, este workshop está enfocado en las orquestas típicas de tango de las décadas de los años 40 y 50, consideradas la época dorada del tango. Está dirigido tanto a músicos profesionales y amateurs como a cualquier persona interesada, sin importar el instrumento que toque, en aprender las técnicas y recursos estilísticos que dieron forma al sonido inconfundible de estas emblemáticas orquestas. Durante el taller, se trabajará en los gestos y acciones necesarias para recrear el sonido característico de esas orquestas, logrando capturar su esencia rítmica, melódica y estilística."
+        "title-class": "DOCENCIA",
+        "class-p": "<p>Ha dirigido ensambles y dictado cursos en instituciones de Argentina, España y Portugal, entre ellas la <span class='bio-highlight'>Academia Nacional del Tango</span>, <span class='bio-highlight'>Universidad Maimónides</span>, <span class='bio-highlight'>Academia Tango Club</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, la Orquesta Escuela Tibidabo (Barcelona), la <span class='bio-highlight'>Camerata Internacional de Barcelona</span> y la <span class='bio-highlight'>Orquestra de Cuerdas Lisboa Tanguera</span>, proyecto del que es fundador y director.</p><p>Su propuesta está dirigida a músicos profesionales, estudiantes avanzados e instituciones interesadas en el estudio del tango desde una perspectiva contemporánea.</p>",
+        "title-workshops": "WORKSHOPS",
+        "title-class1": "Contrabajo en el Tango",
+        "class-p2": "Workshop dedicado al estudio del rol del contrabajo dentro de la orquesta típica, abordando aspectos técnicos, estilísticos y musicales a partir del repertorio de las grandes orquestas de las décadas de 1940 y 1950. El trabajo se centra en recursos como el marcato, la síncopa y las distintas formas de acompañamiento, ofreciendo herramientas aplicables tanto a la práctica profesional como al desarrollo de una identidad interpretativa propia.",
+        "title-class2": "Orquesta Típica",
+        "class-p3": "Workshop dirigido a músicos de cualquier instrumento interesados en comprender el funcionamiento estético y musical de las grandes orquestas típicas argentinas. A través del análisis, el ensayo colectivo y el trabajo sobre repertorio original, se exploran los recursos interpretativos que definieron el sonido de las orquestas de Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán y Juan D'Arienzo."
     },
     "sheet-music": {
         "title-sheet": "PARTITURAS",

@@ -170,44 +170,45 @@ body.dark-mode .bio {
 /******** BARRA DE NAVEGACION ********/
 
 .header-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-    background: transparent;
-    backdrop-filter: blur(0);
-    -webkit-backdrop-filter: blur(0);
+  background: transparent;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
 
-    opacity: 0;
-    transform: translateY(-100%);
-    pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 
-    transition:
-        opacity .35s ease,
-        transform .35s ease,
-        background-color .35s ease,
-        backdrop-filter .35s ease;
+  transition:
+    opacity .35s ease,
+    transform .35s ease,
+    background-color .35s ease,
+    backdrop-filter .35s ease;
 }
 
 .header-wrapper.show-header {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 
-    background: rgba(16, 13, 13, 0.48);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+  background: rgba(16, 13, 13, 0.48);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
+
 .navbar {
-    width: 100%;
+  width: 100%;
 }
 
 .navbar.nav-pages,
 .nav-pages .navbar-collapse,
 .nav-pages .navbar-nav {
-    background-color: rgba(8, 8, 8, 0.01) !important;
+  background-color: rgba(8, 8, 8, 0.01) !important;
 }
 
 @media (max-width: 480px) {
@@ -289,10 +290,10 @@ body.dark-mode .bio {
     font-size: 1.4rem;
   }
 
-  h1,
+  /*   h1,
   .h1 {
     display: none;
-  }
+  } */
 }
 
 .navbar-toggler {
@@ -415,7 +416,7 @@ body.dark-mode .bio {
   padding: 0;
 }
 
- .collapse {
+.collapse {
   display: none;
   transition: height 1s ease;
 }
@@ -430,7 +431,7 @@ body.dark-mode .bio {
   overflow: hidden;
   max-width: 100%;
 
-} 
+}
 
 .fade-in {
   opacity: 0;
@@ -696,7 +697,7 @@ body.dark-mode .bio {
 /********* HEADER DESKTOP NAV, PHOTO GRID Y SWIPPER*********/
 
 @media (min-width: 1200px) {
- /*  .navbar-nav {
+  /*  .navbar-nav {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -835,84 +836,130 @@ body.dark-mode .bio {
 }
 
 /**** index-mobile *****/
-.hero {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    min-height: 100vh;
-    min-height: 100dvh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.hero,
+.hero-partituras,
+.hero-pedagogia {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.hero-img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+.hero-img,
+.hero-img-partituras,
+.hero-img-pedagogia {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 
-    object-fit: cover;
-    object-position: 50% top;
+  object-fit: cover;
+  object-position: 50% top;
 
-    transform: translate3d(0, 0, 0) scale(1.05);
-    will-change: transform;
-    transition: transform .2s ease-out;
+  transform: translate3d(0, 0, 0) scale(1.05);
+  will-change: transform;
+  transition: transform .2s ease-out;
 }
 
-.hero-title {
-    position: absolute;
-    z-index: 2;
+.hero-img-partituras,
+.hero-img-pedagogia {
+  object-position: 80% top;
+}
 
-    left: 2rem;
-    top: 75%;
-    transform: translateY(-50%);
+.hero-title,
+.hero-title-partituras,
+.hero-title-pedagogia {
+  position: absolute;
+  z-index: 2;
 
-    color: whitesmoke;
-    text-transform: uppercase;
-    text-shadow: 0 0 18px rgba(0,0,0,.75);
+  left: 2rem;
+  top: 75%;
+  transform: translateY(-50%);
 
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    line-height: .9;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(0, 0, 0, .75);
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: .9;
+}
+
+.hero-title-partituras,
+.hero-title-pedagogia {
+  font-family: "Bowlby One", sans-serif;
+  font-size: 2rem;
+
 }
 
 .hero-title span {
-    display: block;
-    font-family: "Bowlby One", sans-serif;
+  display: block;
+  font-family: "Bowlby One", sans-serif;
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .hero-title{
-        left:1.5rem;
-        top:18%;
-        font-size:2rem;
-    }
+  .hero-title,
+  .hero-title-partituras,
+  .hero-title-pedagogia {
+    left: 1.5rem;
+    top: 18%;
+    font-size: 2rem;
+  }
+
+  .hero-title-partituras,
+  .hero-title-pedagogia {
+    top: 80%;
+    left: 40%;
+  }
+}
+
+@media (min-width:481px) and (max-width:991px) {
+
+  .hero-title {
+    left: 2rem;
+    top: 75%;
+    font-size: 4rem;
+  }
+
+  .hero-title-partituras,
+  .hero-title-pedagogia {
+    right: 2rem;
+    top: 75%;
+    font-size: 3rem;
+  }
 
 }
 
-@media (min-width:481px) and (max-width:991px){
+@media (min-width:992px) {
 
-    .hero-title{
-        left:2rem;
-        top:75%;
-        font-size:4rem;
-    }
+  .hero-title {
+    left: 15%;
+    top: 55%;
+    font-size: 3rem;
+  }
 
-}
+  .hero-title-partituras {
+    right: 15%;
+    top: 85%;
+    font-size: 3rem;
+  }
 
-@media (min-width:992px){
+  .hero-title-pedagogia {
+    top: 85%;
+  left: 70%;
+    font-size: 3rem;
+  }
 
-    .hero-title{
-        left:15%;
-        top:55%;
-        font-size:4rem;
-    }
-.hero-img{
-  object-position: center 30%;
-}
+  .hero-img,
+  .hero-img-partituras {
+    object-position: center 30%;
+  }
 }
 
 /**** BOTONES *****/
@@ -921,8 +968,8 @@ body.dark-mode .bio {
   position: relative;
   background-color: transparent;
   padding: 10px;
-  color: peru;
-  border: 1px solid peru;
+  color: #7e3333;
+  border: 1px solid #7e3333;
   cursor: pointer;
   border-radius: 5px;
   margin-top: .5rem;
@@ -934,7 +981,7 @@ body.dark-mode .bio {
 }
 
 .piano-descargas:hover {
-  background-color: peru;
+  background-color: #7e3333;
   color: white;
   transform: scale(1.1);
 }
@@ -1005,8 +1052,8 @@ body.dark-mode .bio {
   top: 80%;
   left: 30%;
   padding: 0 .1rem;
-  color: peru;
-  border: 1px solid peru;
+  color:#7e3333;
+  border: 1px solid #7e3333;
   background-color: whitesmoke;
   border-radius: 5px;
   transform: scale(0);
@@ -1404,94 +1451,94 @@ body.dark-mode .bio {
 /**** SECCION VIDEOS ****/
 
 
-.videos{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    overflow:hidden;
-    background:#556B2F;
-    padding-bottom:1rem;
+.videos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background: #556B2F;
+  padding-bottom: 1rem;
 }
 
-.videos-titulo{
-    color:whitesmoke;
-    font-family:"Bowlby One",sans-serif;
-    font-size:2.3rem;
-    margin:1rem 0 .5rem;
-    margin-bottom:1rem;
-    letter-spacing:1px;
+.videos-titulo {
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 2.3rem;
+  margin: 1rem 0 .5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
-.videos-categoria{
-    width:90%;
-    margin:0 auto 2rem;
+.videos-categoria {
+  width: 90%;
+  margin: 0 auto 2rem;
 }
 
-.videos-subtitulo{
-    color:whitesmoke;
-    font-family:"Bowlby One",sans-serif;
-    font-size:1.6rem;
-    margin-bottom:1rem;
+.videos-subtitulo {
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
-.videos-grilla{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:1.5rem;
-    border:1px solid rgba(255,255,255,.8);
-    border-radius:12px;
-    padding:1rem;
+.videos-grilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 12px;
+  padding: 1rem;
 }
 
-.video-card{
-    display:flex;
-    flex-direction:column;
+.video-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.video-card iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    border-radius:10px;
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 10px;
 }
 
-.video-card h4{
-    color:whitesmoke;
-    margin:.8rem 0 .25rem;
-    font-size:1.3rem;
-    font-weight:500;
-    font-family:"Bowlby One",sans-serif;
+.video-card h4 {
+  color: whitesmoke;
+  margin: .8rem 0 .25rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Bowlby One", sans-serif;
 }
 
-.video-card p{
-    color:rgba(255,255,255,.9);
-    line-height:1.5;
-    margin:0;
+.video-card p {
+  color: rgba(255, 255, 255, .9);
+  line-height: 1.5;
+  margin: 0;
 }
 
-.videos-secundarias{
-    width:100%;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    gap:0rem;
+.videos-secundarias {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
 }
 
-.videos-grilla-sec{
-    border:1px solid rgba(255,255,255,.8);
-    border-radius:12px;
-    padding:1rem;
+.videos-grilla-sec {
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 12px;
+  padding: 1rem;
 }
 
-.videos-grilla-sec .video-card{
-    width:100%;
+.videos-grilla-sec .video-card {
+  width: 100%;
 }
 
-.videos-grilla-sec iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    border-radius:10px;
+.videos-grilla-sec iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 10px;
 }
 
 /* .btn-videos{
@@ -2008,7 +2055,7 @@ body.dark-mode .pedagogias {
   }
 
   /***** PORTADA *****/
- /*  h1 {
+  /*  h1 {
     font-size: 3.5rem;
     top: 35%;
     left: 8%;
@@ -2264,7 +2311,7 @@ body.dark-mode .pedagogias {
   }
 
   /* PORTADA */
-/*   h1 {
+  /*   h1 {
     font-size: 4.5rem;
     top: 40%;
     left: 10%;
@@ -2282,7 +2329,7 @@ body.dark-mode .pedagogias {
   /* h1,.h1{
   display:none
 } */
-/*   .portada {
+  /*   .portada {
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -2495,114 +2542,114 @@ body.dark-mode .pedagogias {
 
 
   /* SECCION VIDEOS */
-@media (min-width:992px){
+  @media (min-width:992px) {
 
-.videos{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    background:#556B2F;
-    padding-bottom:1rem;
-}
+    .videos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: #556B2F;
+      padding-bottom: 1rem;
+    }
 
-.videos-titulo{
-    color:whitesmoke;
-    font-family:"Bowlby One",sans-serif;
-    font-size:5rem;
-    margin-bottom:1rem;
-    letter-spacing:1px;
-}
+    .videos-titulo {
+      color: whitesmoke;
+      font-family: "Bowlby One", sans-serif;
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
 
-.videos-categoria{
-    width:100%;
-    margin-bottom:3rem;
-}
+    .videos-categoria {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
 
-.videos-subtitulo{
-    color:whitesmoke;
-    font-family:"Bowlby One",sans-serif;
-    font-size:2rem;
-    margin-bottom:1rem;
-}
+    .videos-subtitulo {
+      color: whitesmoke;
+      font-family: "Bowlby One", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-.videos-grilla{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:2rem;
-    border:1px solid rgba(255,255,255,.8);
-    border-radius:12px;
-    padding:1.5rem;
-}
+    .videos-grilla {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      border: 1px solid rgba(255, 255, 255, .8);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
 
-.video-card{
-    display:flex;
-    flex-direction:column;
-}
+    .video-card {
+      display: flex;
+      flex-direction: column;
+    }
 
-.video-card iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    border-radius:10px;
-}
+    .video-card iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 10px;
+    }
 
-.video-card h4{
-    color:whitesmoke;
-    margin:1rem 0 .3rem;
-    font-size:1.6rem;
-}
+    .video-card h4 {
+      color: whitesmoke;
+      margin: 1rem 0 .3rem;
+      font-size: 1.6rem;
+    }
 
-.video-card p{
-    color:rgba(255,255,255,.9);
-    line-height:1.5;
-    margin:0;
-    font-size:1.05rem;
-}
+    .video-card p {
+      color: rgba(255, 255, 255, .9);
+      line-height: 1.5;
+      margin: 0;
+      font-size: 1.05rem;
+    }
 
-/* SEGUNDA FILA */
+    /* SEGUNDA FILA */
 
-.videos-secundarias{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:2rem;
-    width:100%;
-}
+    .videos-secundarias {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      width: 100%;
+    }
 
-.videos-grilla-sec{
-    border:1px solid rgba(255,255,255,.8);
-    border-radius:12px;
-    padding:1.5rem;
-    height:100%;
-}
+    .videos-grilla-sec {
+      border: 1px solid rgba(255, 255, 255, .8);
+      border-radius: 12px;
+      padding: 1.5rem;
+      height: 100%;
+    }
 
-.videos-grilla-sec .video-card{
-    width:100%;
-}
+    .videos-grilla-sec .video-card {
+      width: 100%;
+    }
 
-.videos-grilla-sec iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    border-radius:10px;
-}
+    .videos-grilla-sec iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 10px;
+    }
 
-.videos-grilla-sec h4{
-    color:whitesmoke;
-    margin:1rem 0 .3rem;
-    font-size:1.6rem;
-}
+    .videos-grilla-sec h4 {
+      color: whitesmoke;
+      margin: 1rem 0 .3rem;
+      font-size: 1.6rem;
+    }
 
-.videos-grilla-sec p{
-    color:rgba(255,255,255,.9);
-    line-height:1.5;
-    margin:0;
-}
+    .videos-grilla-sec p {
+      color: rgba(255, 255, 255, .9);
+      line-height: 1.5;
+      margin: 0;
+    }
 
-.btn-videos{
-    margin-top:2rem;
-}
+    .btn-videos {
+      margin-top: 2rem;
+    }
 
-}
+  }
 
   /* SECCION  AGENDA */
   .agenda-titulo {
@@ -2784,51 +2831,6 @@ body.dark-mode .pedagogias {
   margin-bottom: 2rem;
 }
 
-.partituras1::before,
-.partituras1::after {
-  content: "";
-  position: absolute;
-  background-color: peru;
-  transition: width 2s ease-in-out, height 2s ease-in-out;
-  width: 0;
-  height: 0;
-}
-
-.partituras1::before {
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 1px;
-}
-
-.partituras1::after {
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 0;
-}
-
-.border-visible-top::before {
-  width: 100%;
-}
-
-.border-visible-left::after {
-  height: 100%;
-}
-
-
-.partituras1-titulo {
-  color: peru;
-  position: absolute;
-  font-weight: 400;
-  font-family: "Bowlby One", sans-serif;
-  font-size: 1.5rem;
-  top: 5%;
-  left: 4%;
-  letter-spacing: 1px;
-}
-
-
 
 .partituras-grilla {
   margin-top: 2rem;
@@ -2997,14 +2999,14 @@ body.dark-mode .piano-descargas::before {
 
 /* PARTIRURAS DESKTOP */
 @media(min-width: 1200px) {
-
+  /* 
   .partituras1-titulo {
     font-size: 5rem;
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
     top: 2%;
     left: 4%;
-  }
+  } */
 
 
   .partituras-pa {
@@ -3102,7 +3104,7 @@ body.dark-mode .piano-descargas::before {
   margin-bottom: 0;
 }
 
-.pedagogias:before,
+/* .pedagogias:before,
 .pedagogias::after {
   content: "";
   position: absolute;
@@ -3143,12 +3145,30 @@ body.dark-mode .piano-descargas::before {
   font-size: 1.5rem;
   top: 4%;
   left: 4%;
-}
+} */
 
 .pedagogia-contenedor {
   margin-top: 2rem;
 }
+.pedagogia-pa {
+  margin-top: 1rem;
+  color: #7e3333;
+  font-size: 1rem;
+  
+}
 
+.pedagogia-pa p {
+  margin-bottom: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+}
+.pedagogia-pa span{
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 300;
+}
+/* .bio-highlight {
+  font-weight: 900;
+}
 .pedagogia-pa {
   margin-top: 1rem;
   color: #7e3333;
@@ -3159,7 +3179,7 @@ body.dark-mode .piano-descargas::before {
   text-align: start;
   font-size: 1rem;
   font-family: "Bowlby One", sans-serif;
-}
+} */
 
 .pedagogia-pa2 {
   margin-top: 1rem;
@@ -3174,17 +3194,20 @@ body.dark-mode .piano-descargas::before {
 
 }
 
-.workshop {
-  color: peru;
+.workshop,.workshop-title {
+  color:#7e3333;
   font-size: 1.3rem;
-  border-top: 1px solid peru;
+  border-top: 1px solid #7e3333;
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
   text-wrap: balance;
 }
+.workshop-title{
+  border: none;
 
+}
 .pedagogia-grilla {
-  border: 1px solid peru;
+  border: 1px solid #7e3333;
   border-radius: 5px;
   padding: 16px;
   margin-top: 1.5rem;
@@ -3195,7 +3218,7 @@ body.dark-mode .piano-descargas::before {
   margin: 10px;
   position: absolute;
   font-size: 20px;
-  color: peru;
+  color: #7e3333;
   bottom: 0;
   right: 1%;
   z-index: 10;
@@ -3250,7 +3273,7 @@ body.dark-mode .piano-descargas::before {
 
 /* PEDAGOGIA DESKTOP */
 @media(min-width :1200px) {
-  .pedagogias-titulo {
+  /*   .pedagogias-titulo {
     font-size: 5rem;
     top: 2%;
     left: 2%;
@@ -3258,10 +3281,10 @@ body.dark-mode .piano-descargas::before {
     font-family: "Bowlby One", sans-serif;
     color: peru;
   }
-
+ */
 
   .workshop {
-    color: peru;
+    color:#7e3333;
     font-size: 1.5rem;
   }
 
@@ -3276,7 +3299,7 @@ body.dark-mode .piano-descargas::before {
   }
 
   .piano-partes1 img {
-    border: 1px solid peru;
+    border: 1px solid #7e3333;
     height: 400px;
     position: relative;
   }
@@ -3314,36 +3337,36 @@ body.dark-mode .piano-descargas::before {
   width: 100%;
   z-index: 1000;
 } */
- .header-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-    background:transparent;
-    backdrop-filter: blur(0);
-    -webkit-backdrop-filter: blur(0);
+  background: transparent;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
 
-    opacity: 0;
-    transform: translateY(-100%);
-    pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 
-    transition:
-        opacity .35s ease,
-        transform .35s ease,
-        backdrop-filter .35s ease,
-        background-color .35s ease;
+  transition:
+    opacity .35s ease,
+    transform .35s ease,
+    backdrop-filter .35s ease,
+    background-color .35s ease;
 }
 
 .header-wrapper.show-header {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 
-    background: rgba(16, 13, 13, 0.486) !important;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+  background: rgba(16, 13, 13, 0.486) !important;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .navbar.nav-pages,
@@ -3459,7 +3482,7 @@ body.dark-mode .piano-descargas::before {
   flex-direction: column;
   gap: .3rem;
   justify-content: center;
-  border: 1px solid  #7e3333;
+  border: 1px solid #7e3333;
   border-radius: 12px;
   padding: 1rem;
   /* background-color: rgb(66, 66, 66); */
@@ -3500,7 +3523,7 @@ body.dark-mode .piano-descargas::before {
     flex-direction: column;
     gap: .3rem;
     justify-content: center;
-    border: 1px solid  #7e3333;
+    border: 1px solid #7e3333;
     border-radius: 12px;
     padding: 1rem;
 
@@ -3526,7 +3549,7 @@ body.dark-mode .piano-descargas::before {
     transform: translateY(-50%);
     font-weight: 400;
     font-family: "Bowlby One", sans-serif;
-    color:whitesmoke;
+    color: whitesmoke;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.221);
   }
 
@@ -3581,7 +3604,7 @@ body.dark-mode .piano-descargas::before {
     gap: .3rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid  #7e3333;
+    border: 1px solid #7e3333;
     border-radius: 12px;
     padding: 1rem;
     height: 500px;

@@ -1,5 +1,5 @@
 
-function activarBordesPartituras(contenedor) {
+/* function activarBordesPartituras(contenedor) {
     contenedor.classList.add("border-visible-top");
     contenedor.classList.add("border-visible-left");
     console.log(`Bordes de ${contenedor.id} activados`);
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (partituras1container) {
         activarBordesPartituras(partituras1container);
     }
-});
+}); */
 
 document.addEventListener('DOMContentLoaded', function () {
     const pianoParts = document.querySelectorAll('.piano-partes');
@@ -160,40 +160,49 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(element);
     });
 });
-/* 
-<div class="photo-grid">
-<img src="./img/orsay14.jpg" alt="Foto 1" class="vertical">
-<img src="./img/foto-bioNueva.jpg" alt="Foto 2" class="horizontal">
-<img src="./img/colab.jpg" alt="Foto 3" class="horizontal">
-<img src="./img/ensambleswiper.jpg" alt="Foto 4" class="horizontal">
-<img src="./img/crischus-contra.jpg" alt="Foto 5" class="horizontal">
-<img src="./img/colaboraciones.jpg" alt="Foto 6" class="vertical">
-<img src="./img/fondo-videos.jpg" alt="Foto 7" class="horizontal">
-<img src="./img/swipper2.jpg" alt="Foto 8" class="horizontal">
-<img src="./img/quasimodo-swipper.jpg" alt="Foto 9" class="horizontal">
-<img src="./img/crischus-swipper.jpg" alt="Foto 10" class="horizontal">
-<img src="./img/crischusswipper2.jpg" alt="Foto 11" class="horizontal">
-<img src="./img/crischusswipper3.jpg" alt="Foto 12" class="horizontal">
-</div>  <!-- Modal con slider -->
-            <div class="modal" id="photo-modal">
-                <span class="close-button" id="close-modal">&times;</span>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/orsay14.jpg" alt="Foto 1"></div>
-                        <div class="swiper-slide"><img src="./img/foto-bioNueva.jpg" alt="Foto 2"></div>
-                        <div class="swiper-slide"><img src="./img/colab.jpg" alt="Foto 3"></div>
-                        <div class="swiper-slide"><img src="./img/ensambleswiper.jpg" alt="Foto 4"></div>
-                        <div class="swiper-slide"><img src="./img/crischus-contra.jpg" alt="Foto 5"></div>
-                        <div class="swiper-slide"><img src="./img/colaboraciones.jpg" alt="Foto 6"></div>
-                        <div class="swiper-slide"><img src="./img/fondo-videos.jpg" alt="Foto 7"></div>
-                        <div class="swiper-slide"><img src="./img/swipper2.jpg" alt="Foto 8"></div>
-                        <div class="swiper-slide"><img src="./img/quasimodo-swipper.jpg" alt="Foto 9"></div>
-                        <div class="swiper-slide"><img src="./img/crischus-swipper.jpg" alt="Foto 10"></div>
-                        <div class="swiper-slide"><img src="./img/crischusswipper2.jpg" alt="Foto 11"></div>
-                        <div class="swiper-slide"><img src="./img/crischusswipper3.jpg" alt="Foto 12"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div> */
+ 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hero = document.querySelector(".hero-partituras");
+    const imagen = document.querySelector(".hero-img-partituras");
+    const titulo = document.querySelector(".hero-title-partituras");
+
+    function actualizarHero() {
+
+        if (!hero || !imagen) return;
+
+        const scrollY = window.scrollY;
+        const rect = hero.getBoundingClientRect();
+
+        if (rect.bottom > 0) {
+
+            const desplazamiento = scrollY * 0.45;
+
+            const escala = Math.max(
+                1.20 - scrollY * 0.0007,
+                1
+            );
+
+            imagen.style.transform =
+                `translate3d(0,${desplazamiento}px,0) scale(${escala})`;
+
+            if (titulo) {
+
+                const movimientoTitulo = scrollY * 0.65;
+
+                titulo.style.transform =
+                    `translateY(calc(-50% + ${movimientoTitulo}px))`;
+
+                titulo.style.opacity =
+                    Math.max(1 - scrollY / 500, 0);
+            }
+        }
+    }
+
+    actualizarHero();
+
+    window.addEventListener("scroll", actualizarHero, {
+        passive: true
+    });
+
+});
