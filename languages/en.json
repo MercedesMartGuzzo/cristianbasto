@@ -63,14 +63,15 @@
         "colab2": "Academic Music",
         "colab3": "Rock"
     },
-    "classes": {
-        "title-class": "Teaching",
-        "class-p": "I share my passion for music through personalized classes of double bass, composition, arrangements and orchestration, adapted for musicians of different levels. I also conduct double bass and typical orchestra workshops, where we explore the techniques and characteristic gestures of those great orchestras. In production, I work as a team with the artists, from the creation of arrangements to the direction of recordings and my participation as a double bassist, always seeking an authentic result.",
-        "title-class1": "Double Bass Workshop",
-        "class-p2": "The main idea of ​​Level I of this workshop is to provide effective tools to approach tango, understand the essential function of the double bass within the genre and encourage the search for each musician's own and distinctive musicality. The focus will be on the repertoire of the most influential typical orchestras that marked the golden era of tango in the 1940s and 1950s, such as those of Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán and Juan D'Arienzo. These orchestras not only defined the style and sound of tango, but also consolidated two fundamental accompaniment models that form the backbone of the orchestra both in harmonic terms as rhythmic: Marcato and syncopation.",
-        "title-class2": "Tango Workshop: Typical Orchestras of the 40s and 50s",
-        "class-p3": "Cristian Basto has worked as a teacher directing typical ensembles and orchestras at the National Academy of Tango, at the Center for the Development of Tango and Rioplatense Culture (CDTCR) “Escuela de Tango Orlando Goñi”, and at “La Academia Tango Club”.If you want to learn to play tango, this workshop is focused on the typical tango orchestras of the 40s and 50s, considered the golden age of tango. It is aimed at both professional and amateur musicians as well as anyone interested, regardless of the instrument they play, in learning the techniques and stylistic resources that shaped the unmistakable sound of these emblematic orchestras. During the workshop, we will work on the gestures and actions necessary to recreate the characteristic sound of these orchestras, capturing their rhythmic, melodic and stylistic essence."
-    },
+"classes": {
+    "title-class": "TEACHING",
+    "class-p": "<p>He has directed ensembles and taught courses at institutions in Argentina, Spain, and Portugal, including the <span class='bio-highlight'>National Academy of Tango</span>, <span class='bio-highlight'>Maimonides University</span>, <span class='bio-highlight'>Tango Club Academy</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, the Tibidabo Youth Orchestra (Barcelona), the <span class='bio-highlight'>International Chamber Orchestra of Barcelona</span>, and the <span class='bio-highlight'>Lisboa Tanguera String Orchestra</span>, a project he founded and currently directs.</p><p>His teaching approach is aimed at professional musicians, advanced students, and institutions interested in the study of tango from a contemporary perspective.</p>",
+    "title-workshops": "WORKSHOPS",
+    "title-class1": "Double Bass in Tango",
+    "class-p2": "A workshop dedicated to the study of the role of the double bass within the traditional tango orchestra, covering technical, stylistic, and musical aspects through the repertoire of the great orchestras of the 1940s and 1950s. The course focuses on techniques such as marcato, syncopation, and different accompaniment styles, providing practical tools for both professional performance and the development of a distinctive musical voice.",
+    "title-class2": "Traditional Tango Orchestra",
+    "class-p3": "A workshop designed for musicians of any instrument who are interested in understanding the musical and aesthetic principles of Argentina's great traditional tango orchestras. Through analysis, ensemble rehearsal, and the study of original repertoire, participants explore the interpretative resources that shaped the sound of the orchestras led by Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán, and Juan D'Arienzo."
+},
     "sheet-music": {
         "title-sheet": "SHEET MUSIC",
         "sheet-music-p": "Here I share a selection of scores that range from tango and Argentine popular music to contemporary compositions and arrangements of different genres. Each piece reflects my interest in creating versatile and accessible music, without neglecting depth and quality .",
