@@ -35,10 +35,27 @@
         "title-g": "PHOTOS"
     },
     "music": {
-        "title-m": "MUSIC"
+        "title-m": "MUSIC",
+        "music-button": "View more"
     },
-    "media": {
-        "title-v": "MEDIA"
+    "videos": {
+        "title-v": "MEDIA",
+        "creation": "Creation",
+        "suite-title": "Suite Villa Urquiza",
+        "suite-desc": "Original work for ensemble.",
+        "sheldon-title": "Sheldon",
+        "sheldon-desc": "Original composition with official music video.",
+        "michelangelo-title": "Michelangelo 70",
+        "michelangelo-desc": "Arrangement of a work by Astor Piazzolla, performed by Basto Ensamble.",
+        "nube-title": "Cloud Theme",
+        "nube-desc": "Arrangement of a work by Gerardo Gandini.",
+        "collaborations": "Collaborations",
+        "piso-title": "Piso Mojado",
+        "piso-desc": "Artistic collaboration.",
+        "live": "Live",
+        "carnegie-title": "Carnegie Hall",
+        "carnegie-desc": "Performance with Rascasuelos at Carnegie Hall (New York).",
+        "button": "View More"
     },
     "agenda": {
         "title-a": "AGENDA",
@@ -48,7 +65,13 @@
     },
     "contact": {
         "title-c": "CONTACT",
-        "contact-p": "To communicate with Cristian, write to cristianbasto79@gmail.com"
+        "name-label": "Name",
+        "name-placeholder": "Your name",
+        "email-label": "Email",
+        "email-placeholder": "your@email.com",
+        "message-label": "Message",
+        "message-placeholder": "Write your message",
+        "send-btn": "Send message"
     },
     "press": {
         "kit": "Press Kit"
@@ -63,15 +86,16 @@
         "colab2": "Academic Music",
         "colab3": "Rock"
     },
-"classes": {
-    "title-class": "TEACHING",
-    "class-p": "<p>He has directed ensembles and taught courses at institutions in Argentina, Spain, and Portugal, including the <span class='bio-highlight'>National Academy of Tango</span>, <span class='bio-highlight'>Maimonides University</span>, <span class='bio-highlight'>Tango Club Academy</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, the Tibidabo Youth Orchestra (Barcelona), the <span class='bio-highlight'>International Chamber Orchestra of Barcelona</span>, and the <span class='bio-highlight'>Lisboa Tanguera String Orchestra</span>, a project he founded and currently directs.</p><p>His teaching approach is aimed at professional musicians, advanced students, and institutions interested in the study of tango from a contemporary perspective.</p>",
-    "title-workshops": "WORKSHOPS",
-    "title-class1": "Double Bass in Tango",
-    "class-p2": "A workshop dedicated to the study of the role of the double bass within the traditional tango orchestra, covering technical, stylistic, and musical aspects through the repertoire of the great orchestras of the 1940s and 1950s. The course focuses on techniques such as marcato, syncopation, and different accompaniment styles, providing practical tools for both professional performance and the development of a distinctive musical voice.",
-    "title-class2": "Traditional Tango Orchestra",
-    "class-p3": "A workshop designed for musicians of any instrument who are interested in understanding the musical and aesthetic principles of Argentina's great traditional tango orchestras. Through analysis, ensemble rehearsal, and the study of original repertoire, participants explore the interpretative resources that shaped the sound of the orchestras led by Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán, and Juan D'Arienzo."
-},
+    "classes": {
+        "title-class": "TEACHING",
+        "class-p": "<p>He has directed ensembles and taught courses at institutions in Argentina, Spain, and Portugal, including the <span class='bio-highlight'>National Academy of Tango</span>, <span class='bio-highlight'>Maimonides University</span>, <span class='bio-highlight'>Tango Club Academy</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, the Tibidabo Youth Orchestra (Barcelona), the <span class='bio-highlight'>International Chamber Orchestra of Barcelona</span>, and the <span class='bio-highlight'>Lisboa Tanguera String Orchestra</span>, a project he founded and currently directs.</p><p>His teaching approach is aimed at professional musicians, advanced students, and institutions interested in the study of tango from a contemporary perspective.</p>",
+        "title-workshops": "WORKSHOPS",
+        "title-class1": "Double Bass in Tango",
+        "class-p2": "A workshop dedicated to the study of the role of the double bass within the traditional tango orchestra, covering technical, stylistic, and musical aspects through the repertoire of the great orchestras of the 1940s and 1950s. The course focuses on techniques such as marcato, syncopation, and different accompaniment styles, providing practical tools for both professional performance and the development of a distinctive musical voice.",
+        "bass-button": "Download",  
+        "title-class2": "Traditional Tango Orchestra",
+        "class-p3": "A workshop designed for musicians of any instrument who are interested in understanding the musical and aesthetic principles of Argentina's great traditional tango orchestras. Through analysis, ensemble rehearsal, and the study of original repertoire, participants explore the interpretative resources that shaped the sound of the orchestras led by Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán, and Juan D'Arienzo."
+    },
     "sheet-music": {
         "title-sheet": "SHEET MUSIC",
         "sheet-music-p": "Here I share a selection of scores that range from tango and Argentine popular music to contemporary compositions and arrangements of different genres. Each piece reflects my interest in creating versatile and accessible music, without neglecting depth and quality .",
@@ -81,10 +105,12 @@
         "title-sheet3": "Suite for string ensemble, bandoneon, cello and piano",
         "title-sheet4": "Dance for piano and double bass",
         "title-sheet5": "Works for string quintet and piano",
-        "title-sheet6": "Arrangements for different formats"
+        "title-sheet6": "Arrangements for different formats",
+        "sheet-button": "Download"
     },
     "donations": {
         "title-donations": "DONATIONS",
-        "donations-p": "You can support my content by making a small monthly or one-time contribution, to be able to make more and better content."
+        "donations-p": "You can support my content by making a small monthly or one-time contribution, to be able to make more and better content.",
+       "donations-button": "Contribute"
     }
 }

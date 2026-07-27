@@ -1847,7 +1847,7 @@ body.dark-mode .prensa {
 body.dark-mode .donaciones,
 body.dark-mode .colaboraciones,
 body.dark-mode .pedagogias {
-  border-bottom: 1px solid peru;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .footer-parrafo {
@@ -2541,7 +2541,10 @@ body.dark-mode .pedagogias {
 }
 
 /********SECCION PARTITURAS MOBILE *********/
-
+.partituras-pa {
+color: #7e3333;
+font-weight: 500;
+}
 .partituras1 {
   margin-top: 1rem;
   width: 90vw;
@@ -2644,13 +2647,13 @@ body.dark-mode .piano-descargas {
 }
 
 body.dark-mode .piano-descargas:hover {
-  background-color:#7e3333;
+  background-color:whitesmoke;
   color: black;
 }
 
 body.dark-mode .piano-descargas::before {
   background-color: black;
-  color: #7e3333;
+  color: whitesmoke;
 }
 
 .mostrar-icono {
@@ -2719,6 +2722,7 @@ body.dark-mode .piano-descargas::before {
     margin-bottom: 1.6rem;
     font-size: 1rem;
     border-top: none;
+    color: #7e3333;
   }
 
   .partituras-pa1,

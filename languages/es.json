@@ -35,21 +35,44 @@
         "title-g": "FOTOS"
     },
     "music": {
-        "title-m": "MUSICA"
+        "title-m": "MUSICA",
+        "music-button": "Ver más"
     },
-    "media": {
-        "title-v": "MULTIMEDIA"
-    },
+   "videos": {
+    "title-v": "MEDIA",
+    "creation": "Creación",
+    "suite-title": "Suite Villa Urquiza",
+    "suite-desc": "Obra original para ensamble.",
+    "sheldon-title": "Sheldon",
+    "sheldon-desc": "Obra original con videoclip oficial.",
+    "michelangelo-title": "Michelangelo 70",
+    "michelangelo-desc": "Arreglo sobre una obra de Astor Piazzolla interpretado por Basto Ensamble",
+    "nube-title": "Tema de la Nube",
+    "nube-desc": "Arreglo sobre una obra de Gerardo Gandini.",
+    "collaborations": "Colaboraciones",
+    "piso-title": "Piso Mojado",
+    "piso-desc": "Colaboración artística.",
+    "live": "En vivo",
+    "carnegie-title": "Carnegie Hall",
+    "carnegie-desc": "Presentación junto a Rascasuelos en Carnegie Hall (Nueva York).",
+    "button": "Ver más"
+},
     "agenda": {
         "title-a": "AGENDA",
         "view-more": "Ver más",
         "view-less": "Ver menos",
         "view-map": "Ver en el mapa"
     },
-    "contact": {
-        "title-c": "CONTACTO",
-        "contact-p": "Para comunicarte con Cristian, escribí a cristianbasto79@gmail.com"
-    },
+  "contact": {
+    "title-c": "CONTACTO",
+    "name-label": "Nombre",
+    "name-placeholder": "Tu nombre",
+    "email-label": "Email",
+    "email-placeholder": "tu@email.com",
+    "message-label": "Mensaje",
+    "message-placeholder": "Escribí tu consulta",
+    "send-btn": "Enviar consulta"
+},
     "press": {
         "kit": "Kit de Prensa"
     },
@@ -69,6 +92,7 @@
         "title-workshops": "WORKSHOPS",
         "title-class1": "Contrabajo en el Tango",
         "class-p2": "Workshop dedicado al estudio del rol del contrabajo dentro de la orquesta típica, abordando aspectos técnicos, estilísticos y musicales a partir del repertorio de las grandes orquestas de las décadas de 1940 y 1950. El trabajo se centra en recursos como el marcato, la síncopa y las distintas formas de acompañamiento, ofreciendo herramientas aplicables tanto a la práctica profesional como al desarrollo de una identidad interpretativa propia.",
+        "bass-button": "Descargar",
         "title-class2": "Orquesta Típica",
         "class-p3": "Workshop dirigido a músicos de cualquier instrumento interesados en comprender el funcionamiento estético y musical de las grandes orquestas típicas argentinas. A través del análisis, el ensayo colectivo y el trabajo sobre repertorio original, se exploran los recursos interpretativos que definieron el sonido de las orquestas de Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán y Juan D'Arienzo."
     },
@@ -81,10 +105,12 @@
         "title-sheet3": "Suite para ensamble de cuerdas, bandoneón, cello y piano",
         "title-sheet4": "Danza para piano y contrabajo",
         "title-sheet5": "Obras para quinteto de cuerdas y piano",
-        "title-sheet6": "Arreglos para distintos formatos"
+        "title-sheet6": "Arreglos para distintos formatos",
+        "sheet-button": "Descargar"
     },
     "donations": {
         "title-donations": "DONACIONES",
-        "donations-p": "Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder hacer más y mejor contenido."
+        "donations-p": "Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder hacer más y mejor contenido.",
+       "donations-button": "Donar"
     }
 }

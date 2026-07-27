@@ -46,36 +46,35 @@
                     <ul class="navbar-nav">
                         <div class="menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="#bioContainer" data-section="header"
-                                    data-value="bio">PERFIL</a>
+                                <a class="nav-link" href="#bioContainer" data-section="header" data-value="bio"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#musicaContainer" data-section="header"
-                                    data-value="music">MUSICA</a>
+                                    data-value="music"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link colaboracion" aria-current="page" href="./pages/colaboraciones.html"
-                                    data-section="header" data-value="colaborations">COLABORACIONES</a>
+                                    data-section="header" data-value="colaborations"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#videosContainer" data-section="header"
-                                    data-value="media">MEDIA</a>
+                                    data-value="media"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pedagogia" href="./pages/pedagogia.html" data-section="header"
-                                    data-value="classes">CLASES</a>
+                                    data-value="classes"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link partitura" href="./pages/partituras.html" data-section="header"
-                                    data-value="sheet-music">PARTITURAS</a>
+                                    data-value="sheet-music"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#agendaContainer" data-section="header"
-                                    data-value="agenda">AGENDA</a>
+                                    data-value="agenda"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contactoContainer" data-section="header"
-                                    data-value="contact">CONTACTO</a>
+                                    data-value="contact"></a>
                             </li>
                         </div>
                         <li class="nav-item">
@@ -243,92 +242,117 @@
                         loading="lazy"></iframe>
                 </div> -->
             </div>
-            <a href="./pages/colaboraciones.html"><button class="btn-musica colab">Ver más</button></a>
+            <a href="./pages/colaboraciones.html"><button class="btn-musica colab" data-section="music"
+                    data-value="music-button"></button></a>
         </section>
 
         <section class="videos fade-in" id="videosContainer">
             <div class="contenedor-titulos">
-                <h2 class="videos-titulo" data-section="videos" data-value="title-v">MEDIA</h2>
+                <h2 class="videos-titulo" data-section="videos" data-value="title-v"></h2>
             </div>
+
             <!-- ================= CREACIÓN ================= -->
 
             <div class="videos-categoria container">
-                <h3 class="videos-subtitulo">Creación</h3>
+                <h3 class="videos-subtitulo" data-section="videos" data-value="creation"></h3>
+
                 <div class="videos-grilla">
+
                     <article class="video-card">
                         <iframe src="https://www.youtube.com/embed/4ZF4WjQQCyg?si=QMcFjFqZFw3aoR6O"
                             title="Suite Villa Urquiza" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
-                        <h4>Suite Villa Urquiza</h4>
-                        <p>Obra original para ensamble.</p>
+
+                        <h4 data-section="videos" data-value="suite-title"></h4>
+                        <p data-section="videos" data-value="suite-desc"></p>
                     </article>
+
                     <article class="video-card">
                         <iframe src="https://www.youtube.com/embed/ZXwnQY4hEn4?si=aRnNoLDhAkfWsvAb" title="Sheldon"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
-                        <h4>Sheldon</h4>
-                        <p>Obra original con videoclip oficial.</p>
+
+                        <h4 data-section="videos" data-value="sheldon-title"></h4>
+                        <p data-section="videos" data-value="sheldon-desc"></p>
                     </article>
+
                     <article class="video-card">
                         <iframe src="https://www.youtube.com/embed/yyAd8UQtXTo?si=tYkN0_8PEmIYbOAh"
                             title="Michelangelo 70" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
-                        <h4>Michelangelo 70</h4>
-                        <p>Arreglo sobre una obra de Astor Piazzolla interpretado por Basto Ensamble.</p>
+
+                        <h4 data-section="videos" data-value="michelangelo-title"></h4>
+                        <p data-section="videos" data-value="michelangelo-desc"></p>
                     </article>
+
                     <article class="video-card">
                         <iframe src="https://www.youtube.com/embed/aEtsrS7AGZM?si=AskbN1g4p2iKcAU_"
                             title="Tema de la Nube" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
-                        <h4>Tema de la Nube</h4>
-                        <p>Arreglo sobre una obra de Gerardo Gandini.</p>
+
+                        <h4 data-section="videos" data-value="nube-title"></h4>
+                        <p data-section="videos" data-value="nube-desc"></p>
                     </article>
+
                 </div>
             </div>
+
             <!-- ================= SEGUNDA FILA ================= -->
+
             <div class="videos-secundarias container">
+
                 <!-- COLABORACIONES -->
+
                 <div class="videos-categoria">
-                    <h3 class="videos-subtitulo">Colaboraciones</h3>
+                    <h3 class="videos-subtitulo" data-section="videos" data-value="collaborations"></h3>
+
                     <div class="videos-grilla-sec">
                         <article class="video-card">
                             <iframe src="https://www.youtube.com/embed/8n32tQMw6jk?si=WHMzhC4C9BBlcXZJ"
                                 title="Piso Mojado" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
-                            <h4>Piso Mojado</h4>
-                            <p>Colaboración artística.</p>
+
+                            <h4 data-section="videos" data-value="piso-title"></h4>
+                            <p data-section="videos" data-value="piso-desc"></p>
                         </article>
                     </div>
                 </div>
+
                 <!-- EN VIVO -->
+
                 <div class="videos-categoria">
-                    <h3 class="videos-subtitulo">En vivo</h3>
+                    <h3 class="videos-subtitulo" data-section="videos" data-value="live"></h3>
+
                     <div class="videos-grilla-sec">
                         <article class="video-card">
                             <iframe src="https://www.youtube.com/embed/cS7g1r8yc38?si=JzznhLX8nCXRnT6C"
                                 title="Carnegie Hall" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
-                            <h4>Carnegie Hall</h4>
-                            <p>Presentación junto a Rascasuelos en Carnegie Hall (Nueva York).</p>
+
+                            <h4 data-section="videos" data-value="carnegie-title"></h4>
+                            <p data-section="videos" data-value="carnegie-desc"></p>
                         </article>
                     </div>
                 </div>
+
             </div>
+
             <a href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w" target="_blank">
-                <button class="btn-videos tablet">Ver más</button>
+                <button class="btn-videos tablet" data-section="videos" data-value="button"></button>
             </a>
         </section>
 
         <section class="agenda fade-in" id="agendaContainer">
             <div class="contenedor-titulos">
-                <h2 class="agenda-titulo" data-section="agenda" data-value="title-a">AGENDA</h2>
+                <h2 class="agenda-titulo" data-section="agenda" data-value="title-a"></h2>
             </div>
+
             <div class="agenda-lista container">
                 <ul id="eventos"></ul>
             </div>
@@ -337,49 +361,74 @@
         <section class="contacto fade-in" id="contactoContainer">
             <div class="contacto-bg container">
                 <div class="contacto-overlay"></div>
+
                 <div class="contacto-contenido">
-                    <h2 class="contacto-titulo" data-section="contact" data-value="title-c">CONTACTO</h2>
+                    <h2 class="contacto-titulo" data-section="contact" data-value="title-c"></h2>
 
                     <div class="contacto-iconos">
                         <a class="btn-whatsapp-icon" href="https://wa.me/5491154641609" target="_blank"
                             aria-label="WhatsApp">
                             <i class="bi bi-whatsapp"></i>
                         </a>
+
                         <a class="nav-link"
                             href="https://open.spotify.com/intl-es/artist/3E3wkeQEQLDeW8T29vBpRz?si=KnFjaQ85T3qEKlw1AbGz9Q"
-                            target="_blank" aria-label="Spotify"><i class="bi bi-spotify"></i></a>
+                            target="_blank" aria-label="Spotify">
+                            <i class="bi bi-spotify"></i>
+                        </a>
+
                         <a class="nav-link" href="https://www.instagram.com/bastocristian/" target="_blank"
-                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
                         <a class="nav-link" href="https://www.facebook.com/cristianbastook" target="_blank"
-                            aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
                         <a class="nav-link" href="https://www.youtube.com/channel/UCib3Ki2MnRiySZNAdrgof4w"
-                            target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                        <a class="nav-link" href="mailto:cristianbasto79@gmail.com" target="_blank" aria-label="Mail"><i
-                                class="bi bi-envelope-fill"></i></a>
+                            target="_blank" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a class="nav-link" href="mailto:cristianbasto79@gmail.com" target="_blank" aria-label="Mail">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
                     </div>
 
                     <div class="contacto-form-wrap">
                         <form class="contacto-form" action="https://formspree.io/f/your-form-id" method="POST">
+
                             <div class="contacto-form-grid">
                                 <div class="contacto-form-group">
-                                    <label class="contacto-form-label" for="contacto-nombre">Nombre</label>
-                                    <input id="contacto-nombre" name="name" type="text" placeholder="Tu nombre"
-                                        required>
+                                    <label class="contacto-form-label" for="contacto-nombre" data-section="contact"
+                                        data-value="name-label"></label>
+                                    <input id="contacto-nombre" name="name" type="text" data-section="contact"
+                                        data-value-placeholder="name-placeholder" required>
                                 </div>
                                 <div class="contacto-form-group">
-                                    <label class="contacto-form-label" for="contacto-email">Email</label>
-                                    <input id="contacto-email" name="email" type="email" placeholder="tu@email.com"
-                                        required>
+                                    <label class="contacto-form-label" for="contacto-email" data-section="contact"
+                                        data-value="email-label"></label>
+
+                                    <input id="contacto-email" name="email" type="email" data-section="contact"
+                                        data-value-placeholder="email-placeholder" required>
                                 </div>
                             </div>
                             <div class="contacto-form-group">
-                                <label class="contacto-form-label" for="contacto-mensaje">Mensaje</label>
-                                <textarea id="contacto-mensaje" name="message" rows="4"
-                                    placeholder="Escribí tu consulta" required></textarea>
+                                <label class="contacto-form-label" for="contacto-mensaje" data-section="contact"
+                                    data-value="message-label"></label>
+
+                                <textarea id="contacto-mensaje" name="message" rows="4" data-section="contact"
+                                    data-value-placeholder="message-placeholder" required></textarea>
                             </div>
-                            <button class="contacto-form-btn" type="submit">Enviar consulta</button>
+                            <button class="contacto-form-btn" type="submit" data-section="contact"
+                                data-value="send-btn">
+                            </button>
+
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -416,6 +465,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+    <script src="./js/darkMode.js"></script>
     <script src="./js/language.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/agenda.js"></script>

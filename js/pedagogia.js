@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos que deseas animar
     const elements = document.querySelectorAll('.fade-in');

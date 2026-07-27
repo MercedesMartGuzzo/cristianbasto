@@ -1,17 +1,4 @@
 
-/* function activarBordesPartituras(contenedor) {
-    contenedor.classList.add("border-visible-top");
-    contenedor.classList.add("border-visible-left");
-    console.log(`Bordes de ${contenedor.id} activados`);
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    let partituras1container = document.getElementById("partituras1Container");
-    console.log(partituras1container); // Verifica si el elemento se obtiene correctamente
-    if (partituras1container) {
-        activarBordesPartituras(partituras1container);
-    }
-}); */
 
 document.addEventListener('DOMContentLoaded', function () {
     const pianoParts = document.querySelectorAll('.piano-partes');
@@ -83,41 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 }); 
 
-//ACTIVAR-DESACTIVAR DARK-MODE//
-document.addEventListener("DOMContentLoaded", () => {
-    const botonColorMode = document.querySelector("#color-mode");
-    const body = document.body;
 
-    let darkMode = localStorage.getItem("dark-mode");
-
-    function activarDarkMode() {
-        body.classList.add("dark-mode");
-        botonColorMode.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
-        localStorage.setItem("dark-mode", "activado");
-    }
-
-    function desactivarDarkMode() {
-        body.classList.remove("dark-mode");
-        botonColorMode.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
-        localStorage.setItem("dark-mode", "desactivado");
-    }
-
-    if (darkMode === "activado") {
-        activarDarkMode();
-    } else {
-        desactivarDarkMode();
-    }
-
-    botonColorMode.addEventListener("click", () => {
-        darkMode = localStorage.getItem("dark-mode");
-
-        if (darkMode === "activado") {
-            desactivarDarkMode();
-        } else {
-            activarDarkMode();
-        }
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos que deseas animar
