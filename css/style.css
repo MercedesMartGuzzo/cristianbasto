@@ -103,6 +103,8 @@ body.dark-mode #eventos li,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
+body.dark-mode .piano-titulo,
+body.dark-mode .partituras1 h4,
 body.dark-mode .pedagogias,
 body.dark-mode .pedagogia-pa,
 body.dark-mode .pedagogia-pa2,
@@ -112,7 +114,11 @@ body.dark-mode .copi,
 body.dark-mode .footer h2,
 body.dark-mode .footer-titulo,
 body.dark-mode .footer-redes2,
-body.dark-mode .footer-parrafo2 {
+body.dark-mode .footer-parrafo2,
+body.dark-mode .workshop,
+body.dark-mode .workshop-title,
+body.dark-mode .colaboracione,
+body.dark-mode .discos{
   background-color: black;
   color: white;
 }
@@ -121,13 +127,33 @@ body.dark-mode .contacto-titulo {
   background-color: transparent;
 }
 
+body.dark-mode .mostrar-icono,
+body.dark-mode .mostrar-icono1 {
+  color: black;
+}
+
+body.dark-mode .piano-partes img,
+body.dark-mode .pedagogia-grilla ,
+body.dark-mode .piano1{
+  border: 1px solid whitesmoke;
+}
+
+
 body.dark-mode .footer2,
 body.dark-mode .prensa,
-body.dark-mode .contacto {
+body.dark-mode .contacto,
+body.dark-mode .partituras1 h4,
+body.dark-mode .donaciones-titulo,
+body.dark-mode .piano-titulo,
+body.dark-mode .workshop,
+body.dark-mode .colaboracione,
+body.dark-mode .discos{
   border-top: 1px solid whitesmoke;
 }
 
-body.dark-mode .donaciones-btn {
+body.dark-mode .donaciones-btn,
+body.dark-mode .piano-descargas {
+  color: whitesmoke;
   border: 1px solid whitesmoke;
 }
 
@@ -238,7 +264,7 @@ body.dark-mode .bio {
   .redes {
     padding-bottom: .3rem;
 
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 0.25rem;
   }
 
@@ -248,7 +274,7 @@ body.dark-mode .bio {
     justify-content: center;
     width: auto;
     height: auto;
-  } 
+  }
 
   .redes a i {
     font-size: 1.9rem;
@@ -359,7 +385,7 @@ body.dark-mode .bio {
   justify-content: start;
   align-items: center;
   margin: 0;
-/*   gap: .5em; */
+  /*   gap: .5em; */
 }
 
 .redes a::after {
@@ -676,7 +702,8 @@ body.dark-mode .bio {
 /********* HEADER DESKTOP NAV, PHOTO GRID Y SWIPPER*********/
 
 @media (min-width: 1200px) {
-   /**** swipper *****/
+
+  /**** swipper *****/
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
@@ -846,7 +873,7 @@ body.dark-mode .bio {
 
   .hero-title-pedagogia {
     top: 85%;
-  left: 70%;
+    left: 70%;
     font-size: 3rem;
   }
 
@@ -942,7 +969,7 @@ body.dark-mode .bio {
   top: 80%;
   left: 30%;
   padding: 0 .1rem;
-  color:#7e3333;
+  color: #7e3333;
   border: 1px solid #7e3333;
   background-color: whitesmoke;
   border-radius: 5px;
@@ -1217,7 +1244,7 @@ body.dark-mode .bio {
   justify-content: start;
   margin-bottom: 1rem;
   font-weight: 400;
-  font-size:2.3rem;
+  font-size: 2.3rem;
   background-color: peru;
   font-family: "Bowlby One", sans-serif;
   overflow: hidden;
@@ -1844,9 +1871,7 @@ body.dark-mode .prensa {
   border-bottom: 1px solid whitesmoke;
 }
 
-body.dark-mode .donaciones,
-body.dark-mode .colaboraciones,
-body.dark-mode .pedagogias {
+body.dark-mode .donaciones {
   border-bottom: 1px solid whitesmoke;
 }
 
@@ -2536,15 +2561,16 @@ body.dark-mode .pedagogias {
 }
 
 .navbar-toggler {
-  background-color:transparent;
+  background-color: transparent;
   border: 0;
 }
 
 /********SECCION PARTITURAS MOBILE *********/
 .partituras-pa {
-color: #7e3333;
-font-weight: 500;
+  color: #7e3333;
+  font-weight: 500;
 }
+
 .partituras1 {
   margin-top: 1rem;
   width: 90vw;
@@ -2565,13 +2591,15 @@ font-weight: 500;
   margin-top: 1rem;
   color: #7e3333;
   font-size: 1rem;
- font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
 }
-.partituras-pa p span{
+
+.partituras-pa p span {
   font-family: "Bowlby One", sans-serif;
   font-weight: 300;
 }
+
 .partituras-pa1 {
   margin-top: 1rem;
   color: black;
@@ -2647,7 +2675,7 @@ body.dark-mode .piano-descargas {
 }
 
 body.dark-mode .piano-descargas:hover {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -2662,7 +2690,7 @@ body.dark-mode .piano-descargas::before {
   position: absolute;
   font-size: 20px;
   color: #7e3333;
- /*  top: 0; */
+  /*  top: 0; */
   bottom: 0;
   right: 1%;
   z-index: 10;
@@ -2752,7 +2780,7 @@ body.dark-mode .piano-descargas::before {
     position: absolute;
     font-size: 20px;
     color: #7e3333;
-  /*   top: 0; */
+    /*   top: 0; */
     bottom: 0;
     right: 8%;
   }
@@ -2806,11 +2834,12 @@ body.dark-mode .piano-descargas::before {
 .pedagogia-contenedor {
   margin-top: 2rem;
 }
+
 .pedagogia-pa {
   margin-top: 1rem;
   color: #7e3333;
   font-size: 1rem;
-  
+
 }
 
 .pedagogia-pa p {
@@ -2818,7 +2847,8 @@ body.dark-mode .piano-descargas::before {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
 }
-.pedagogia-pa span{
+
+.pedagogia-pa span {
   font-family: "Bowlby One", sans-serif;
   font-weight: 300;
 }
@@ -2835,17 +2865,20 @@ body.dark-mode .piano-descargas::before {
   margin-bottom: 1rem;
 }
 
-.workshop,.workshop-title {
-  color:#7e3333;
+.workshop,
+.workshop-title {
+  color: #7e3333;
   font-size: 1.3rem;
   border-top: 1px solid #7e3333;
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
   text-wrap: balance;
 }
-.workshop-title{
+
+.workshop-title {
   border: none;
 }
+
 .pedagogia-grilla {
   border: 1px solid #7e3333;
   border-radius: 5px;
@@ -2912,7 +2945,7 @@ body.dark-mode .piano-descargas::before {
 @media(min-width :1200px) {
 
   .workshop {
-    color:#7e3333;
+    color: #7e3333;
     font-size: 1.5rem;
   }
 
