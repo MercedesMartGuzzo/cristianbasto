@@ -591,7 +591,6 @@ body.dark-mode .bio {
   font-size: 30px;
 }
 
-
 /***** header-tablet *****/
 
 @media(min-width: 768px) {
@@ -609,15 +608,23 @@ body.dark-mode .bio {
   .photo-grid img.horizontal1:hover {
     transform: scale(01.01);
   }
+  .menu{
+     gap: 3rem; 
+    padding-top: 3rem;
+  }
+  .redes {
+    font-size: 1.5rem;
+    gap: 1rem;
+    margin-top: 2rem
+  }
+
+   .iconos {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 @media(min-width:992px) {
-
-  .contenedor-titulos {
-    max-width: 992px;
-    margin: 0 auto;
-    margin-inline-start: 2rem;
-  }
 
   .navbar-nav {
     width: 100%;
@@ -655,6 +662,8 @@ body.dark-mode .bio {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
+    padding: 0;
   }
 
   .nav-item {
@@ -677,6 +686,16 @@ body.dark-mode .bio {
   .iconos {
     gap: 0.9rem;
   }
+
+  .lang-button {
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: whitesmoke;
+  font-family: "Bowlby One", sans-serif;
+  padding: 0;
+}
 
   .bi-moon-stars-fill {
     margin-right: .3rem;
@@ -776,6 +795,7 @@ body.dark-mode .bio {
   overflow: hidden;
 }
 
+
 .hero-img,
 .hero-img-partituras,
 .hero-img-pedagogia {
@@ -791,12 +811,17 @@ body.dark-mode .bio {
   transition: transform .2s ease-out;
 }
 
-.hero-img-partituras,
+.hero-img-partituras{
+    object-fit: cover;
+    object-position: center top;
+    transform: translate3d(0,0,0) scale(1);
+}
+
 .hero-img-pedagogia {
   object-position: 80% top;
 }
 
-.hero-title,
+/* .hero-title,
 .hero-title-partituras,
 .hero-title-pedagogia {
   position: absolute;
@@ -821,9 +846,9 @@ body.dark-mode .bio {
 .hero-title span {
   display: block;
   font-family: "Bowlby One", sans-serif;
-}
+} */
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
 
   .hero-title,
   .hero-title-partituras,
@@ -838,9 +863,9 @@ body.dark-mode .bio {
     top: 80%;
     left: 40%;
   }
-}
+} */
 
-@media (min-width:481px) and (max-width:991px) {
+/* @media (min-width:481px) and (max-width:991px) {
 
   .hero-title {
     left: 2rem;
@@ -855,11 +880,11 @@ body.dark-mode .bio {
     font-size: 3rem;
   }
 
-}
+} */
 
 @media (min-width:992px) {
 
-  .hero-title {
+ /*  .hero-title {
     left: 15%;
     top: 55%;
     font-size: 3rem;
@@ -875,12 +900,19 @@ body.dark-mode .bio {
     top: 85%;
     left: 70%;
     font-size: 3rem;
-  }
+  } */
 
-  .hero-img,
-  .hero-img-partituras {
+  .hero-img{
     object-position: center 30%;
   }
+  .hero-img-partituras{
+    object-position: center 12%;
+    transition:
+        transform .2s ease-out,
+        border-radius .35s ease;
+
+  }
+ 
 }
 
 /**** BOTONES *****/
@@ -889,8 +921,8 @@ body.dark-mode .bio {
   position: relative;
   background-color: transparent;
   padding: 10px;
-  color: #7e3333;
-  border: 1px solid #7e3333;
+  color:black;
+  border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
   margin-top: .5rem;
@@ -902,7 +934,7 @@ body.dark-mode .bio {
 }
 
 .piano-descargas:hover {
-  background-color: #7e3333;
+  background-color: black;
   color: white;
   transform: scale(1.1);
 }
@@ -969,8 +1001,8 @@ body.dark-mode .bio {
   top: 80%;
   left: 30%;
   padding: 0 .1rem;
-  color: #7e3333;
-  border: 1px solid #7e3333;
+  color:black;
+  border: 1px solid black;
   background-color: whitesmoke;
   border-radius: 5px;
   transform: scale(0);
@@ -1014,8 +1046,8 @@ body.dark-mode .bio {
   position: relative;
   background-color: white;
   padding: 10px;
-  color: #7e3333;
-  border: 1px solid #7e3333;
+  color: black;
+  border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
   margin-top: .5rem;
@@ -1026,7 +1058,7 @@ body.dark-mode .bio {
 }
 
 .donaciones-btn:hover {
-  background-color: #7e3333;
+  background-color:black;
   color: white;
   transform: scale(1.1);
 }
@@ -1035,8 +1067,8 @@ body.dark-mode .bio {
   position: absolute;
   content: "Donations";
   top: 75%;
-  color: #7e3333;
-  border: 1px solid #7e3333;
+  color: black;
+  border: 1px solid black;
   background-color: whitesmoke;
   padding: .1rem .2rem;
   border-radius: 5px;
@@ -1264,10 +1296,10 @@ body.dark-mode .bio {
 
 .discos,
 .colaboracione {
-  color: #7e3333;
+  color:black;
   font-size: 1.3rem;
   margin-top: 1.5em;
-  border-top: 1px solid #7e3333;
+  border-top: 1px solid black;
   padding-top: .5rem;
   /* margin-left: 2rem; */
   margin-bottom: 1rem;
@@ -2567,7 +2599,7 @@ body.dark-mode .donaciones {
 
 /********SECCION PARTITURAS MOBILE *********/
 .partituras-pa {
-  color: #7e3333;
+  color: black;
   font-weight: 500;
 }
 
@@ -2589,7 +2621,7 @@ body.dark-mode .donaciones {
 
 .partituras-pa p {
   margin-top: 1rem;
-  color: #7e3333;
+  color: black;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
@@ -2624,13 +2656,13 @@ body.dark-mode .donaciones {
 }
 
 .arreglos {
-  border-top: 1px solid #7e3333;
+  border-top: 1px solid black;
   padding-top: 1rem;
   text-wrap: balance;
 }
 
 .partituras1 h4 {
-  color: #7e3333;
+  color:black;
   font-size: 1.3rem;
   font-family: "Bowlby One", sans-serif;
 }
@@ -2640,8 +2672,8 @@ body.dark-mode .donaciones {
   flex-direction: column;
 }
 
-.piano-titulo {
-  color: #7e3333;
+.piano-titulo-a,.piano-titulo {
+  color: black;
   margin-top: 1.5rem;
   justify-content: start;
   align-items: center;
@@ -2650,14 +2682,16 @@ body.dark-mode .donaciones {
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
 }
-
+.piano-titulo-a{
+  border-top: none;
+}
 .piano-portada {
   position: relative;
 }
 
 .piano-partes img {
   margin-top: .5rem;
-  border: 1px solid #7e3333;
+  border: 1px solid black;
   border-radius: 5px;
   position: relative;
 }
@@ -2689,7 +2723,7 @@ body.dark-mode .piano-descargas::before {
   margin: 10px;
   position: absolute;
   font-size: 20px;
-  color: #7e3333;
+  color: black;
   /*  top: 0; */
   bottom: 0;
   right: 1%;
@@ -2701,21 +2735,21 @@ body.dark-mode .piano-descargas::before {
 .arreglos-titulo,
 .surera-titulo,
 .donaciones-titulo {
-  color: #7e3333;
+  color: black;
   margin-top: 2.5rem;
   justify-content: start;
   align-items: center;
   display: flex;
   margin-bottom: 1rem;
-  border-top: 1px solid #7e3333;
+  border-top: 1px solid black;
   padding-top: 1rem;
   text-wrap: balance;
   font-family: "Bowlby One", sans-serif;
 }
 
 .donaciones-titulo {
-  color: #7e3333;
-  border-top: 1px solid #7e3333;
+  color:black;
+  border-top: 1px solid black;
 }
 
 .donaciones {
@@ -2750,7 +2784,7 @@ body.dark-mode .piano-descargas::before {
     margin-bottom: 1.6rem;
     font-size: 1rem;
     border-top: none;
-    color: #7e3333;
+    color: black;
   }
 
   .partituras-pa1,
@@ -2764,7 +2798,7 @@ body.dark-mode .piano-descargas::before {
   }
 
   .partituras1 h4 {
-    color: #7e3333;
+    color: black;
     font-size: 1.6rem;
   }
 
@@ -2779,7 +2813,7 @@ body.dark-mode .piano-descargas::before {
     margin: 10px;
     position: absolute;
     font-size: 20px;
-    color: #7e3333;
+    color: black;
     /*   top: 0; */
     bottom: 0;
     right: 8%;
@@ -2802,19 +2836,19 @@ body.dark-mode .piano-descargas::before {
   .quinteto-titulo,
   .arreglos-titulo,
   .donaciones-titulo {
-    color: #7e3333;
+    color:black;
     margin-top: 2.5rem;
     justify-content: start;
     align-items: center;
     display: flex;
     margin-bottom: 1rem;
-    border-top: 1px solid #7e3333;
+    border-top: 1px solid black;
     padding-top: 1rem;
   }
 
   .donaciones-titulo {
-    color: #7e3333;
-    border-top: 1px solid #7e3333;
+    color: black;
+    border-top: 1px solid black;
   }
 }
 
@@ -2837,7 +2871,7 @@ body.dark-mode .piano-descargas::before {
 
 .pedagogia-pa {
   margin-top: 1rem;
-  color: #7e3333;
+  color: black;
   font-size: 1rem;
 
 }
@@ -2867,9 +2901,9 @@ body.dark-mode .piano-descargas::before {
 
 .workshop,
 .workshop-title {
-  color: #7e3333;
+  color: black;
   font-size: 1.3rem;
-  border-top: 1px solid #7e3333;
+  border-top: 1px solid black;
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
   text-wrap: balance;
@@ -2880,7 +2914,7 @@ body.dark-mode .piano-descargas::before {
 }
 
 .pedagogia-grilla {
-  border: 1px solid #7e3333;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 16px;
   margin-top: 1.5rem;
@@ -2891,7 +2925,7 @@ body.dark-mode .piano-descargas::before {
   margin: 10px;
   position: absolute;
   font-size: 20px;
-  color: #7e3333;
+  color: black;
   bottom: 0;
   right: 1%;
   z-index: 10;
@@ -2945,7 +2979,7 @@ body.dark-mode .piano-descargas::before {
 @media(min-width :1200px) {
 
   .workshop {
-    color: #7e3333;
+    color: black;
     font-size: 1.5rem;
   }
 
@@ -3042,7 +3076,7 @@ body.dark-mode .piano-descargas::before {
   transition: transform 0.2s ease-out;
 }
 
-.colaboraciones-titulo {
+/* .colaboraciones-titulo {
   position: absolute;
   z-index: 2;
   left: 2rem;
@@ -3055,7 +3089,7 @@ body.dark-mode .piano-descargas::before {
   text-shadow: 0 0 18px rgba(0, 0, 0, 0.75);
   width: calc(100% - 4rem);
   font-family: "Bowlby One", sans-serif;
-}
+} */
 
 .colaboraciones {
   margin-top: 1rem;
@@ -3088,7 +3122,7 @@ body.dark-mode .piano-descargas::before {
   flex-direction: column;
   gap: .3rem;
   justify-content: center;
-  border: 1px solid #7e3333;
+  border: 1px solid black;
   border-radius: 12px;
   padding: 1rem;
 }
@@ -3098,13 +3132,13 @@ body.dark-mode .piano-descargas::before {
     object-position: 35% 20%;
   }
 
-  .colaboraciones-titulo {
+ /*  .colaboraciones-titulo {
     font-size: 3.4rem;
     left: 2rem;
     top: 50%;
     transform: translateY(-50%);
     width: auto;
-  }
+  } */
 
   .spotify1 {
     display: grid;
@@ -3127,7 +3161,7 @@ body.dark-mode .piano-descargas::before {
     flex-direction: column;
     gap: .3rem;
     justify-content: center;
-    border: 1px solid #7e3333;
+    border: 1px solid black;
     border-radius: 12px;
     padding: 1rem;
   }
@@ -3143,7 +3177,7 @@ body.dark-mode .piano-descargas::before {
     object-position: 30% 18%;
   }
 
-  .colaboraciones-titulo {
+/*   .colaboraciones-titulo {
     font-size: 3rem;
     right: 2rem;
     top: 80%;
@@ -3154,7 +3188,7 @@ body.dark-mode .piano-descargas::before {
     font-family: "Bowlby One", sans-serif;
     color: whitesmoke;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.221);
-  }
+  } */
 
   .colaboraciones {
     margin-bottom: 1rem;
@@ -3202,7 +3236,7 @@ body.dark-mode .piano-descargas::before {
     gap: .3rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid #7e3333;
+    border: 1px solid black;
     border-radius: 12px;
     padding: 1rem;
     height: 500px;

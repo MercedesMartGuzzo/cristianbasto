@@ -60,10 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const desplazamiento = scrollY * 0.45;
 
-            const escala = Math.max(
-                1.20 - scrollY * 0.0007,
-                1
-            );
+            const escala = window.innerWidth <= 768
+                ? Math.max(1.0 - scrollY * 0.0003, 1)
+                : Math.max(1 - scrollY * 0.0002, 1);
 
             imagen.style.transform =
                 `translate3d(0,${desplazamiento}px,0) scale(${escala})`;
