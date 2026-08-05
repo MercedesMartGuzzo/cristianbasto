@@ -92,25 +92,27 @@
         "title-workshops": "WORKSHOPS",
         "title-class1": "Double Bass in Tango",
         "class-p2": "A workshop dedicated to the study of the role of the double bass within the traditional tango orchestra, covering technical, stylistic, and musical aspects through the repertoire of the great orchestras of the 1940s and 1950s. The course focuses on techniques such as marcato, syncopation, and different accompaniment styles, providing practical tools for both professional performance and the development of a distinctive musical voice.",
-        "bass-button": "Download",  
+        "bass-button": "Download",
         "title-class2": "Traditional Tango Orchestra",
         "class-p3": "A workshop designed for musicians of any instrument who are interested in understanding the musical and aesthetic principles of Argentina's great traditional tango orchestras. Through analysis, ensemble rehearsal, and the study of original repertoire, participants explore the interpretative resources that shaped the sound of the orchestras led by Aníbal Troilo, Osvaldo Pugliese, Horacio Salgán, and Juan D'Arienzo."
     },
-    "sheet-music": {
-        "title-sheet": "SHEET MUSIC",
-        "sheet-music-p": "Here I share a selection of scores that range from tango and Argentine popular music to contemporary compositions and arrangements of different genres. Each piece reflects my interest in creating versatile and accessible music, without neglecting depth and quality .",
-        "title-sheet1": "Compositions and arrangements",
-        "sheet-music-p1": "My compositions explore innovative sounds and textures, influenced by contemporary music and current technologies. Each work is an invitation to discover the unexpected within the familiar. In my arrangements, the focus is to transform and reinventing known melodies, adapting them to explore new musical perspectives I have collaborated on albums such as Pasa by Limón García, A Berisso by Noelia Sinkunas, ¿Y el fin del amor? Laso, among others, providing a distinctive touch to each piece. In this section, you will find arrangements designed for various groups and styles, such as orchestras, ensembles and quartets. If you have a musical project or group and are looking for original arrangements or compositions, you can count on me. to give a unique and professional twist to each performance.",
-        "title-sheet2": "Piano Solo",
-        "title-sheet3": "Suite for string ensemble, bandoneon, cello and piano",
-        "title-sheet4": "Dance for piano and double bass",
-        "title-sheet5": "Works for string quintet and piano",
-        "title-sheet6": "Arrangements for different formats",
-        "sheet-button": "Download"
-    },
+   "sheet-music": {
+    "title-sheet": "SHEET MUSIC",
+    "title-sheet1": "COMPOSITION",
+    "sheet-music-p": "<p>Composition, arranging, and musical direction are at the heart of Cristian Basto's creative work. His output includes original compositions, arrangements for ensembles and tango orchestras, interdisciplinary projects, and record productions, always seeking to bring Argentine musical tradition into dialogue with contemporary languages.</p><p>As an arranger, he has contributed to critically acclaimed and award-winning recordings, including <span class='bio-highlight'>¿Y el fin del amor?</span> (Mariana Mazú), <span class='bio-highlight'>La Caldera</span> (Julieta Laso), <span class='bio-highlight'>Salve</span> (Noelia Sinkunas), and <span class='bio-highlight'>Pasa</span> (Limón García).</p><p>His compositions and arrangements are part of the repertoire of various ensembles and have been performed in concerts, recordings, and international festivals.</p><p>He also creates commissioned compositions, arrangements, and provides musical direction for recordings, chamber music, ensembles, orchestras, and audiovisual productions.</p>",
+    "title-sheet1b": "Sheet Music Store",
+    "sheet-music-p2": "<p><span class='bio-highlight'>What is included with each digital publication?</span></p><p>All publications are high-quality self-published editions, ready to print and use on the music stand. When you purchase a composition or arrangement, you will receive the complete digital package, including:</p><p><span class='bio-highlight'>Full Score</span> in high-resolution vector PDF format.</p><p><span class='bio-highlight'>Complete set of individual parts</span> for each instrument.</p>",
+    "title-sheet1c": "Catalog & Pricing",
+    "title-sheet2": "Solo Piano",
+    "title-sheet3": "Suite for String Ensemble, Bandoneón, Cello and Piano",
+    "title-sheet4": "Dance for Piano and Double Bass",
+    "title-sheet5": "Works for String Quintet and Piano",
+    "title-sheet6": "Arrangements for Various Ensembles",
+    "sheet-button": "Buy"
+},
     "donations": {
         "title-donations": "DONATIONS",
         "donations-p": "You can support my content by making a small monthly or one-time contribution, to be able to make more and better content.",
-       "donations-button": "Contribute"
+        "donations-button": "Contribute"
     }
 }

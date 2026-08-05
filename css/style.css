@@ -103,7 +103,7 @@ body.dark-mode #eventos li,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
-body.dark-mode .piano-titulo,
+body.dark-mode .piano-titulo,body.dark-mode .piano-titulo-a,
 body.dark-mode .partituras1 h4,
 body.dark-mode .pedagogias,
 body.dark-mode .pedagogia-pa,
@@ -157,31 +157,19 @@ body.dark-mode .piano-descargas {
   border: 1px solid whitesmoke;
 }
 
-body.dark-mode .donaciones-btn::before {
-  color: black;
-  border: 1px solid black;
-}
+
 
 body.dark-mode .btn-videos:hover {
   color: black;
 }
 
-body.dark-mode .btn-videos::before {
-
-  border: 1px solid whitesmoke;
-  background-color: black;
-}
 
 body.dark-mode .btn-musica:hover {
   color: black;
   border: 1px solid whitesmoke;
 }
 
-body.dark-mode .btn-musica:before {
-  background-color: black;
-  border: 1px solid whitesmoke;
 
-}
 
 body.dark-mode .bio {
   border-bottom: 1px solid whitesmoke;
@@ -994,54 +982,6 @@ body.dark-mode .bio {
   border: 1px solid #2b212b;
 }
 
-.piano-descargas::before {
-  position: absolute;
-  content: "Douwnload";
-  font-size: .7rem;
-  top: 80%;
-  left: 30%;
-  padding: 0 .1rem;
-  color:black;
-  border: 1px solid black;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  transform: scale(0);
-  transform-origin: top;
-  transition: .3s;
-}
-
-.btn-musica::before {
-  position: absolute;
-  content: "See more";
-  font-size: .7rem;
-  top: 70%;
-  left: 30%;
-  padding: 0 .1rem;
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
-  background-color: peru;
-  border-radius: 5px;
-  transform: scale(0);
-  transform-origin: top;
-  transition: .3s;
-}
-
-.btn-videos::before {
-  position: absolute;
-  content: "See all";
-  font-size: .7rem;
-  top: 70%;
-  right: 0;
-  padding: 0 .1rem;
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
-  background-color: #556B2F;
-  border-radius: 5px;
-  transform: scale(0);
-  transform-origin: top;
-  transition: .3s;
-}
-
 .donaciones-btn {
   position: relative;
   background-color: white;
@@ -1063,28 +1003,7 @@ body.dark-mode .bio {
   transform: scale(1.1);
 }
 
-.donaciones-btn::before {
-  position: absolute;
-  content: "Donations";
-  top: 75%;
-  color: black;
-  border: 1px solid black;
-  background-color: whitesmoke;
-  padding: .1rem .2rem;
-  border-radius: 5px;
-  transform: scale(0);
-  transform-origin: top;
-  transition: .3s;
-  margin-top: .2rem;
-}
 
-.donaciones-btn:hover::before,
-.piano-descargas:hover::before,
-.btn-videos:hover::before,
-.btn-musica:hover::before {
-  transform: scale(1);
-
-}
 
 /**** SECCION BIO *****/
 
@@ -2678,7 +2597,7 @@ body.dark-mode .donaciones {
   justify-content: start;
   align-items: center;
   display: flex;
-  border-top: 1px solid #7e3333;
+  border-top: 1px solid black;
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
 }
@@ -2713,10 +2632,7 @@ body.dark-mode .piano-descargas:hover {
   color: black;
 }
 
-body.dark-mode .piano-descargas::before {
-  background-color: black;
-  color: whitesmoke;
-}
+
 
 .mostrar-icono {
   cursor: pointer;

@@ -38,41 +38,41 @@
         "title-m": "MUSICA",
         "music-button": "Ver más"
     },
-   "videos": {
-    "title-v": "MEDIA",
-    "creation": "Creación",
-    "suite-title": "Suite Villa Urquiza",
-    "suite-desc": "Obra original para ensamble.",
-    "sheldon-title": "Sheldon",
-    "sheldon-desc": "Obra original con videoclip oficial.",
-    "michelangelo-title": "Michelangelo 70",
-    "michelangelo-desc": "Arreglo sobre una obra de Astor Piazzolla interpretado por Basto Ensamble",
-    "nube-title": "Tema de la Nube",
-    "nube-desc": "Arreglo sobre una obra de Gerardo Gandini.",
-    "collaborations": "Colaboraciones",
-    "piso-title": "Piso Mojado",
-    "piso-desc": "Colaboración artística.",
-    "live": "En vivo",
-    "carnegie-title": "Carnegie Hall",
-    "carnegie-desc": "Presentación junto a Rascasuelos en Carnegie Hall (Nueva York).",
-    "button": "Ver más"
-},
+    "videos": {
+        "title-v": "MEDIA",
+        "creation": "Creación",
+        "suite-title": "Suite Villa Urquiza",
+        "suite-desc": "Obra original para ensamble.",
+        "sheldon-title": "Sheldon",
+        "sheldon-desc": "Obra original con videoclip oficial.",
+        "michelangelo-title": "Michelangelo 70",
+        "michelangelo-desc": "Arreglo sobre una obra de Astor Piazzolla interpretado por Basto Ensamble",
+        "nube-title": "Tema de la Nube",
+        "nube-desc": "Arreglo sobre una obra de Gerardo Gandini.",
+        "collaborations": "Colaboraciones",
+        "piso-title": "Piso Mojado",
+        "piso-desc": "Colaboración artística.",
+        "live": "En vivo",
+        "carnegie-title": "Carnegie Hall",
+        "carnegie-desc": "Presentación junto a Rascasuelos en Carnegie Hall (Nueva York).",
+        "button": "Ver más"
+    },
     "agenda": {
         "title-a": "AGENDA",
         "view-more": "Ver más",
         "view-less": "Ver menos",
         "view-map": "Ver en el mapa"
     },
-  "contact": {
-    "title-c": "CONTACTO",
-    "name-label": "Nombre",
-    "name-placeholder": "Tu nombre",
-    "email-label": "Email",
-    "email-placeholder": "tu@email.com",
-    "message-label": "Mensaje",
-    "message-placeholder": "Escribí tu consulta",
-    "send-btn": "Enviar consulta"
-},
+    "contact": {
+        "title-c": "CONTACTO",
+        "name-label": "Nombre",
+        "name-placeholder": "Tu nombre",
+        "email-label": "Email",
+        "email-placeholder": "tu@email.com",
+        "message-label": "Mensaje",
+        "message-placeholder": "Escribí tu consulta",
+        "send-btn": "Enviar consulta"
+    },
     "press": {
         "kit": "Kit de Prensa"
     },
@@ -88,7 +88,8 @@
     },
     "classes": {
         "title-class": "DOCENCIA",
-        "class-p": "<p>Ha dirigido ensambles y dictado cursos en instituciones de Argentina, España y Portugal, entre ellas la <span class='bio-highlight'>Academia Nacional del Tango</span>, <span class='bio-highlight'>Universidad Maimónides</span>, <span class='bio-highlight'>Academia Tango Club</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, la Orquesta Escuela Tibidabo (Barcelona), la <span class='bio-highlight'>Camerata Internacional de Barcelona</span> y la <span class='bio-highlight'>Orquestra de Cuerdas Lisboa Tanguera</span>, proyecto del que es fundador y director.</p><p>Su propuesta está dirigida a músicos profesionales, estudiantes avanzados e instituciones interesadas en el estudio del tango desde una perspectiva contemporánea.</p>",
+        "class-p-a": "<p>La actividad pedagógica constituye una extensión natural de la práctica artística de Cristian Basto. Desde hace más de quince años desarrolla proyectos de formación, dirección de ensambles y workshops especializados, combinando la experiencia escénica con la investigación sobre el lenguaje del tango y la música argentina contemporánea.</p>",
+        "class-p": "<p>Ha dirigido ensambles y dictado cursos en instituciones de Argentina, España y Portugal, entre ellas la <span class='bio-highlight'>Academia Nacional del Tango</span>, <span class='bio-highlight'>Universidad Maimónides</span>, <span class='bio-highlight'>Academia Tango Club</span>, <span class='bio-highlight'>Latitud Tango (Barcelona)</span>, la <span class='bio-highlight'>Orquesta Escuela Tibidabo (Barcelona)</span>, la <span class='bio-highlight'>Camerata Internacional de Barcelona</span> y la <span class='bio-highlight'>Orquestra de Cuerdas Lisboa Tanguera</span>, proyecto del que es fundador y director.</p><p>Su propuesta está dirigida a músicos profesionales, estudiantes avanzados e instituciones interesadas en el estudio del tango desde una perspectiva contemporánea.</p>",
         "title-workshops": "WORKSHOPS",
         "title-class1": "Contrabajo en el Tango",
         "class-p2": "Workshop dedicado al estudio del rol del contrabajo dentro de la orquesta típica, abordando aspectos técnicos, estilísticos y musicales a partir del repertorio de las grandes orquestas de las décadas de 1940 y 1950. El trabajo se centra en recursos como el marcato, la síncopa y las distintas formas de acompañamiento, ofreciendo herramientas aplicables tanto a la práctica profesional como al desarrollo de una identidad interpretativa propia.",
@@ -98,19 +99,21 @@
     },
     "sheet-music": {
         "title-sheet": "PARTITURAS",
-    "title-sheet1": "CREACIÓN",
-    "sheet-music-p": "<p>La composición, el arreglo y la dirección musical constituyen el núcleo de la actividad creativa de Cristian Basto. Su trabajo abarca obras originales, arreglos para ensambles y orquestas típicas, proyectos interdisciplinarios y producciones discográficas, siempre desde una mirada que pone en diálogo la tradición de la música argentina con los lenguajes contemporáneos.</p><p>Como arreglador ha participado en producciones reconocidas por la crítica y la industria discográfica, entre ellas <span class='bio-highlight'>¿Y el fin del amor?</span> (Mariana Mazú), <span class='bio-highlight'>La Caldera</span> (Julieta Laso), <span class='bio-highlight'>Salve</span> (Noelia Sinkunas) y <span class='bio-highlight'>Pasa</span> (Limón García).</p><p>Sus composiciones y arreglos forman parte del repertorio de diferentes ensambles y han sido interpretados en conciertos, grabaciones y festivales internacionales.</p><p>Además, realiza composiciones, arreglos y dirección musical por encargo para producciones discográficas, música de cámara, ensambles, orquestas y proyectos audiovisuales.</p>",
-        "sheet-music-p1": "Mis composiciones exploran sonoridades y texturas innovadoras, influenciadas por la música contemporánea y las tecnologías actuales. Cada obra es una invitación a descubrir lo inesperado dentro de lo familiar. En mis arreglos, el enfoque es transformar y reinventar melodías conocidas, adaptándolas para explorar nuevas perspectivas musicales. He colaborado en discos como Pasa de Limón García, A Berisso de Noelia Sinkunas, ¿Y el fin del amor? de Mariana Mazu, La Caldera de Julieta Laso, entre otros, aportando un toque distintivo a cada pieza. En esta sección, encontrarás arreglos pensados para diversos grupos y estilos, como orquestas, ensambles y cuartetos.Si tenés un proyecto o grupo musical y buscás arreglos o composiciones originales, podés contar conmigo para darle un giro único y profesional a cada interpretación.",
-        "title-sheet2": "Piano Solo",
-        "title-sheet3": "Suite para ensamble de cuerdas, bandoneón, cello y piano",
-        "title-sheet4": "Danza para piano y contrabajo",
-        "title-sheet5": "Obras para quinteto de cuerdas y piano",
-        "title-sheet6": "Arreglos para distintos formatos",
-        "sheet-button": "Descargar"
+        "title-sheet1": "CREACIÓN",
+        "sheet-music-p": "<p>La composición, el arreglo y la dirección musical constituyen el núcleo de la actividad creativa de Cristian Basto. Su trabajo abarca obras originales, arreglos para ensambles y orquestas típicas, proyectos interdisciplinarios y producciones discográficas, siempre desde una mirada que pone en diálogo la tradición de la música argentina con los lenguajes contemporáneos.</p><p>Como arreglador ha participado en producciones reconocidas por la crítica y la industria discográfica, entre ellas <span class='bio-highlight'>¿Y el fin del amor?</span> (Mariana Mazú), <span class='bio-highlight'>La Caldera</span> (Julieta Laso), <span class='bio-highlight'>Salve</span> (Noelia Sinkunas) y <span class='bio-highlight'>Pasa</span> (Limón García).</p><p>Sus composiciones y arreglos forman parte del repertorio de diferentes ensambles y han sido interpretados en conciertos, grabaciones y festivales internacionales.</p><p>Además, realiza composiciones, arreglos y dirección musical por encargo para producciones discográficas, música de cámara, ensambles, orquestas y proyectos audiovisuales.</p>",
+        "title-sheet1b": "Tienda de partituras",
+        "sheet-music-p2": "<p><span class='bio-highlight'>Qué incluye cada material digital?</span></p><p>Todas las publicaciones son ediciones de autor de alta calidad, listas para imprimir y utilizar en atril. Al adquirir una obra o arreglo recibís el archivo digital completo que incluye:<p><span class='bio-highlight'>Score General (Full Score)</span> en PDF vectorial de alta resolución.</p><p><span class='bio-highlight'>Juego completo de Particellas individuales</span> para cada instrumento.</p>",
+        "title-sheet1c": "Catálogo y Tarifas",
+        "title-sheet2": "Piano Solo  — 12 €",
+        "title-sheet3": "Orquesta de Cuerdas y Bandoneón — 75 €",
+        "title-sheet4": "Dúos y Música de Cámara — 25 €",
+        "title-sheet5": "Quinteto de cuerdas y piano — 40 €",
+        "title-sheet6": " Orquesta Sinfónica / Grandes Ensambles — 90 €",
+        "sheet-button": "Comprar"
     },
     "donations": {
         "title-donations": "DONACIONES",
         "donations-p": "Podés apoyar mi contenido haciendo un pequeño aporte mensual o único, para poder hacer más y mejor contenido.",
-       "donations-button": "Donar"
+        "donations-button": "Donar"
     }
 }
