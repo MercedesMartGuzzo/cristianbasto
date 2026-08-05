@@ -125,7 +125,7 @@
                     <h3 class="piano-titulo-a" data-section="sheet-music" data-value="title-sheet1b"></h3>
                     <div class="partituras-pa" data-section="sheet-music" data-value="sheet-music-p2">
                     </div>
-                    <h3 class="piano-titulo-a"data-section="sheet-music" data-value="title-sheet1c"></h3>
+                    <h3 class="piano-titulo-a" data-section="sheet-music" data-value="title-sheet1c"></h3>
                 </div>
                 <h4 class="piano-titulo fade-in1" data-section="sheet-music" data-value="title-sheet2">
                 </h4>
@@ -144,10 +144,12 @@
                         <img src="../partituras/mor/mor_page-0003.jpg" alt="Previsualización 2"
                             class="previsualizacion">
                     </div>
-                    <a href="https://drive.google.com/file/d/1MuxWgOfc6uNquWaB1q1EaqSo9qovWMan/view?usp=drive_link"
-                        target="_blank">
-                        <button class="piano-descargas" data-section="sheet-music" data-value="sheet-button"></button>
-                    </a>
+                    <button class="piano-descargas" data-title="MOR" data-price="12"
+                        data-image="../partituras/mor/mor_page-0001.jpg">
+
+                        Comprar
+
+                    </button>
                 </div>
 
                 <div class="piano-partes">
@@ -205,9 +207,9 @@
                         </div>
                         <div class="previsualizaciones">
                             <img src="../partituras/suite-score-particellas_page-0002.jpg" alt="Previsualización 1"
-                                class="previsualizacion">
+                                class="previsualizacion suites">
                             <img src="../partituras/suite-score-particellas_page-0003.jpg" alt="Previsualización 2"
-                                class="previsualizacion">
+                                class="previsualizacion suites">
                         </div>
                         <a href="https://drive.google.com/file/d/1DYulpsozGZATQEtWcfnqNDUAxgwHahNH/view?usp=drive_link"
                             target="_blank">
@@ -243,7 +245,7 @@
                                 data-value="sheet-button"></button>
                         </a>
                     </div>
-                     <div class="piano-partes">
+                    <div class="piano-partes">
                         <div class="piano-portada">
                             <img src="../partituras/tema-de-la-nuve-variaciones sobre una nube_page-0001.jpg"
                                 alt="Portada" class="portada-img1">
@@ -432,17 +434,59 @@
                 </div>
             </div>
             </div>
+
+            <!-- ===================== CARRITO FLOTANTE ===================== -->
+
+            <button id="floating-cart" class="floating-cart">
+                <i class="bi bi-bag-fill"></i>
+                <span id="cart-count">0</span>
+            </button>
+
+            <!-- ===================== MODAL CARRITO ===================== -->
+
+            <div id="cart-modal" class="cart-modal">
+
+                <div class="cart-content">
+
+                    <button class="cart-close" id="close-cart">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+
+                    <h2>Your Cart</h2>
+
+                    <div id="cart-items">
+
+                        <!-- JS -->
+
+                    </div>
+
+                    <div class="cart-footer">
+
+                        <div class="subtotal">
+
+                            <span>Subtotal</span>
+
+                            <span id="cart-total">€0</span>
+
+                        </div>
+                        <button id="checkout-btn" class="checkout-btn">
+
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="donaciones container">
-            <h3 class="donaciones-titulo" data-section="donations" data-value="title-donations">
-            </h3>
-            <p class="donaciones-p" data-section="donations" data-value="donations-p">
+            <h4 class="donaciones-titulo" data-section="donations" data-value="title-donations">
+            </h4>
+            <p class="partituras-pa" data-section="donations" data-value="donations-p">
             </p>
-            <div class="donaciones-icon">
+            <!--   <div class="donaciones-icon">
                 <h3 class="donaciones-icon"> <img class="img-icon" src="../img/paypal (2).png" alt="">PAYPAL(USD)</h3>
             </div>
             <a href="https://www.paypal.com/donate/?hosted_button_id=XDYEVGGVBPCQG" target="_blank"><button
-                    class="donaciones-btn" data-section="donations" data-value="donations-button"></button></a>
+                    class="donaciones-btn" data-section="donations" data-value="donations-button"></button></a> -->
         </section>
 
     </main>

@@ -158,3 +158,123 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/*==========================
+        CARRITO
+==========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cart = [];
+
+    const floatingCart = document.getElementById("floating-cart");
+    const cartModal = document.getElementById("cart-modal");
+    const closeCart = document.getElementById("close-cart");
+    const cartItems = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
+    const cartTotal = document.getElementById("cart-total");
+
+    // Agregar al carrito
+    document.querySelectorAll(".piano-descargas").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            cart.push({
+                title: btn.dataset.title,
+                price: Number(btn.dataset.price),
+                image: btn.dataset.image
+            });
+
+            renderCart();
+
+            cartModal.classList.add("show");
+
+        });
+
+    });
+
+    // Renderizar carrito
+    function renderCart() {
+
+        cartItems.innerHTML = "";
+
+        let total = 0;
+
+        cart.forEach((item, index) => {
+
+            total += item.price;
+
+            cartItems.innerHTML += `
+                <div class="cart-item">
+
+                    <img src="${item.image}" alt="${item.title}">
+
+                    <div class="cart-info">
+
+                        <div class="cart-title">
+                            ${item.title}
+                        </div>
+
+                    </div>
+
+                    <button class="remove-item" data-index="${index}">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+
+                </div>
+            `;
+
+        });
+
+        cartTotal.textContent = `€${total}`;
+        cartCount.textContent = cart.length;
+
+        floatingCart.classList.toggle("show", cart.length > 0);
+
+        // Eliminar producto
+        document.querySelectorAll(".remove-item").forEach(btn => {
+
+            btn.addEventListener("click", () => {
+
+                const index = Number(btn.dataset.index);
+
+                cart.splice(index, 1);
+
+                renderCart();
+
+                if (cart.length === 0) {
+                    cartModal.classList.remove("show");
+                }
+
+            });
+
+        });
+
+    }
+
+    // Abrir carrito flotante
+    if (floatingCart) {
+        floatingCart.addEventListener("click", () => {
+            cartModal.classList.add("show");
+        });
+    }
+
+    // Cerrar con la X
+    if (closeCart) {
+        closeCart.addEventListener("click", () => {
+            cartModal.classList.remove("show");
+        });
+    }
+
+    // Cerrar haciendo click fuera
+    if (cartModal) {
+        cartModal.addEventListener("click", (e) => {
+
+            if (e.target === cartModal) {
+                cartModal.classList.remove("show");
+            }
+
+        });
+    }
+
+});
