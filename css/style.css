@@ -103,7 +103,8 @@ body.dark-mode #eventos li,
 body.dark-mode .partituras1,
 body.dark-mode .partituras-grilla,
 body.dark-mode .partituras-grilla p,
-body.dark-mode .piano-titulo,body.dark-mode .piano-titulo-a,
+body.dark-mode .piano-titulo,
+body.dark-mode .piano-titulo-a,
 body.dark-mode .partituras1 h4,
 body.dark-mode .pedagogias,
 body.dark-mode .pedagogia-pa,
@@ -118,7 +119,7 @@ body.dark-mode .footer-parrafo2,
 body.dark-mode .workshop,
 body.dark-mode .workshop-title,
 body.dark-mode .colaboracione,
-body.dark-mode .discos{
+body.dark-mode .discos {
   background-color: black;
   color: white;
 }
@@ -133,8 +134,8 @@ body.dark-mode .mostrar-icono1 {
 }
 
 body.dark-mode .piano-partes img,
-body.dark-mode .pedagogia-grilla ,
-body.dark-mode .piano1{
+body.dark-mode .pedagogia-grilla,
+body.dark-mode .piano1 {
   border: 1px solid whitesmoke;
 }
 
@@ -147,7 +148,7 @@ body.dark-mode .donaciones-titulo,
 body.dark-mode .piano-titulo,
 body.dark-mode .workshop,
 body.dark-mode .colaboracione,
-body.dark-mode .discos{
+body.dark-mode .discos {
   border-top: 1px solid whitesmoke;
 }
 
@@ -596,17 +597,19 @@ body.dark-mode .bio {
   .photo-grid img.horizontal1:hover {
     transform: scale(01.01);
   }
-  .menu{
-     gap: 3rem; 
+
+  .menu {
+    gap: 3rem;
     padding-top: 3rem;
   }
+
   .redes {
     font-size: 1.5rem;
     gap: 1rem;
     margin-top: 2rem
   }
 
-   .iconos {
+  .iconos {
     margin-top: 2rem;
     font-size: 1.5rem;
   }
@@ -676,14 +679,14 @@ body.dark-mode .bio {
   }
 
   .lang-button {
-  font-size: 1rem;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  color: whitesmoke;
-  font-family: "Bowlby One", sans-serif;
-  padding: 0;
-}
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: "Bowlby One", sans-serif;
+    padding: 0;
+  }
 
   .bi-moon-stars-fill {
     margin-right: .3rem;
@@ -799,10 +802,10 @@ body.dark-mode .bio {
   transition: transform .2s ease-out;
 }
 
-.hero-img-partituras{
-    object-fit: cover;
-    object-position: center top;
-    transform: translate3d(0,0,0) scale(1);
+.hero-img-partituras {
+  object-fit: cover;
+  object-position: center top;
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .hero-img-pedagogia {
@@ -872,7 +875,7 @@ body.dark-mode .bio {
 
 @media (min-width:992px) {
 
- /*  .hero-title {
+  /*  .hero-title {
     left: 15%;
     top: 55%;
     font-size: 3rem;
@@ -890,17 +893,18 @@ body.dark-mode .bio {
     font-size: 3rem;
   } */
 
-  .hero-img{
+  .hero-img {
     object-position: center 30%;
   }
-  .hero-img-partituras{
+
+  .hero-img-partituras {
     object-position: center 12%;
     transition:
-        transform .2s ease-out,
-        border-radius .35s ease;
+      transform .2s ease-out,
+      border-radius .35s ease;
 
   }
- 
+
 }
 
 /**** BOTONES *****/
@@ -909,7 +913,7 @@ body.dark-mode .bio {
   position: relative;
   background-color: transparent;
   padding: 10px;
-  color:black;
+  color: black;
   border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
@@ -919,6 +923,7 @@ body.dark-mode .bio {
   margin-left: .3rem;
   font-family: "Bowlby One", sans-serif;
   font-weight: 200;
+  width: 110px;
 }
 
 .piano-descargas:hover {
@@ -998,7 +1003,7 @@ body.dark-mode .bio {
 }
 
 .donaciones-btn:hover {
-  background-color:black;
+  background-color: black;
   color: white;
   transform: scale(1.1);
 }
@@ -1215,7 +1220,7 @@ body.dark-mode .bio {
 
 .discos,
 .colaboracione {
-  color:black;
+  color: black;
   font-size: 1.3rem;
   margin-top: 1.5em;
   border-top: 1px solid black;
@@ -2522,6 +2527,12 @@ body.dark-mode .donaciones {
   font-weight: 500;
 }
 
+.partituras-pa.subtitle {
+  margin-bottom: 0;
+  margin-top: .5rem;
+
+}
+
 .partituras1 {
   margin-top: 1rem;
   width: 90vw;
@@ -2581,7 +2592,7 @@ body.dark-mode .donaciones {
 }
 
 .partituras1 h4 {
-  color:black;
+  color: black;
   font-size: 1.3rem;
   font-family: "Bowlby One", sans-serif;
 }
@@ -2591,7 +2602,8 @@ body.dark-mode .donaciones {
   flex-direction: column;
 }
 
-.piano-titulo-a,.piano-titulo {
+.piano-titulo-a,
+.piano-titulo {
   color: black;
   margin-top: 1.5rem;
   justify-content: start;
@@ -2601,9 +2613,11 @@ body.dark-mode .donaciones {
   padding-top: 1rem;
   font-family: "Bowlby One", sans-serif;
 }
-.piano-titulo-a{
+
+.piano-titulo-a {
   border-top: none;
 }
+
 .piano-portada {
   position: relative;
 }
@@ -2621,9 +2635,10 @@ body.dark-mode .donaciones {
   top: 0;
   left: 0;
 }
+
 .previsualizacion.suites {
-   width: 100%; 
-  height:400px;
+  width: 100%;
+  height: 400px;
   object-fit: fill;
   object-position: center;
 }
@@ -2670,7 +2685,7 @@ body.dark-mode .piano-descargas:hover {
 }
 
 .donaciones-titulo {
-  color:black;
+  color: black;
   border-top: 1px solid black;
 }
 
@@ -2758,7 +2773,7 @@ body.dark-mode .piano-descargas:hover {
   .quinteto-titulo,
   .arreglos-titulo,
   .donaciones-titulo {
-    color:black;
+    color: black;
     margin-top: 2.5rem;
     justify-content: start;
     align-items: center;
@@ -3054,7 +3069,7 @@ body.dark-mode .piano-descargas:hover {
     object-position: 35% 20%;
   }
 
- /*  .colaboraciones-titulo {
+  /*  .colaboraciones-titulo {
     font-size: 3.4rem;
     left: 2rem;
     top: 50%;
@@ -3099,7 +3114,7 @@ body.dark-mode .piano-descargas:hover {
     object-position: 30% 18%;
   }
 
-/*   .colaboraciones-titulo {
+  /*   .colaboraciones-titulo {
     font-size: 3rem;
     right: 2rem;
     top: 80%;
@@ -3375,271 +3390,321 @@ body.dark-mode .redes-footer2 a:hover {
           STORE
 ******************************/
 
-.floating-cart{
+.floating-cart {
 
-    position:fixed;
+  position: fixed;
 
-    right:30px;
+  right: 30px;
 
-    bottom:30px;
+  bottom: 30px;
 
-    width:65px;
+  width: 65px;
 
-    height:65px;
+  height: 65px;
 
-    border-radius:50%;
+  border-radius: 50%;
 
-    border:none;
+  border: none;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    background:#6b2b2b;
+  background: #6b2b2b;
 
-    color:white;
+  color: white;
 
-    display:flex;
+  display: flex;
 
-    justify-content:center;
+  justify-content: center;
 
-    align-items:center;
+  align-items: center;
 
-    font-size:1.4rem;
+  font-size: 1.4rem;
 
-    z-index:5000;
+  z-index: 5000;
 
-    opacity:0;
+  opacity: 0;
 
-    pointer-events:none;
+  pointer-events: none;
 
-    transition:.3s;
+  transition: .3s;
 }
 
-.floating-cart.show{
+.floating-cart.show {
 
-    opacity:1;
+  opacity: 1;
 
-    pointer-events:auto;
+  pointer-events: auto;
 }
 
-#cart-count{
+#cart-count {
 
-    position:absolute;
+  position: absolute;
 
-    top:-6px;
+  top: -6px;
 
-    right:-6px;
+  right: -6px;
 
-    width:24px;
+  width: 24px;
 
-    height:24px;
+  height: 24px;
 
-    border-radius:50%;
+  border-radius: 50%;
 
-    background:black;
+  background: black;
 
-    color:white;
+  color: white;
 
-    display:flex;
+  display: flex;
 
-    justify-content:center;
+  justify-content: center;
 
-    align-items:center;
+  align-items: center;
 
-    font-size:.8rem;
+  font-size: .8rem;
 
-    font-family:"DM Sans",sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-.cart-modal{
+.cart-modal {
 
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.6);
-
-    display:none;
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:6000;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 6000;
 }
 
-.cart-modal.show{
+.cart-modal.show {
 
-    display:flex;
+  display: flex;
 }
 
-.cart-content{
+.cart-content {
 
-    width:min(900px,90vw);
+  width: min(900px, 90vw);
 
-    background:white;
+  background: white;
 
-    padding:40px;
+  padding: 40px;
 
-    position:relative;
+  position: relative;
 
-    max-height:85vh;
+  max-height: 85vh;
 
-    overflow:auto;
+  overflow: auto;
 }
 
-.cart-content h2{
+.cart-content h2 {
 
-    font-family:"Bowlby One",sans-serif;
+  font-family: "Bowlby One", sans-serif;
 
-    font-size:2rem;
+  font-size: 2rem;
 
-    margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
-.cart-close{
+.cart-close {
 
-    position:absolute;
+  position: absolute;
 
-    right:25px;
+  right: 25px;
 
-    top:25px;
+  top: 25px;
 
-    border:none;
+  border: none;
 
-    background:none;
+  background: none;
 
-    font-size:1.4rem;
+  font-size: 1.4rem;
 
-    cursor:pointer;
+  cursor: pointer;
 }
 
-.cart-item{
-    display:flex;
-    align-items:flex-start;
-    gap:2rem;
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-.cart-info{
-    flex:1;
+.cart-info {
+  flex: 1;
 }
 
-.cart-item img{
+.cart-item img {
 
-    width:120px;
+  width: 120px;
 
-    border:1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 
 
-.cart-title{
+.cart-title {
 
-    font-family:"DM Sans",sans-serif;
+  font-family: "Bowlby One", sans-serif;
 
-    font-size:1.2rem;
-
-    font-weight:700;
+  font-size: 1.2rem;
 }
 
 
-.cart-price{
-    margin-left:auto;
+.cart-price {
+  margin-left: auto;
 }
 
-.cart-footer{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:2rem;
+.cart-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
 }
 
-.checkout-btn{
+.checkout-btn {
 
-    background:#6b2b2b;
+  background: #6b2b2b;
 
-    color:white;
+  color: white;
 
-    border:none;
+  border: none;
 
-    padding:16px 45px;
+  padding: 16px 45px;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    font-family:"Bowlby One",sans-serif;
+  font-family: "Bowlby One", sans-serif;
 
-    letter-spacing:1px;
+  letter-spacing: 1px;
 
-    transition:.3s;
+  transition: .3s;
 }
 
-.checkout-btn:hover{
+.checkout-btn:hover {
 
-    opacity:.9;
+  opacity: .9;
 }
 
-.remove-item{
+.remove-item {
 
-    border:none;
-    background:none;
-    cursor:pointer;
+  border: none;
+  background: none;
+  cursor: pointer;
 
-    font-size:1.2rem;
+  font-size: 1.2rem;
 
-    color:#6b2b2b;
+  color: #6b2b2b;
 
-    transition:.3s;
-
-}
-
-.remove-item:hover{
-
-    transform:scale(1.15);
+  transition: .3s;
 
 }
 
-@media(max-width:768px){
+.remove-item:hover {
+  transform: scale(1.15);
+}
 
-.cart-content{
+.quantity-control {
 
-padding:25px;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1rem;
+
+}
+
+.qty-minus,
+.qty-plus {
+
+  width: 34px;
+  height: 34px;
+
+  border: 1px solid #6b2b2b;
+  background: #6b2b2b;
+  color: white;
+  cursor: pointer;
+
+  font-family: "Bowlby One", sans-serif;
+  font-size: 1rem;
+
+  transition: .2s;
+
+}
+
+.qty-minus:hover,
+.qty-plus:hover {
+
+  background:white;
+  color: #6b2b2b;
+
+}
+
+.qty-number {
+
+  min-width: 20px;
+  text-align: center;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+
+}
+
+.cart-right {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
 
 }
 
 
-    .cart-item{
-        display:flex;
-        flex-direction:column;
-        gap:1rem;
-    }
+@media(max-width:768px) {
 
-    .cart-footer-mobile{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        width:100%;
-        margin-top:.5rem;
-    }
+  .cart-content {
 
-    .remove-item{
-        margin:0;
-    }
+    padding: 25px;
+
+  }
 
 
-.cart-item img{
-    width:150px;
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+.remove-item {
+display:none;   
 }
+  .cart-footer-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: .5rem;
+  }
 
-.cart-price{
-    margin:1rem 0;
-}
+  .remove-item {
+    margin: 0;
+  }
 
-.cart-footer{
-    flex-direction:column;
-    align-items:stretch;
-}
 
-.checkout-btn{
-    width:100%;
-}
+  .cart-item img {
+    width: 150px;
+  }
+
+  .cart-price {
+    margin: 1rem 0;
+  }
+
+  .cart-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .checkout-btn {
+    width: 100%;
+  }
 
 }

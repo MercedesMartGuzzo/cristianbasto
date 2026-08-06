@@ -162,10 +162,9 @@ document.addEventListener("DOMContentLoaded", () => {
 /*==========================
         CARRITO
 ==========================*/
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    const cart = [];
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     const floatingCart = document.getElementById("floating-cart");
     const cartModal = document.getElementById("cart-modal");
@@ -173,19 +172,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartItems = document.getElementById("cart-items");
     const cartCount = document.getElementById("cart-count");
     const cartTotal = document.getElementById("cart-total");
+    function saveCart() {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
 
-    // Agregar al carrito
+    //==========================
+    // AGREGAR AL CARRITO
+    //==========================
+
     document.querySelectorAll(".piano-descargas").forEach(btn => {
 
         btn.addEventListener("click", () => {
 
-            cart.push({
-                title: btn.dataset.title,
-                price: Number(btn.dataset.price),
-                image: btn.dataset.image
-            });
+            const title = btn.dataset.title;
+
+            const existingItem = cart.find(item => item.title === title);
+
+            if (existingItem) {
+
+                existingItem.quantity++;
+
+            } else {
+
+                cart.push({
+
+                    title: btn.dataset.title,
+                    price: Number(btn.dataset.price),
+                    image: btn.dataset.image,
+                    quantity: 1
+
+                });
+
+            }
 
             renderCart();
+            saveCart();
 
             cartModal.classList.add("show");
 
@@ -193,7 +214,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    // Renderizar carrito
+    //==========================
+    // RENDER
+    //==========================
+
     function renderCart() {
 
         cartItems.innerHTML = "";
@@ -202,79 +226,191 @@ document.addEventListener("DOMContentLoaded", () => {
 
         cart.forEach((item, index) => {
 
-            total += item.price;
+            total += item.price * item.quantity;
 
             cartItems.innerHTML += `
-                <div class="cart-item">
 
-                    <img src="${item.image}" alt="${item.title}">
+            <div class="cart-item">
 
-                    <div class="cart-info">
+                <img src="${item.image}" alt="${item.title}">
 
-                        <div class="cart-title">
-                            ${item.title}
-                        </div>
+                <div class="cart-info">
+
+                    <div class="cart-title">
+
+                        ${item.title}
 
                     </div>
 
-                    <button class="remove-item" data-index="${index}">
+
+                  <div class="quantity-control">
+    <button
+        class="qty-minus"
+        data-index="${index}"
+        aria-label="Restar">
+        <i class="bi bi-dash"></i>
+    </button>
+
+    <span class="qty-number">
+        ${item.quantity}
+    </span>
+    <button
+        class="qty-plus"
+        data-index="${index}"
+        aria-label="Sumar">
+      <i class="bi bi-plus"></i>
+    </button>
+</div>
+
+                </div>
+
+               <div class="cart-right">
+
+                    <div class="cart-price">
+
+                        €${(item.price * item.quantity).toFixed(2)}
+
+                    </div>
+
+                    <button
+                        class="remove-item"
+                        data-index="${index}">
+
                         <i class="bi bi-trash3"></i>
+
                     </button>
 
                 </div>
+
+            </div>
+
             `;
 
         });
 
-        cartTotal.textContent = `€${total}`;
-        cartCount.textContent = cart.length;
+        cartTotal.textContent = `€${total.toFixed(2)}`;
+
+        cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
 
         floatingCart.classList.toggle("show", cart.length > 0);
 
-        // Eliminar producto
-        document.querySelectorAll(".remove-item").forEach(btn => {
+        //-----------------------
+        // SUMAR
+        //-----------------------
 
-            btn.addEventListener("click", () => {
+        document.querySelectorAll(".qty-plus").forEach(btn => {
 
-                const index = Number(btn.dataset.index);
+            btn.onclick = () => {
 
-                cart.splice(index, 1);
+                cart[btn.dataset.index].quantity++;
 
                 renderCart();
+                saveCart();
 
-                if (cart.length === 0) {
-                    cartModal.classList.remove("show");
+            };
+
+        });
+
+        //-----------------------
+        // RESTAR
+        //-----------------------
+
+        document.querySelectorAll(".qty-minus").forEach(btn => {
+
+            btn.onclick = () => {
+
+                const item = cart[btn.dataset.index];
+
+                item.quantity--;
+
+                if (item.quantity <= 0) {
+
+                    cart.splice(btn.dataset.index, 1);
+
                 }
 
-            });
+                renderCart();
+                saveCart();
+
+                if (!cart.length) {
+
+                    cartModal.classList.remove("show");
+
+                }
+
+            };
+
+        });
+
+        //-----------------------
+        // ELIMINAR
+        //-----------------------
+
+        document.querySelectorAll(".remove-item").forEach(btn => {
+
+            btn.onclick = () => {
+
+                cart.splice(btn.dataset.index, 1);
+
+                renderCart();
+                saveCart();
+
+                if (!cart.length) {
+
+                    cartModal.classList.remove("show");
+
+                }
+
+            };
 
         });
 
     }
 
-    // Abrir carrito flotante
+    //==========================
+    // ABRIR CARRITO
+    //==========================
+
     if (floatingCart) {
+
         floatingCart.addEventListener("click", () => {
+
             cartModal.classList.add("show");
+
         });
+
     }
 
-    // Cerrar con la X
+    //==========================
+    // CERRAR
+    //==========================
+
     if (closeCart) {
+
         closeCart.addEventListener("click", () => {
+
             cartModal.classList.remove("show");
+
         });
+
     }
 
-    // Cerrar haciendo click fuera
+    //==========================
+    // CLICK FUERA
+    //==========================
+
     if (cartModal) {
-        cartModal.addEventListener("click", (e) => {
+
+        cartModal.addEventListener("click", e => {
 
             if (e.target === cartModal) {
+
                 cartModal.classList.remove("show");
+
             }
 
         });
-    }
 
+    }
+    renderCart();
 });
