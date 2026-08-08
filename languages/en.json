@@ -109,12 +109,14 @@
     "subtitle1":  "Dance for piano and double bass.",
     "title-sheet4":  "String Orchestra and Bandoneón — 75 €",
     "title-sheet5": "String and piano quintet — 40 €",
+    "title-sheet5b": "String Orchestra — 60 €",
+    "title-sheet5c": "String Orchestra, Piano and Bandoneón — 75 €",
     "title-sheet6": "Symphony Orchestra / Large Ensembles — 90 €",
     "sheet-button": "Buy"
 },
     "donations": {
-        "title-donations": "DONATIONS",
-        "donations-p": "You can support my content by making a small monthly or one-time contribution, to be able to make more and better content.",
+        "title-donations": "Compositions and arrangements by request",
+        "donations-p": "If you need an adaptation for a specific formation, an original composition, or the musical direction for your discographic or audiovisual production, you can contact him directly.",
         "donations-button": "Contribute"
     }
 }
