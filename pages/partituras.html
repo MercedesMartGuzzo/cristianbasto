@@ -631,17 +631,75 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ===================== MODAL CHECKOUT ===================== -->
+<!-- Insertar justo después del cierre de #cart-modal en tu HTML -->
+
+<div id="checkout-modal" class="checkout-modal">
+    <div class="checkout-content">
+
+        <button class="checkout-close" id="close-checkout">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <div class="checkout-grid">
+
+            <!-- ===== COLUMNA FORMULARIO ===== -->
+            <div class="checkout-form">
+
+                <h2 class="checkout-heading">Additional Info</h2>
+                <label class="checkout-label" for="checkout-note">Send us a note</label>
+                <textarea id="checkout-note" class="checkout-input" rows="2"></textarea>
+
+                <h2 class="checkout-heading">Contact Info</h2>
+                <input type="email" id="checkout-email" class="checkout-input" placeholder="Email for order confirmation" required>
+                <input type="tel" id="checkout-phone" class="checkout-input" placeholder="Phone Number">
+
+                <div class="checkout-row">
+                    <input type="text" id="checkout-firstname" class="checkout-input" placeholder="First Name" required>
+                    <input type="text" id="checkout-lastname" class="checkout-input" placeholder="Last Name" required>
+                </div>
+
+                <h2 class="checkout-heading">Payment Method</h2>
+                <div class="checkout-paypal-label">
+                    <i class="bi bi-paypal"></i> PayPal
+                </div>
+
+                <div id="checkout-error" class="checkout-error" style="display:none;"></div>
+
+                <!-- El SDK de PayPal renderiza el botón acá -->
+                <div id="paypal-button-container"></div>
+
+            </div>
+
+            <!-- ===== COLUMNA RESUMEN ===== -->
+            <div class="checkout-summary">
+
+                <h3 class="checkout-summary-title">Overview</h3>
+
+                <div id="checkout-summary-items"></div>
+
+                <div class="checkout-summary-row">
+                    <span>Subtotal</span>
+                    <span id="checkout-subtotal">€0</span>
+                </div>
+
+                <div class="checkout-summary-row checkout-total">
+                    <span>TOTAL</span>
+                    <span id="checkout-total">€0</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
         </section>
         <section class="donaciones container">
             <h4 class="donaciones-titulo" data-section="donations" data-value="title-donations">
             </h4>
             <p class="partituras-pa" data-section="donations" data-value="donations-p">
             </p>
-            <!--   <div class="donaciones-icon">
-                <h3 class="donaciones-icon"> <img class="img-icon" src="../img/paypal (2).png" alt="">PAYPAL(USD)</h3>
-            </div>
-            <a href="https://www.paypal.com/donate/?hosted_button_id=XDYEVGGVBPCQG" target="_blank"><button
-                    class="donaciones-btn" data-section="donations" data-value="donations-button"></button></a> -->
         </section>
 
     </main>

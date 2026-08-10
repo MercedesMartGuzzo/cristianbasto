@@ -172,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartItems = document.getElementById("cart-items");
     const cartCount = document.getElementById("cart-count");
     const cartTotal = document.getElementById("cart-total");
+
     function saveCart() {
         localStorage.setItem("cart", JSON.stringify(cart));
     }
@@ -412,5 +413,255 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
+
     renderCart();
+
+
+    /*==========================
+            CHECKOUT
+    ==========================*/
+
+    // ⚠️ COMPLETAR ANTES DE PUBLICAR:
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/TU_ID_DE_FORMSPREE"; // tu form ID de Formspree
+    const PAYPAL_CLIENT_ID   = "TU_PAYPAL_CLIENT_ID";                       // developer.paypal.com > Apps & Credentials
+
+    const checkoutBtn          = document.getElementById("checkout-btn");
+    const checkoutModal        = document.getElementById("checkout-modal");
+    const closeCheckout        = document.getElementById("close-checkout");
+    const checkoutSummaryItems = document.getElementById("checkout-summary-items");
+    const checkoutSubtotal     = document.getElementById("checkout-subtotal");
+    const checkoutTotalEl      = document.getElementById("checkout-total");
+    const checkoutError        = document.getElementById("checkout-error");
+
+    //-----------------------
+    // RESUMEN DEL PEDIDO
+    //-----------------------
+
+    function renderCheckoutSummary() {
+
+        let total = 0;
+        checkoutSummaryItems.innerHTML = "";
+
+        cart.forEach(item => {
+
+            total += item.price * item.quantity;
+
+            checkoutSummaryItems.innerHTML += `
+                <div class="checkout-summary-item">
+                    <img src="${item.image}" alt="${item.title}">
+                    <div class="checkout-summary-info">
+                        <span>${item.title}</span>
+                        <small>x${item.quantity}</small>
+                    </div>
+                    <span class="checkout-summary-price">€${(item.price * item.quantity).toFixed(2)}</span>
+                </div>
+            `;
+
+        });
+
+        checkoutSubtotal.textContent = `€${total.toFixed(2)}`;
+        checkoutTotalEl.textContent  = `€${total.toFixed(2)}`;
+
+        return total;
+
+    }
+
+    //-----------------------
+    // VALIDACIÓN DEL FORM
+    //-----------------------
+
+    function validateCheckoutForm() {
+
+        const email     = document.getElementById("checkout-email").value.trim();
+        const firstName = document.getElementById("checkout-firstname").value.trim();
+        const lastName  = document.getElementById("checkout-lastname").value.trim();
+
+        if (!email || !firstName || !lastName) {
+
+            checkoutError.textContent = "Completá email, nombre y apellido antes de pagar.";
+            checkoutError.style.display = "block";
+            return false;
+
+        }
+
+        checkoutError.style.display = "none";
+        return true;
+
+    }
+
+    //-----------------------
+    // CARGA DEL SDK DE PAYPAL
+    //-----------------------
+
+    function loadPayPalSDK(callback) {
+
+        if (window.paypal) {
+            callback();
+            return;
+        }
+
+        const script = document.createElement("script");
+        script.src = `https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=EUR`;
+        script.onload = callback;
+        script.onerror = () => {
+            checkoutError.textContent = "No se pudo cargar PayPal. Probá de nuevo en un momento.";
+            checkoutError.style.display = "block";
+        };
+        document.body.appendChild(script);
+
+    }
+
+    //-----------------------
+    // BOTÓN DE PAYPAL
+    //-----------------------
+
+    function renderPayPalButton(total) {
+
+        const container = document.getElementById("paypal-button-container");
+        container.innerHTML = "";
+
+        paypal.Buttons({
+
+            style: { color: "gold", shape: "rect", label: "pay" },
+
+            onClick: (data, actions) => {
+
+                if (!validateCheckoutForm()) {
+                    return actions.reject();
+                }
+
+                return actions.resolve();
+
+            },
+
+            createOrder: (data, actions) => {
+
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: total.toFixed(2),
+                            currency_code: "EUR"
+                        }
+                    }]
+                });
+
+            },
+
+            onApprove: (data, actions) => {
+
+                return actions.order.capture().then(details => {
+
+                    sendOrderToFormspree(details, total);
+                    showCheckoutSuccess();
+
+                });
+
+            },
+
+            onError: err => {
+
+                checkoutError.textContent = "Hubo un error al procesar el pago. Intentá de nuevo.";
+                checkoutError.style.display = "block";
+                console.error(err);
+
+            }
+
+        }).render("#paypal-button-container");
+
+    }
+
+    //-----------------------
+    // ENVÍO DEL PEDIDO POR FORMSPREE
+    //-----------------------
+
+    function sendOrderToFormspree(paypalDetails, total) {
+
+        const payload = {
+
+            email:     document.getElementById("checkout-email").value.trim(),
+            phone:     document.getElementById("checkout-phone").value.trim(),
+            firstName: document.getElementById("checkout-firstname").value.trim(),
+            lastName:  document.getElementById("checkout-lastname").value.trim(),
+            note:      document.getElementById("checkout-note").value.trim(),
+            total:     `€${total.toFixed(2)}`,
+            paypalOrderId:    paypalDetails.id,
+            paypalPayerEmail: paypalDetails.payer?.email_address || "",
+            items: cart.map(item =>
+                `${item.title} x${item.quantity} - €${(item.price * item.quantity).toFixed(2)}`
+            ).join("\n")
+
+        };
+
+        fetch(FORMSPREE_ENDPOINT, {
+            method: "POST",
+            headers: { "Accept": "application/json", "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        }).catch(err => console.error("Error enviando el pedido:", err));
+
+    }
+
+    //-----------------------
+    // MENSAJE DE ÉXITO
+    //-----------------------
+
+    function showCheckoutSuccess() {
+
+        document.querySelector(".checkout-form").innerHTML = `
+            <div class="checkout-success">
+                <i class="bi bi-check-circle-fill"></i>
+                <h2>¡Gracias por tu compra!</h2>
+                <p>Te enviamos la confirmación por email. En breve vas a recibir el material.</p>
+            </div>
+        `;
+
+        cart.length = 0;
+        saveCart();
+        renderCart();
+
+    }
+
+    //-----------------------
+    // ABRIR CHECKOUT
+    //-----------------------
+
+    if (checkoutBtn) {
+
+        checkoutBtn.addEventListener("click", () => {
+
+            if (!cart.length) return;
+
+            cartModal.classList.remove("show");
+            checkoutModal.classList.add("show");
+
+            const total = renderCheckoutSummary();
+            loadPayPalSDK(() => renderPayPalButton(total));
+
+        });
+
+    }
+
+    //-----------------------
+    // CERRAR CHECKOUT
+    //-----------------------
+
+    if (closeCheckout) {
+
+        closeCheckout.addEventListener("click", () => {
+            checkoutModal.classList.remove("show");
+        });
+
+    }
+
+    if (checkoutModal) {
+
+        checkoutModal.addEventListener("click", e => {
+
+            if (e.target === checkoutModal) {
+                checkoutModal.classList.remove("show");
+            }
+
+        });
+
+    }
+
 });

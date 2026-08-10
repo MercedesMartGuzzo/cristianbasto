@@ -3708,3 +3708,232 @@ display:none;
   }
 
 }
+/*==========================
+    CHECKOUT MODAL
+    Usa las mismas variables que tu cart-modal si ya existen (--color-primary, --font-main).
+    Si no las tenés definidas, ajustá los valores de fallback (después del "," en cada var()).
+==========================*/
+
+.checkout-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-modal.show {
+    display: flex;
+}
+
+.checkout-content {
+    background: #fff;
+    width: 100%;
+    max-width: 950px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    font-family: var(--font-main, inherit);
+}
+
+.checkout-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--color-text, #333);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+}
+
+/* ---------- Columna formulario ---------- */
+
+.checkout-form {
+    padding: 32px;
+}
+
+.checkout-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: var(--color-text, #222);
+}
+
+.checkout-heading:first-child {
+    margin-top: 0;
+}
+
+.checkout-label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: var(--color-text-muted, #666);
+}
+
+.checkout-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: var(--color-text, #222);
+    background: #fff;
+}
+
+.checkout-input:focus {
+    outline: none;
+    border-color: var(--color-primary, #7b3131);
+}
+
+.checkout-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.checkout-paypal-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.checkout-paypal-label i {
+    color: #003087;
+    font-size: 1.1rem;
+}
+
+.checkout-error {
+    background: #fdecea;
+    color: #b3261e;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.checkout-success {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.checkout-success i {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.checkout-success h2 {
+    margin: 0 0 8px;
+}
+
+/* ---------- Columna resumen ---------- */
+
+.checkout-summary {
+    background: var(--color-bg-alt, #f7f7f7);
+    padding: 32px 28px;
+}
+
+.checkout-summary-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    color: var(--color-text, #222);
+}
+
+.checkout-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.checkout-summary-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.checkout-summary-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 0.85rem;
+}
+
+.checkout-summary-info small {
+    color: var(--color-text-muted, #888);
+}
+
+.checkout-summary-price {
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.checkout-summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #e2e2e2;
+    font-size: 0.9rem;
+}
+
+.checkout-total {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ---------- Botón PayPal (contenedor) ---------- */
+
+#paypal-button-container {
+    margin-top: 6px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+
+    .checkout-content {
+        max-height: 100vh;
+        border-radius: 0;
+    }
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        order: -1;
+    }
+
+    .checkout-form,
+    .checkout-summary {
+        padding: 24px 20px;
+    }
+
+    .checkout-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
