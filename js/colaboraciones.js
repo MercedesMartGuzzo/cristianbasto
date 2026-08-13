@@ -4,7 +4,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos que deseas animar
     const elements = document.querySelectorAll('.fade-in1');
-
     // Crear el observer
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -55,19 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             header.classList.remove("show-header");
         }
-
         // Efectos mientras la portada esté visible
         if (portada && imagen) {
             const rect = portada.getBoundingClientRect();
-
             if (rect.bottom > 0) {
                 // Parallax de la imagen
                 const desplazamiento = scrollY * 0.45;
-
                 const escala = window.innerWidth <= 768
                     ? Math.max(1.0 - scrollY * 0.0003, 1)
                     : Math.max(1 - scrollY * 0.0002, 1);
-
 
                 imagen.style.transform = `
     translate3d(0, ${desplazamiento}px, 0)

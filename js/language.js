@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Leer el idioma guardado en localStorage al cargar la página
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es'; // Por defecto 'es'
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es'; 
     handleLanguageChange(savedLanguage);
 
     langButtons.forEach(button => {

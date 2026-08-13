@@ -63,6 +63,7 @@ main {
   transition: background-color .3s, color .3s;
 }
 
+
 body.dark-mode main {
   background-color: black;
 }
@@ -931,7 +932,9 @@ body.dark-mode .bio {
   color: white;
   transform: scale(1.1);
 }
-
+.piano-descargas.contra-btn{
+  width:130px;
+}
 .btn-musica,
 .btn-videos,
 .btn-prensa {
@@ -2862,7 +2865,7 @@ body.dark-mode .piano-descargas:hover {
   margin: 10px;
   position: absolute;
   font-size: 20px;
-  color: black;
+  color:#666;
   bottom: 0;
   right: 1%;
   z-index: 10;
@@ -3710,8 +3713,6 @@ display:none;
 }
 /*==========================
     CHECKOUT MODAL
-    Usa las mismas variables que tu cart-modal si ya existen (--color-primary, --font-main).
-    Si no las tenés definidas, ajustá los valores de fallback (después del "," en cada var()).
 ==========================*/
 
 .checkout-modal {
@@ -3936,4 +3937,28 @@ display:none;
         grid-template-columns: 1fr;
         gap: 0;
     }
+}
+/* ==========================
+   PAYPAL DESHABILITADO
+========================== */
+
+.paypal-disabled {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #e5e5e5;
+    color: #888;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: not-allowed;
+}
+
+/* Cuando el email es válido */
+.paypal-disabled.hidden {
+    display: none;
+}
+
+#paypal-button-container {
+    margin-top: 6px;
 }
