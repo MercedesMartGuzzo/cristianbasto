@@ -151,6 +151,12 @@ function updateTextContent(data) {
         }
     });
 
+    // Actualizar enlaces dinámicos (como el de prensa)
+    const pressLink = document.getElementById('press-link');
+    if (pressLink && data.press && data.press.url) {
+        pressLink.href = data.press.url;
+    }
+
     // Recalcular referencias porque se reemplazó innerHTML de los contenedores text1-text4
     textsToChange = document.querySelectorAll('[data-section]');
     assignBioToggleEvents();
