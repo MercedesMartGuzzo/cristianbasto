@@ -1425,6 +1425,7 @@ body.dark-mode .agenda-lista {
 
 #eventos {
   padding-left: 0px;
+  width: 100%;
 }
 
 body.dark-mode #eventos li {

@@ -4,60 +4,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const eventos = [
     {
+        name: "ORQUESTRA ASSINTOMÁTICA",
+        date: "27-10-2026",
+        time: "",
+        location: "Coímbra, Portugal",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=MATE+Festival+Coimbra+Portugal"
+    },
+    {
+        name: "CUARTETO INSURGENTE",
+        date: "01-11-2026",
+        time: "",
+        location: "Caldes de Montbui, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Espai+Can+Rius+Caldes+de+Montbui+Spain"
+    },
+    {
         name: "QUINTETO ASTOR PIAZZOLLA",
         date: "07-11-2026",
         time: "20:00",
         location: "Miami, Estados Unidos",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Adrienne+Arsht+Center+Miami"
-    },
-    {
-        name: "NOELIA SINKUNAS QUARTET",
-        date: "16-08-2026",
-        time: "",
-        location: "Tarbes, Francia",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Festival+Tarbes+en+Tango+Tarbes+France"
-    },
-    {
-        name: "NOELIA SINKUNAS QUARTET",
-        date: "17-08-2026",
-        time: "",
-        location: "Tarbes, Francia",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Festival+Tarbes+en+Tango+Tarbes+France"
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Knight+Concert+Hall+Adrienne+Arsht+Center+Miami"
     },
     {
         name: "QUINTETO ASTOR PIAZZOLLA",
-        date: "22-07-2026",
+        date: "09-11-2026",
         time: "",
-        location: "San Sebastián, España",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Kursaal+San+Sebastian+Spain"
+        location: "Nueva York, Estados Unidos",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Zankel+Hall+Carnegie+Hall+New+York"
     },
     {
-        name: "MARTÍN SUED & ORQUESTRA ASSINTOMÁTICA",
-        date: "10-07-2026",
+        name: "CUARTETO INSURGENTE",
+        date: "13-11-2026",
         time: "",
-        location: "Espinho, Portugal",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Espinho+Portugal"
+        location: "Barcelona, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Teatro+Metamorfosis+Barcelona+Spain"
     },
     {
-        name: "QUINTETO ASTOR PIAZZOLLA",
-        date: "27-06-2026",
-        time: "20:00",
-        location: "Montreal, Canadá",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Maison+Symphonique+Place+des+Arts+Montreal"
+        name: "CUARTETO INSURGENTE",
+        date: "20-11-2026",
+        time: "",
+        location: "Barcelona, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Teatro+Metamorfosis+Barcelona+Spain"
     },
     {
-        name: "QUINTETO ASTOR PIAZZOLLA",
-        date: "25-06-2026",
+        name: "CUARTETO INSURGENTE",
+        date: "04-12-2026",
         time: "",
-        location: "Montreal, Canadá",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=L+Amphitheatre+du+Gesu+Montreal"
+        location: "Barcelona, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Espai+Mescladis+Altell+Barcelona+Spain"
     },
     {
-        name: "CUARTETO INSURGENTE & MARTÍN SUED",
-        date: "13-06-2026",
+        name: "CUARTETO INSURGENTE",
+        date: "06-02-2027",
         time: "",
-        location: "Hohenems, Austria",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=Markus+Sittikus+Saal+Hohenems+Austria"
+        location: "Barcelona, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Espai+Conclave+Barcelona+Spain"
     }
 ];
 
