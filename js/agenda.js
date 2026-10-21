@@ -58,6 +58,42 @@ const eventos = [
         time: "",
         location: "Barcelona, España",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=Espai+Conclave+Barcelona+Spain"
+    },
+    {
+        name: "SOCIAL TANGO PROJECT",
+        date: "19-02-2027",
+        time: "",
+        location: "Waco, Estados Unidos",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Creative+Waco+Waco+Texas"
+    },
+    {
+        name: "SOCIAL TANGO PROJECT",
+        date: "26-02-2027",
+        endDate: "27-02-2027",
+        time: "",
+        location: "Dallas, Estados Unidos",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=TITAS+UNBOUND+Dallas+Texas"
+    },
+    {
+        name: "SOCIAL TANGO PROJECT",
+        date: "03-03-2027",
+        time: "",
+        location: "Portland, Estados Unidos",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=White+Bird+Portland+Oregon"
+    },
+    {
+        name: "SOCIAL TANGO PROJECT",
+        date: "07-03-2027",
+        time: "",
+        location: "Boca Raton, Estados Unidos",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Festival+of+the+Arts+BOCA+Boca+Raton+Florida"
+    },
+    {
+        name: "CUARTETO INSURGENTE",
+        date: "27-05-2027",
+        time: "",
+        location: "Barcelona, España",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Centre+Cultural+Navas+Barcelona+Spain"
     }
 ];
 
